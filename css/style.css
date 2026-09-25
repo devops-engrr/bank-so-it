@@ -543,3 +543,690 @@ html[data-theme="dark"] .nav-account{
 @media(prefers-reduced-motion:reduce){
   .theme-toggle{transition:none}
 }
+
+/* =========================================================
+   HOMEPAGE LATEST YOUTUBE VIDEO
+   ========================================================= */
+
+#latest-video-loading,
+#latest-video-error {
+  grid-column: 1 / -1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.latest-video-media {
+  position: relative;
+  display: block;
+  min-height: 300px;
+  overflow: hidden;
+  background: #11152a;
+}
+
+.latest-video-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  display: block;
+  object-fit: cover;
+  transition: transform .35s ease;
+}
+
+.latest-video-media:hover img {
+  transform: scale(1.035);
+}
+
+.latest-video-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 68px;
+  height: 68px;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(11,16,32,.76);
+  color: #fff;
+  font-size: 25px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.28);
+  transition: transform .2s ease, background .2s ease;
+}
+
+.latest-video-media:hover .latest-video-play {
+  transform: translate(-50%, -50%) scale(1.08);
+  background: var(--primary);
+}
+
+.latest-video-content h3 {
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 16px 0 10px;
+}
+
+@media (max-width: 760px) {
+  .latest-video-media,
+  .latest-video-media img {
+    min-height: 220px;
+  }
+
+  .latest-video-content h3 {
+    font-size: 25px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .latest-video-media img,
+  .latest-video-play {
+    transition: none;
+  }
+}
+
+/* Dynamic video cards use the same surface as the rest of the site. */
+html[data-theme="dark"] .dynamic-video-card {
+  background:var(--surface);
+  border-color:var(--line);
+}
+/* =========================================================
+   BANK SO IT — LATEST VIDEO CAROUSEL
+   Production homepage component
+   ========================================================= */
+
+.latest-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 8% 15%,
+      rgba(91, 92, 226, .08),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 92% 80%,
+      rgba(91, 92, 226, .06),
+      transparent 28%
+    ),
+    var(--soft);
+}
+
+/* Very subtle ambient background motion */
+.latest-section::before,
+.latest-section::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: .45;
+  animation: latestAmbientFloat 14s ease-in-out infinite alternate;
+}
+
+.latest-section::before {
+  width: 220px;
+  height: 220px;
+  left: -100px;
+  top: 80px;
+  background: rgba(91, 92, 226, .10);
+}
+
+.latest-section::after {
+  width: 260px;
+  height: 260px;
+  right: -120px;
+  bottom: 40px;
+  background: rgba(120, 100, 240, .08);
+  animation-delay: -7s;
+}
+
+@keyframes latestAmbientFloat {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(25px, -15px, 0) scale(1.08);
+  }
+}
+
+.latest-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.latest-section-head {
+  align-items: end;
+}
+
+.latest-section-head h2 {
+  max-width: 680px;
+}
+
+/* ---------------------------------------------------------
+   Carousel shell
+   --------------------------------------------------------- */
+
+.latest-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.latest-carousel-viewport {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  border-radius: 22px;
+  outline: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.latest-carousel-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.latest-carousel-viewport:focus-visible {
+  box-shadow:
+    0 0 0 3px rgba(91, 92, 226, .20);
+}
+
+/* ---------------------------------------------------------
+   Track
+   --------------------------------------------------------- */
+
+.latest-carousel-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  padding: 4px 2px 12px;
+}
+
+/* ---------------------------------------------------------
+   Video card
+   --------------------------------------------------------- */
+
+.latest-video-card {
+  flex: 0 0
+    calc(
+      (100vw - 80px - 40px) / 3
+    );
+
+  max-width: 420px;
+  min-width: 300px;
+
+  scroll-snap-align: start;
+
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  overflow: hidden;
+
+  box-shadow:
+    0 8px 25px rgba(16, 24, 40, .06);
+
+  transition:
+    transform .28s ease,
+    box-shadow .28s ease,
+    border-color .28s ease;
+}
+
+.latest-video-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 18px 45px rgba(16, 24, 40, .12);
+
+  border-color: rgba(91, 92, 226, .30);
+}
+
+/* ---------------------------------------------------------
+   Thumbnail
+   --------------------------------------------------------- */
+
+.latest-video-thumbnail {
+  position: relative;
+  display: block;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  background: #11152a;
+}
+
+.latest-video-thumbnail img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform .5s cubic-bezier(.2,.7,.2,1);
+}
+
+.latest-video-card:hover .latest-video-thumbnail img {
+  transform: scale(1.045);
+}
+
+/* Thumbnail overlay */
+
+.latest-video-thumbnail::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(11, 16, 32, .35),
+      transparent 45%
+    );
+
+  pointer-events: none;
+}
+
+/* ---------------------------------------------------------
+   Play button
+   --------------------------------------------------------- */
+
+.latest-video-play {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 58px;
+  height: 58px;
+
+  display: grid;
+  place-items: center;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background: rgba(11, 16, 32, .82);
+
+  color: #fff;
+
+  font-size: 19px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, .28);
+
+  z-index: 2;
+
+  transition:
+    transform .25s ease,
+    background .25s ease,
+    box-shadow .25s ease;
+}
+
+.latest-video-card:hover .latest-video-play {
+  transform:
+    translate(-50%, -50%)
+    scale(1.09);
+
+  background: var(--primary);
+
+  box-shadow:
+    0 12px 35px rgba(91, 92, 226, .30);
+}
+
+/* ---------------------------------------------------------
+   Card content
+   --------------------------------------------------------- */
+
+.latest-video-content {
+  padding: 20px 21px 21px;
+}
+
+.latest-video-content .pill {
+  margin-bottom: 9px;
+}
+
+.latest-video-content h3 {
+  margin: 0 0 9px;
+
+  font-size: 18px;
+  line-height: 1.35;
+
+  letter-spacing: -.015em;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+  overflow: hidden;
+}
+
+.latest-video-content h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.latest-video-content h3 a:hover {
+  color: var(--primary);
+}
+
+.latest-video-date {
+  margin-bottom: 11px;
+
+  color: var(--primary);
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: .02em;
+}
+
+.latest-video-content p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 13px;
+  line-height: 1.55;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+  overflow: hidden;
+}
+
+/* ---------------------------------------------------------
+   Navigation arrows
+   --------------------------------------------------------- */
+
+.latest-carousel-btn {
+  flex: 0 0 auto;
+
+  width: 46px;
+  height: 46px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid var(--line);
+  border-radius: 50%;
+
+  background: var(--surface);
+  color: var(--ink);
+
+  font-size: 18px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 6px 20px rgba(16, 24, 40, .08);
+
+  transition:
+    transform .2s ease,
+    background .2s ease,
+    color .2s ease,
+    box-shadow .2s ease;
+}
+
+.latest-carousel-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+
+  background: var(--primary);
+  color: #fff;
+
+  border-color: var(--primary);
+
+  box-shadow:
+    0 10px 25px rgba(91, 92, 226, .20);
+}
+
+.latest-carousel-btn:focus-visible {
+  outline: 3px solid rgba(91, 92, 226, .20);
+  outline-offset: 2px;
+}
+
+.latest-carousel-btn:disabled {
+  opacity: .38;
+  cursor: default;
+}
+
+/* ---------------------------------------------------------
+   Footer controls
+   --------------------------------------------------------- */
+
+.latest-carousel-footer {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 18px;
+}
+
+.latest-carousel-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.latest-carousel-dot {
+  width: 7px;
+  height: 7px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 999px;
+
+  background: var(--line);
+
+  cursor: pointer;
+
+  transition:
+    width .25s ease,
+    background .25s ease;
+}
+
+.latest-carousel-dot.active {
+  width: 22px;
+  background: var(--primary);
+}
+
+.latest-view-all {
+  color: var(--primary);
+
+  font-size: 13px;
+  font-weight: 850;
+
+  text-decoration: none;
+}
+
+.latest-view-all:hover {
+  color: var(--primary-dark);
+}
+
+/* ---------------------------------------------------------
+   Loading state
+   --------------------------------------------------------- */
+
+.latest-video-skeleton {
+  flex: 0 0
+    calc(
+      (100vw - 80px - 40px) / 3
+    );
+
+  max-width: 420px;
+  min-width: 300px;
+
+  height: 360px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.55) 25%,
+      rgba(255,255,255,.90) 50%,
+      rgba(255,255,255,.55) 75%
+    );
+
+  background-size: 200% 100%;
+
+  animation:
+    latestSkeletonShimmer 1.5s infinite;
+}
+
+@keyframes latestSkeletonShimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* ---------------------------------------------------------
+   Error / empty state
+   --------------------------------------------------------- */
+
+.latest-video-message {
+  width: 100%;
+
+  padding: 55px 25px;
+
+  text-align: center;
+
+  background: var(--surface);
+
+  border: 1px solid var(--line);
+  border-radius: 20px;
+}
+
+.latest-video-message strong {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.latest-video-message span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ---------------------------------------------------------
+   Tablet
+   --------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+
+  .latest-video-card {
+    flex-basis:
+      calc(
+        (100vw - 70px - 20px) / 2
+      );
+  }
+
+  .latest-video-skeleton {
+    flex-basis:
+      calc(
+        (100vw - 70px - 20px) / 2
+      );
+  }
+
+}
+
+/* ---------------------------------------------------------
+   Mobile
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+  .latest-section {
+    padding: 62px 0;
+  }
+
+  .latest-section-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .latest-section-head h2 {
+    font-size: 28px;
+  }
+
+  .latest-carousel {
+    gap: 8px;
+  }
+
+  .latest-carousel-btn {
+    display: none;
+  }
+
+  .latest-carousel-viewport {
+    margin: 0 -2px;
+  }
+
+  .latest-carousel-track {
+    gap: 14px;
+  }
+
+  .latest-video-card {
+    flex-basis:
+      calc(
+        88vw
+      );
+
+    min-width: 0;
+
+    border-radius: 18px;
+  }
+
+  .latest-video-skeleton {
+    flex-basis: 88vw;
+    min-width: 0;
+  }
+
+  .latest-video-content {
+    padding: 18px;
+  }
+
+  .latest-video-content h3 {
+    font-size: 17px;
+  }
+
+  .latest-carousel-footer {
+    margin-top: 13px;
+  }
+
+}
+
+/* ---------------------------------------------------------
+   Reduced motion / accessibility
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .latest-section::before,
+  .latest-section::after,
+  .latest-video-skeleton {
+    animation: none;
+  }
+
+  .latest-carousel-viewport {
+    scroll-behavior: auto;
+  }
+
+  .latest-video-card,
+  .latest-video-thumbnail img,
+  .latest-video-play,
+  .latest-carousel-btn,
+  .latest-carousel-dot {
+    transition: none;
+  }
+
+}
