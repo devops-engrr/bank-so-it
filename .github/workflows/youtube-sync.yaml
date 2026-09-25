@@ -1,0 +1,80 @@
+name: Sync YouTube Videos
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-youtube:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch latest YouTube videos
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          set -euo pipefail
+
+          mkdir -p data
+
+          CHANNEL_RESPONSE=$(curl -fsS \
+            "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forHandle=%40BankSoIt&key=${YOUTUBE_API_KEY}")
+
+          UPLOADS_PLAYLIST_ID=$(echo "$CHANNEL_RESPONSE" | jq -r \
+            '.items[0].contentDetails.relatedPlaylists.uploads')
+
+          if [ -z "$UPLOADS_PLAYLIST_ID" ] || [ "$UPLOADS_PLAYLIST_ID" = "null" ]; then
+            echo "Could not find the Bank SO IT uploads playlist."
+            exit 1
+          fi
+
+          VIDEOS_RESPONSE=$(curl -fsS \
+            "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&playlistId=${UPLOADS_PLAYLIST_ID}&maxResults=50&key=${YOUTUBE_API_KEY}")
+
+          echo "$VIDEOS_RESPONSE" | jq '{
+            updatedAt: (now | todate),
+            channel: {
+              name: "Bank SO IT",
+              handle: "@BankSoIt",
+              url: "https://www.youtube.com/@BankSoIt"
+            },
+            videos: [
+              .items[]
+              | {
+                  videoId: .contentDetails.videoId,
+                  title: .snippet.title,
+                  description: .snippet.description,
+                  publishedAt: .contentDetails.videoPublishedAt,
+                  thumbnail: (
+                    .snippet.thumbnails.maxres.url //
+                    .snippet.thumbnails.high.url //
+                    .snippet.thumbnails.medium.url //
+                    .snippet.thumbnails.default.url
+                  ),
+                  url: ("https://www.youtube.com/watch?v=" + .contentDetails.videoId)
+                }
+            ]
+          }' > data/videos.json
+
+          echo "Fetched $(jq '.videos | length' data/videos.json) videos."
+
+      - name: Commit updated video data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/videos.json
+
+          if git diff --cached --quiet; then
+            echo "No video changes detected."
+          else
+            git commit -m "chore: sync YouTube videos"
+            git push
+          fi
