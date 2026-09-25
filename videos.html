@@ -1,19 +1,168 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Videos | Bank SO IT</title>
-<meta name="description" content="Bank SO IT preparation videos for IBPS SO IT, SBI SO, RRB SO and other banking exams.">
-<link rel="icon" type="image/jpeg" href="assets/logo/bank-so-it-logo.jpg">
-<link rel="stylesheet" href="css/style.css"></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Videos | Bank SO IT</title>
+
+  <meta
+    name="description"
+    content="Latest Bank SO IT preparation videos for IBPS SO IT, SBI SO, RRB SO and other banking exams."
+  >
+
+  <link rel="icon" type="image/jpeg" href="assets/logo/bank-so-it-logo.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
 <body>
-<header class="site-header"><div class="container nav"><a class="brand" href="index.html"><img class="brand-logo" src="assets/logo/bank-so-it-logo.jpg" alt="Bank SO IT logo"><span>Bank <strong>SO IT</strong></span></a><button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button><nav class="nav-links"><a href="index.html">Home</a><a class="active" href="videos.html">Videos</a><a href="quizzes.html">Daily Quiz</a><a href="resources.html">Resources</a><a href="announcements.html">Announcements</a><a href="about.html">About</a><a class="nav-cta" href="https://www.youtube.com/@BankSoIt" target="_blank" rel="noopener">YouTube ↗</a></nav></div></header>
+
+<header class="site-header">
+  <div class="container nav">
+
+    <a class="brand" href="index.html">
+      <img
+        class="brand-logo"
+        src="assets/logo/bank-so-it-logo.jpg"
+        alt="Bank SO IT logo"
+      >
+      <span>Bank <strong>SO IT</strong></span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a class="active" href="videos.html">Videos</a>
+      <a href="quizzes.html">Daily Quiz</a>
+      <a href="resources.html">Resources</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="about.html">About</a>
+
+      <a
+        class="nav-cta"
+        href="https://www.youtube.com/@BankSoIt"
+        target="_blank"
+        rel="noopener"
+      >
+        YouTube ↗
+      </a>
+    </nav>
+
+  </div>
+</header>
+
+
 <main>
-<section class="page-hero"><div class="container"><span class="eyebrow">VIDEO HUB</span><h1>Bank SO IT Videos</h1><p>Concepts, revision, practice and exam-focused preparation from our YouTube channel.</p><a class="btn btn-primary" href="https://www.youtube.com/@BankSoIt" target="_blank" rel="noopener">Open YouTube Channel ↗</a></div></section>
-<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow dark">CHANNEL</span><h2>Watch our latest content</h2></div><p>New uploads are published on YouTube.</p></div>
-<div class="video-list">
-<a class="video-item" href="https://www.youtube.com/@BankSoIt" target="_blank" rel="noopener"><div class="video-thumb"><span>▶</span></div><div><span class="pill">YouTube</span><h3>Latest Bank SO IT preparation videos</h3><p>IT Professional Knowledge, English, Quant, Reasoning, Banking Awareness and exam strategies.</p><strong>Watch on YouTube ↗</strong></div></a>
-<a class="video-item" href="https://www.youtube.com/@BankSoIt" target="_blank" rel="noopener"><div class="video-thumb purple"><span>▶</span></div><div><span class="pill">Practice</span><h3>Questions, revision and mock-test discussions</h3><p>Follow the channel for topic-wise practice and revision-focused sessions.</p><strong>Explore channel ↗</strong></div></a>
-</div></div></section>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+
+      <span class="eyebrow">VIDEO HUB</span>
+
+      <h1>Bank SO IT Videos</h1>
+
+      <p>
+        Concepts, revision, practice and exam-focused preparation
+        from our YouTube channel.
+      </p>
+
+      <a
+        class="btn btn-primary"
+        href="https://www.youtube.com/@BankSoIt"
+        target="_blank"
+        rel="noopener"
+      >
+        Open YouTube Channel ↗
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- VIDEO SECTION -->
+  <section class="section">
+
+    <div class="container">
+
+      <div class="section-head">
+
+        <div>
+          <span class="eyebrow dark">LATEST UPLOADS</span>
+
+          <h2>Watch our latest content</h2>
+        </div>
+
+        <p id="video-status">
+          Loading videos from YouTube…
+        </p>
+
+      </div>
+
+
+      <!-- Dynamic videos will be inserted here -->
+      <div
+        id="video-grid"
+        class="dynamic-video-grid"
+        aria-live="polite"
+      ></div>
+
+
+      <!-- Loading state -->
+      <div
+        id="video-loading"
+        class="video-loading"
+      >
+        <div class="video-loading-spinner"></div>
+        <p>Loading the latest Bank SO IT videos…</p>
+      </div>
+
+
+      <!-- Error state -->
+      <div
+        id="video-error"
+        class="video-error"
+        hidden
+      >
+        <h3>Videos couldn't be loaded</h3>
+
+        <p>
+          Please refresh the page or visit our YouTube channel directly.
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="https://www.youtube.com/@BankSoIt"
+          target="_blank"
+          rel="noopener"
+        >
+          Visit YouTube ↗
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
 </main>
-<footer class="footer"><div class="container footer-bottom"><span>© 2026 Bank SO IT</span><span>Independent educational platform.</span></div></footer>
-<script src="js/main.js"></script></body></html>
+
+
+<footer class="footer">
+  <div class="container footer-bottom">
+    <span>© 2026 Bank SO IT</span>
+    <span>Independent educational platform.</span>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
