@@ -11,7 +11,162 @@ document.addEventListener("DOMContentLoaded", () => {
       const open = nav.classList.toggle("open");
       toggle.setAttribute("aria-expanded", String(open));
     });
+
+    /*
+     * Close the mobile menu after a navigation link is selected.
+     */
+    nav.addEventListener("click", (event) => {
+      if (event.target.closest("a")) {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      }
+    });
   }
+
+
+  /*
+   * Account navigation
+   *
+   * Public pages only need the Supabase client to determine whether
+   * the visitor has an active session. The publishable key remains in
+   * js/supabase.js. Never place the Supabase secret/service-role key here.
+   */
+  const accountLink = document.querySelector("[data-account-link]");
+
+  const loadScript = (src) => {
+    return new Promise((resolve, reject) => {
+      const existing = document.querySelector(`script[src="${src}"]`);
+
+      if (existing) {
+        if (existing.dataset.loaded === "true") {
+          resolve();
+          return;
+        }
+
+        existing.addEventListener("load", resolve, { once: true });
+        existing.addEventListener("error", reject, { once: true });
+        return;
+      }
+
+      const script = document.createElement("script");
+      script.src = src;
+      script.async = false;
+
+      script.addEventListener("load", () => {
+        script.dataset.loaded = "true";
+        resolve();
+      }, { once: true });
+
+      script.addEventListener("error", () => {
+        reject(new Error(`Unable to load ${src}`));
+      }, { once: true });
+
+      document.head.appendChild(script);
+    });
+  };
+
+
+  const ensureSupabaseClient = async () => {
+
+    /*
+     * auth.html/dashboard.html already load Supabase themselves.
+     * On public pages we load the same client only when needed.
+     */
+    if (!window.supabase) {
+      await loadScript(
+        "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+      );
+    }
+
+    if (!window.bankSoItSupabase) {
+      await loadScript("js/supabase.js");
+    }
+
+    if (!window.bankSoItSupabase) {
+      throw new Error("Bank SO IT Supabase client is not configured.");
+    }
+
+    return window.bankSoItSupabase;
+  };
+
+
+  const updateAccountLink = (session) => {
+
+    if (!accountLink) {
+      return;
+    }
+
+    const loggedIn = Boolean(session);
+
+    accountLink.textContent = loggedIn
+      ? "Dashboard"
+      : "Login / Sign Up";
+
+    accountLink.href = loggedIn
+      ? "dashboard.html"
+      : "auth.html";
+
+    accountLink.classList.toggle(
+      "is-authenticated",
+      loggedIn
+    );
+
+    accountLink.setAttribute(
+      "aria-label",
+      loggedIn
+        ? "Open your Bank SO IT dashboard"
+        : "Login or create a Bank SO IT account"
+    );
+  };
+
+
+  const initAccountNavigation = async () => {
+
+    if (!accountLink) {
+      return;
+    }
+
+    /*
+     * Keep Login / Sign Up as the safe fallback while the session
+     * is being resolved.
+     */
+    updateAccountLink(null);
+
+    try {
+
+      const client = await ensureSupabaseClient();
+
+      const {
+        data: { session }
+      } = await client.auth.getSession();
+
+      updateAccountLink(session);
+
+      /*
+       * Keep the header synchronized if the user signs in/out in
+       * another tab or the session is refreshed.
+       */
+      client.auth.onAuthStateChange((_event, nextSession) => {
+        updateAccountLink(nextSession);
+      });
+
+    } catch (error) {
+
+      /*
+       * Authentication should never prevent the rest of the public
+       * website from working.
+       */
+      console.warn(
+        "Bank SO IT account navigation could not initialize:",
+        error
+      );
+
+      updateAccountLink(null);
+    }
+  };
+
+
+  initAccountNavigation();
 
 
   /*
@@ -27,6 +182,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const videoError = document.getElementById("video-error");
   const videoStatus = document.getElementById("video-status");
 
+  /*
+   * main.js is shared by multiple pages. Only initialize the
+   * YouTube renderer on pages that actually contain #video-grid.
+   */
   if (!videoGrid) {
     return;
   }
@@ -234,7 +393,9 @@ document.addEventListener("DOMContentLoaded", () => {
       /*
        * Hide loading state
        */
-      videoLoading.hidden = true;
+      if (videoLoading) {
+        videoLoading.hidden = true;
+      }
 
 
       /*
@@ -242,17 +403,21 @@ document.addEventListener("DOMContentLoaded", () => {
        */
       const count = data.videos.length;
 
-      videoStatus.textContent =
-        `${count} videos • Automatically synced from YouTube`;
+      if (videoStatus) {
+        videoStatus.textContent =
+          `${count} videos • Automatically synced from YouTube`;
+      }
 
 
       /*
        * If no videos were returned
        */
-      if (count === 0) {
+      if (count === 0 && videoError) {
 
-        videoStatus.textContent =
-          "No videos available yet.";
+        if (videoStatus) {
+          videoStatus.textContent =
+            "No videos available yet.";
+        }
 
         videoError.hidden = false;
       }
@@ -264,13 +429,18 @@ document.addEventListener("DOMContentLoaded", () => {
         error
       );
 
+      if (videoLoading) {
+        videoLoading.hidden = true;
+      }
 
-      videoLoading.hidden = true;
+      if (videoError) {
+        videoError.hidden = false;
+      }
 
-      videoError.hidden = false;
-
-      videoStatus.textContent =
-        "Unable to load videos right now.";
+      if (videoStatus) {
+        videoStatus.textContent =
+          "Unable to load videos right now.";
+      }
 
     }
 

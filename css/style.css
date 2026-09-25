@@ -257,3 +257,152 @@
   }
 
 }
+
+
+/* =========================================================
+   ACCOUNT NAVIGATION + HOMEPAGE ACCOUNT CTA
+   ========================================================= */
+
+.nav-account{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:40px;
+  padding:9px 14px;
+  border:1px solid #d8d9f7;
+  border-radius:10px;
+  background:#f7f7ff;
+  color:var(--primary)!important;
+  font-weight:800;
+  white-space:nowrap;
+  transition:background .18s ease,color .18s ease,border-color .18s ease,transform .18s ease;
+}
+
+.nav-account:hover{
+  background:var(--primary);
+  border-color:var(--primary);
+  color:#fff!important;
+  transform:translateY(-1px);
+}
+
+.nav-account.is-authenticated{
+  background:var(--primary);
+  border-color:var(--primary);
+  color:#fff!important;
+}
+
+.nav-account.is-authenticated:hover{
+  background:var(--primary-dark);
+  border-color:var(--primary-dark);
+}
+
+.hero-account-cta{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px 14px;
+  margin-top:20px;
+  font-size:13px;
+  color:#bfc5d7;
+}
+
+.account-cta-link{
+  color:#fff;
+  font-weight:850;
+  text-decoration:underline;
+  text-decoration-color:rgba(150,153,255,.75);
+  text-underline-offset:4px;
+  transition:color .18s ease;
+}
+
+.account-cta-link:hover{
+  color:#b8bbff;
+}
+
+@media(max-width:950px){
+  .nav-account{
+    padding:9px 12px;
+  }
+}
+
+@media(max-width:760px){
+  .nav-account{
+    width:100%;
+  }
+
+  .hero-account-cta{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:6px;
+    margin-top:18px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .nav-account,
+  .account-cta-link{
+    transition:none;
+  }
+}
+
+
+/* =========================================================
+   JOB UPDATES EMPTY STATE
+   ========================================================= */
+
+.job-updates-empty {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 58px 32px;
+  box-shadow: var(--shadow);
+}
+
+.job-updates-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  background: var(--soft);
+  font-size: 32px;
+}
+
+.job-updates-empty h2 {
+  margin: 0 0 10px;
+  font-size: 30px;
+}
+
+.job-updates-empty p {
+  max-width: 600px;
+  margin: 0 auto 24px;
+  color: var(--muted);
+}
+
+.job-updates-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #eef0ff;
+  color: #4d4fb8;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 650px) {
+  .job-updates-empty {
+    padding: 42px 22px;
+  }
+
+  .job-updates-empty h2 {
+    font-size: 25px;
+  }
+}
