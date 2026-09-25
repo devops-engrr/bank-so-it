@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   applyTheme(savedTheme === "dark" || savedTheme === "light" ? savedTheme : systemTheme);
 
-  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelector(".nav-links");
 
-  if (nav && !document.querySelector("[data-theme-toggle]")) {
+  if (navLinks && !document.querySelector("[data-theme-toggle]")) {
     const themeButton = document.createElement("button");
     themeButton.type = "button";
     themeButton.className = "theme-toggle";
@@ -39,11 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
       updateThemeButton();
     });
 
-    const accountLink = nav.querySelector("[data-account-link]");
+    const accountLink = navLinks.querySelector("[data-account-link]");
     if (accountLink) {
       accountLink.insertAdjacentElement("afterend", themeButton);
     } else {
-      nav.appendChild(themeButton);
+      navLinks.appendChild(themeButton);
     }
 
     updateThemeButton();
