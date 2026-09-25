@@ -1,6 +1,37 @@
 (() => {
   "use strict";
 
+  /* Bank SO IT theme */
+  const initTheme = () => {
+    const saved = localStorage.getItem("bankSoItTheme");
+    const system = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    const initial = saved === "dark" || saved === "light" ? saved : system;
+    document.documentElement.dataset.theme = initial;
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "auth-theme-toggle";
+    button.setAttribute("aria-label", "Switch theme");
+    document.body.appendChild(button);
+
+    const update = () => {
+      const dark = document.documentElement.dataset.theme === "dark";
+      button.textContent = dark ? "☀ Light" : "🌙 Dark";
+      button.title = dark ? "Switch to light mode" : "Switch to dark mode";
+    };
+
+    button.addEventListener("click", () => {
+      const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+      document.documentElement.dataset.theme = next;
+      localStorage.setItem("bankSoItTheme", next);
+      update();
+    });
+
+    update();
+  };
+
+  initTheme();
+
   const client = window.bankSoItSupabase;
 
   async function init() {

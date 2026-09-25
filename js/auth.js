@@ -1,6 +1,37 @@
 (() => {
   "use strict";
 
+  /* Bank SO IT theme */
+  const initTheme = () => {
+    const saved = localStorage.getItem("bankSoItTheme");
+    const system = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    const initial = saved === "dark" || saved === "light" ? saved : system;
+    document.documentElement.dataset.theme = initial;
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "auth-theme-toggle";
+    button.setAttribute("aria-label", "Switch theme");
+    document.body.appendChild(button);
+
+    const update = () => {
+      const dark = document.documentElement.dataset.theme === "dark";
+      button.textContent = dark ? "☀ Light" : "🌙 Dark";
+      button.title = dark ? "Switch to light mode" : "Switch to dark mode";
+    };
+
+    button.addEventListener("click", () => {
+      const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+      document.documentElement.dataset.theme = next;
+      localStorage.setItem("bankSoItTheme", next);
+      update();
+    });
+
+    update();
+  };
+
+  initTheme();
+
   const $ = (selector) => document.querySelector(selector);
   const client = () => window.bankSoItSupabase;
 
@@ -105,6 +136,12 @@
 
   $("#login-tab").addEventListener("click", () => switchMode("login"));
   $("#signup-tab").addEventListener("click", () => switchMode("signup"));
+
+  // Open the requested authentication mode from links such as auth.html?mode=signup.
+  const requestedMode = new URLSearchParams(window.location.search).get("mode");
+  if (requestedMode === "signup" || requestedMode === "login") {
+    switchMode(requestedMode);
+  }
   $("#signup-password").addEventListener("input", updateStrength);
 
   document.querySelectorAll("[data-toggle-password]").forEach((button) => {
@@ -144,7 +181,7 @@
     } catch (error) {
       const msg = String(error.message || "").toLowerCase();
       if (msg.includes("email not confirmed")) {
-        showMessage("Please verify your email before logging in. Check your inbox.", "error");
+        showMessage("Please verify your email before logging in. Check your inbox for the verification email from Supabase. If you do not see it, check your spam or junk folder.", "error");
       } else if (msg.includes("invalid login credentials")) {
         showMessage("Email or password is incorrect.", "error");
       } else {
@@ -223,7 +260,7 @@
       loginForm.classList.add("hidden");
       signupForm.classList.add("hidden");
       verificationView.classList.remove("hidden");
-      showMessage("Account created. Please verify your email.", "success");
+      showMessage("Account created successfully. We sent a verification email from Supabase to your inbox. Please verify your email before logging in. If you do not see it, check your spam or junk folder.", "success");
     } catch (error) {
       const msg = String(error.message || "").toLowerCase();
       if (msg.includes("already registered") || msg.includes("already been registered")) {

@@ -307,16 +307,26 @@
 }
 
 .account-cta-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:11px 17px;
+  border:1px solid rgba(150,153,255,.55);
+  border-radius:10px;
+  background:rgba(91,92,226,.18);
   color:#fff;
-  font-weight:850;
-  text-decoration:underline;
-  text-decoration-color:rgba(150,153,255,.75);
-  text-underline-offset:4px;
-  transition:color .18s ease;
+  font-size:17px;
+  font-weight:900;
+  letter-spacing:.01em;
+  text-decoration:none;
+  transition:color .18s ease,background .18s ease,border-color .18s ease,transform .18s ease;
 }
 
 .account-cta-link:hover{
-  color:#b8bbff;
+  color:#fff;
+  background:rgba(91,92,226,.34);
+  border-color:rgba(150,153,255,.75);
+  transform:translateY(-1px);
 }
 
 @media(max-width:950px){
@@ -405,4 +415,131 @@
   .job-updates-empty h2 {
     font-size: 25px;
   }
+}
+
+/* =========================================================
+   LIGHT / DARK THEME SYSTEM
+   ========================================================= */
+:root{
+  color-scheme:light;
+}
+
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#080d1a;
+  --surface:#10182b;
+  --ink:#f1f5ff;
+  --muted:#9ca9c2;
+  --line:#26334d;
+  --primary:#7b83ff;
+  --primary-dark:#6870e8;
+  --dark:#050914;
+  --soft:#0e1730;
+  --shadow:0 16px 42px rgba(0,0,0,.28);
+}
+
+html[data-theme="dark"] body{
+  background:var(--bg);
+  color:var(--ink);
+}
+
+html[data-theme="dark"] .site-header{
+  background:rgba(8,13,26,.94);
+  border-color:var(--line);
+}
+
+html[data-theme="dark"] .nav-links a{color:#c4cee0}
+html[data-theme="dark"] .nav-links a:hover,
+html[data-theme="dark"] .nav-links .active{color:#9da3ff}
+
+html[data-theme="dark"] .nav-links{
+  background:transparent;
+}
+
+html[data-theme="dark"] .menu-toggle{color:#f1f5ff}
+
+html[data-theme="dark"] .section.soft{background:#0b1224}
+
+html[data-theme="dark"] .info-card,
+html[data-theme="dark"] .feature-banner,
+html[data-theme="dark"] .exam-grid div,
+html[data-theme="dark"] .video-item,
+html[data-theme="dark"] .announcement,
+html[data-theme="dark"] .job-updates-empty,
+html[data-theme="dark"] .video-error{
+  background:var(--surface);
+  border-color:var(--line);
+}
+
+html[data-theme="dark"] .info-card:hover,
+html[data-theme="dark"] .dynamic-video-card:hover{
+  border-color:#4a55a0;
+}
+
+html[data-theme="dark"] .info-card p,
+html[data-theme="dark"] .section-head p,
+html[data-theme="dark"] .video-item p,
+html[data-theme="dark"] .announcement p,
+html[data-theme="dark"] .job-updates-empty p,
+html[data-theme="dark"] .video-error p{
+  color:var(--muted);
+}
+
+html[data-theme="dark"] .pill,
+html[data-theme="dark"] .job-updates-badge{
+  background:#18234a;
+  color:#aeb5ff;
+}
+
+html[data-theme="dark"] .card-link,
+html[data-theme="dark"] .text-link,
+html[data-theme="dark"] .dynamic-video-link,
+html[data-theme="dark"] .dynamic-video-date{
+  color:#9da3ff;
+}
+
+html[data-theme="dark"] .footer{
+  background:#050914;
+}
+
+html[data-theme="dark"] .nav-account{
+  background:rgba(123,131,255,.12);
+  border-color:rgba(123,131,255,.35);
+  color:#dbe0ff;
+}
+
+.theme-toggle{
+  appearance:none;
+  border:1px solid var(--line);
+  background:var(--surface);
+  color:var(--ink);
+  border-radius:10px;
+  padding:9px 12px;
+  font:inherit;
+  font-size:13px;
+  font-weight:800;
+  cursor:pointer;
+  white-space:nowrap;
+  transition:background .18s ease,color .18s ease,border-color .18s ease,transform .18s ease;
+}
+
+.theme-toggle:hover{
+  border-color:var(--primary);
+  color:var(--primary);
+  transform:translateY(-1px);
+}
+
+@media(max-width:760px){
+  html[data-theme="dark"] .nav-links{
+    background:#10182b;
+  }
+
+  .theme-toggle{
+    width:100%;
+    text-align:center;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .theme-toggle{transition:none}
 }

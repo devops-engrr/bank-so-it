@@ -1,6 +1,65 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   /*
+   * Theme system
+   * - Uses the visitor's saved preference when available.
+   * - Otherwise follows the operating-system preference.
+   * - Saves the choice for future visits.
+   */
+  const applyTheme = (theme) => {
+    document.documentElement.dataset.theme = theme;
+  };
+
+  const savedTheme = localStorage.getItem("bankSoItTheme");
+  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+
+  applyTheme(savedTheme === "dark" || savedTheme === "light" ? savedTheme : systemTheme);
+
+  const nav = document.querySelector(".nav-links");
+
+  if (nav && !document.querySelector("[data-theme-toggle]")) {
+    const themeButton = document.createElement("button");
+    themeButton.type = "button";
+    themeButton.className = "theme-toggle";
+    themeButton.setAttribute("data-theme-toggle", "true");
+
+    const updateThemeButton = () => {
+      const dark = document.documentElement.dataset.theme === "dark";
+      themeButton.textContent = dark ? "☀ Light" : "🌙 Dark";
+      themeButton.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+      themeButton.title = dark ? "Switch to light mode" : "Switch to dark mode";
+    };
+
+    themeButton.addEventListener("click", () => {
+      const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+      applyTheme(nextTheme);
+      localStorage.setItem("bankSoItTheme", nextTheme);
+      updateThemeButton();
+    });
+
+    const accountLink = nav.querySelector("[data-account-link]");
+    if (accountLink) {
+      accountLink.insertAdjacentElement("afterend", themeButton);
+    } else {
+      nav.appendChild(themeButton);
+    }
+
+    updateThemeButton();
+  }
+
+  /*
+   * Canonical home URL
+   *
+   * Keep the public home URL as https://banksoit.com/ instead of
+   * exposing /index.html when a visitor clicks a logo or Home link.
+   */
+  document.querySelectorAll('a[href="index.html"], a[href="./index.html"]').forEach((link) => {
+    link.setAttribute("href", "/");
+  });
+
+  /*
    * Mobile navigation
    */
   const toggle = document.querySelector(".menu-toggle");
