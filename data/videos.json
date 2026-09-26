@@ -1,11 +1,19 @@
 {
-  "updatedAt": "2026-09-26T13:03:54Z",
+  "updatedAt": "2026-09-26T17:08:47Z",
   "channel": {
     "name": "Bank SO IT",
     "handle": "@BankSoIt",
     "url": "https://www.youtube.com/@BankSoIt"
   },
   "videos": [
+    {
+      "videoId": "4ItOSW7f4Co",
+      "title": "DBMS Crash Course Part 1 (Modules 1 to 4) | IBPS SO IT, RRB Scale 2 IT, SBI SO, BPSC TRE CS 2026",
+      "description": "Welcome to Day 2 of our comprehensive Computer Science & IT preparation series on BankSoIT! 🚀\n\nIn this masterclass, we cover DBMS Part 1 (Modules 1 through 4) designed specifically for competitive IT and CS exams, including IBPS SO IT Officer, SBI SO, RRB Scale 2 IT Officer, BPSC TRE CS, DSSSB, NIC/NIELIT, GATE, UGC NET, and State Technical exams. \n\nLearn core concepts, avoid common exam traps, practice active recall with module quizzes, and reinforce your prep!\n\n💡 ANNOUNCEMENTS:\n1. Day 2 DBMS Part 1 Practice Quiz will be uploaded to our website shortly! Head over to practice: https://banksoit.com\n2. Stay tuned for our upcoming NBFC analysis & vlog video dropping soon!\n\n━━━━━━━━━━━━━━━━━━━━\n📌 TOPICS COVERED:\n• Module 1: DBMS Foundations (3-Level Architecture, Data Independence, Super/Candidate/Primary Keys, Integrity Constraints)\n• Module 2: ER & Relational Models (Entities, Attributes, Cardinality, Participation, Relational Vocabulary)\n• Module 3: Functional Dependencies & Normalization (Anomalies, FDs, 1NF, 2NF, 3NF, BCNF)\n• Module 4: SQL Core (DDL, DML, DCL, TCL, NULL Traps, Aggregate Functions, GROUP BY & HAVING)\n\n━━━━━━━━━━━━━━━━━━━━\n⏱️ TIMESTAMPS:\n00:00 - Introduction & Free Learning Platform Overview\n01:30 - Complete DBMS Exam Syllabus Roadmap\n02:15 - Module 1: DBMS Foundations & 3-Level Architecture (ECI)\n03:50 - Physical vs Logical Data Independence Explained\n05:30 - Keys Made Simple: Super Key, Candidate Key, Primary Key\n08:20 - Foreign Keys & Integrity Constraints (Referential Integrity)\n10:45 - Module 1: 5-Mark Checkpoint Quiz & Answer Key\n13:10 - Module 2: ER Model & Relational Concepts\n14:30 - ER Building Blocks: Entities, Attributes & Relationships\n16:45 - Cardinality Ratios (1:1, 1:N, M:N) & Participation Rules\n18:50 - Relational Vocabulary (Tuples, Degree, Cardinality, Domains)\n21:30 - Module 2: 5-Mark Checkpoint Quiz & Detailed Review\n24:00 - Module 3: Functional Dependencies & Normalization\n25:30 - Why Normalize? Update, Insertion & Deletion Anomalies\n27:15 - Functional Dependency & Determinant Rules\n29:40 - Normal Forms Ladder: 1NF, 2NF, 3NF & BCNF Demystified\n33:20 - Module 3: 5-Mark Checkpoint Quiz & Answers\n36:00 - Module 4: SQL Core Commands & Language Families\n37:10 - DDL vs DML vs DCL vs TCL Comparison\n39:30 - Exam Trap: DELETE vs TRUNCATE vs DROP Differences\n41:40 - SQL Queries: SELECT, WHERE, ORDER BY\n44:00 - NULL Handling Pitfalls: COUNT(*) vs COUNT(column)\n46:15 - Aggregate Functions, GROUP BY & The HAVING Clause\n49:00 - Module 4: 5-Mark Checkpoint Quiz & Answers\n52:15 - Wrap-up, Upcoming Notes & DBMS Part 2 Preview\n\n━━━━━━━━━━━━━━━━━━━━\n🌐 PLATFORM & COMMUNITY LINKS:\n• Website: https://banksoit.com (Quizzes, Mock Tests & PDF Notes)\n• Telegram Channel: [Insert Your Telegram Link Here]\n• Subscribe to BankSoIT for daily lectures, IT exam strategies, and job updates!\n\n━━━━━━━━━━━━━━━━━━━━\n⚖️ COPYRIGHT DISCLAIMER:\nCopyright Disclaimer under Section 107 of the Copyright Act 1976, allowance is made for \"fair use\" for purposes such as criticism, comment, news reporting, teaching, scholarship, education, and research. All materials and content presented in this video belong to BankSoIT and are designed strictly for educational and exam preparation purposes.\n\n#DBMS #IBPSSOIT #RRBSO #ComputerScience #SQLTutorial #DatabaseManagement #BPSCTRE #BankSoIT #ITOfficer #Normalization",
+      "publishedAt": "2026-09-26T16:23:58Z",
+      "thumbnail": "https://i.ytimg.com/vi/4ItOSW7f4Co/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=4ItOSW7f4Co"
+    },
     {
       "videoId": "Lnagvk40Cy8",
       "title": "Free Bank SO IT Exam Platform 2026: Daily Mocks, Detailed Solutions & Prep Tracker | All IT Exams",
