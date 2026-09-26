@@ -551,5 +551,11 @@
       "examTrap": "A composite primary key does not imply A and B are individually unique.",
       "hint": "Read the constraint declarations independently."
     }
-  ]
+  ],
+  "description": "Architecture, data independence, keys and integrity constraints — exam-oriented practice.",
+  "category": "IT Professional Knowledge",
+  "topic": "DBMS",
+  "subtopic": "DBMS Foundations",
+  "part": 1,
+  "difficulty": "Exam Practice"
 }

@@ -551,5 +551,11 @@
       "examTrap": "Do not average NULL as zero.",
       "hint": "For each group, use only the non-NULL B values in AVG."
     }
-  ]
+  ],
+  "description": "DDL/DML/DCL/TCL, SELECT, WHERE, NULL, aggregates, GROUP BY, HAVING, LIKE and BETWEEN.",
+  "category": "IT Professional Knowledge",
+  "topic": "DBMS",
+  "subtopic": "SQL Core",
+  "part": 1,
+  "difficulty": "Exam Practice"
 }

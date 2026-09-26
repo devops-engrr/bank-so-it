@@ -551,5 +551,11 @@
       "examTrap": "The fact that the determinant is meaningful does not make the dependency full.",
       "hint": "Compare StudentID with the complete key StudentID + CourseID."
     }
-  ]
+  ],
+  "description": "Functional dependencies, closures, candidate keys, anomalies, minimal cover and normalization.",
+  "category": "IT Professional Knowledge",
+  "topic": "DBMS",
+  "subtopic": "Functional Dependencies & Normalization",
+  "part": 1,
+  "difficulty": "Exam Practice"
 }

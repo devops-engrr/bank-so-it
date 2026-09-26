@@ -551,5 +551,11 @@
       "examTrap": "Participation does not by itself determine whether the relationship is 1:N or M:N.",
       "hint": "Ask whether any employee may exist without participating."
     }
-  ]
+  ],
+  "description": "Entities, attributes, relationships, cardinality, participation and relational-model vocabulary.",
+  "category": "IT Professional Knowledge",
+  "topic": "DBMS",
+  "subtopic": "ER Model & Relational Model",
+  "part": 1,
+  "difficulty": "Exam Practice"
 }
