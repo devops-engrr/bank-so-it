@@ -40,8 +40,15 @@
           lastError = error;
         }
       }
+      if (!catalog && Array.isArray(window.BANK_SO_IT_QUIZ_CATALOG)) {
+        catalog = { quizzes: window.BANK_SO_IT_QUIZ_CATALOG };
+      }
       if (!catalog) throw lastError || new Error("Quiz catalog unavailable");
       meta = (catalog.quizzes || []).find((item) => item.id === id);
+      if (!meta && window.BANK_SO_IT_QUIZ_DATA && window.BANK_SO_IT_QUIZ_DATA[id]) {
+        const fallback = window.BANK_SO_IT_QUIZ_DATA[id];
+        meta = { id, title: fallback.title, description: fallback.description, category: fallback.category, topic: fallback.topic, subtopic: fallback.subtopic, questionCount: fallback.questionCount, difficulty: "Exam Practice", file: `data/quizzes/${id}.json` };
+      }
       if (!meta) throw new Error("Quiz not found");
 
       document.title = `${meta.title} | Bank SO IT`;
@@ -64,6 +71,9 @@
         } catch (error) {
           lastError = error;
         }
+      }
+      if (!quizPayload && window.BANK_SO_IT_QUIZ_DATA && window.BANK_SO_IT_QUIZ_DATA[id]) {
+        quizPayload = window.BANK_SO_IT_QUIZ_DATA[id];
       }
       if (!quizPayload) throw lastError || new Error("Quiz unavailable");
 

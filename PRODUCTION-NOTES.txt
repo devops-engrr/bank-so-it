@@ -1,0 +1,4 @@
+Bank SO IT production fix
+- Quiz catalog and quiz runner include a built-in fallback bundle so current quizzes still work if GitHub Pages fails to serve JSON files.
+- Global footer contains no email/contact link. Contact email remains on About page only.
+- Student-facing quiz titles do not include Day 01.
