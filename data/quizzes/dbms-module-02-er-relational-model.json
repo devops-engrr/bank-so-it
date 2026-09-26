@@ -1,0 +1,555 @@
+{
+  "version": 1,
+  "quizId": "dbms-module-02-er-relational-model",
+  "title": "ER Model & Relational Model",
+  "subtitle": "Entities, attributes, relationships, cardinality, participation and relational-model vocabulary.",
+  "questionCount": 20,
+  "source": "DBMS Crash Course Part 1 — Modules 1 to 4. Questions are independently crafted from the module concepts and exam-style patterns supplied for Bank SO IT.",
+  "instructions": [
+    "Choose one answer for each question.",
+    "Questions are designed for IBPS SO IT, RRB Scale II IT, SBI SO and similar Computer Science/IT examinations.",
+    "Review the explanation, important point, exam trap and hint after submission."
+  ],
+  "questions": [
+    {
+      "id": "DBM2-01",
+      "question": "In an ER model, which component represents a distinguishable real-world object such as STUDENT or ACCOUNT?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Attribute"
+        },
+        {
+          "id": "B",
+          "text": "Entity"
+        },
+        {
+          "id": "C",
+          "text": "Relationship"
+        },
+        {
+          "id": "D",
+          "text": "Domain"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An entity represents a distinguishable real-world object or concept about which data is stored.",
+      "importantPoint": "Entity = object; attribute = property; relationship = association.",
+      "examTrap": "Do not confuse an entity with its descriptive properties.",
+      "hint": "Ask “what object are we storing information about?”"
+    },
+    {
+      "id": "DBM2-02",
+      "question": "In an ER model, DOB is stored for a STUDENT and AGE is calculated from DOB. What type of attribute is AGE?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Simple attribute"
+        },
+        {
+          "id": "B",
+          "text": "Derived attribute"
+        },
+        {
+          "id": "C",
+          "text": "Multivalued attribute"
+        },
+        {
+          "id": "D",
+          "text": "Key attribute"
+        }
+      ],
+      "answer": "B",
+      "explanation": "AGE can be computed from DOB, so it is a derived attribute.",
+      "importantPoint": "Derived attributes are obtained from other stored data.",
+      "examTrap": "A derived attribute need not be physically stored as an independent value.",
+      "hint": "Look for whether the value can be calculated from another attribute."
+    },
+    {
+      "id": "DBM2-03",
+      "question": "Which ER notation represents a weak entity set in the standard Chen model?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Single rectangle"
+        },
+        {
+          "id": "B",
+          "text": "Double rectangle"
+        },
+        {
+          "id": "C",
+          "text": "Single diamond"
+        },
+        {
+          "id": "D",
+          "text": "Dashed ellipse"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A weak entity is represented by a double rectangle in Chen ER notation.",
+      "importantPoint": "Weak entity → double rectangle.",
+      "examTrap": "A double diamond represents an identifying relationship, not the weak entity itself.",
+      "hint": "Focus on the entity-set symbol rather than the relationship symbol."
+    },
+    {
+      "id": "DBM2-04",
+      "question": "Which ER notation represents an identifying relationship for a weak entity in the standard Chen model?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Double diamond"
+        },
+        {
+          "id": "B",
+          "text": "Double rectangle"
+        },
+        {
+          "id": "C",
+          "text": "Dashed ellipse"
+        },
+        {
+          "id": "D",
+          "text": "Underlined attribute"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The identifying relationship is represented by a double diamond in the standard Chen notation.",
+      "importantPoint": "Weak entity → double rectangle; identifying relationship → double diamond.",
+      "examTrap": "Do not swap the weak entity symbol with its identifying relationship.",
+      "hint": "Ask which symbol represents a relationship rather than an entity."
+    },
+    {
+      "id": "DBM2-05",
+      "question": "In an ER model, a double line between an entity set and a relationship set indicates:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Partial participation"
+        },
+        {
+          "id": "B",
+          "text": "Total participation"
+        },
+        {
+          "id": "C",
+          "text": "Many-to-many cardinality"
+        },
+        {
+          "id": "D",
+          "text": "A multivalued attribute"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A double line conventionally denotes total participation: every entity in the set must participate in the relationship.",
+      "importantPoint": "Total participation = mandatory participation.",
+      "examTrap": "Cardinality answers “how many”; participation answers “is participation required?”",
+      "hint": "Think “mandatory involvement.”"
+    },
+    {
+      "id": "DBM2-06",
+      "question": "Which statement correctly distinguishes cardinality from participation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cardinality specifies whether participation is mandatory; participation specifies the number of entities."
+        },
+        {
+          "id": "B",
+          "text": "Cardinality specifies how many entities can participate; participation specifies whether participation is mandatory."
+        },
+        {
+          "id": "C",
+          "text": "Both terms mean the same thing."
+        },
+        {
+          "id": "D",
+          "text": "Cardinality applies only to attributes, while participation applies only to keys."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Cardinality describes the number mapping such as 1:1 or 1:N, while participation describes whether every entity must participate.",
+      "importantPoint": "Cardinality = how many; participation = required or optional.",
+      "examTrap": "Do not use “total” and “partial” as cardinality terms.",
+      "hint": "Associate “how many?” with cardinality."
+    },
+    {
+      "id": "DBM2-07",
+      "question": "A STUDENT can enroll in many COURSEs, and each COURSE can have many STUDENTs. What is the cardinality?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1:1"
+        },
+        {
+          "id": "B",
+          "text": "1:N"
+        },
+        {
+          "id": "C",
+          "text": "N:1"
+        },
+        {
+          "id": "D",
+          "text": "M:N"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Both sides can have many instances, so the relationship is many-to-many, written M:N.",
+      "importantPoint": "M:N means many on both sides.",
+      "examTrap": "1:N would restrict one side to a single related entity.",
+      "hint": "Count the maximum possible related instances on both sides."
+    },
+    {
+      "id": "DBM2-08",
+      "question": "A BANK_ACCOUNT must belong to exactly one CUSTOMER, while a CUSTOMER may have many BANK_ACCOUNTs. Which cardinality is most appropriate from CUSTOMER to BANK_ACCOUNT?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1:1"
+        },
+        {
+          "id": "B",
+          "text": "1:N"
+        },
+        {
+          "id": "C",
+          "text": "N:1"
+        },
+        {
+          "id": "D",
+          "text": "M:N"
+        }
+      ],
+      "answer": "B",
+      "explanation": "One customer can have many accounts, while each account belongs to one customer, giving a 1:N relationship from CUSTOMER to BANK_ACCOUNT.",
+      "importantPoint": "1:N means one instance on the first side can relate to many on the second.",
+      "examTrap": "Direction matters when describing 1:N versus N:1.",
+      "hint": "Read the relationship from CUSTOMER toward BANK_ACCOUNT."
+    },
+    {
+      "id": "DBM2-09",
+      "question": "In the relational model, a tuple corresponds to a:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Column"
+        },
+        {
+          "id": "B",
+          "text": "Row"
+        },
+        {
+          "id": "C",
+          "text": "Domain"
+        },
+        {
+          "id": "D",
+          "text": "Schema"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A tuple is a row or record in a relation.",
+      "importantPoint": "Tuple = row; attribute = column.",
+      "examTrap": "Degree counts attributes, not tuples.",
+      "hint": "Use the table analogy: one horizontal record is a tuple."
+    },
+    {
+      "id": "DBM2-10",
+      "question": "A relation has 7 attributes and 120 tuples. What are its degree and cardinality, respectively?",
+      "options": [
+        {
+          "id": "A",
+          "text": "7 and 120"
+        },
+        {
+          "id": "B",
+          "text": "120 and 7"
+        },
+        {
+          "id": "C",
+          "text": "7 and 7"
+        },
+        {
+          "id": "D",
+          "text": "120 and 120"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Degree is the number of attributes (columns), 7; cardinality is the number of tuples (rows), 120.",
+      "importantPoint": "Degree → columns; cardinality → rows.",
+      "examTrap": "Do not reverse degree and cardinality.",
+      "hint": "Map attributes to columns and tuples to rows."
+    },
+    {
+      "id": "DBM2-11",
+      "question": "Which statement about a domain is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It is the number of rows in a relation."
+        },
+        {
+          "id": "B",
+          "text": "It is the set of permitted values for an attribute."
+        },
+        {
+          "id": "C",
+          "text": "It is the association between two entities."
+        },
+        {
+          "id": "D",
+          "text": "It is the physical location of a table."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A domain defines the allowable values or value set associated with an attribute.",
+      "importantPoint": "Domain = permitted values.",
+      "examTrap": "Cardinality and degree describe relation size/structure, not value restrictions.",
+      "hint": "Think “what values are allowed here?”"
+    },
+    {
+      "id": "DBM2-12",
+      "question": "A STUDENT entity has attributes Student_ID, Name, DOB and Phone_Numbers, where a student may have several phone numbers. Which attribute is naturally multivalued?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Student_ID"
+        },
+        {
+          "id": "B",
+          "text": "Name"
+        },
+        {
+          "id": "C",
+          "text": "DOB"
+        },
+        {
+          "id": "D",
+          "text": "Phone_Numbers"
+        }
+      ],
+      "answer": "D",
+      "explanation": "If a single STUDENT may have several phone numbers, Phone_Numbers is multivalued.",
+      "importantPoint": "Multivalued attribute → multiple values for one entity instance.",
+      "examTrap": "A primary identifier such as Student_ID is normally single-valued.",
+      "hint": "Look for an attribute that can legitimately contain several values per entity."
+    },
+    {
+      "id": "DBM2-13",
+      "question": "Which ER attribute notation is traditionally used for a derived attribute?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Double ellipse"
+        },
+        {
+          "id": "B",
+          "text": "Dashed ellipse"
+        },
+        {
+          "id": "C",
+          "text": "Rectangle"
+        },
+        {
+          "id": "D",
+          "text": "Double rectangle"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A derived attribute is represented by a dashed ellipse in the standard Chen notation.",
+      "importantPoint": "Derived attribute → dashed ellipse.",
+      "examTrap": "Double ellipse is used for multivalued attributes in standard Chen notation.",
+      "hint": "Recall the distinction between stored and computed attributes."
+    },
+    {
+      "id": "DBM2-14",
+      "question": "If an attribute uniquely identifies each entity instance in an ER model, it is commonly represented by:",
+      "options": [
+        {
+          "id": "A",
+          "text": "An underlined attribute name"
+        },
+        {
+          "id": "B",
+          "text": "A double diamond"
+        },
+        {
+          "id": "C",
+          "text": "A double rectangle"
+        },
+        {
+          "id": "D",
+          "text": "A dashed relationship line"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A key attribute is conventionally shown with its attribute name underlined in Chen notation.",
+      "importantPoint": "Key attribute → underlined attribute.",
+      "examTrap": "The rectangle represents an entity; the diamond represents a relationship.",
+      "hint": "Look for the notation used to mark a key."
+    },
+    {
+      "id": "DBM2-15",
+      "question": "A relationship between DOCTOR and PATIENT records that a doctor treats a patient. Which ER component represents “treats”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Entity"
+        },
+        {
+          "id": "B",
+          "text": "Attribute"
+        },
+        {
+          "id": "C",
+          "text": "Relationship"
+        },
+        {
+          "id": "D",
+          "text": "Domain"
+        }
+      ],
+      "answer": "C",
+      "explanation": "“Treats” describes an association between two entity sets, so it is a relationship.",
+      "importantPoint": "Relationship = association between entity sets.",
+      "examTrap": "An attribute describes an entity; it does not represent the association itself.",
+      "hint": "Ask whether the term connects two entity types."
+    },
+    {
+      "id": "DBM2-16",
+      "question": "A relation STUDENT(SID, Name, Dept) contains 50 rows currently. If one new student tuple is inserted, what happens to the relation’s cardinality, assuming the insertion succeeds?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It decreases to 49"
+        },
+        {
+          "id": "B",
+          "text": "It remains 50"
+        },
+        {
+          "id": "C",
+          "text": "It becomes 51"
+        },
+        {
+          "id": "D",
+          "text": "Its degree becomes 51"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Cardinality counts rows/tuples, so adding one tuple changes it from 50 to 51.",
+      "importantPoint": "Insert row → cardinality changes; adding a column would change degree.",
+      "examTrap": "Degree is not affected by inserting a tuple.",
+      "hint": "Count rows before and after the insertion."
+    },
+    {
+      "id": "DBM2-17",
+      "question": "Which statement is true for a 1:N relationship from DEPARTMENT to EMPLOYEE?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every department must have exactly one employee."
+        },
+        {
+          "id": "B",
+          "text": "An employee can belong to many departments under the stated relationship."
+        },
+        {
+          "id": "C",
+          "text": "One department can be associated with many employees, while each employee is associated with at most one department."
+        },
+        {
+          "id": "D",
+          "text": "Both sides must contain the same number of instances."
+        }
+      ],
+      "answer": "C",
+      "explanation": "In a 1:N relationship from DEPARTMENT to EMPLOYEE, one department can relate to many employees, while an employee is associated with at most one department through that relationship.",
+      "importantPoint": "The side marked 1 can map to many instances on the N side.",
+      "examTrap": "Cardinality does not automatically imply total participation.",
+      "hint": "Read the “1” and “N” from the stated direction."
+    },
+    {
+      "id": "DBM2-18",
+      "question": "A COMPANY entity has a single registered address, but an employee may have multiple phone numbers. Which pair of attribute types is appropriate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Address multivalued; Phone simple"
+        },
+        {
+          "id": "B",
+          "text": "Address simple; Phone multivalued"
+        },
+        {
+          "id": "C",
+          "text": "Both simple"
+        },
+        {
+          "id": "D",
+          "text": "Both multivalued"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A single address is simple/single-valued in the stated model, while multiple phone numbers make Phone multivalued.",
+      "importantPoint": "Attribute type depends on the number of values associated with one entity instance.",
+      "examTrap": "Do not infer multivalued status merely because a value can be stored as text.",
+      "hint": "Use the number of permitted values per entity instance."
+    },
+    {
+      "id": "DBM2-19",
+      "question": "Which statement correctly relates a relation schema and a relation instance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Schema is the current rows; instance is the column definition."
+        },
+        {
+          "id": "B",
+          "text": "Schema describes structure; instance is the data present at a particular time."
+        },
+        {
+          "id": "C",
+          "text": "Both mean the same thing."
+        },
+        {
+          "id": "D",
+          "text": "Schema refers only to physical disk blocks."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A relation schema defines attributes and structure, while a relation instance is the set of tuples present at a given time.",
+      "importantPoint": "Schema = structure; instance = current data.",
+      "examTrap": "An instance can change without changing the schema.",
+      "hint": "Separate “what the table looks like” from “what rows it currently contains.”"
+    },
+    {
+      "id": "DBM2-20",
+      "question": "A relationship is marked with total participation for EMPLOYEE in WORKS_FOR. What does this imply?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every employee must participate in WORKS_FOR."
+        },
+        {
+          "id": "B",
+          "text": "Every department must have exactly one employee."
+        },
+        {
+          "id": "C",
+          "text": "The relationship must be many-to-many."
+        },
+        {
+          "id": "D",
+          "text": "Every employee must have multiple departments."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Total participation means every entity in the specified EMPLOYEE set participates in the relationship.",
+      "importantPoint": "Total participation = mandatory participation for that entity set.",
+      "examTrap": "Participation does not by itself determine whether the relationship is 1:N or M:N.",
+      "hint": "Ask whether any employee may exist without participating."
+    }
+  ]
+}

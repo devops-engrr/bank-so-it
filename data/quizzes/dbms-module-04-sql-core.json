@@ -1,0 +1,555 @@
+{
+  "version": 1,
+  "quizId": "dbms-module-04-sql-core",
+  "title": "SQL Core",
+  "subtitle": "DDL/DML/DCL/TCL, SELECT, WHERE, NULL, aggregates, GROUP BY, HAVING, LIKE and BETWEEN.",
+  "questionCount": 20,
+  "source": "DBMS Crash Course Part 1 — Modules 1 to 4. Questions are independently crafted from the module concepts and exam-style patterns supplied for Bank SO IT.",
+  "instructions": [
+    "Choose one answer for each question.",
+    "Questions are designed for IBPS SO IT, RRB Scale II IT, SBI SO and similar Computer Science/IT examinations.",
+    "Review the explanation, important point, exam trap and hint after submission."
+  ],
+  "questions": [
+    {
+      "id": "DBM4-01",
+      "question": "Which SQL command belongs to DDL?",
+      "options": [
+        {
+          "id": "A",
+          "text": "INSERT"
+        },
+        {
+          "id": "B",
+          "text": "UPDATE"
+        },
+        {
+          "id": "C",
+          "text": "CREATE"
+        },
+        {
+          "id": "D",
+          "text": "GRANT"
+        }
+      ],
+      "answer": "C",
+      "explanation": "CREATE defines database objects, so it belongs to Data Definition Language (DDL).",
+      "importantPoint": "DDL → CREATE, ALTER, DROP, TRUNCATE.",
+      "examTrap": "INSERT and UPDATE are DML; GRANT is DCL.",
+      "hint": "Ask whether the command changes object structure or manipulates rows."
+    },
+    {
+      "id": "DBM4-02",
+      "question": "Which SQL command is classified as DCL?",
+      "options": [
+        {
+          "id": "A",
+          "text": "COMMIT"
+        },
+        {
+          "id": "B",
+          "text": "GRANT"
+        },
+        {
+          "id": "C",
+          "text": "DELETE"
+        },
+        {
+          "id": "D",
+          "text": "ALTER"
+        }
+      ],
+      "answer": "B",
+      "explanation": "GRANT controls privileges, so it is a Data Control Language command.",
+      "importantPoint": "DCL → GRANT and REVOKE.",
+      "examTrap": "COMMIT is TCL; DELETE is DML; ALTER is DDL.",
+      "hint": "Think “permissions” when identifying DCL."
+    },
+    {
+      "id": "DBM4-03",
+      "question": "Which statement about DELETE and TRUNCATE is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DELETE cannot use WHERE, while TRUNCATE can."
+        },
+        {
+          "id": "B",
+          "text": "DELETE can remove selected rows using WHERE; TRUNCATE removes all rows from the table."
+        },
+        {
+          "id": "C",
+          "text": "TRUNCATE removes the table definition; DELETE preserves it."
+        },
+        {
+          "id": "D",
+          "text": "DELETE is DDL and TRUNCATE is DML."
+        }
+      ],
+      "answer": "B",
+      "explanation": "DELETE can target selected rows using WHERE, while TRUNCATE removes all rows from the table while retaining the table object.",
+      "importantPoint": "DELETE → row-level DML operation; TRUNCATE → removes all rows.",
+      "examTrap": "TRUNCATE is not the same as DROP; DROP removes the object definition.",
+      "hint": "Compare whether the command targets selected rows or all rows."
+    },
+    {
+      "id": "DBM4-04",
+      "question": "Consider EMPLOYEE(Name, Dept, Salary). Which query returns only employees from IT with Salary greater than 50000?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SELECT Name FROM EMPLOYEE WHERE Dept = 'IT' AND Salary > 50000;"
+        },
+        {
+          "id": "B",
+          "text": "SELECT Name FROM EMPLOYEE HAVING Dept = 'IT' AND Salary > 50000;"
+        },
+        {
+          "id": "C",
+          "text": "SELECT Name FROM EMPLOYEE WHERE Dept = 'IT' OR Salary < 50000;"
+        },
+        {
+          "id": "D",
+          "text": "SELECT Name FROM EMPLOYEE GROUP BY Dept WHERE Salary > 50000;"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The WHERE clause filters rows before grouping, and AND requires both conditions to be true.",
+      "importantPoint": "WHERE filters individual rows.",
+      "examTrap": "HAVING is used to filter groups, not as a general replacement for WHERE.",
+      "hint": "Evaluate which clause is designed for row-level filtering."
+    },
+    {
+      "id": "DBM4-05",
+      "question": "In SQL, which condition correctly tests whether Salary is NULL?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Salary = NULL"
+        },
+        {
+          "id": "B",
+          "text": "Salary <> NULL"
+        },
+        {
+          "id": "C",
+          "text": "Salary IS NULL"
+        },
+        {
+          "id": "D",
+          "text": "Salary == NULL"
+        }
+      ],
+      "answer": "C",
+      "explanation": "NULL represents an unknown or missing value and is tested with IS NULL, not ordinary equality or inequality operators.",
+      "importantPoint": "Use IS NULL and IS NOT NULL for NULL testing.",
+      "examTrap": "Comparing NULL with = or <> does not produce the desired true condition.",
+      "hint": "Look for the SQL predicate specifically designed for NULL."
+    },
+    {
+      "id": "DBM4-06",
+      "question": "A table EMPLOYEE has 5 rows, and exactly one row has Salary = NULL. What is the result of SELECT COUNT(*), COUNT(Salary) FROM EMPLOYEE?",
+      "options": [
+        {
+          "id": "A",
+          "text": "5, 5"
+        },
+        {
+          "id": "B",
+          "text": "4, 5"
+        },
+        {
+          "id": "C",
+          "text": "5, 4"
+        },
+        {
+          "id": "D",
+          "text": "4, 4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "COUNT(*) counts all rows, giving 5. COUNT(Salary) counts non-NULL Salary values, giving 4.",
+      "importantPoint": "COUNT(*) counts rows; COUNT(column) ignores NULLs.",
+      "examTrap": "Do not treat COUNT(column) as identical to COUNT(*).",
+      "hint": "Separate row counting from non-NULL value counting."
+    },
+    {
+      "id": "DBM4-07",
+      "question": "For a numeric column Salary containing 20, 30, NULL and 50, what does AVG(Salary) return?",
+      "options": [
+        {
+          "id": "A",
+          "text": "25"
+        },
+        {
+          "id": "B",
+          "text": "33.33 approximately"
+        },
+        {
+          "id": "C",
+          "text": "50"
+        },
+        {
+          "id": "D",
+          "text": "100"
+        }
+      ],
+      "answer": "B",
+      "explanation": "AVG ignores NULL values, so the average is (20 + 30 + 50) / 3 = 100/3 ≈ 33.33.",
+      "importantPoint": "Most SQL aggregate functions ignore NULL values in the target column.",
+      "examTrap": "Do not divide by the total row count when one value is NULL.",
+      "hint": "Count only non-NULL Salary values for AVG."
+    },
+    {
+      "id": "DBM4-08",
+      "question": "Which clause is used to form groups of rows that have the same value for specified columns?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ORDER BY"
+        },
+        {
+          "id": "B",
+          "text": "GROUP BY"
+        },
+        {
+          "id": "C",
+          "text": "HAVING"
+        },
+        {
+          "id": "D",
+          "text": "WHERE"
+        }
+      ],
+      "answer": "B",
+      "explanation": "GROUP BY partitions rows into groups based on the specified grouping expressions.",
+      "importantPoint": "GROUP BY → groups; HAVING → filters groups.",
+      "examTrap": "ORDER BY sorts the result; it does not form groups.",
+      "hint": "Look for the clause whose job is grouping rows."
+    },
+    {
+      "id": "DBM4-09",
+      "question": "Which clause is specifically intended to filter groups after aggregation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "WHERE"
+        },
+        {
+          "id": "B",
+          "text": "ORDER BY"
+        },
+        {
+          "id": "C",
+          "text": "HAVING"
+        },
+        {
+          "id": "D",
+          "text": "DISTINCT"
+        }
+      ],
+      "answer": "C",
+      "explanation": "HAVING filters groups after GROUP BY and aggregation.",
+      "importantPoint": "WHERE → rows; HAVING → groups.",
+      "examTrap": "Using HAVING for ordinary row filtering is usually unnecessary and can be invalid depending on the query.",
+      "hint": "The question says “after aggregation”; identify the group-level filter."
+    },
+    {
+      "id": "DBM4-10",
+      "question": "Which query correctly returns departments whose average salary is greater than 60000?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SELECT Dept, AVG(Salary) FROM Employee WHERE AVG(Salary) > 60000 GROUP BY Dept;"
+        },
+        {
+          "id": "B",
+          "text": "SELECT Dept, AVG(Salary) FROM Employee GROUP BY Dept HAVING AVG(Salary) > 60000;"
+        },
+        {
+          "id": "C",
+          "text": "SELECT Dept, AVG(Salary) FROM Employee HAVING Salary > 60000;"
+        },
+        {
+          "id": "D",
+          "text": "SELECT Dept, AVG(Salary) FROM Employee ORDER BY AVG(Salary) > 60000;"
+        }
+      ],
+      "answer": "B",
+      "explanation": "AVG(Salary) is an aggregate over each department, so the group must be formed first and filtered using HAVING.",
+      "importantPoint": "GROUP BY forms the groups; HAVING filters aggregate results.",
+      "examTrap": "WHERE operates before grouping and cannot generally contain an aggregate condition like AVG(Salary).",
+      "hint": "Ask whether the condition is on an individual row or a group aggregate."
+    },
+    {
+      "id": "DBM4-11",
+      "question": "In a LIKE predicate, what does % represent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Exactly one character"
+        },
+        {
+          "id": "B",
+          "text": "Zero or more characters"
+        },
+        {
+          "id": "C",
+          "text": "One or more digits only"
+        },
+        {
+          "id": "D",
+          "text": "A literal percent sign in every context"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The percent wildcard matches a sequence of zero or more characters in standard SQL LIKE pattern matching.",
+      "importantPoint": "% → zero or more characters; _ → exactly one character.",
+      "examTrap": "Do not confuse % with the single-character underscore wildcard.",
+      "hint": "Compare the two common LIKE wildcards."
+    },
+    {
+      "id": "DBM4-12",
+      "question": "Which condition matches names beginning with “An” using SQL LIKE?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Name LIKE '%An'"
+        },
+        {
+          "id": "B",
+          "text": "Name LIKE 'An%'"
+        },
+        {
+          "id": "C",
+          "text": "Name LIKE '_An%'"
+        },
+        {
+          "id": "D",
+          "text": "Name LIKE '%An%'"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An% requires the string to begin with An and allows zero or more characters after it.",
+      "importantPoint": "Prefix search → literal prefix followed by %.",
+      "examTrap": "%An% would also match names containing An in the middle.",
+      "hint": "The wildcard must come after the required prefix."
+    },
+    {
+      "id": "DBM4-13",
+      "question": "Which statement about BETWEEN is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "BETWEEN excludes both endpoints."
+        },
+        {
+          "id": "B",
+          "text": "BETWEEN includes the lower and upper bounds in the comparison."
+        },
+        {
+          "id": "C",
+          "text": "BETWEEN is valid only for character data."
+        },
+        {
+          "id": "D",
+          "text": "BETWEEN is identical to LIKE."
+        }
+      ],
+      "answer": "B",
+      "explanation": "For the usual SQL range predicate, BETWEEN is inclusive of both specified endpoints.",
+      "importantPoint": "BETWEEN corresponds to an inclusive range.",
+      "examTrap": "Do not treat BETWEEN like a strict greater-than/less-than comparison.",
+      "hint": "Check whether the endpoints themselves satisfy the condition."
+    },
+    {
+      "id": "DBM4-14",
+      "question": "Suppose Salary values are 40000, 50000, 60000 and NULL. What does SELECT COUNT(*) FROM Employee WHERE Salary BETWEEN 50000 AND 60000 return?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "BETWEEN is inclusive, so 50000 and 60000 both satisfy the condition. NULL does not satisfy the predicate. The result is 2 rows.",
+      "importantPoint": "BETWEEN includes both endpoints.",
+      "examTrap": "NULL is not treated as a numeric value in the comparison.",
+      "hint": "Check the two boundary values first, then handle NULL."
+    },
+    {
+      "id": "DBM4-15",
+      "question": "Which query sorts employees from highest salary to lowest salary?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SELECT * FROM Employee ORDER BY Salary ASC;"
+        },
+        {
+          "id": "B",
+          "text": "SELECT * FROM Employee ORDER BY Salary DESC;"
+        },
+        {
+          "id": "C",
+          "text": "SELECT * FROM Employee GROUP BY Salary DESC;"
+        },
+        {
+          "id": "D",
+          "text": "SELECT * FROM Employee WHERE Salary DESC;"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ORDER BY Salary DESC sorts the result in descending order, placing higher salaries before lower salaries under normal ordering.",
+      "importantPoint": "DESC → descending; ASC → ascending.",
+      "examTrap": "GROUP BY is for grouping, not sorting.",
+      "hint": "Identify the clause and direction used for sorting."
+    },
+    {
+      "id": "DBM4-16",
+      "question": "Consider table T(x) containing values 10, 20, NULL, 20. What is the result of SELECT COUNT(x), COUNT(*) FROM T?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2, 3"
+        },
+        {
+          "id": "B",
+          "text": "3, 4"
+        },
+        {
+          "id": "C",
+          "text": "4, 3"
+        },
+        {
+          "id": "D",
+          "text": "2, 4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "COUNT(x) ignores the NULL and counts three non-NULL values; COUNT(*) counts all four rows.",
+      "importantPoint": "COUNT(column) excludes NULL; COUNT(*) counts rows.",
+      "examTrap": "Duplicate values are still counted by COUNT unless DISTINCT is specified.",
+      "hint": "First count non-NULL x values, then count total rows."
+    },
+    {
+      "id": "DBM4-17",
+      "question": "Which command changes the definition of an existing table, such as adding a column?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ALTER"
+        },
+        {
+          "id": "B",
+          "text": "UPDATE"
+        },
+        {
+          "id": "C",
+          "text": "INSERT"
+        },
+        {
+          "id": "D",
+          "text": "GRANT"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ALTER changes the definition of an existing database object, such as adding or modifying table columns.",
+      "importantPoint": "ALTER → modify object structure.",
+      "examTrap": "UPDATE modifies row values, not table definition.",
+      "hint": "Ask whether the operation changes schema structure or row data."
+    },
+    {
+      "id": "DBM4-18",
+      "question": "Which command permanently records the current transaction changes in the transaction-control sense?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ROLLBACK"
+        },
+        {
+          "id": "B",
+          "text": "COMMIT"
+        },
+        {
+          "id": "C",
+          "text": "SAVEPOINT"
+        },
+        {
+          "id": "D",
+          "text": "REVOKE"
+        }
+      ],
+      "answer": "B",
+      "explanation": "COMMIT makes the transaction changes permanent as part of transaction control.",
+      "importantPoint": "COMMIT → make transaction changes durable; ROLLBACK → undo uncommitted work.",
+      "examTrap": "REVOKE is a privilege-control command, not a transaction command.",
+      "hint": "Focus on the transaction command that finalizes changes."
+    },
+    {
+      "id": "DBM4-19",
+      "question": "A query uses SELECT Dept, AVG(Salary) FROM Employee GROUP BY Dept. What does the result contain conceptually?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One row for every employee"
+        },
+        {
+          "id": "B",
+          "text": "One row for every department represented in the input, with its average salary"
+        },
+        {
+          "id": "C",
+          "text": "Only the department having the maximum salary"
+        },
+        {
+          "id": "D",
+          "text": "One row for every distinct salary"
+        }
+      ],
+      "answer": "B",
+      "explanation": "GROUP BY Dept creates one group per department represented in the input; AVG(Salary) produces an aggregate for each group.",
+      "importantPoint": "GROUP BY changes row-level input into groups for aggregation.",
+      "examTrap": "The result is not one row per employee.",
+      "hint": "Think about how many groups are formed by the grouping column."
+    },
+    {
+      "id": "DBM4-20",
+      "question": "Consider table T(A,B) with rows (1,10), (1,NULL), (2,20), (2,30). What does SELECT A, AVG(B) FROM T GROUP BY A return for A = 1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1, 5"
+        },
+        {
+          "id": "B",
+          "text": "1, 10"
+        },
+        {
+          "id": "C",
+          "text": "1, NULL"
+        },
+        {
+          "id": "D",
+          "text": "1, 20"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For A = 1, the B values are 10 and NULL. AVG ignores NULL, so the average is 10.",
+      "importantPoint": "Aggregates such as AVG ignore NULL values in the aggregated column.",
+      "examTrap": "Do not average NULL as zero.",
+      "hint": "For each group, use only the non-NULL B values in AVG."
+    }
+  ]
+}

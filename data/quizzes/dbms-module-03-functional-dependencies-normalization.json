@@ -1,0 +1,555 @@
+{
+  "version": 1,
+  "quizId": "dbms-module-03-functional-dependencies-normalization",
+  "title": "Functional Dependencies & Normalization",
+  "subtitle": "Functional dependencies, closures, candidate keys, anomalies, minimal cover and normalization.",
+  "questionCount": 20,
+  "source": "DBMS Crash Course Part 1 — Modules 1 to 4. Questions are independently crafted from the module concepts and exam-style patterns supplied for Bank SO IT.",
+  "instructions": [
+    "Choose one answer for each question.",
+    "Questions are designed for IBPS SO IT, RRB Scale II IT, SBI SO and similar Computer Science/IT examinations.",
+    "Review the explanation, important point, exam trap and hint after submission."
+  ],
+  "questions": [
+    {
+      "id": "DBM3-01",
+      "question": "Given the functional dependency A → B, which statement is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A is determined by B."
+        },
+        {
+          "id": "B",
+          "text": "B is determined by A."
+        },
+        {
+          "id": "C",
+          "text": "A and B must both be candidate keys."
+        },
+        {
+          "id": "D",
+          "text": "A and B must be foreign keys."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A → B means that the value of A determines a unique value of B. A is the determinant and B is the dependent attribute.",
+      "importantPoint": "Left side = determinant; right side = dependent.",
+      "examTrap": "The arrow direction matters.",
+      "hint": "Read the dependency from left to right."
+    },
+    {
+      "id": "DBM3-02",
+      "question": "Given F = {A → B, B → C}, which dependency can be inferred using transitivity?",
+      "options": [
+        {
+          "id": "A",
+          "text": "C → A"
+        },
+        {
+          "id": "B",
+          "text": "A → C"
+        },
+        {
+          "id": "C",
+          "text": "B → A"
+        },
+        {
+          "id": "D",
+          "text": "C → B"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From A → B and B → C, transitivity gives A → C.",
+      "importantPoint": "Transitivity: X → Y and Y → Z imply X → Z.",
+      "examTrap": "Do not reverse a functional dependency.",
+      "hint": "Follow the chain from A through B to C."
+    },
+    {
+      "id": "DBM3-03",
+      "question": "For F = {A → B, B → C}, what is A⁺?",
+      "options": [
+        {
+          "id": "A",
+          "text": "{A}"
+        },
+        {
+          "id": "B",
+          "text": "{A,B}"
+        },
+        {
+          "id": "C",
+          "text": "{A,B,C}"
+        },
+        {
+          "id": "D",
+          "text": "{A,C}"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Start with A; A → B adds B, and B → C then adds C. Therefore A⁺ = {A,B,C}.",
+      "importantPoint": "Attribute closure repeatedly applies applicable FDs until no new attributes can be added.",
+      "examTrap": "Do not stop after applying only the first dependency.",
+      "hint": "Start with A and follow every FD whose left side is contained in the closure."
+    },
+    {
+      "id": "DBM3-04",
+      "question": "For relation R(A,B,C) with F = {A → B, B → C}, which attribute set is a candidate key?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A"
+        },
+        {
+          "id": "B",
+          "text": "B"
+        },
+        {
+          "id": "C",
+          "text": "C"
+        },
+        {
+          "id": "D",
+          "text": "B,C"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A⁺ = {A,B,C}, so A determines all attributes and is minimal. B⁺ lacks A, and C⁺ contains only C.",
+      "importantPoint": "A is a candidate key because its closure contains all attributes.",
+      "examTrap": "A candidate key must determine the whole relation and be minimal.",
+      "hint": "Compute closures of the small candidate sets."
+    },
+    {
+      "id": "DBM3-05",
+      "question": "For F = {AB → C, C → D}, what is (AB)⁺?",
+      "options": [
+        {
+          "id": "A",
+          "text": "{A,B}"
+        },
+        {
+          "id": "B",
+          "text": "{A,B,C}"
+        },
+        {
+          "id": "C",
+          "text": "{A,B,C,D}"
+        },
+        {
+          "id": "D",
+          "text": "{C,D}"
+        }
+      ],
+      "answer": "C",
+      "explanation": "AB initially contains A and B; AB → C adds C, and C → D then adds D. Thus (AB)⁺ = {A,B,C,D}.",
+      "importantPoint": "Closure can require multiple FD applications.",
+      "examTrap": "Do not omit attributes already present in the starting set.",
+      "hint": "Apply AB → C first, then use the newly obtained C."
+    },
+    {
+      "id": "DBM3-06",
+      "question": "Suppose R(A,B,C) has F = {AB → C}. Which statement is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A alone is necessarily a candidate key."
+        },
+        {
+          "id": "B",
+          "text": "B alone is necessarily a candidate key."
+        },
+        {
+          "id": "C",
+          "text": "AB can be a candidate key if it is minimal and determines all attributes."
+        },
+        {
+          "id": "D",
+          "text": "C must be a candidate key."
+        }
+      ],
+      "answer": "C",
+      "explanation": "AB determines C, and AB already contains A and B. If neither A nor B alone determines all attributes, AB is a candidate key.",
+      "importantPoint": "A composite candidate key can contain more than one attribute.",
+      "examTrap": "A determinant is not automatically a candidate key; minimality must also be checked.",
+      "hint": "Check both uniqueness-by-FD and minimality."
+    },
+    {
+      "id": "DBM3-07",
+      "question": "Which anomaly occurs when deleting the last employee of a department also removes the only stored information about that department?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Insertion anomaly"
+        },
+        {
+          "id": "B",
+          "text": "Update anomaly"
+        },
+        {
+          "id": "C",
+          "text": "Deletion anomaly"
+        },
+        {
+          "id": "D",
+          "text": "Join anomaly"
+        }
+      ],
+      "answer": "C",
+      "explanation": "This is a deletion anomaly because removing one fact unintentionally removes another independent fact.",
+      "importantPoint": "Deletion anomaly = loss of unrelated information caused by a deletion.",
+      "examTrap": "Update anomaly involves inconsistent repeated facts; insertion anomaly involves inability to store a fact independently.",
+      "hint": "Look for unintended loss of another fact during deletion."
+    },
+    {
+      "id": "DBM3-08",
+      "question": "A department name is repeated in 100 employee rows. The department name changes, but only 98 rows are updated. Which anomaly is illustrated?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Deletion anomaly"
+        },
+        {
+          "id": "B",
+          "text": "Update anomaly"
+        },
+        {
+          "id": "C",
+          "text": "Insertion anomaly"
+        },
+        {
+          "id": "D",
+          "text": "Cardinality anomaly"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Repeated department information that becomes inconsistent after an update is an update anomaly.",
+      "importantPoint": "Update anomaly = repeated fact must be changed consistently in multiple rows.",
+      "examTrap": "The issue is not that a row cannot be inserted or that data is deleted.",
+      "hint": "Look for inconsistent copies of the same fact."
+    },
+    {
+      "id": "DBM3-09",
+      "question": "Which normal form primarily requires atomic attribute values and removes repeating/non-atomic groups?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1NF"
+        },
+        {
+          "id": "B",
+          "text": "2NF"
+        },
+        {
+          "id": "C",
+          "text": "3NF"
+        },
+        {
+          "id": "D",
+          "text": "BCNF"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First Normal Form requires atomic values and eliminates repeating groups/non-atomic attribute structures.",
+      "importantPoint": "1NF → atomic values.",
+      "examTrap": "2NF and 3NF address dependency-based issues after 1NF.",
+      "hint": "Remember the normalization ladder: atomic → partial → transitive → determinant."
+    },
+    {
+      "id": "DBM3-10",
+      "question": "A relation has a composite candidate key (A,B) and a non-key attribute C with A → C. Which normal form is violated?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1NF"
+        },
+        {
+          "id": "B",
+          "text": "2NF"
+        },
+        {
+          "id": "C",
+          "text": "3NF"
+        },
+        {
+          "id": "D",
+          "text": "BCNF only"
+        }
+      ],
+      "answer": "B",
+      "explanation": "C depends on only part A of the composite candidate key (A,B), which is a partial dependency and violates 2NF.",
+      "importantPoint": "2NF removes partial dependency of non-prime attributes on a proper subset of a candidate key.",
+      "examTrap": "Partial dependency cannot occur with a single-attribute candidate key.",
+      "hint": "Compare the determinant A with the full composite key AB."
+    },
+    {
+      "id": "DBM3-11",
+      "question": "A relation is in 2NF and has a dependency A → B where A is non-key and B is non-key. If A is transitively dependent on a candidate key, which normal form is threatened?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1NF"
+        },
+        {
+          "id": "B",
+          "text": "2NF"
+        },
+        {
+          "id": "C",
+          "text": "3NF"
+        },
+        {
+          "id": "D",
+          "text": "No normal form"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A transitive dependency of a non-key attribute through another non-key determinant violates the usual 3NF condition.",
+      "importantPoint": "3NF removes transitive dependency of non-key attributes on candidate keys.",
+      "examTrap": "2NF addresses partial dependency, not transitive dependency.",
+      "hint": "Look for a non-key determinant between the key and another non-key attribute."
+    },
+    {
+      "id": "DBM3-12",
+      "question": "Which condition is characteristic of BCNF?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every attribute must be atomic."
+        },
+        {
+          "id": "B",
+          "text": "No candidate key may contain more than one attribute."
+        },
+        {
+          "id": "C",
+          "text": "Every determinant of a non-trivial functional dependency must be a candidate key."
+        },
+        {
+          "id": "D",
+          "text": "Every relation must have exactly one candidate key."
+        }
+      ],
+      "answer": "C",
+      "explanation": "BCNF requires every determinant of every non-trivial functional dependency to be a candidate key.",
+      "importantPoint": "BCNF → every determinant is a candidate key.",
+      "examTrap": "BCNF does not require single-attribute keys.",
+      "hint": "Focus on the left-hand side of every non-trivial FD."
+    },
+    {
+      "id": "DBM3-13",
+      "question": "Can a partial dependency exist when the only candidate key consists of a single attribute?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes, because every FD is partial."
+        },
+        {
+          "id": "B",
+          "text": "Yes, if the dependent attribute is non-prime."
+        },
+        {
+          "id": "C",
+          "text": "No, because there is no proper subset of a single-attribute key."
+        },
+        {
+          "id": "D",
+          "text": "Only in BCNF."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A partial dependency requires dependence on a proper subset of a composite candidate key. A single-attribute key has no proper non-empty subset that can form such a partial dependency.",
+      "importantPoint": "Partial dependency requires a composite candidate key.",
+      "examTrap": "Do not confuse “non-key determinant” with “partial dependency.”",
+      "hint": "Ask whether a proper subset of the candidate key exists."
+    },
+    {
+      "id": "DBM3-14",
+      "question": "For F = {A → B, B → C, A → C}, which FD is redundant in a minimal cover?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A → B"
+        },
+        {
+          "id": "B",
+          "text": "B → C"
+        },
+        {
+          "id": "C",
+          "text": "A → C"
+        },
+        {
+          "id": "D",
+          "text": "None"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A → C is implied by A → B and B → C through transitivity, so it can be removed without changing the closure of the FD set.",
+      "importantPoint": "A minimal cover removes redundant dependencies.",
+      "examTrap": "An FD is redundant if it can be derived from the remaining dependencies.",
+      "hint": "Try deriving A → C without using A → C itself."
+    },
+    {
+      "id": "DBM3-15",
+      "question": "For F = {AB → C, A → C}, what can be said about the left side of AB → C?",
+      "options": [
+        {
+          "id": "A",
+          "text": "B is extraneous because A → C already holds."
+        },
+        {
+          "id": "B",
+          "text": "A is extraneous because B → C is given."
+        },
+        {
+          "id": "C",
+          "text": "Neither A nor B can ever be extraneous."
+        },
+        {
+          "id": "D",
+          "text": "AB → C must be removed because it is a candidate key."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since A → C already holds, AB → C adds no information beyond A → C; B is extraneous from the left side of AB → C.",
+      "importantPoint": "Minimal cover removes extraneous attributes from determinants when possible.",
+      "examTrap": "Do not remove an attribute merely because it appears in a composite determinant; test extraneousness.",
+      "hint": "Compare AB → C with the existing A → C dependency."
+    },
+    {
+      "id": "DBM3-16",
+      "question": "For relation R(A,B,C,D) with F = {A → B, B → C, C → D}, which attribute is a candidate key?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A"
+        },
+        {
+          "id": "B",
+          "text": "B"
+        },
+        {
+          "id": "C",
+          "text": "C"
+        },
+        {
+          "id": "D",
+          "text": "D"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A⁺ = {A,B,C,D}; B⁺ lacks A, C⁺ lacks A and B, and D⁺ contains only D. Thus A is the candidate key.",
+      "importantPoint": "A candidate key must determine every attribute and be minimal.",
+      "examTrap": "The chain does not work backward.",
+      "hint": "Follow the dependency chain starting from each candidate."
+    },
+    {
+      "id": "DBM3-17",
+      "question": "A relation R(A,B,C) has F = {A → B, B → A, B → C}. Which of the following is a candidate key?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A only"
+        },
+        {
+          "id": "B",
+          "text": "B only"
+        },
+        {
+          "id": "C",
+          "text": "A and B"
+        },
+        {
+          "id": "D",
+          "text": "C only"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A⁺ = {A,B,C} through A → B and B → C; B⁺ = {A,B,C} through B → A and B → C. Both A and B are minimal determinants, so both are candidate keys.",
+      "importantPoint": "A relation can have multiple candidate keys.",
+      "examTrap": "Do not assume the first determinant found is the only candidate key.",
+      "hint": "Compute A⁺ and B⁺, then test minimality."
+    },
+    {
+      "id": "DBM3-18",
+      "question": "A relation is in 3NF but not in BCNF. Which statement can be true?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every determinant is a candidate key."
+        },
+        {
+          "id": "B",
+          "text": "There exists a non-trivial FD whose determinant is not a candidate key, while its dependent attribute is prime."
+        },
+        {
+          "id": "C",
+          "text": "The relation violates 1NF."
+        },
+        {
+          "id": "D",
+          "text": "A partial dependency on a proper subset of a candidate key must exist."
+        }
+      ],
+      "answer": "B",
+      "explanation": "3NF can allow certain dependencies where the determinant is not a superkey if the dependent attribute is prime; BCNF would reject such a determinant.",
+      "importantPoint": "BCNF is stricter than 3NF.",
+      "examTrap": "Not every 3NF relation is necessarily in BCNF.",
+      "hint": "Compare the determinant requirement of BCNF with the prime-attribute exception in 3NF."
+    },
+    {
+      "id": "DBM3-19",
+      "question": "Which sequence correctly represents the usual progression of normalization requirements?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3NF → 2NF → 1NF → BCNF"
+        },
+        {
+          "id": "B",
+          "text": "1NF → 2NF → 3NF → BCNF"
+        },
+        {
+          "id": "C",
+          "text": "BCNF → 3NF → 2NF → 1NF"
+        },
+        {
+          "id": "D",
+          "text": "2NF → 1NF → BCNF → 3NF"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The standard progression is 1NF, then 2NF, then 3NF, with BCNF being a stronger normal form.",
+      "importantPoint": "1NF → atomic; 2NF → no partial dependency; 3NF → no problematic transitive dependency; BCNF → every determinant is a candidate key.",
+      "examTrap": "Do not place BCNF before 1NF in the normalization ladder.",
+      "hint": "Recall the order from weaker to stronger requirements."
+    },
+    {
+      "id": "DBM3-20",
+      "question": "Consider R(StudentID, CourseID, StudentName, Grade) with candidate key (StudentID, CourseID) and FD StudentID → StudentName. What is the main normalization issue?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No issue because StudentName depends on StudentID."
+        },
+        {
+          "id": "B",
+          "text": "A partial dependency exists because StudentName depends on part of the composite key."
+        },
+        {
+          "id": "C",
+          "text": "A transitive dependency necessarily exists."
+        },
+        {
+          "id": "D",
+          "text": "The relation violates only BCNF, not 2NF."
+        }
+      ],
+      "answer": "B",
+      "explanation": "StudentName depends only on StudentID, which is a proper subset of the composite candidate key, so the relation has a partial dependency and violates 2NF.",
+      "importantPoint": "Partial dependency is a 2NF violation.",
+      "examTrap": "The fact that the determinant is meaningful does not make the dependency full.",
+      "hint": "Compare StudentID with the complete key StudentID + CourseID."
+    }
+  ]
+}

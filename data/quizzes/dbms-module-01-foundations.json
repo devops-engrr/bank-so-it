@@ -1,0 +1,555 @@
+{
+  "version": 1,
+  "quizId": "dbms-module-01-foundations",
+  "title": "DBMS Foundations",
+  "subtitle": "Architecture, data independence, keys and integrity constraints — exam-oriented practice.",
+  "questionCount": 20,
+  "source": "DBMS Crash Course Part 1 — Modules 1 to 4. Questions are independently crafted from the module concepts and exam-style patterns supplied for Bank SO IT.",
+  "instructions": [
+    "Choose one answer for each question.",
+    "Questions are designed for IBPS SO IT, RRB Scale II IT, SBI SO and similar Computer Science/IT examinations.",
+    "Review the explanation, important point, exam trap and hint after submission."
+  ],
+  "questions": [
+    {
+      "id": "DBM1-01",
+      "question": "Which statement most accurately distinguishes a database from a DBMS?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A database is the software that manages data, whereas a DBMS is the stored data."
+        },
+        {
+          "id": "B",
+          "text": "A database is an organized collection of related data, whereas a DBMS is software used to manage it."
+        },
+        {
+          "id": "C",
+          "text": "A database is always a set of tables, whereas a DBMS is only a query language."
+        },
+        {
+          "id": "D",
+          "text": "A database and a DBMS are two names for exactly the same thing."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A database refers to the organized collection of related data; the DBMS provides the software facilities to create, store, retrieve, secure and manage that data.",
+      "importantPoint": "Database = data collection; DBMS = management software.",
+      "examTrap": "SQL is a language, not the DBMS itself.",
+      "hint": "Separate the stored information from the software that manages it."
+    },
+    {
+      "id": "DBM1-02",
+      "question": "In the three-level database architecture, which level describes the overall logical structure of the entire database?",
+      "options": [
+        {
+          "id": "A",
+          "text": "External level"
+        },
+        {
+          "id": "B",
+          "text": "Conceptual level"
+        },
+        {
+          "id": "C",
+          "text": "Internal level"
+        },
+        {
+          "id": "D",
+          "text": "Physical device level"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The conceptual level describes the overall logical structure of the database, independent of individual user views and physical storage details.",
+      "importantPoint": "External = user views; conceptual = overall logical structure; internal = storage details.",
+      "examTrap": "Do not confuse the conceptual schema with an external user view.",
+      "hint": "Think about the level that sits between user-specific views and physical storage."
+    },
+    {
+      "id": "DBM1-03",
+      "question": "A bank changes the file organization and adds a new index without changing the logical schema seen by applications. Which type of data independence is demonstrated?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Logical data independence"
+        },
+        {
+          "id": "B",
+          "text": "Physical data independence"
+        },
+        {
+          "id": "C",
+          "text": "Referential independence"
+        },
+        {
+          "id": "D",
+          "text": "View independence"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Changing storage structures or access paths while preserving the logical schema is physical data independence.",
+      "importantPoint": "Physical independence concerns changes at the internal/storage level.",
+      "examTrap": "Changing the conceptual schema while preserving external views is logical data independence.",
+      "hint": "The change described is below the logical schema."
+    },
+    {
+      "id": "DBM1-04",
+      "question": "A database has a relation STUDENT(SID, Email, Name), where both SID and Email uniquely identify a student and neither contains unnecessary attributes. Which statement is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SID and Email are both super keys but neither is a candidate key."
+        },
+        {
+          "id": "B",
+          "text": "SID and Email are both candidate keys, and one may be chosen as the primary key."
+        },
+        {
+          "id": "C",
+          "text": "Only SID can be a candidate key because a relation can have only one candidate key."
+        },
+        {
+          "id": "D",
+          "text": "Email can be a primary key only if SID is removed from the relation."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Both SID and Email are minimal unique identifiers, so both are candidate keys. One candidate key is selected as the primary key.",
+      "importantPoint": "A relation can have multiple candidate keys but only one selected primary key.",
+      "examTrap": "Candidate key means minimal super key; it does not mean the key already selected as primary.",
+      "hint": "Check uniqueness first, then minimality."
+    },
+    {
+      "id": "DBM1-05",
+      "question": "For relation R(A,B,C,D), suppose A alone uniquely identifies every tuple. Which of the following is necessarily true?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A is a candidate key."
+        },
+        {
+          "id": "B",
+          "text": "A is a super key but cannot be a candidate key."
+        },
+        {
+          "id": "C",
+          "text": "A must be a foreign key."
+        },
+        {
+          "id": "D",
+          "text": "A must be a composite key."
+        }
+      ],
+      "answer": "A",
+      "explanation": "If A uniquely identifies tuples and consists of a single attribute, no proper subset exists, so A is a candidate key.",
+      "importantPoint": "A minimal unique identifier is a candidate key.",
+      "examTrap": "A candidate key need not be composite.",
+      "hint": "Ask whether the unique identifier has any unnecessary attribute."
+    },
+    {
+      "id": "DBM1-06",
+      "question": "Which statement correctly describes a primary key in a relational table?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It may contain duplicate values as long as a foreign key references it."
+        },
+        {
+          "id": "B",
+          "text": "It uniquely identifies tuples and does not permit NULL values."
+        },
+        {
+          "id": "C",
+          "text": "It must always be a single numeric attribute."
+        },
+        {
+          "id": "D",
+          "text": "It is identical to every candidate key in the relation."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A primary key is the selected candidate key used to identify tuples; primary-key values must be unique and cannot be NULL.",
+      "importantPoint": "Primary key = selected candidate key + uniqueness and non-NULL requirement.",
+      "examTrap": "A composite primary key is valid; it need not be numeric or single-column.",
+      "hint": "Recall the two core integrity properties of a primary key."
+    },
+    {
+      "id": "DBM1-07",
+      "question": "Consider EMPLOYEE(EID, Name, DeptID) and DEPARTMENT(DeptID, DeptName). If EMPLOYEE.DeptID references DEPARTMENT.DeptID, which integrity constraint is primarily enforced?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Entity integrity"
+        },
+        {
+          "id": "B",
+          "text": "Referential integrity"
+        },
+        {
+          "id": "C",
+          "text": "Domain integrity"
+        },
+        {
+          "id": "D",
+          "text": "Key minimality"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The foreign-key reference requires matching referenced values or an allowed NULL, thereby enforcing referential integrity.",
+      "importantPoint": "Foreign key → referential integrity.",
+      "examTrap": "Entity integrity is concerned with primary-key uniqueness and non-NULL values.",
+      "hint": "Look for a relationship between a referencing column and a referenced key."
+    },
+    {
+      "id": "DBM1-08",
+      "question": "Which operation would directly violate entity integrity for a table whose primary key is STUDENT_ID?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Inserting a NULL STUDENT_ID"
+        },
+        {
+          "id": "B",
+          "text": "Updating a non-key attribute"
+        },
+        {
+          "id": "C",
+          "text": "Deleting a tuple using its primary key"
+        },
+        {
+          "id": "D",
+          "text": "Inserting a new unique STUDENT_ID"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Entity integrity requires the primary key to be non-NULL. Inserting NULL into the primary key violates that rule.",
+      "importantPoint": "Entity integrity: primary key values are unique and non-NULL.",
+      "examTrap": "Referential integrity concerns foreign keys, not the primary key itself.",
+      "hint": "Focus on what values are forbidden in a primary-key column."
+    },
+    {
+      "id": "DBM1-09",
+      "question": "A column AGE has a CHECK constraint AGE >= 18. Which operation can be rejected solely because of this constraint?",
+      "options": [
+        {
+          "id": "A",
+          "text": "INSERT of AGE = 16"
+        },
+        {
+          "id": "B",
+          "text": "INSERT of a unique primary key"
+        },
+        {
+          "id": "C",
+          "text": "SELECT with a WHERE clause"
+        },
+        {
+          "id": "D",
+          "text": "UPDATE of an unrelated column"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The CHECK condition requires AGE to be at least 18, so an inserted value of 16 violates the constraint.",
+      "importantPoint": "CHECK constraints enforce specified predicates on column values.",
+      "examTrap": "A CHECK constraint is different from a primary-key uniqueness constraint.",
+      "hint": "Evaluate the value against AGE >= 18."
+    },
+    {
+      "id": "DBM1-10",
+      "question": "A relation has three candidate keys: {A}, {B}, and {C,D}. If {B} is selected as the primary key, what remains true about {A}?",
+      "options": [
+        {
+          "id": "A",
+          "text": "{A} ceases to be a candidate key."
+        },
+        {
+          "id": "B",
+          "text": "{A} remains a candidate key but is not the primary key."
+        },
+        {
+          "id": "C",
+          "text": "{A} automatically becomes a foreign key."
+        },
+        {
+          "id": "D",
+          "text": "{A} must be combined with {B} to remain unique."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Selecting one candidate key as the primary key does not remove the minimal uniqueness property of the other candidate keys.",
+      "importantPoint": "Candidate keys are all minimal super keys; primary key is one selected candidate key.",
+      "examTrap": "Primary-key selection does not change the underlying candidate-key set.",
+      "hint": "Distinguish “candidate” from “selected as primary.”"
+    },
+    {
+      "id": "DBM1-11",
+      "question": "Which mapping of architecture level to role is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "External → physical storage; Conceptual → user view; Internal → logical schema"
+        },
+        {
+          "id": "B",
+          "text": "External → user-specific view; Conceptual → overall logical schema; Internal → physical storage"
+        },
+        {
+          "id": "C",
+          "text": "External → constraints; Conceptual → indexes; Internal → SQL commands"
+        },
+        {
+          "id": "D",
+          "text": "External → rows; Conceptual → columns; Internal → keys"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The external level provides user-specific views, the conceptual level represents the overall logical schema, and the internal level describes physical storage.",
+      "importantPoint": "External → view; conceptual → logical structure; internal → storage.",
+      "examTrap": "Do not map “internal” to internal users; it refers to the storage level.",
+      "hint": "Read the three levels from user view down to storage."
+    },
+    {
+      "id": "DBM1-12",
+      "question": "A DBMS allows two applications to use different external views of the same underlying conceptual schema. Which architecture feature enables this?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Multiple external schemas over a conceptual schema"
+        },
+        {
+          "id": "B",
+          "text": "A separate database for every application"
+        },
+        {
+          "id": "C",
+          "text": "Only physical data independence"
+        },
+        {
+          "id": "D",
+          "text": "Foreign-key cascading"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The external level supports multiple user/application views over the common conceptual schema.",
+      "importantPoint": "External schemas can provide different views of the same database.",
+      "examTrap": "Different views do not require duplicate underlying databases.",
+      "hint": "Think about user-specific views in the three-level architecture."
+    },
+    {
+      "id": "DBM1-13",
+      "question": "Which of the following is a super key but not a candidate key for relation R(A,B,C) when A alone uniquely identifies tuples?",
+      "options": [
+        {
+          "id": "A",
+          "text": "{A}"
+        },
+        {
+          "id": "B",
+          "text": "{A,B}"
+        },
+        {
+          "id": "C",
+          "text": "{B}"
+        },
+        {
+          "id": "D",
+          "text": "{C}"
+        }
+      ],
+      "answer": "B",
+      "explanation": "{A,B} is unique because it contains A, but it is not minimal because A alone is already a super key. Therefore {A,B} is a super key but not a candidate key.",
+      "importantPoint": "Candidate key = minimal super key.",
+      "examTrap": "Adding attributes to a candidate key usually creates a super key that is no longer minimal.",
+      "hint": "Check whether a proper subset already identifies the tuple."
+    },
+    {
+      "id": "DBM1-14",
+      "question": "Suppose a foreign-key column in CHILD references a primary key in PARENT. Which value is generally permitted in CHILD when the relationship is optional?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Any value, even if it does not occur in PARENT"
+        },
+        {
+          "id": "B",
+          "text": "NULL"
+        },
+        {
+          "id": "C",
+          "text": "A duplicate value only if it is not in PARENT"
+        },
+        {
+          "id": "D",
+          "text": "A value that violates the referenced domain"
+        }
+      ],
+      "answer": "B",
+      "explanation": "When the relationship is optional, the foreign-key column may be NULL unless a NOT NULL constraint is also specified. A non-NULL foreign-key value must satisfy the referential constraint.",
+      "importantPoint": "Foreign key NULLability depends on whether the relationship is optional and whether NOT NULL is imposed.",
+      "examTrap": "A foreign key is not required to be unique.",
+      "hint": "Check whether the relationship is optional before rejecting NULL."
+    },
+    {
+      "id": "DBM1-15",
+      "question": "Which statement about a UNIQUE constraint is most accurate in standard relational reasoning?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It identifies the table physically on disk."
+        },
+        {
+          "id": "B",
+          "text": "It enforces uniqueness for the constrained key/column set, while NULL handling depends on the DBMS and constraint semantics."
+        },
+        {
+          "id": "C",
+          "text": "It always makes the column the primary key."
+        },
+        {
+          "id": "D",
+          "text": "It automatically creates a foreign-key relationship."
+        }
+      ],
+      "answer": "B",
+      "explanation": "A UNIQUE constraint prevents duplicate non-NULL key values under its defined semantics, but it does not make the column the primary key. Exact NULL behavior can vary by DBMS.",
+      "importantPoint": "UNIQUE and PRIMARY KEY are related but not identical constraints.",
+      "examTrap": "A UNIQUE constraint does not automatically establish referential integrity.",
+      "hint": "Separate uniqueness from primary-key selection."
+    },
+    {
+      "id": "DBM1-16",
+      "question": "Which situation is the clearest example of logical data independence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Changing an index without changing the logical schema"
+        },
+        {
+          "id": "B",
+          "text": "Changing the conceptual schema while preserving required external views"
+        },
+        {
+          "id": "C",
+          "text": "Changing a disk block size"
+        },
+        {
+          "id": "D",
+          "text": "Reorganizing records within a data file"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Logical data independence concerns changes to the conceptual schema while keeping external views stable as far as possible.",
+      "importantPoint": "Logical ↔ conceptual structure; physical ↔ storage structures.",
+      "examTrap": "Index and file-organization changes are physical-level changes.",
+      "hint": "Identify which architectural level is being modified."
+    },
+    {
+      "id": "DBM1-17",
+      "question": "A relation R(P,Q,R,S) has candidate key {P,Q}. Which statement about {P,Q,R} is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It cannot be a super key because it contains a non-key attribute."
+        },
+        {
+          "id": "B",
+          "text": "It is a super key but not a candidate key."
+        },
+        {
+          "id": "C",
+          "text": "It is necessarily another candidate key."
+        },
+        {
+          "id": "D",
+          "text": "It is a foreign key by definition."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Any superset of a candidate key is a super key because it still uniquely identifies tuples, but {P,Q,R} is not minimal.",
+      "importantPoint": "Every candidate key is a super key, but not every super key is minimal.",
+      "examTrap": "A super key may contain extra attributes.",
+      "hint": "Start with the known candidate key and test whether the larger set is minimal."
+    },
+    {
+      "id": "DBM1-18",
+      "question": "Which combination is correctly matched?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Primary key → may be NULL; Foreign key → must always be unique"
+        },
+        {
+          "id": "B",
+          "text": "Candidate key → minimal super key; Super key → uniquely identifies tuples"
+        },
+        {
+          "id": "C",
+          "text": "Super key → must be minimal; Candidate key → may contain redundant attributes"
+        },
+        {
+          "id": "D",
+          "text": "Foreign key → selected candidate key of the same table only"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A candidate key is a minimal super key, while a super key is any attribute set that uniquely identifies tuples and may contain redundant attributes.",
+      "importantPoint": "Candidate = minimal; super = unique, not necessarily minimal.",
+      "examTrap": "Do not reverse the definitions of super key and candidate key.",
+      "hint": "Look for the pair that preserves the word “minimal.”"
+    },
+    {
+      "id": "DBM1-19",
+      "question": "A DBMS changes the internal storage structure while applications continue to use the same conceptual schema and external views. Which statement best describes the benefit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Applications need not be rewritten merely because physical storage changed."
+        },
+        {
+          "id": "B",
+          "text": "Every external view must be redesigned."
+        },
+        {
+          "id": "C",
+          "text": "All candidate keys must change."
+        },
+        {
+          "id": "D",
+          "text": "The database must be converted to a different model."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Physical data independence allows internal storage changes without requiring corresponding changes to higher-level schemas or applications.",
+      "importantPoint": "Higher levels are insulated from many internal storage changes.",
+      "examTrap": "Physical changes do not imply a change in the data model.",
+      "hint": "Focus on the phrase “internal storage structure.”"
+    },
+    {
+      "id": "DBM1-20",
+      "question": "A table has PRIMARY KEY(A,B) and a separate UNIQUE(C). Which statement is necessarily correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "C is the primary key."
+        },
+        {
+          "id": "B",
+          "text": "{A,B} is the selected primary key, while C has a uniqueness constraint."
+        },
+        {
+          "id": "C",
+          "text": "A and B must each be unique individually."
+        },
+        {
+          "id": "D",
+          "text": "C must be a foreign key."
+        }
+      ],
+      "answer": "B",
+      "explanation": "PRIMARY KEY(A,B) defines a composite primary key. UNIQUE(C) separately enforces uniqueness on C according to the DBMS semantics.",
+      "importantPoint": "A composite primary key can consist of multiple attributes.",
+      "examTrap": "A composite primary key does not imply A and B are individually unique.",
+      "hint": "Read the constraint declarations independently."
+    }
+  ]
+}

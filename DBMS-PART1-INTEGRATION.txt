@@ -1,0 +1,15 @@
+DBMS Part 1 integration package
+
+Added four production DBMS quizzes under IT Professional Knowledge > DBMS:
+1. DBMS Foundations
+2. ER Model & Relational Model
+3. Functional Dependencies & Normalization
+4. SQL Core
+
+Each quiz has 20 exam-oriented questions (80 total).
+The catalog JSON and quiz fallback bundle were updated so the quizzes work with both normal JSON fetches and the existing offline/network-failure fallback.
+
+No Day 1 / lesson / vlog wording was added to the quiz questions.
+UI enhancement included in this package:
+- Homepage footer now includes a subtle Website Visitors counter badge.
+- Quiz catalog tiles are slightly more compact for easier scrolling; all quiz content/details are unchanged.
