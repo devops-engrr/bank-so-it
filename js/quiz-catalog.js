@@ -46,13 +46,26 @@
 
   const load = async () => {
     try {
-      const response = await fetch(`/data/quizzes-index.json?v=${Date.now()}`, {
-        cache: "no-store"
-      });
+      const cacheBust = `v=${Date.now()}`;
+      const candidates = [
+        `/data/quizzes-index.json?${cacheBust}`,
+        `../data/quizzes-index.json?${cacheBust}`
+      ];
+      let payload = null;
+      let lastError = null;
 
-      if (!response.ok) throw new Error("Quiz catalog request failed");
+      for (const url of candidates) {
+        try {
+          const response = await fetch(url, { cache: "no-store" });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          payload = await response.json();
+          break;
+        } catch (error) {
+          lastError = error;
+        }
+      }
 
-      const payload = await response.json();
+      if (!payload) throw lastError || new Error("Quiz catalog request failed");
       const quizzes = Array.isArray(payload.quizzes) ? payload.quizzes : [];
 
       render(quizzes);
@@ -143,7 +156,7 @@
               </div>
               <div class="quiz-card-grid">
                 ${topicQuizzes.map((quiz) => `
-                  <a class="quiz-card" href="quiz.html?id=${encodeURIComponent(quiz.id)}">
+                  <a class="quiz-card" href="/quiz/?id=${encodeURIComponent(quiz.id)}">
                     <span class="quiz-card-kicker">${esc(quiz.subtopic || topic)}</span>
                     <h3>${esc(quiz.title)}</h3>
                     <p>${esc(quiz.description)}</p>

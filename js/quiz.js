@@ -23,12 +23,24 @@
     try {
       if (!id) throw new Error("Missing quiz id");
 
-      const indexResponse = await fetch(`/data/quizzes-index.json?v=${Date.now()}`, {
-        cache: "no-store"
-      });
-      if (!indexResponse.ok) throw new Error("Quiz catalog unavailable");
-
-      const catalog = await indexResponse.json();
+      const cacheBust = `v=${Date.now()}`;
+      const indexUrls = [
+        `/data/quizzes-index.json?${cacheBust}`,
+        `../data/quizzes-index.json?${cacheBust}`
+      ];
+      let catalog = null;
+      let lastError = null;
+      for (const url of indexUrls) {
+        try {
+          const indexResponse = await fetch(url, { cache: "no-store" });
+          if (!indexResponse.ok) throw new Error(`HTTP ${indexResponse.status}`);
+          catalog = await indexResponse.json();
+          break;
+        } catch (error) {
+          lastError = error;
+        }
+      }
+      if (!catalog) throw lastError || new Error("Quiz catalog unavailable");
       meta = (catalog.quizzes || []).find((item) => item.id === id);
       if (!meta) throw new Error("Quiz not found");
 
@@ -38,12 +50,24 @@
         descriptionMeta.setAttribute("content", meta.description);
       }
 
-      const quizResponse = await fetch(`/${meta.file}?v=${Date.now()}`, {
-        cache: "no-store"
-      });
-      if (!quizResponse.ok) throw new Error("Quiz unavailable");
+      const quizUrls = [
+        `/${meta.file}?${cacheBust}`,
+        `../${meta.file}?${cacheBust}`
+      ];
+      let quizPayload = null;
+      for (const url of quizUrls) {
+        try {
+          const quizResponse = await fetch(url, { cache: "no-store" });
+          if (!quizResponse.ok) throw new Error(`HTTP ${quizResponse.status}`);
+          quizPayload = await quizResponse.json();
+          break;
+        } catch (error) {
+          lastError = error;
+        }
+      }
+      if (!quizPayload) throw lastError || new Error("Quiz unavailable");
 
-      quiz = await quizResponse.json();
+      quiz = quizPayload;
       render();
     } catch (error) {
       app.innerHTML = `
