@@ -1230,3 +1230,132 @@ html[data-theme="dark"] .dynamic-video-card {
   }
 
 }
+/* =========================================================
+   ABOUT PAGE — PRODUCTION ALIGNMENT
+   ========================================================= */
+.about-page .about-hero .container,
+.about-page .about-section > .container {
+  width: min(1160px, calc(100% - 40px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-page .about-hero {
+  padding: 72px 0;
+}
+
+.about-page .about-hero h1 {
+  max-width: 900px;
+}
+
+.about-page .about-section {
+  padding: 72px 0;
+}
+
+.about-page .about-content {
+  width: min(900px, 100%);
+  margin: 0 auto;
+}
+
+.about-page .about-content h2 {
+  margin: 0 0 14px;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: -.025em;
+}
+
+.about-page .about-content h2:not(:first-child) {
+  margin-top: 42px;
+}
+
+.about-page .about-content h3 {
+  margin: 0 0 10px;
+}
+
+.about-page .about-content p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.about-page .about-content .eyebrow {
+  margin-bottom: 10px;
+}
+
+.about-page .about-expertise-grid {
+  width: 100%;
+  margin-top: 34px;
+}
+
+.about-page .about-expertise-grid .info-card {
+  min-height: 100%;
+}
+
+.about-page .about-why {
+  margin-top: 48px;
+}
+
+.about-page .learning-cycle {
+  color: var(--ink) !important;
+  font-size: 17px;
+  margin-top: 24px !important;
+}
+
+.about-page .about-contact {
+  padding: 30px 32px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.about-page .about-contact h2 {
+  margin-top: 0 !important;
+}
+
+.about-page .about-contact a:not(.btn) {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.about-page .about-independence {
+  margin-top: 38px;
+}
+
+.about-page .about-independence h3 {
+  font-size: 21px;
+}
+
+@media (max-width: 950px) {
+  .about-page .about-expertise-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .about-page .about-hero .container,
+  .about-page .about-section > .container {
+    width: min(100% - 28px, 1160px);
+  }
+
+  .about-page .about-section {
+    padding: 58px 0;
+  }
+
+  .about-page .about-content {
+    width: 100%;
+  }
+
+  .about-page .about-content h2 {
+    font-size: 29px;
+  }
+
+  .about-page .about-expertise-grid {
+    grid-template-columns: 1fr;
+    margin-top: 28px;
+  }
+
+  .about-page .about-contact {
+    padding: 24px;
+  }
+}
