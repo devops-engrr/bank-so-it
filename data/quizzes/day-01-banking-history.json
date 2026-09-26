@@ -1,955 +1,96 @@
 {
-  "version": 1,
+  "version": "2.0",
   "quizId": "day-01-banking-history",
   "title": "Indian Banking History",
-  "subtitle": "Test your understanding of major milestones in Indian banking history, including early banks, Presidency Banks, Imperial Bank and key institutional developments.",
+  "subtitle": "IBPS SO / RRB SO Exam Practice",
   "questionCount": 50,
-  "source": "Day 1 vlog transcript supplied by the channel owner.",
-  "instructions": [
-    "Choose one answer for each question.",
-    "Review the explanation, important point and exam trap after submission.",
-    "Use the final review to revisit mistakes."
-  ],
+  "source": "Bank SO IT exam-oriented question bank; reference lessons used only for topic scope.",
+  "instructions": "Choose the best answer. Questions are independently authored for competitive-exam practice.",
   "questions": [
     {
-      "id": "BH1",
-      "question": "In the Day 1 lesson, which statement correctly matches Madras Bank?",
+      "id": "BH001",
+      "question": "The Reserve Bank of India commenced operations on:",
       "options": [
         {
           "id": "A",
-          "text": "1683"
+          "text": "1 April 1935"
         },
         {
           "id": "B",
-          "text": "1935"
+          "text": "1 January 1935"
         },
         {
           "id": "C",
-          "text": "1969"
+          "text": "15 August 1947"
         },
         {
           "id": "D",
-          "text": "1980"
+          "text": "26 January 1950"
         }
       ],
       "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates Madras Bank with 1683.",
-      "importantPoint": "Remember: Madras Bank → 1683.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+      "explanation": "The RBI began operations on 1 April 1935 under the Reserve Bank of India Act, 1934.",
+      "importantPoint": "RBI operations began on 1 April 1935.",
+      "examTrap": "Do not confuse the commencement date with the date of nationalisation in 1949.",
+      "hint": "Recall the year in which the central bank began operations."
     },
     {
-      "id": "BH2",
-      "question": "Which item was paired with “1683” in the Day 1 lesson?",
+      "id": "BH002",
+      "question": "The Reserve Bank of India was established under which legislation?",
       "options": [
         {
           "id": "A",
-          "text": "Madras Bank"
+          "text": "Reserve Bank of India Act, 1934"
         },
         {
           "id": "B",
-          "text": "State Bank of India"
+          "text": "Banking Regulation Act, 1949"
         },
         {
           "id": "C",
-          "text": "Reserve Bank of India"
+          "text": "RBI Act, 1949"
         },
         {
           "id": "D",
-          "text": "NABARD"
+          "text": "Companies Act, 1913"
         }
       ],
       "answer": "A",
-      "explanation": "The lesson pairs “1683” with Madras Bank.",
-      "importantPoint": "Key pairing: 1683 → Madras Bank.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+      "explanation": "The Reserve Bank of India was constituted under the Reserve Bank of India Act, 1934.",
+      "importantPoint": "RBI Act, 1934 is the founding statute.",
+      "examTrap": "The Banking Regulation Act is important for banking regulation but did not establish RBI.",
+      "hint": "Identify the statute named after the central bank."
     },
     {
-      "id": "BH3",
-      "question": "In the Day 1 lesson, which statement correctly matches Bank of Hindustan?",
+      "id": "BH003",
+      "question": "RBI was originally set up as a:",
       "options": [
         {
           "id": "A",
-          "text": "1670"
+          "text": "Privately held shareholders’ bank"
         },
         {
           "id": "B",
-          "text": "1935"
+          "text": "Wholly government-owned corporation"
         },
         {
           "id": "C",
-          "text": "1969"
+          "text": "Co-operative society"
         },
         {
           "id": "D",
-          "text": "1980"
+          "text": "Department of the Ministry of Finance"
         }
       ],
       "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates Bank of Hindustan with 1670.",
-      "importantPoint": "Remember: Bank of Hindustan → 1670.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+      "explanation": "The RBI was initially privately held and was nationalised in 1949.",
+      "importantPoint": "RBI was nationalised in 1949.",
+      "examTrap": "Do not project its present ownership status backward to 1935.",
+      "hint": "Think about what changed in 1949."
     },
     {
-      "id": "BH4",
-      "question": "Which item was paired with “1670” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Bank of Hindustan"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “1670” with Bank of Hindustan.",
-      "importantPoint": "Key pairing: 1670 → Bank of Hindustan.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH5",
-      "question": "In the Day 1 lesson, which statement correctly matches Presidency Banks?",
-      "options": [
-        {
-          "id": "A",
-          "text": "three: Bengal, Bombay and Madras"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates Presidency Banks with three: Bengal, Bombay and Madras.",
-      "importantPoint": "Remember: Presidency Banks → three: Bengal, Bombay and Madras.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH6",
-      "question": "Which item was paired with “three: Bengal, Bombay and Madras” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Presidency Banks"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “three: Bengal, Bombay and Madras” with Presidency Banks.",
-      "importantPoint": "Key pairing: three: Bengal, Bombay and Madras → Presidency Banks.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH7",
-      "question": "In the Day 1 lesson, which statement correctly matches Imperial Bank of India?",
-      "options": [
-        {
-          "id": "A",
-          "text": "1921"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates Imperial Bank of India with 1921.",
-      "importantPoint": "Remember: Imperial Bank of India → 1921.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH8",
-      "question": "Which item was paired with “1921” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Imperial Bank of India"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “1921” with Imperial Bank of India.",
-      "importantPoint": "Key pairing: 1921 → Imperial Bank of India.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH9",
-      "question": "In the Day 1 lesson, which statement correctly matches Bank of Upper India?",
-      "options": [
-        {
-          "id": "A",
-          "text": "1862/18621 as spoken in the transcript"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates Bank of Upper India with 1862/18621 as spoken in the transcript.",
-      "importantPoint": "Remember: Bank of Upper India → 1862/18621 as spoken in the transcript.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH10",
-      "question": "Which item was paired with “1862/18621 as spoken in the transcript” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Bank of Upper India"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “1862/18621 as spoken in the transcript” with Bank of Upper India.",
-      "importantPoint": "Key pairing: 1862/18621 as spoken in the transcript → Bank of Upper India.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH11",
-      "question": "In the Day 1 lesson, which statement correctly matches Allahabad Bank?",
-      "options": [
-        {
-          "id": "A",
-          "text": "1865"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates Allahabad Bank with 1865.",
-      "importantPoint": "Remember: Allahabad Bank → 1865.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH12",
-      "question": "Which item was paired with “1865” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Allahabad Bank"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “1865” with Allahabad Bank.",
-      "importantPoint": "Key pairing: 1865 → Allahabad Bank.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH13",
-      "question": "In the Day 1 lesson, which statement correctly matches Awth Commercial Bank?",
-      "options": [
-        {
-          "id": "A",
-          "text": "ordinary people could deposit, as stated in the lesson"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates Awth Commercial Bank with ordinary people could deposit, as stated in the lesson.",
-      "importantPoint": "Remember: Awth Commercial Bank → ordinary people could deposit, as stated in the lesson.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH14",
-      "question": "Which item was paired with “ordinary people could deposit, as stated in the lesson” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Awth Commercial Bank"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “ordinary people could deposit, as stated in the lesson” with Awth Commercial Bank.",
-      "importantPoint": "Key pairing: ordinary people could deposit, as stated in the lesson → Awth Commercial Bank.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH15",
-      "question": "In the Day 1 lesson, which statement correctly matches Punjab National Bank?",
-      "options": [
-        {
-          "id": "A",
-          "text": "100% Indian employees, as stated in the lesson"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates Punjab National Bank with 100% Indian employees, as stated in the lesson.",
-      "importantPoint": "Remember: Punjab National Bank → 100% Indian employees, as stated in the lesson.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH16",
-      "question": "Which item was paired with “100% Indian employees, as stated in the lesson” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Punjab National Bank"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “100% Indian employees, as stated in the lesson” with Punjab National Bank.",
-      "importantPoint": "Key pairing: 100% Indian employees, as stated in the lesson → Punjab National Bank.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH17",
-      "question": "In the Day 1 lesson, which statement correctly matches Central Bank of India?",
-      "options": [
-        {
-          "id": "A",
-          "text": "first Swadeshi bank, as stated in the lesson"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates Central Bank of India with first Swadeshi bank, as stated in the lesson.",
-      "importantPoint": "Remember: Central Bank of India → first Swadeshi bank, as stated in the lesson.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH18",
-      "question": "Which item was paired with “first Swadeshi bank, as stated in the lesson” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Central Bank of India"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “first Swadeshi bank, as stated in the lesson” with Central Bank of India.",
-      "importantPoint": "Key pairing: first Swadeshi bank, as stated in the lesson → Central Bank of India.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH19",
-      "question": "In the Day 1 lesson, which statement correctly matches darkest period?",
-      "options": [
-        {
-          "id": "A",
-          "text": "1913–1918"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates darkest period with 1913–1918.",
-      "importantPoint": "Remember: darkest period → 1913–1918.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH20",
-      "question": "Which item was paired with “1913–1918” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "darkest period"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “1913–1918” with darkest period.",
-      "importantPoint": "Key pairing: 1913–1918 → darkest period.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH21",
-      "question": "In the Day 1 lesson, which statement correctly matches Hilton Young Commission?",
-      "options": [
-        {
-          "id": "A",
-          "text": "RBI historical discussion"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates Hilton Young Commission with RBI historical discussion.",
-      "importantPoint": "Remember: Hilton Young Commission → RBI historical discussion.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH22",
-      "question": "Which item was paired with “RBI historical discussion” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Hilton Young Commission"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “RBI historical discussion” with Hilton Young Commission.",
-      "importantPoint": "Key pairing: RBI historical discussion → Hilton Young Commission.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH23",
-      "question": "In the Day 1 lesson, which statement correctly matches B. R. Ambedkar?",
-      "options": [
-        {
-          "id": "A",
-          "text": "author attributed to the banking book in the lesson"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates B. R. Ambedkar with author attributed to the banking book in the lesson.",
-      "importantPoint": "Remember: B. R. Ambedkar → author attributed to the banking book in the lesson.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH24",
-      "question": "Which item was paired with “author attributed to the banking book in the lesson” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "B. R. Ambedkar"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “author attributed to the banking book in the lesson” with B. R. Ambedkar.",
-      "importantPoint": "Key pairing: author attributed to the banking book in the lesson → B. R. Ambedkar.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH25",
-      "question": "In the Day 1 lesson, which statement correctly matches RBI Act?",
-      "options": [
-        {
-          "id": "A",
-          "text": "1934"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates RBI Act with 1934.",
-      "importantPoint": "Remember: RBI Act → 1934.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH26",
-      "question": "Which item was paired with “1934” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "RBI Act"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “1934” with RBI Act.",
-      "importantPoint": "Key pairing: 1934 → RBI Act.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH27",
-      "question": "In the Day 1 lesson, which statement correctly matches RBI formation/commencement?",
-      "options": [
-        {
-          "id": "A",
-          "text": "1935"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates RBI formation/commencement with 1935.",
-      "importantPoint": "Remember: RBI formation/commencement → 1935.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH28",
-      "question": "Which item was paired with “1935” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "RBI formation/commencement"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “1935” with RBI formation/commencement.",
-      "importantPoint": "Key pairing: 1935 → RBI formation/commencement.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH29",
-      "question": "In the Day 1 lesson, which statement correctly matches RBI initial location?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Kolkata/Calcutta"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates RBI initial location with Kolkata/Calcutta.",
-      "importantPoint": "Remember: RBI initial location → Kolkata/Calcutta.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH30",
-      "question": "Which item was paired with “Kolkata/Calcutta” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "RBI initial location"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “Kolkata/Calcutta” with RBI initial location.",
-      "importantPoint": "Key pairing: Kolkata/Calcutta → RBI initial location.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH31",
-      "question": "In the Day 1 lesson, which statement correctly matches RBI moved to Bombay?",
-      "options": [
-        {
-          "id": "A",
-          "text": "1937"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates RBI moved to Bombay with 1937.",
-      "importantPoint": "Remember: RBI moved to Bombay → 1937.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH32",
-      "question": "Which item was paired with “1937” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "RBI moved to Bombay"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “1937” with RBI moved to Bombay.",
-      "importantPoint": "Key pairing: 1937 → RBI moved to Bombay.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH33",
-      "question": "In the Day 1 lesson, which statement correctly matches Independence?",
-      "options": [
-        {
-          "id": "A",
-          "text": "1947"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates Independence with 1947.",
-      "importantPoint": "Remember: Independence → 1947.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH34",
-      "question": "Which item was paired with “1947” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Independence"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “1947” with Independence.",
-      "importantPoint": "Key pairing: 1947 → Independence.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH35",
-      "question": "In the Day 1 lesson, which statement correctly matches RBI nationalisation?",
-      "options": [
-        {
-          "id": "A",
-          "text": "1 January 1949"
-        },
-        {
-          "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
-          "text": "1969"
-        },
-        {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates RBI nationalisation with 1 January 1949.",
-      "importantPoint": "Remember: RBI nationalisation → 1 January 1949.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH36",
-      "question": "Which item was paired with “1 January 1949” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "RBI nationalisation"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
-          "id": "C",
-          "text": "Reserve Bank of India"
-        },
-        {
-          "id": "D",
-          "text": "NABARD"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The lesson pairs “1 January 1949” with RBI nationalisation.",
-      "importantPoint": "Key pairing: 1 January 1949 → RBI nationalisation.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
-    },
-    {
-      "id": "BH37",
-      "question": "In the Day 1 lesson, which statement correctly matches Banking Companies Act?",
+      "id": "BH004",
+      "question": "The Reserve Bank of India was nationalised in:",
       "options": [
         {
           "id": "A",
@@ -961,47 +102,130 @@
         },
         {
           "id": "C",
-          "text": "1969"
+          "text": "1947"
         },
         {
           "id": "D",
-          "text": "1980"
+          "text": "1956"
         }
       ],
       "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates Banking Companies Act with 1949.",
-      "importantPoint": "Remember: Banking Companies Act → 1949.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+      "explanation": "The RBI was nationalised in 1949, making it wholly owned by the Government of India.",
+      "importantPoint": "RBI nationalisation: 1949.",
+      "examTrap": "1947 is Independence, not RBI nationalisation.",
+      "hint": "Separate the political milestone of Independence from the banking milestone."
     },
     {
-      "id": "BH38",
-      "question": "Which item was paired with “1949” in the Day 1 lesson?",
+      "id": "BH005",
+      "question": "The first Governor of the Reserve Bank of India was:",
       "options": [
         {
           "id": "A",
-          "text": "Banking Companies Act"
+          "text": "Osborne Smith"
         },
         {
           "id": "B",
-          "text": "State Bank of India"
+          "text": "C. D. Deshmukh"
         },
         {
           "id": "C",
-          "text": "Reserve Bank of India"
+          "text": "Benegal Rama Rau"
         },
         {
           "id": "D",
-          "text": "NABARD"
+          "text": "James B. Taylor"
         }
       ],
       "answer": "A",
-      "explanation": "The lesson pairs “1949” with Banking Companies Act.",
-      "importantPoint": "Key pairing: 1949 → Banking Companies Act.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+      "explanation": "Sir Osborne Smith was the first Governor of the RBI.",
+      "importantPoint": "First RBI Governor: Sir Osborne Smith.",
+      "examTrap": "C. D. Deshmukh was the first Indian Governor, not the first Governor overall.",
+      "hint": "Distinguish first Governor from first Indian Governor."
     },
     {
-      "id": "BH39",
-      "question": "In the Day 1 lesson, which statement correctly matches SBI from Imperial Bank?",
+      "id": "BH006",
+      "question": "Who was the first Indian Governor of the RBI?",
+      "options": [
+        {
+          "id": "A",
+          "text": "C. D. Deshmukh"
+        },
+        {
+          "id": "B",
+          "text": "Osborne Smith"
+        },
+        {
+          "id": "C",
+          "text": "Benegal Rama Rau"
+        },
+        {
+          "id": "D",
+          "text": "Manmohan Singh"
+        }
+      ],
+      "answer": "A",
+      "explanation": "C. D. Deshmukh became the first Indian Governor of the RBI.",
+      "importantPoint": "First Indian RBI Governor: C. D. Deshmukh.",
+      "examTrap": "Do not confuse him with the first Governor, Osborne Smith.",
+      "hint": "Focus on the word “Indian”."
+    },
+    {
+      "id": "BH007",
+      "question": "The headquarters of the RBI is located in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mumbai"
+        },
+        {
+          "id": "B",
+          "text": "New Delhi"
+        },
+        {
+          "id": "C",
+          "text": "Kolkata"
+        },
+        {
+          "id": "D",
+          "text": "Chennai"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The RBI’s central office is in Mumbai.",
+      "importantPoint": "RBI Central Office: Mumbai.",
+      "examTrap": "Kolkata was historically important to banking but is not RBI headquarters.",
+      "hint": "Think of the RBI Central Office location."
+    },
+    {
+      "id": "BH008",
+      "question": "Which institution was established in 1949 to regulate banking companies in India?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reserve Bank of India under the Banking Regulation framework"
+        },
+        {
+          "id": "B",
+          "text": "NABARD"
+        },
+        {
+          "id": "C",
+          "text": "SEBI"
+        },
+        {
+          "id": "D",
+          "text": "SIDBI"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Banking Regulation Act, 1949 provided the statutory framework for regulation of banking companies by RBI.",
+      "importantPoint": "Banking Regulation Act: 1949.",
+      "examTrap": "NABARD and SIDBI were established decades later.",
+      "hint": "Focus on the year 1949 and banking regulation."
+    },
+    {
+      "id": "BH009",
+      "question": "The Imperial Bank of India was transformed into the State Bank of India in:",
       "options": [
         {
           "id": "A",
@@ -1009,7 +233,7 @@
         },
         {
           "id": "B",
-          "text": "1935"
+          "text": "1949"
         },
         {
           "id": "C",
@@ -1021,51 +245,53 @@
         }
       ],
       "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates SBI from Imperial Bank with 1955.",
-      "importantPoint": "Remember: SBI from Imperial Bank → 1955.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+      "explanation": "The State Bank of India Act, 1955 led to the establishment of SBI from the Imperial Bank of India.",
+      "importantPoint": "Imperial Bank → SBI: 1955.",
+      "examTrap": "1969 relates to the first major bank nationalisation wave.",
+      "hint": "Link the Imperial Bank with SBI."
     },
     {
-      "id": "BH40",
-      "question": "Which item was paired with “1955” in the Day 1 lesson?",
+      "id": "BH010",
+      "question": "The State Bank of India was established under:",
       "options": [
         {
           "id": "A",
-          "text": "SBI from Imperial Bank"
+          "text": "State Bank of India Act, 1955"
         },
         {
           "id": "B",
-          "text": "State Bank of India"
+          "text": "Banking Regulation Act, 1949"
         },
         {
           "id": "C",
-          "text": "Reserve Bank of India"
+          "text": "SBI Act, 1969"
         },
         {
           "id": "D",
-          "text": "NABARD"
+          "text": "Companies Act, 1956"
         }
       ],
       "answer": "A",
-      "explanation": "The lesson pairs “1955” with SBI from Imperial Bank.",
-      "importantPoint": "Key pairing: 1955 → SBI from Imperial Bank.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+      "explanation": "SBI was constituted under the State Bank of India Act, 1955.",
+      "importantPoint": "SBI Act: 1955.",
+      "examTrap": "The 1969 nationalisation wave involved other major banks, not the original creation of SBI.",
+      "hint": "Recall the legislation that created SBI."
     },
     {
-      "id": "BH41",
-      "question": "In the Day 1 lesson, which statement correctly matches RBI share in SBI?",
+      "id": "BH011",
+      "question": "The first major nationalisation of 14 banks in India took place in:",
       "options": [
         {
           "id": "A",
-          "text": "93%, with 7% private as stated in lesson"
+          "text": "1969"
         },
         {
           "id": "B",
-          "text": "1935"
+          "text": "1955"
         },
         {
           "id": "C",
-          "text": "1969"
+          "text": "1975"
         },
         {
           "id": "D",
@@ -1073,151 +299,292 @@
         }
       ],
       "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates RBI share in SBI with 93%, with 7% private as stated in lesson.",
-      "importantPoint": "Remember: RBI share in SBI → 93%, with 7% private as stated in lesson.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+      "explanation": "Fourteen major commercial banks were nationalised in 1969.",
+      "importantPoint": "14 major banks were nationalised in 1969.",
+      "examTrap": "1980 was the second major nationalisation wave involving six banks.",
+      "hint": "Remember the 14-bank milestone."
     },
     {
-      "id": "BH42",
-      "question": "Which item was paired with “93%, with 7% private as stated in lesson” in the Day 1 lesson?",
+      "id": "BH012",
+      "question": "How many major commercial banks were nationalised in the first 1969 nationalisation wave?",
       "options": [
         {
           "id": "A",
-          "text": "RBI share in SBI"
+          "text": "14"
         },
         {
           "id": "B",
-          "text": "State Bank of India"
+          "text": "6"
         },
         {
           "id": "C",
-          "text": "Reserve Bank of India"
+          "text": "10"
         },
         {
           "id": "D",
-          "text": "NABARD"
+          "text": "20"
         }
       ],
       "answer": "A",
-      "explanation": "The lesson pairs “93%, with 7% private as stated in lesson” with RBI share in SBI.",
-      "importantPoint": "Key pairing: 93%, with 7% private as stated in lesson → RBI share in SBI.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+      "explanation": "The 1969 nationalisation covered 14 major commercial banks.",
+      "importantPoint": "1969: 14 banks.",
+      "examTrap": "Six banks were nationalised in the second wave in 1980.",
+      "hint": "Compare 1969 and 1980."
     },
     {
-      "id": "BH43",
-      "question": "In the Day 1 lesson, which statement correctly matches nationalisation phase 1?",
+      "id": "BH013",
+      "question": "The second major nationalisation of banks took place in:",
       "options": [
         {
           "id": "A",
-          "text": "1969: 14 banks; ₹50 crore-plus deposits"
+          "text": "1980"
         },
         {
           "id": "B",
-          "text": "1935"
-        },
-        {
-          "id": "C",
           "text": "1969"
         },
         {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates nationalisation phase 1 with 1969: 14 banks; ₹50 crore-plus deposits.",
-      "importantPoint": "Remember: nationalisation phase 1 → 1969: 14 banks; ₹50 crore-plus deposits.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH44",
-      "question": "Which item was paired with “1969: 14 banks; ₹50 crore-plus deposits” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "nationalisation phase 1"
-        },
-        {
-          "id": "B",
-          "text": "State Bank of India"
-        },
-        {
           "id": "C",
-          "text": "Reserve Bank of India"
+          "text": "1975"
         },
         {
           "id": "D",
-          "text": "NABARD"
+          "text": "1991"
         }
       ],
       "answer": "A",
-      "explanation": "The lesson pairs “1969: 14 banks; ₹50 crore-plus deposits” with nationalisation phase 1.",
-      "importantPoint": "Key pairing: 1969: 14 banks; ₹50 crore-plus deposits → nationalisation phase 1.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+      "explanation": "Six additional commercial banks were nationalised in 1980.",
+      "importantPoint": "Second major bank nationalisation: 1980.",
+      "examTrap": "1991 marks economic reforms, not the second nationalisation wave.",
+      "hint": "Think of the second nationalisation milestone."
     },
     {
-      "id": "BH45",
-      "question": "In the Day 1 lesson, which statement correctly matches RRB milestone?",
+      "id": "BH014",
+      "question": "How many banks were nationalised in the 1980 wave?",
       "options": [
         {
           "id": "A",
-          "text": "1975; Prathama Bank in October 1975"
+          "text": "6"
         },
         {
           "id": "B",
-          "text": "1935"
+          "text": "14"
         },
         {
           "id": "C",
+          "text": "8"
+        },
+        {
+          "id": "D",
+          "text": "12"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Six more banks were nationalised in 1980.",
+      "importantPoint": "1980: 6 banks.",
+      "examTrap": "Do not interchange the 1969 and 1980 counts.",
+      "hint": "Compare the two nationalisation waves."
+    },
+    {
+      "id": "BH015",
+      "question": "The Lead Bank Scheme was introduced in:",
+      "options": [
+        {
+          "id": "A",
           "text": "1969"
         },
         {
-          "id": "D",
-          "text": "1980"
-        }
-      ],
-      "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates RRB milestone with 1975; Prathama Bank in October 1975.",
-      "importantPoint": "Remember: RRB milestone → 1975; Prathama Bank in October 1975.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
-    },
-    {
-      "id": "BH46",
-      "question": "Which item was paired with “1975; Prathama Bank in October 1975” in the Day 1 lesson?",
-      "options": [
-        {
-          "id": "A",
-          "text": "RRB milestone"
-        },
-        {
           "id": "B",
-          "text": "State Bank of India"
+          "text": "1955"
         },
         {
           "id": "C",
-          "text": "Reserve Bank of India"
+          "text": "1980"
         },
         {
           "id": "D",
-          "text": "NABARD"
+          "text": "1991"
         }
       ],
       "answer": "A",
-      "explanation": "The lesson pairs “1975; Prathama Bank in October 1975” with RRB milestone.",
-      "importantPoint": "Key pairing: 1975; Prathama Bank in October 1975 → RRB milestone.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+      "explanation": "The Lead Bank Scheme was introduced in 1969 to improve banking development and credit planning at the district level.",
+      "importantPoint": "Lead Bank Scheme: 1969.",
+      "examTrap": "It is not a post-1991 reform.",
+      "hint": "Associate the scheme with the first nationalisation period."
     },
     {
-      "id": "BH47",
-      "question": "In the Day 1 lesson, which statement correctly matches RRB Act?",
+      "id": "BH016",
+      "question": "The Regional Rural Banks were established under which Act?",
       "options": [
         {
           "id": "A",
+          "text": "Regional Rural Banks Act, 1976"
+        },
+        {
+          "id": "B",
+          "text": "Banking Regulation Act, 1949"
+        },
+        {
+          "id": "C",
+          "text": "NABARD Act, 1981"
+        },
+        {
+          "id": "D",
+          "text": "SBI Act, 1955"
+        }
+      ],
+      "answer": "A",
+      "explanation": "RRBs were established under the Regional Rural Banks Act, 1976.",
+      "importantPoint": "RRB Act: 1976.",
+      "examTrap": "NABARD was established later in 1982.",
+      "hint": "Look for the legislation specifically named for RRBs."
+    },
+    {
+      "id": "BH017",
+      "question": "Regional Rural Banks were established with the objective of primarily serving:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rural and agricultural credit needs"
+        },
+        {
+          "id": "B",
+          "text": "Large multinational corporations"
+        },
+        {
+          "id": "C",
+          "text": "Capital market intermediaries"
+        },
+        {
+          "id": "D",
+          "text": "Foreign exchange dealers"
+        }
+      ],
+      "answer": "A",
+      "explanation": "RRBs were created to improve institutional credit access in rural areas, particularly for agriculture and weaker sections.",
+      "importantPoint": "RRBs focus on rural credit.",
+      "examTrap": "RRBs are not designed primarily for capital-market intermediation.",
+      "hint": "Think about the “Rural” in RRB."
+    },
+    {
+      "id": "BH018",
+      "question": "NABARD was established in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1982"
+        },
+        {
+          "id": "B",
           "text": "1976"
         },
         {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1991"
+        }
+      ],
+      "answer": "A",
+      "explanation": "NABARD was established on 12 July 1982.",
+      "importantPoint": "NABARD: 1982.",
+      "examTrap": "Do not confuse its year with the RRB Act of 1976.",
+      "hint": "Recall the apex rural-development institution’s founding year."
+    },
+    {
+      "id": "BH019",
+      "question": "NABARD was established under:",
+      "options": [
+        {
+          "id": "A",
+          "text": "NABARD Act, 1981"
+        },
+        {
           "id": "B",
-          "text": "1935"
+          "text": "RRB Act, 1976"
+        },
+        {
+          "id": "C",
+          "text": "Banking Regulation Act, 1949"
+        },
+        {
+          "id": "D",
+          "text": "SIDBI Act, 1989"
+        }
+      ],
+      "answer": "A",
+      "explanation": "NABARD was created under the National Bank for Agriculture and Rural Development Act, 1981 and commenced operations in 1982.",
+      "importantPoint": "NABARD Act: 1981; operations: 1982.",
+      "examTrap": "The Act year and commencement year are different.",
+      "hint": "Distinguish legislation from commencement."
+    },
+    {
+      "id": "BH020",
+      "question": "SIDBI was established in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1990"
+        },
+        {
+          "id": "B",
+          "text": "1982"
+        },
+        {
+          "id": "C",
+          "text": "1991"
+        },
+        {
+          "id": "D",
+          "text": "1995"
+        }
+      ],
+      "answer": "A",
+      "explanation": "SIDBI was established on 2 April 1990 as the principal financial institution for promotion, financing and development of the MSME sector.",
+      "importantPoint": "SIDBI: 1990.",
+      "examTrap": "1991 is associated with economic reforms, not SIDBI’s establishment.",
+      "hint": "Think of the institution focused on small industries."
+    },
+    {
+      "id": "BH021",
+      "question": "SIDBI primarily focuses on:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Micro, small and medium enterprises"
+        },
+        {
+          "id": "B",
+          "text": "Agricultural land records"
+        },
+        {
+          "id": "C",
+          "text": "Monetary policy"
+        },
+        {
+          "id": "D",
+          "text": "Insurance regulation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "SIDBI is the principal financial institution for promotion, financing and development of the MSME sector.",
+      "importantPoint": "SIDBI: MSME development and finance.",
+      "examTrap": "Agricultural and rural-development finance is associated more directly with NABARD.",
+      "hint": "Match the institution with its sector."
+    },
+    {
+      "id": "BH022",
+      "question": "The economic reforms that significantly changed India’s financial sector began in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1991"
+        },
+        {
+          "id": "B",
+          "text": "1980"
         },
         {
           "id": "C",
@@ -1225,51 +592,107 @@
         },
         {
           "id": "D",
-          "text": "1980"
+          "text": "2000"
         }
       ],
       "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates RRB Act with 1976.",
-      "importantPoint": "Remember: RRB Act → 1976.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+      "explanation": "The 1991 reforms introduced major liberalisation measures, including changes affecting the financial sector.",
+      "importantPoint": "1991: major economic reforms.",
+      "examTrap": "1991 did not mark the beginning of bank nationalisation.",
+      "hint": "Associate 1991 with liberalisation."
     },
     {
-      "id": "BH48",
-      "question": "Which item was paired with “1976” in the Day 1 lesson?",
+      "id": "BH023",
+      "question": "The Narasimham Committee of 1991 was primarily associated with reforms in:",
       "options": [
         {
           "id": "A",
-          "text": "RRB Act"
+          "text": "Financial and banking sector"
         },
         {
           "id": "B",
-          "text": "State Bank of India"
+          "text": "Telecommunications licensing"
         },
         {
           "id": "C",
-          "text": "Reserve Bank of India"
+          "text": "Election administration"
         },
         {
           "id": "D",
-          "text": "NABARD"
+          "text": "Agricultural land reform"
         }
       ],
       "answer": "A",
-      "explanation": "The lesson pairs “1976” with RRB Act.",
-      "importantPoint": "Key pairing: 1976 → RRB Act.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+      "explanation": "The Committee on the Financial System headed by M. Narasimham examined banking and financial-sector reforms.",
+      "importantPoint": "Narasimham Committee I: 1991 financial-sector reforms.",
+      "examTrap": "Do not confuse it with committees dealing with unrelated sectors.",
+      "hint": "Think “financial system”."
     },
     {
-      "id": "BH49",
-      "question": "In the Day 1 lesson, which statement correctly matches nationalisation phase 2?",
+      "id": "BH024",
+      "question": "The Narasimham Committee II was constituted in:",
       "options": [
         {
           "id": "A",
-          "text": "1980: 6 banks; ₹200 crore-plus deposits"
+          "text": "1998"
         },
         {
           "id": "B",
-          "text": "1935"
+          "text": "1991"
+        },
+        {
+          "id": "C",
+          "text": "2005"
+        },
+        {
+          "id": "D",
+          "text": "1985"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The second Narasimham Committee was constituted in 1998 to review banking-sector reforms.",
+      "importantPoint": "Narasimham Committee II: 1998.",
+      "examTrap": "1991 refers to the first committee.",
+      "hint": "Distinguish Committee I and II."
+    },
+    {
+      "id": "BH025",
+      "question": "Which committee is closely associated with the introduction of prudential norms in Indian banking reforms?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Narasimham Committee"
+        },
+        {
+          "id": "B",
+          "text": "Sarkaria Commission"
+        },
+        {
+          "id": "C",
+          "text": "Malimath Committee"
+        },
+        {
+          "id": "D",
+          "text": "Kothari Commission"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Narasimham Committee recommendations were central to banking-sector reforms, including prudential norms and income recognition concepts.",
+      "importantPoint": "Narasimham recommendations shaped banking reforms.",
+      "examTrap": "The other committees had different mandates.",
+      "hint": "Focus on banking-sector reform."
+    },
+    {
+      "id": "BH026",
+      "question": "The Banking Ombudsman Scheme was introduced by RBI in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1995"
+        },
+        {
+          "id": "B",
+          "text": "1982"
         },
         {
           "id": "C",
@@ -1277,21 +700,22 @@
         },
         {
           "id": "D",
-          "text": "1980"
+          "text": "2006"
         }
       ],
       "answer": "A",
-      "explanation": "The Day 1 lesson explicitly associates nationalisation phase 2 with 1980: 6 banks; ₹200 crore-plus deposits.",
-      "importantPoint": "Remember: nationalisation phase 2 → 1980: 6 banks; ₹200 crore-plus deposits.",
-      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+      "explanation": "The RBI introduced the Banking Ombudsman Scheme in 1995 to provide a mechanism for resolving customer complaints against banks.",
+      "importantPoint": "Banking Ombudsman Scheme: 1995.",
+      "examTrap": "Do not confuse the original scheme with later revisions.",
+      "hint": "Recall the first introduction year."
     },
     {
-      "id": "BH50",
-      "question": "Which item was paired with “1980: 6 banks; ₹200 crore-plus deposits” in the Day 1 lesson?",
+      "id": "BH027",
+      "question": "The first bank to be established in India is commonly identified as:",
       "options": [
         {
           "id": "A",
-          "text": "nationalisation phase 2"
+          "text": "Bank of Hindustan"
         },
         {
           "id": "B",
@@ -1299,7 +723,331 @@
         },
         {
           "id": "C",
+          "text": "Punjab National Bank"
+        },
+        {
+          "id": "D",
+          "text": "Allahabad Bank"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Bank of Hindustan, established in 1770, is commonly cited as the first bank established in India.",
+      "importantPoint": "Bank of Hindustan: 1770.",
+      "examTrap": "SBI and PNB were established much later.",
+      "hint": "Think of the earliest commonly cited bank."
+    },
+    {
+      "id": "BH028",
+      "question": "Which was the first presidency bank?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bank of Bengal"
+        },
+        {
+          "id": "B",
+          "text": "Bank of Bombay"
+        },
+        {
+          "id": "C",
+          "text": "Bank of Madras"
+        },
+        {
+          "id": "D",
+          "text": "Imperial Bank of India"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Bank of Bengal was established in 1806 and was the first of the three Presidency Banks.",
+      "importantPoint": "Bank of Bengal: 1806.",
+      "examTrap": "Bank of Bombay and Bank of Madras followed later.",
+      "hint": "Recall the chronological order of Presidency Banks."
+    },
+    {
+      "id": "BH029",
+      "question": "Bank of Bombay was established in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1840"
+        },
+        {
+          "id": "B",
+          "text": "1806"
+        },
+        {
+          "id": "C",
+          "text": "1843"
+        },
+        {
+          "id": "D",
+          "text": "1921"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Bank of Bombay was established in 1840.",
+      "importantPoint": "Bank of Bombay: 1840.",
+      "examTrap": "1843 corresponds to Bank of Madras.",
+      "hint": "Compare the establishment years of the Presidency Banks."
+    },
+    {
+      "id": "BH030",
+      "question": "Bank of Madras was established in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1843"
+        },
+        {
+          "id": "B",
+          "text": "1840"
+        },
+        {
+          "id": "C",
+          "text": "1806"
+        },
+        {
+          "id": "D",
+          "text": "1921"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Bank of Madras was established in 1843.",
+      "importantPoint": "Bank of Madras: 1843.",
+      "examTrap": "Do not swap Bombay and Madras.",
+      "hint": "Recall the sequence: Bengal, Bombay, Madras."
+    },
+    {
+      "id": "BH031",
+      "question": "The three Presidency Banks were amalgamated in 1921 to form:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Imperial Bank of India"
+        },
+        {
+          "id": "B",
           "text": "Reserve Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "Bank of India"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Bank of Bengal, Bank of Bombay and Bank of Madras were amalgamated in 1921 to form the Imperial Bank of India.",
+      "importantPoint": "Presidency Banks → Imperial Bank: 1921.",
+      "examTrap": "SBI came later in 1955.",
+      "hint": "Identify the institution that preceded SBI."
+    },
+    {
+      "id": "BH032",
+      "question": "The Imperial Bank of India was formed in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1921"
+        },
+        {
+          "id": "B",
+          "text": "1906"
+        },
+        {
+          "id": "C",
+          "text": "1935"
+        },
+        {
+          "id": "D",
+          "text": "1955"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Imperial Bank of India was formed in 1921 by amalgamating the three Presidency Banks.",
+      "importantPoint": "Imperial Bank: 1921.",
+      "examTrap": "1955 is the year it became SBI.",
+      "hint": "Separate formation of Imperial Bank from its later conversion."
+    },
+    {
+      "id": "BH033",
+      "question": "The first Indian bank with limited liability established by Indians is commonly identified as:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Allahabad Bank"
+        },
+        {
+          "id": "B",
+          "text": "Punjab National Bank"
+        },
+        {
+          "id": "C",
+          "text": "Bank of Bengal"
+        },
+        {
+          "id": "D",
+          "text": "Central Bank of India"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Allahabad Bank, established in 1865, is commonly described in banking histories as the oldest joint-stock bank in India still in existence for much of its history.",
+      "importantPoint": "Allahabad Bank: 1865.",
+      "examTrap": "Avoid confusing it with PNB (1894).",
+      "hint": "Compare the historical establishment years."
+    },
+    {
+      "id": "BH034",
+      "question": "Punjab National Bank was established in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1894"
+        },
+        {
+          "id": "B",
+          "text": "1865"
+        },
+        {
+          "id": "C",
+          "text": "1906"
+        },
+        {
+          "id": "D",
+          "text": "1911"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Punjab National Bank was established in 1894.",
+      "importantPoint": "PNB: 1894.",
+      "examTrap": "Allahabad Bank predates it.",
+      "hint": "Recall PNB’s 19th-century founding."
+    },
+    {
+      "id": "BH035",
+      "question": "Bank of India was established in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1906"
+        },
+        {
+          "id": "B",
+          "text": "1894"
+        },
+        {
+          "id": "C",
+          "text": "1911"
+        },
+        {
+          "id": "D",
+          "text": "1935"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Bank of India was established in 1906.",
+      "importantPoint": "Bank of India: 1906.",
+      "examTrap": "Do not confuse 1906 with the Swadeshi-era banking expansion generally.",
+      "hint": "Recall the year of establishment."
+    },
+    {
+      "id": "BH036",
+      "question": "Central Bank of India was established in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1911"
+        },
+        {
+          "id": "B",
+          "text": "1906"
+        },
+        {
+          "id": "C",
+          "text": "1894"
+        },
+        {
+          "id": "D",
+          "text": "1921"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Central Bank of India was established in 1911.",
+      "importantPoint": "Central Bank of India: 1911.",
+      "examTrap": "1921 is the Imperial Bank milestone.",
+      "hint": "Compare the dates of major Indian banks."
+    },
+    {
+      "id": "BH037",
+      "question": "The Banking Companies Act, 1949 was later renamed as the:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Banking Regulation Act, 1949"
+        },
+        {
+          "id": "B",
+          "text": "RBI Act, 1949"
+        },
+        {
+          "id": "C",
+          "text": "Companies Regulation Act, 1949"
+        },
+        {
+          "id": "D",
+          "text": "Financial Institutions Act, 1949"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Banking Companies Act, 1949 was renamed the Banking Regulation Act, 1949.",
+      "importantPoint": "Banking Regulation Act: 1949.",
+      "examTrap": "It is not the same legislation as the RBI Act, 1934.",
+      "hint": "Look for the standard current name of the Act."
+    },
+    {
+      "id": "BH038",
+      "question": "The State Bank of India group was expanded through the nationalisation of:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Seven associate banks in 1960"
+        },
+        {
+          "id": "B",
+          "text": "Fourteen banks in 1969"
+        },
+        {
+          "id": "C",
+          "text": "Six banks in 1980"
+        },
+        {
+          "id": "D",
+          "text": "All private banks in 1991"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Seven associate banks were brought into the SBI group in 1960 under the State Bank of India (Subsidiary Banks) Act, 1959.",
+      "importantPoint": "SBI associate banks: 1960.",
+      "examTrap": "The 1969 nationalisation involved 14 major commercial banks.",
+      "hint": "Separate SBI expansion from nationalisation."
+    },
+    {
+      "id": "BH039",
+      "question": "The first phase of bank nationalisation in 1969 was based on the banking nationalisation ordinance issued by:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Government of India"
+        },
+        {
+          "id": "B",
+          "text": "RBI alone"
+        },
+        {
+          "id": "C",
+          "text": "SEBI"
         },
         {
           "id": "D",
@@ -1307,13 +1055,311 @@
         }
       ],
       "answer": "A",
-      "explanation": "The lesson pairs “1980: 6 banks; ₹200 crore-plus deposits” with nationalisation phase 2.",
-      "importantPoint": "Key pairing: 1980: 6 banks; ₹200 crore-plus deposits → nationalisation phase 2.",
-      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+      "explanation": "The Government of India nationalised 14 major banks in 1969.",
+      "importantPoint": "1969 nationalisation was a government policy action.",
+      "examTrap": "RBI is the central bank and regulator, but the nationalisation decision was by the government.",
+      "hint": "Focus on who enacted nationalisation."
+    },
+    {
+      "id": "BH040",
+      "question": "Which development is most directly associated with the 1990s banking reforms?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Prudential regulation and greater competition"
+        },
+        {
+          "id": "B",
+          "text": "Creation of the first Presidency Bank"
+        },
+        {
+          "id": "C",
+          "text": "Formation of RBI"
+        },
+        {
+          "id": "D",
+          "text": "Nationalisation of 14 banks"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The 1990s reforms strengthened prudential norms and introduced greater competition through banking-sector liberalisation.",
+      "importantPoint": "1990s reforms: prudential norms and competition.",
+      "examTrap": "Nationalisation belongs to 1969/1980.",
+      "hint": "Think of post-1991 liberalisation."
+    },
+    {
+      "id": "BH041",
+      "question": "The concept of “priority sector lending” is most closely connected with the objective of:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Directing credit toward identified priority sectors"
+        },
+        {
+          "id": "B",
+          "text": "Financing only large corporations"
+        },
+        {
+          "id": "C",
+          "text": "Eliminating all rural banking"
+        },
+        {
+          "id": "D",
+          "text": "Regulating stock exchanges"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Priority sector lending channels a prescribed share of bank credit toward sectors considered important for inclusive economic development.",
+      "importantPoint": "Priority sector lending supports identified priority sectors.",
+      "examTrap": "It is not limited to large corporate lending.",
+      "hint": "Focus on the policy objective of directed credit."
+    },
+    {
+      "id": "BH042",
+      "question": "Which institution succeeded the Industrial Finance Corporation of India as part of the development-finance landscape?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No direct successor; IFCI remained a distinct institution"
+        },
+        {
+          "id": "B",
+          "text": "NABARD"
+        },
+        {
+          "id": "C",
+          "text": "RBI"
+        },
+        {
+          "id": "D",
+          "text": "SEBI"
+        }
+      ],
+      "answer": "A",
+      "explanation": "IFCI remained a distinct development financial institution; it was not succeeded by NABARD or SEBI.",
+      "importantPoint": "Do not invent institutional succession.",
+      "examTrap": "NABARD and SEBI have different mandates and histories.",
+      "hint": "Check whether the premise implies a formal successor."
+    },
+    {
+      "id": "BH043",
+      "question": "SEBI received statutory status in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1992"
+        },
+        {
+          "id": "B",
+          "text": "1988"
+        },
+        {
+          "id": "C",
+          "text": "1990"
+        },
+        {
+          "id": "D",
+          "text": "1995"
+        }
+      ],
+      "answer": "A",
+      "explanation": "SEBI was established in 1988 and received statutory powers under the SEBI Act, 1992.",
+      "importantPoint": "SEBI: 1988 establishment; statutory status: 1992.",
+      "examTrap": "Do not state simply that SEBI was “created” in 1992 without the distinction.",
+      "hint": "Separate establishment from statutory status."
+    },
+    {
+      "id": "BH044",
+      "question": "Which institution regulates India’s securities market?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SEBI"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "NABARD"
+        },
+        {
+          "id": "D",
+          "text": "SIDBI"
+        }
+      ],
+      "answer": "A",
+      "explanation": "SEBI is the statutory regulator of India’s securities market.",
+      "importantPoint": "SEBI: securities-market regulator.",
+      "examTrap": "RBI regulates monetary and banking matters, not the securities market generally.",
+      "hint": "Match regulator to market."
+    },
+    {
+      "id": "BH045",
+      "question": "The Payment and Settlement Systems Act was enacted in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "2007"
+        },
+        {
+          "id": "B",
+          "text": "1991"
+        },
+        {
+          "id": "C",
+          "text": "1982"
+        },
+        {
+          "id": "D",
+          "text": "2013"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Payment and Settlement Systems Act, 2007 provides the legal framework for regulation and supervision of payment systems in India.",
+      "importantPoint": "PSS Act: 2007.",
+      "examTrap": "Do not confuse it with the 2013 Companies Act.",
+      "hint": "Think of the legal framework for payment systems."
+    },
+    {
+      "id": "BH046",
+      "question": "The Monetary Policy Committee was formally constituted in its present statutory framework in:",
+      "options": [
+        {
+          "id": "A",
+          "text": "2016"
+        },
+        {
+          "id": "B",
+          "text": "2007"
+        },
+        {
+          "id": "C",
+          "text": "1991"
+        },
+        {
+          "id": "D",
+          "text": "2020"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Monetary Policy Committee framework was established through amendments to the RBI Act in 2016.",
+      "importantPoint": "MPC framework: 2016.",
+      "examTrap": "The policy rate framework existed before the statutory MPC.",
+      "hint": "Focus on the formal MPC framework."
+    },
+    {
+      "id": "BH047",
+      "question": "Which institution is responsible for monetary policy in India?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "B",
+          "text": "SEBI"
+        },
+        {
+          "id": "C",
+          "text": "NABARD"
+        },
+        {
+          "id": "D",
+          "text": "SIDBI"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The RBI is entrusted with the formulation and implementation of monetary policy in India.",
+      "importantPoint": "RBI: monetary policy authority.",
+      "examTrap": "SEBI regulates securities markets.",
+      "hint": "Match the institution to monetary policy."
+    },
+    {
+      "id": "BH048",
+      "question": "The Nationalisation of banks in 1969 was primarily aimed at:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Expanding banking access and aligning credit with development priorities"
+        },
+        {
+          "id": "B",
+          "text": "Privatising commercial banks"
+        },
+        {
+          "id": "C",
+          "text": "Reducing rural banking"
+        },
+        {
+          "id": "D",
+          "text": "Replacing RBI with a new central bank"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The 1969 nationalisation was associated with wider banking access, branch expansion and directing credit toward development priorities.",
+      "importantPoint": "Nationalisation expanded the developmental role of banking.",
+      "examTrap": "It was not a privatisation programme.",
+      "hint": "Consider the stated development objectives of the period."
+    },
+    {
+      "id": "BH049",
+      "question": "Which sequence is chronologically correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RBI operations → Imperial Bank → SBI"
+        },
+        {
+          "id": "B",
+          "text": "Imperial Bank → RBI operations → SBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI → RBI operations → Imperial Bank"
+        },
+        {
+          "id": "D",
+          "text": "RBI operations → SBI → Imperial Bank"
+        }
+      ],
+      "answer": "A",
+      "explanation": "RBI operations began in 1935, while SBI was established in 1955 from the Imperial Bank formed in 1921; therefore the proposed sequence in A is not chronologically complete.",
+      "importantPoint": "Chronology questions require checking every event, not just one pair.",
+      "examTrap": "Option A actually omits the Imperial Bank-to-SBI relationship and is therefore not a valid chronological sequence.",
+      "hint": "Check all three dates carefully."
+    },
+    {
+      "id": "BH050",
+      "question": "Which sequence correctly orders these milestones from earliest to latest?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bank of Bengal → Imperial Bank of India → RBI operations → SBI"
+        },
+        {
+          "id": "B",
+          "text": "RBI operations → Bank of Bengal → Imperial Bank of India → SBI"
+        },
+        {
+          "id": "C",
+          "text": "Bank of Bengal → RBI operations → SBI → Imperial Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "Imperial Bank of India → Bank of Bengal → RBI operations → SBI"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Bank of Bengal was established in 1806, the Imperial Bank was formed in 1921, RBI began operations in 1935, and SBI was established in 1955.",
+      "importantPoint": "Chronology: 1806 → 1921 → 1935 → 1955.",
+      "examTrap": "Do not place RBI before the Presidency Bank era.",
+      "hint": "Compare the four milestone years."
     }
   ],
   "category": "Banking Awareness",
   "topic": "Indian Banking History",
   "subtopic": "Banking History",
-  "description": "Covers the major historical milestones, institutions and banking developments included in the lesson, with exam-focused recall and application questions."
+  "description": "Exam-focused questions covering major institutions, milestones, reforms and chronology in Indian banking history."
 }

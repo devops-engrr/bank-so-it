@@ -1,1320 +1,1366 @@
 {
-  "version": 1,
+  "version": "2.0",
   "quizId": "day-01-grammar-r01-r03",
   "title": "Grammar Rules 1–3",
-  "subtitle": "Practice application-based questions on Each & Every, Both, and Who & Whom.",
+  "subtitle": "IBPS SO / RRB SO Exam Practice",
   "questionCount": 50,
-  "source": "Day 1 vlog transcript supplied by the channel owner.",
-  "instructions": [
-    "Choose one answer for each question.",
-    "Review the explanation, important point and exam trap after submission.",
-    "Use the final review to revisit mistakes."
-  ],
+  "source": "Bank SO IT exam-oriented question bank; reference lessons used only for topic scope.",
+  "instructions": "Choose the best answer. Questions are independently authored for competitive-exam practice.",
   "questions": [
     {
-      "id": "BG1",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG001",
+      "question": "Choose the grammatically correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Each of my students is working hard."
+          "text": "Each of the candidates has submitted the application."
         },
         {
           "id": "B",
-          "text": "Each my students is working hard."
+          "text": "Each of the candidates have submitted the application."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "Each candidates has submitted the application."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "Each of candidates have submitted the application."
         }
       ],
       "answer": "A",
-      "explanation": "Each of my students is working hard. follows the construction taught in the Day 1 lesson. R01 uses the each-of construction shown in the lesson.",
-      "importantPoint": "Each of + plural noun takes singular agreement in the lesson’s pattern.",
-      "examTrap": "Do not drop “of” in the each-of construction."
+      "explanation": "The distributive pronoun “each” takes a singular verb: “has”.",
+      "importantPoint": "Each of + plural noun → singular verb.",
+      "examTrap": "The plural noun “candidates” does not control the verb.",
+      "hint": "Find the true grammatical subject."
     },
     {
-      "id": "BG2",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG002",
+      "question": "Choose the grammatically correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Each my students is working hard."
+          "text": "Every employee is required to carry an identity card."
         },
         {
           "id": "B",
-          "text": "Each of my students is working hard."
+          "text": "Every employees are required to carry an identity card."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "Every employee are required to carry an identity card."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "Every of employee is required to carry an identity card."
         }
       ],
       "answer": "A",
-      "explanation": "Each my students is working hard. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. R01 uses the each-of construction shown in the lesson.",
-      "importantPoint": "Each of + plural noun takes singular agreement in the lesson’s pattern.",
-      "examTrap": "Do not drop “of” in the each-of construction."
-    },
-    {
-      "id": "BG3",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Every student is ready."
-        },
-        {
-          "id": "B",
-          "text": "Every of my student is ready."
-        },
-        {
-          "id": "C",
-          "text": "The students both are ready."
-        },
-        {
-          "id": "D",
-          "text": "Whom works hard every day?"
-        }
-      ],
-      "answer": "A",
-      "explanation": "Every student is ready. follows the construction taught in the Day 1 lesson. The lesson contrasts direct Every + noun with the each-of construction.",
-      "importantPoint": "Every is presented with the direct noun pattern.",
-      "examTrap": "“Every of” is a trap in the lesson’s examples."
-    },
-    {
-      "id": "BG4",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Every of my student is ready."
-        },
-        {
-          "id": "B",
-          "text": "Every student is ready."
-        },
-        {
-          "id": "C",
-          "text": "Who called you yesterday?"
-        },
-        {
-          "id": "D",
-          "text": "Both my books are open."
-        }
-      ],
-      "answer": "A",
-      "explanation": "Every of my student is ready. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson contrasts direct Every + noun with the each-of construction.",
-      "importantPoint": "Every is presented with the direct noun pattern.",
-      "examTrap": "“Every of” is a trap in the lesson’s examples."
-    },
-    {
-      "id": "BG5",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
-      "options": [
-        {
-          "id": "A",
-          "text": "I have a book in each hand."
-        },
-        {
-          "id": "B",
-          "text": "I have a book in every hand."
-        },
-        {
-          "id": "C",
-          "text": "The students both are ready."
-        },
-        {
-          "id": "D",
-          "text": "Whom works hard every day?"
-        }
-      ],
-      "answer": "A",
-      "explanation": "I have a book in each hand. follows the construction taught in the Day 1 lesson. The lesson uses the two-hand example to illustrate Each for individual items.",
-      "importantPoint": "Remember the exact two-hand example.",
-      "examTrap": "Do not automatically substitute Every for Each."
-    },
-    {
-      "id": "BG6",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
-      "options": [
-        {
-          "id": "A",
-          "text": "I have a book in every hand."
-        },
-        {
-          "id": "B",
-          "text": "I have a book in each hand."
-        },
-        {
-          "id": "C",
-          "text": "Who called you yesterday?"
-        },
-        {
-          "id": "D",
-          "text": "Both my books are open."
-        }
-      ],
-      "answer": "A",
-      "explanation": "I have a book in every hand. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson uses the two-hand example to illustrate Each for individual items.",
-      "importantPoint": "Remember the exact two-hand example.",
-      "examTrap": "Do not automatically substitute Every for Each."
-    },
-    {
-      "id": "BG7",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
-      "options": [
-        {
-          "id": "A",
-          "text": "I have every reason to be happy."
-        },
-        {
-          "id": "B",
-          "text": "I have each reason to be happy."
-        },
-        {
-          "id": "C",
-          "text": "The students both are ready."
-        },
-        {
-          "id": "D",
-          "text": "Whom works hard every day?"
-        }
-      ],
-      "answer": "A",
-      "explanation": "I have every reason to be happy. follows the construction taught in the Day 1 lesson. The lesson specifically uses “every reason” as its abstract-noun example.",
-      "importantPoint": "The abstract-noun example is every reason.",
-      "examTrap": "This is a source-specific rule example from the vlog."
-    },
-    {
-      "id": "BG8",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
-      "options": [
-        {
-          "id": "A",
-          "text": "I have each reason to be happy."
-        },
-        {
-          "id": "B",
-          "text": "I have every reason to be happy."
-        },
-        {
-          "id": "C",
-          "text": "Who called you yesterday?"
-        },
-        {
-          "id": "D",
-          "text": "Both my books are open."
-        }
-      ],
-      "answer": "A",
-      "explanation": "I have each reason to be happy. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson specifically uses “every reason” as its abstract-noun example.",
-      "importantPoint": "The abstract-noun example is every reason.",
-      "examTrap": "This is a source-specific rule example from the vlog."
-    },
-    {
-      "id": "BG9",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Every candidate is prepared."
-        },
-        {
-          "id": "B",
-          "text": "Every candidates are prepared."
-        },
-        {
-          "id": "C",
-          "text": "The students both are ready."
-        },
-        {
-          "id": "D",
-          "text": "Whom works hard every day?"
-        }
-      ],
-      "answer": "A",
-      "explanation": "Every candidate is prepared. follows the construction taught in the Day 1 lesson. The lesson stresses singular agreement with Every.",
-      "importantPoint": "Every + singular noun + singular agreement in the taught framework.",
-      "examTrap": "A plural noun/verb pair is the trap."
-    },
-    {
-      "id": "BG10",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Every candidates are prepared."
-        },
-        {
-          "id": "B",
-          "text": "Every candidate is prepared."
-        },
-        {
-          "id": "C",
-          "text": "Who called you yesterday?"
-        },
-        {
-          "id": "D",
-          "text": "Both my books are open."
-        }
-      ],
-      "answer": "A",
-      "explanation": "Every candidates are prepared. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson stresses singular agreement with Every.",
-      "importantPoint": "Every + singular noun + singular agreement in the taught framework.",
-      "examTrap": "A plural noun/verb pair is the trap."
-    },
-    {
-      "id": "BG11",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Each candidate is prepared."
-        },
-        {
-          "id": "B",
-          "text": "Each candidates are prepared."
-        },
-        {
-          "id": "C",
-          "text": "The students both are ready."
-        },
-        {
-          "id": "D",
-          "text": "Whom works hard every day?"
-        }
-      ],
-      "answer": "A",
-      "explanation": "Each candidate is prepared. follows the construction taught in the Day 1 lesson. The lesson stresses singular agreement with Each.",
-      "importantPoint": "Each + singular agreement in the taught framework.",
-      "examTrap": "Do not let the idea of a group force a plural verb."
-    },
-    {
-      "id": "BG12",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Each candidates are prepared."
-        },
-        {
-          "id": "B",
-          "text": "Each candidate is prepared."
-        },
-        {
-          "id": "C",
-          "text": "Who called you yesterday?"
-        },
-        {
-          "id": "D",
-          "text": "Both my books are open."
-        }
-      ],
-      "answer": "A",
-      "explanation": "Each candidates are prepared. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson stresses singular agreement with Each.",
-      "importantPoint": "Each + singular agreement in the taught framework.",
-      "examTrap": "Do not let the idea of a group force a plural verb."
-    },
-    {
-      "id": "BG13",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Each of my books is useful."
-        },
-        {
-          "id": "B",
-          "text": "Each of my book is useful."
-        },
-        {
-          "id": "C",
-          "text": "The students both are ready."
-        },
-        {
-          "id": "D",
-          "text": "Whom works hard every day?"
-        }
-      ],
-      "answer": "A",
-      "explanation": "Each of my books is useful. follows the construction taught in the Day 1 lesson. The lesson’s each-of pattern uses a plural noun after of.",
-      "importantPoint": "Each of + plural noun + singular verb.",
-      "examTrap": "The noun after “of” is plural in the taught construction."
-    },
-    {
-      "id": "BG14",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Each of my book is useful."
-        },
-        {
-          "id": "B",
-          "text": "Each of my books is useful."
-        },
-        {
-          "id": "C",
-          "text": "Who called you yesterday?"
-        },
-        {
-          "id": "D",
-          "text": "Both my books are open."
-        }
-      ],
-      "answer": "A",
-      "explanation": "Each of my book is useful. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson’s each-of pattern uses a plural noun after of.",
-      "importantPoint": "Each of + plural noun + singular verb.",
-      "examTrap": "The noun after “of” is plural in the taught construction."
-    },
-    {
-      "id": "BG15",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Every student is working."
-        },
-        {
-          "id": "B",
-          "text": "Every students are working."
-        },
-        {
-          "id": "C",
-          "text": "The students both are ready."
-        },
-        {
-          "id": "D",
-          "text": "Whom works hard every day?"
-        }
-      ],
-      "answer": "A",
-      "explanation": "Every student is working. follows the construction taught in the Day 1 lesson. The direct Every construction uses a singular noun and singular agreement.",
+      "explanation": "“Every” is followed by a singular countable noun and takes a singular verb.",
       "importantPoint": "Every + singular noun + singular verb.",
-      "examTrap": "Plural noun after Every is a common trap."
+      "examTrap": "Do not use a plural noun immediately after “every”.",
+      "hint": "Check the noun after “every”."
     },
     {
-      "id": "BG16",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG003",
+      "question": "Choose the grammatically correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Every students are working."
+          "text": "Both the proposals are technically feasible."
         },
         {
           "id": "B",
-          "text": "Every student is working."
+          "text": "Both the proposal is technically feasible."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "Both the proposals is technically feasible."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "Both of proposal are technically feasible."
         }
       ],
       "answer": "A",
-      "explanation": "Every students are working. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The direct Every construction uses a singular noun and singular agreement.",
-      "importantPoint": "Every + singular noun + singular verb.",
-      "examTrap": "Plural noun after Every is a common trap."
+      "explanation": "“Both” refers to two entities and takes a plural noun and plural verb.",
+      "importantPoint": "Both + plural noun + plural verb.",
+      "examTrap": "“Both” does not take a singular verb when it is the subject.",
+      "hint": "Look at subject number."
     },
     {
-      "id": "BG17",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG004",
+      "question": "Choose the grammatically correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Both A and B are correct."
+          "text": "Both of the applicants were shortlisted."
         },
         {
           "id": "B",
-          "text": "Both A as well as B are correct."
+          "text": "Both of the applicant was shortlisted."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "Both of applicants was shortlisted."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "Both applicants was shortlisted."
         }
       ],
       "answer": "A",
-      "explanation": "Both A and B are correct. follows the construction taught in the Day 1 lesson. Rule 2 teaches Both with and and rejects the as-well-as pairing in the lesson.",
-      "importantPoint": "Both → and in the taught construction.",
-      "examTrap": "Do not combine Both with as well as."
+      "explanation": "“Both of the applicants” is a correct plural construction and takes “were”.",
+      "importantPoint": "Both of + plural noun → plural verb.",
+      "examTrap": "The noun after “of” must be plural in this construction.",
+      "hint": "Check the noun and verb together."
     },
     {
-      "id": "BG18",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG005",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Both A as well as B are correct."
+          "text": "The manager spoke to Ravi and me."
         },
         {
           "id": "B",
-          "text": "Both A and B are correct."
+          "text": "The manager spoke to Ravi and I."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "The manager spoke to Ravi and myself."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "The manager spoke to Ravi and mine."
         }
       ],
       "answer": "A",
-      "explanation": "Both A as well as B are correct. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. Rule 2 teaches Both with and and rejects the as-well-as pairing in the lesson.",
-      "importantPoint": "Both → and in the taught construction.",
-      "examTrap": "Do not combine Both with as well as."
+      "explanation": "After the preposition “to”, the objective pronoun “me” is required.",
+      "importantPoint": "Object after a preposition: me, him, her, us, them.",
+      "examTrap": "“I” is a subject form, not the object of “to”.",
+      "hint": "Remove “Ravi and” and test the pronoun."
     },
     {
-      "id": "BG19",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG006",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Neither A nor B is coming."
+          "text": "Whom did you invite to the meeting?"
         },
         {
           "id": "B",
-          "text": "Both A nor B is coming."
+          "text": "Who did you invite to the meeting?"
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "Whom invited you to the meeting?"
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "Who did you invited to the meeting?"
         }
       ],
       "answer": "A",
-      "explanation": "Neither A nor B is coming. follows the construction taught in the Day 1 lesson. The lesson contrasts Both with the negative neither...nor construction.",
-      "importantPoint": "Neither...nor is the negative pair taught.",
-      "examTrap": "Do not create a hybrid Both...nor construction."
+      "explanation": "“Whom” is used as the object of the verb “invite”.",
+      "importantPoint": "Who = subject; whom = object in formal usage.",
+      "examTrap": "Do not choose “who” merely because it is more common in speech.",
+      "hint": "Ask: whom did you invite?"
     },
     {
-      "id": "BG20",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG007",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Both A nor B is coming."
+          "text": "Who is responsible for preparing the report?"
         },
         {
           "id": "B",
-          "text": "Neither A nor B is coming."
+          "text": "Whom is responsible for preparing the report?"
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "Who are responsible for preparing the report?"
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "Whom are responsible for preparing the report?"
         }
       ],
       "answer": "A",
-      "explanation": "Both A nor B is coming. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson contrasts Both with the negative neither...nor construction.",
-      "importantPoint": "Neither...nor is the negative pair taught.",
-      "examTrap": "Do not create a hybrid Both...nor construction."
+      "explanation": "“Who” is the subject of “is responsible”.",
+      "importantPoint": "Who functions as subject here.",
+      "examTrap": "“Whom” is objective case and cannot be the subject in this sentence.",
+      "hint": "Identify who performs the action/state."
     },
     {
-      "id": "BG21",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG008",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Both my students are ready."
+          "text": "To whom did the officer address the letter?"
         },
         {
           "id": "B",
-          "text": "My both students are ready."
+          "text": "To who did the officer address the letter?"
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "Whom did the officer addressed the letter?"
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "Who did the officer address to the letter?"
         }
       ],
       "answer": "A",
-      "explanation": "Both my students are ready. follows the construction taught in the Day 1 lesson. The lesson explicitly places the possessive adjective after Both.",
-      "importantPoint": "Both + possessive adjective + noun.",
-      "examTrap": "The position of “my” is the trap."
+      "explanation": "After the preposition “to”, the formal objective form “whom” is used.",
+      "importantPoint": "Preposition + whom in formal grammar.",
+      "examTrap": "The verb after “did” must remain in base form.",
+      "hint": "Check both the preposition and verb form."
     },
     {
-      "id": "BG22",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG009",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "My both students are ready."
+          "text": "Neither of the two answers is correct."
         },
         {
           "id": "B",
-          "text": "Both my students are ready."
+          "text": "Neither of the two answers are correct."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "Neither of the two answer is correct."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "Neither of two answers are correct."
         }
       ],
       "answer": "A",
-      "explanation": "My both students are ready. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson explicitly places the possessive adjective after Both.",
-      "importantPoint": "Both + possessive adjective + noun.",
-      "examTrap": "The position of “my” is the trap."
+      "explanation": "“Neither” is singular in standard formal usage and takes “is”.",
+      "importantPoint": "Neither of + plural noun → singular verb.",
+      "examTrap": "The plural noun after “of” does not make the verb plural.",
+      "hint": "Identify the head word of the subject."
     },
     {
-      "id": "BG23",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG010",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Both my books are open."
+          "text": "Either of the routes is acceptable."
         },
         {
           "id": "B",
-          "text": "My both books are open."
+          "text": "Either of the routes are acceptable."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "Either of the route are acceptable."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "Either routes is acceptable."
         }
       ],
       "answer": "A",
-      "explanation": "Both my books are open. follows the construction taught in the Day 1 lesson. The lesson’s possessive example uses both my, not my both.",
-      "importantPoint": "Possessive adjective follows Both.",
-      "examTrap": "Do not move the possessive adjective before Both."
+      "explanation": "“Either” is singular and takes “is” in this construction.",
+      "importantPoint": "Either of + plural noun → singular verb.",
+      "examTrap": "Do not let the nearby plural noun control the verb.",
+      "hint": "Focus on “either”."
     },
     {
-      "id": "BG24",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG011",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "My both books are open."
+          "text": "One of the applicants has cleared the test."
         },
         {
           "id": "B",
-          "text": "Both my books are open."
+          "text": "One of the applicants have cleared the test."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "One of the applicant has cleared the test."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "One of applicants have cleared the test."
         }
       ],
       "answer": "A",
-      "explanation": "My both books are open. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson’s possessive example uses both my, not my both.",
-      "importantPoint": "Possessive adjective follows Both.",
-      "examTrap": "Do not move the possessive adjective before Both."
+      "explanation": "The head word is “one”, so the verb is singular.",
+      "importantPoint": "One of + plural noun → singular verb.",
+      "examTrap": "The plural noun “applicants” does not control agreement.",
+      "hint": "Identify the head word “one”."
     },
     {
-      "id": "BG25",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG012",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Both the candidates are ready."
+          "text": "A number of students have registered for the course."
         },
         {
           "id": "B",
-          "text": "The both candidates are ready."
+          "text": "A number of students has registered for the course."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "A number of student have registered for the course."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "A number students has registered for the course."
         }
       ],
       "answer": "A",
-      "explanation": "Both the candidates are ready. follows the construction taught in the Day 1 lesson. The lesson teaches the ordering with Both before the possessive/determiner construction it illustrates.",
-      "importantPoint": "Keep Both in the taught position.",
-      "examTrap": "Watch the placement of the determiner/possessive."
+      "explanation": "“A number of” means several and takes a plural noun and plural verb.",
+      "importantPoint": "A number of + plural noun → plural verb.",
+      "examTrap": "Do not confuse it with “the number of”.",
+      "hint": "Compare “a number of” with “the number of”."
     },
     {
-      "id": "BG26",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG013",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "The both candidates are ready."
+          "text": "The number of students has increased this year."
         },
         {
           "id": "B",
-          "text": "Both the candidates are ready."
+          "text": "The number of students have increased this year."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "The number of student have increased this year."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "The numbers of students has increased this year."
         }
       ],
       "answer": "A",
-      "explanation": "The both candidates are ready. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson teaches the ordering with Both before the possessive/determiner construction it illustrates.",
-      "importantPoint": "Keep Both in the taught position.",
-      "examTrap": "Watch the placement of the determiner/possessive."
+      "explanation": "“The number” is singular and therefore takes “has”.",
+      "importantPoint": "The number of + plural noun → singular verb.",
+      "examTrap": "This is different from “a number of”.",
+      "hint": "Identify whether the phrase begins with “the number”."
     },
     {
-      "id": "BG27",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG014",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Both students are ready."
+          "text": "Each boy and each girl was given a certificate."
         },
         {
           "id": "B",
-          "text": "Both students is ready."
+          "text": "Each boy and each girl were given a certificate."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "Each boy and each girl have given a certificate."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "Each boy and each girl are given a certificate."
         }
       ],
       "answer": "A",
-      "explanation": "Both students are ready. follows the construction taught in the Day 1 lesson. The plural subject in the Both construction takes the plural agreement shown in the sentence.",
-      "importantPoint": "Both refers to two and the subject is plural.",
-      "examTrap": "Do not use singular agreement with a plural Both subject."
+      "explanation": "When “each” individually modifies the two subjects, the construction takes singular agreement.",
+      "importantPoint": "Each + singular subject → singular agreement.",
+      "examTrap": "Do not automatically use a plural verb because there are two noun phrases.",
+      "hint": "Look at the repeated “each”."
     },
     {
-      "id": "BG28",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG015",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Both students is ready."
+          "text": "Every one of the machines is operational."
         },
         {
           "id": "B",
-          "text": "Both students are ready."
+          "text": "Every one of the machines are operational."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "Every one of the machine are operational."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "Every one machines is operational."
         }
       ],
       "answer": "A",
-      "explanation": "Both students is ready. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The plural subject in the Both construction takes the plural agreement shown in the sentence.",
-      "importantPoint": "Both refers to two and the subject is plural.",
-      "examTrap": "Do not use singular agreement with a plural Both subject."
+      "explanation": "“Every one” is singular and takes “is”.",
+      "importantPoint": "Every one of + plural noun → singular verb.",
+      "examTrap": "“Every one” is not the same as “everyone” in meaning or grammar.",
+      "hint": "Focus on “every one”."
     },
     {
-      "id": "BG29",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG016",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Who called you?"
+          "text": "Everyone in the department has completed the training."
         },
         {
           "id": "B",
-          "text": "Whom called you?"
+          "text": "Everyone in the department have completed the training."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "Everyone in department have completed training."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "Everyone in the departments has complete the training."
         }
       ],
       "answer": "A",
-      "explanation": "Who called you? follows the construction taught in the Day 1 lesson. Rule 3 distinguishes Who as subjective and Whom as objective.",
-      "importantPoint": "Who → subject; Whom → object.",
-      "examTrap": "Do not decide by question form alone."
+      "explanation": "“Everyone” is an indefinite pronoun that takes a singular verb.",
+      "importantPoint": "Everyone → singular verb.",
+      "examTrap": "The meaning may refer to many people, but grammatical number is singular.",
+      "hint": "Check the pronoun’s grammatical number."
     },
     {
-      "id": "BG30",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG017",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Whom called you?"
+          "text": "Both of them are ready for the interview."
         },
         {
           "id": "B",
-          "text": "Who called you?"
+          "text": "Both of them is ready for the interview."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "Both of they are ready for the interview."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "Both them are ready for the interview."
         }
       ],
       "answer": "A",
-      "explanation": "Whom called you? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. Rule 3 distinguishes Who as subjective and Whom as objective.",
-      "importantPoint": "Who → subject; Whom → object.",
-      "examTrap": "Do not decide by question form alone."
+      "explanation": "“Both of them” is the correct plural construction.",
+      "importantPoint": "Both of + object pronoun.",
+      "examTrap": "“They” cannot follow “of” in this construction.",
+      "hint": "Check the pronoun case after “of”."
     },
     {
-      "id": "BG31",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG018",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Whom did you meet?"
+          "text": "It was he who prepared the report."
         },
         {
           "id": "B",
-          "text": "Who did you meet?"
+          "text": "It was him who prepared the report."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "It was he whom prepared the report."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "It was him which prepared the report."
         }
       ],
       "answer": "A",
-      "explanation": "Whom did you meet? follows the construction taught in the Day 1 lesson. In the lesson’s framework, Whom is used for the object of the verb meet.",
-      "importantPoint": "Whom → objective role.",
-      "examTrap": "The object can appear at the beginning of a question."
+      "explanation": "In formal traditional grammar, the complement after “It was” is “he”, and “who” is the subject of “prepared”.",
+      "importantPoint": "Formal exam grammar may require subject-form pronouns after linking verbs.",
+      "examTrap": "“Whom” cannot be the subject of “prepared”.",
+      "hint": "Check the role of “who” in the relative clause."
     },
     {
-      "id": "BG32",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG019",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Who did you meet?"
+          "text": "Whoever completes the task first will receive the certificate."
         },
         {
           "id": "B",
-          "text": "Whom did you meet?"
+          "text": "Whomever completes the task first will receive the certificate."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "Whoever complete the task first will receive the certificate."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "Whomsoever completes the task first will receive the certificate."
         }
       ],
       "answer": "A",
-      "explanation": "Who did you meet? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. In the lesson’s framework, Whom is used for the object of the verb meet.",
-      "importantPoint": "Whom → objective role.",
-      "examTrap": "The object can appear at the beginning of a question."
+      "explanation": "“Whoever” is the subject of “completes” and therefore is appropriate.",
+      "importantPoint": "Whoever can function as a subject; whomever is objective.",
+      "examTrap": "Do not choose “whomever” merely because the sentence is formal.",
+      "hint": "Identify who performs “completes”."
     },
     {
-      "id": "BG33",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG020",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "God likes whom?"
+          "text": "The candidate whom the panel selected accepted the offer."
         },
         {
           "id": "B",
-          "text": "God likes who?"
+          "text": "The candidate who the panel selected accepted the offer."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "The candidate whom selected the panel accepted the offer."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "The candidate who the panel selected accepted the offers."
         }
       ],
       "answer": "A",
-      "explanation": "God likes whom? follows the construction taught in the Day 1 lesson. The pronoun is the object of likes in the lesson’s subject/object framework.",
-      "importantPoint": "Object role → Whom.",
-      "examTrap": "Check grammatical role, not just whether the person is human."
+      "explanation": "“Whom” is the object of “selected”: the panel selected whom.",
+      "importantPoint": "Relative pronoun as object → whom in formal usage.",
+      "examTrap": "“Who” is common in informal usage, but exam grammar may test formal case.",
+      "hint": "Ask: the panel selected whom?"
     },
     {
-      "id": "BG34",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG021",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "God likes who?"
+          "text": "The officer who approved the request is on leave."
         },
         {
           "id": "B",
-          "text": "God likes whom?"
+          "text": "The officer whom approved the request is on leave."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "The officer who the request approved is on leave."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "The officer whom the request approved is on leave."
         }
       ],
       "answer": "A",
-      "explanation": "God likes who? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The pronoun is the object of likes in the lesson’s subject/object framework.",
-      "importantPoint": "Object role → Whom.",
-      "examTrap": "Check grammatical role, not just whether the person is human."
+      "explanation": "“Who” is the subject of “approved”: the officer approved the request.",
+      "importantPoint": "Relative pronoun as subject → who.",
+      "examTrap": "Do not use “whom” when the pronoun performs the action.",
+      "hint": "Ask: who approved the request?"
     },
     {
-      "id": "BG35",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG022",
+      "question": "Identify the grammatically correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Who works very hard?"
+          "text": "Each of the files has been reviewed carefully."
         },
         {
           "id": "B",
-          "text": "Whom works very hard?"
+          "text": "Each of the files have been reviewed carefully."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "Each of the file has been reviewed carefully."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "Each files have been reviewed carefully."
         }
       ],
       "answer": "A",
-      "explanation": "Who works very hard? follows the construction taught in the Day 1 lesson. Who is the subject performing the action.",
-      "importantPoint": "Subject role → Who.",
-      "examTrap": "Do not treat every question pronoun as Whom."
+      "explanation": "“Each” is singular and takes “has”; “files” is plural after “of”.",
+      "importantPoint": "Each of + plural noun → singular verb.",
+      "examTrap": "Do not make the verb agree with “files”.",
+      "hint": "Find the head word of the subject."
     },
     {
-      "id": "BG36",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG023",
+      "question": "Identify the grammatically correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Whom works very hard?"
+          "text": "Every student and every teacher was informed."
         },
         {
           "id": "B",
-          "text": "Who works very hard?"
+          "text": "Every student and every teacher were informed."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "Every students and every teacher was informed."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "Every student and every teacher have informed."
         }
       ],
       "answer": "A",
-      "explanation": "Whom works very hard? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. Who is the subject performing the action.",
-      "importantPoint": "Subject role → Who.",
-      "examTrap": "Do not treat every question pronoun as Whom."
+      "explanation": "Each singular subject introduced by “every” supports singular agreement in this coordinated construction.",
+      "importantPoint": "Every + singular noun.",
+      "examTrap": "The presence of two subjects does not automatically require “were” here.",
+      "hint": "Look at the form after each “every”."
     },
     {
-      "id": "BG37",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG024",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "She met whom yesterday."
+          "text": "Neither the manager nor the assistants were available."
         },
         {
           "id": "B",
-          "text": "She met who yesterday."
+          "text": "Neither the manager nor the assistants was available."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "Neither the manager nor the assistants is available."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "Neither the manager nor the assistants has available."
         }
       ],
       "answer": "A",
-      "explanation": "She met whom yesterday. follows the construction taught in the Day 1 lesson. The pronoun is the object of met.",
-      "importantPoint": "Object role → Whom.",
-      "examTrap": "The verb-object relationship decides the form."
+      "explanation": "With “neither...nor”, the verb commonly agrees with the nearer subject; “assistants” is plural, so “were” is appropriate.",
+      "importantPoint": "Neither...nor → verb agreement follows the nearer subject in standard usage.",
+      "examTrap": "Do not automatically make the verb singular because of “neither”.",
+      "hint": "Check the subject nearest to the verb."
     },
     {
-      "id": "BG38",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG025",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "She met who yesterday."
+          "text": "Neither the assistants nor the manager was available."
         },
         {
           "id": "B",
-          "text": "She met whom yesterday."
+          "text": "Neither the assistants nor the manager were available."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "Neither the assistants nor the manager are available."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "Neither assistants nor manager have available."
         }
       ],
       "answer": "A",
-      "explanation": "She met who yesterday. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The pronoun is the object of met.",
-      "importantPoint": "Object role → Whom.",
-      "examTrap": "The verb-object relationship decides the form."
+      "explanation": "The nearer subject is singular “manager”, so “was” is appropriate.",
+      "importantPoint": "Neither...nor → agreement with the nearer subject.",
+      "examTrap": "Changing subject order can change the verb form.",
+      "hint": "Look at the noun closest to the verb."
     },
     {
-      "id": "BG39",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG026",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Who is ready?"
+          "text": "Either the manager or the assistants are responsible."
         },
         {
           "id": "B",
-          "text": "Whom is ready?"
+          "text": "Either the manager or the assistants is responsible."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "Either the manager or the assistants was responsible."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "Either manager or assistants has responsible."
         }
       ],
       "answer": "A",
-      "explanation": "Who is ready? follows the construction taught in the Day 1 lesson. Who functions as the subject of is.",
-      "importantPoint": "Subject role → Who.",
-      "examTrap": "Whom is not the subject form taught in the lesson."
+      "explanation": "With “either...or”, the verb agrees with the nearer subject “assistants”.",
+      "importantPoint": "Either...or → agreement with the nearer subject.",
+      "examTrap": "Do not always use singular agreement after “either”.",
+      "hint": "Check the nearer subject."
     },
     {
-      "id": "BG40",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG027",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Whom is ready?"
+          "text": "Either the assistants or the manager is responsible."
         },
         {
           "id": "B",
-          "text": "Who is ready?"
+          "text": "Either the assistants or the manager are responsible."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "Either the assistants or the manager have responsible."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "Either assistants or manager were responsible."
         }
       ],
       "answer": "A",
-      "explanation": "Whom is ready? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. Who functions as the subject of is.",
-      "importantPoint": "Subject role → Who.",
-      "examTrap": "Whom is not the subject form taught in the lesson."
+      "explanation": "The nearer subject is singular “manager”, so “is” is appropriate.",
+      "importantPoint": "Either...or → nearer-subject agreement.",
+      "examTrap": "Subject order matters for agreement.",
+      "hint": "Look immediately before the verb."
     },
     {
-      "id": "BG41",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG028",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "I met whom yesterday."
+          "text": "The quality of these products is excellent."
         },
         {
           "id": "B",
-          "text": "I met who yesterday."
+          "text": "The quality of these products are excellent."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "The qualities of these products is excellent."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "The quality these products are excellent."
         }
       ],
       "answer": "A",
-      "explanation": "I met whom yesterday. follows the construction taught in the Day 1 lesson. The pronoun is the object of met.",
-      "importantPoint": "Whom → object.",
-      "examTrap": "Look for the verb whose object the pronoun represents."
+      "explanation": "The head noun is singular “quality”, so the verb is “is”.",
+      "importantPoint": "Prepositional phrases do not change the number of the head noun.",
+      "examTrap": "Do not make the verb agree with the plural noun “products”.",
+      "hint": "Find the main noun before “of”."
     },
     {
-      "id": "BG42",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG029",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "I met who yesterday."
+          "text": "The list of shortlisted candidates is on the desk."
         },
         {
           "id": "B",
-          "text": "I met whom yesterday."
+          "text": "The list of shortlisted candidates are on the desk."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "The lists of shortlisted candidates is on the desk."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "The list shortlisted candidates are on the desk."
         }
       ],
       "answer": "A",
-      "explanation": "I met who yesterday. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The pronoun is the object of met.",
-      "importantPoint": "Whom → object.",
-      "examTrap": "Look for the verb whose object the pronoun represents."
+      "explanation": "The head noun “list” is singular and takes “is”.",
+      "importantPoint": "Head noun controls agreement.",
+      "examTrap": "The plural noun “candidates” is inside an “of” phrase.",
+      "hint": "Ignore the intervening plural noun and find the head."
     },
     {
-      "id": "BG43",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG030",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Who works hard?"
+          "text": "More than one candidate has qualified."
         },
         {
           "id": "B",
-          "text": "Whom works hard?"
+          "text": "More than one candidate have qualified."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "More than one candidates has qualified."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "More than one candidate are qualified."
         }
       ],
       "answer": "A",
-      "explanation": "Who works hard? follows the construction taught in the Day 1 lesson. Who is doing the action.",
-      "importantPoint": "Who → subject.",
-      "examTrap": "The meaning “person” alone does not decide the form."
+      "explanation": "“More than one” generally takes a singular noun and singular verb in standard exam grammar.",
+      "importantPoint": "More than one + singular noun + singular verb.",
+      "examTrap": "Do not treat the phrase as a normal plural expression.",
+      "hint": "Recall the fixed agreement pattern."
     },
     {
-      "id": "BG44",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG031",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Whom works hard?"
+          "text": "Many a student has made this mistake."
         },
         {
           "id": "B",
-          "text": "Who works hard?"
+          "text": "Many a student have made this mistake."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "Many a students has made this mistake."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "Many students has made this mistake."
         }
       ],
       "answer": "A",
-      "explanation": "Whom works hard? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. Who is doing the action.",
-      "importantPoint": "Who → subject.",
-      "examTrap": "The meaning “person” alone does not decide the form."
+      "explanation": "“Many a” takes a singular noun and singular verb.",
+      "importantPoint": "Many a + singular noun + singular verb.",
+      "examTrap": "Do not use a plural noun after “many a”.",
+      "hint": "Recognise the fixed construction."
     },
     {
-      "id": "BG45",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG032",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Whom did they meet?"
+          "text": "There are several reasons for the delay."
         },
         {
           "id": "B",
-          "text": "Who did they meet?"
+          "text": "There is several reasons for the delay."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "There are a reason for the delay."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "There is several reason for the delay."
         }
       ],
       "answer": "A",
-      "explanation": "Whom did they meet? follows the construction taught in the Day 1 lesson. Whom is the object of meet even though it appears first.",
-      "importantPoint": "Front position does not change grammatical role.",
-      "examTrap": "This is a classic Who/Whom exam trap."
+      "explanation": "The real subject “several reasons” is plural, so “are” is required.",
+      "importantPoint": "In existential constructions, agreement follows the notional subject.",
+      "examTrap": "Do not let “there” determine the verb number.",
+      "hint": "Identify what actually exists."
     },
     {
-      "id": "BG46",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG033",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Who did they meet?"
+          "text": "There is a problem with the server."
         },
         {
           "id": "B",
-          "text": "Whom did they meet?"
+          "text": "There are a problem with the server."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "There is problems with the server."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "There are problem with the server."
         }
       ],
       "answer": "A",
-      "explanation": "Who did they meet? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. Whom is the object of meet even though it appears first.",
-      "importantPoint": "Front position does not change grammatical role.",
-      "examTrap": "This is a classic Who/Whom exam trap."
+      "explanation": "The real subject “a problem” is singular, so “is” is required.",
+      "importantPoint": "There is + singular noun.",
+      "examTrap": "“There” itself has no number for agreement.",
+      "hint": "Look at the noun after the verb."
     },
     {
-      "id": "BG47",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG034",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Who called and whom did you meet?"
+          "text": "The news is encouraging."
         },
         {
           "id": "B",
-          "text": "Whom called and who did you meet?"
+          "text": "The news are encouraging."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "The news were encouraging."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "The news have encouraging."
         }
       ],
       "answer": "A",
-      "explanation": "Who called and whom did you meet? follows the construction taught in the Day 1 lesson. The two pronouns have different roles: Who is subject of called; Whom is object of meet.",
-      "importantPoint": "Judge each pronoun by its own grammatical role.",
-      "examTrap": "One sentence can legitimately contain both forms."
+      "explanation": "“News” is grammatically singular despite ending in “s”.",
+      "importantPoint": "News → singular noun.",
+      "examTrap": "Do not infer plural agreement from the final “s”.",
+      "hint": "Check whether “news” is countable in this use."
     },
     {
-      "id": "BG48",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG035",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Whom called and who did you meet?"
+          "text": "Mathematics is an important subject for the exam."
         },
         {
           "id": "B",
-          "text": "Who called and whom did you meet?"
+          "text": "Mathematics are an important subject for the exam."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "Mathematics have an important subject for the exam."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "Mathematics were an important subject for the exam."
         }
       ],
       "answer": "A",
-      "explanation": "Whom called and who did you meet? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The two pronouns have different roles: Who is subject of called; Whom is object of meet.",
-      "importantPoint": "Judge each pronoun by its own grammatical role.",
-      "examTrap": "One sentence can legitimately contain both forms."
+      "explanation": "“Mathematics” is singular when referring to the academic subject.",
+      "importantPoint": "Names of academic subjects ending in -s often take singular verbs.",
+      "examTrap": "The spelling does not determine grammatical number by itself.",
+      "hint": "Treat the subject name as one field of study."
     },
     {
-      "id": "BG49",
-      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "id": "BG036",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Each of my students is ready, and both my books are open."
+          "text": "The police have arrested the suspect."
         },
         {
           "id": "B",
-          "text": "Each my students are ready, and my both books are open."
+          "text": "The police has arrested the suspect."
         },
         {
           "id": "C",
-          "text": "The students both are ready."
+          "text": "The police is arrested the suspect."
         },
         {
           "id": "D",
-          "text": "Whom works hard every day?"
+          "text": "The police was arrested the suspect."
         }
       ],
       "answer": "A",
-      "explanation": "Each of my students is ready, and both my books are open. follows the construction taught in the Day 1 lesson. The sentence combines the R01 each-of/singular pattern with the R02 possessive-after-Both pattern.",
-      "importantPoint": "R01: each of + plural noun + singular verb; R02: both + possessive.",
-      "examTrap": "Check both rules independently."
+      "explanation": "“Police” is generally treated as a plural noun when referring to police officers collectively.",
+      "importantPoint": "Police → plural agreement in standard usage.",
+      "examTrap": "Do not use “polices” or singular agreement in this meaning.",
+      "hint": "Consider whether the noun refers to officers as a group."
     },
     {
-      "id": "BG50",
-      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "id": "BG037",
+      "question": "Choose the correct sentence.",
       "options": [
         {
           "id": "A",
-          "text": "Each my students are ready, and my both books are open."
+          "text": "The committee has submitted its report."
         },
         {
           "id": "B",
-          "text": "Each of my students is ready, and both my books are open."
+          "text": "The committee have submitted its report."
         },
         {
           "id": "C",
-          "text": "Who called you yesterday?"
+          "text": "The committee has submitted their report."
         },
         {
           "id": "D",
-          "text": "Both my books are open."
+          "text": "The committee were submitted its report."
         }
       ],
       "answer": "A",
-      "explanation": "Each my students are ready, and my both books are open. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The sentence combines the R01 each-of/singular pattern with the R02 possessive-after-Both pattern.",
-      "importantPoint": "R01: each of + plural noun + singular verb; R02: both + possessive.",
-      "examTrap": "Check both rules independently."
+      "explanation": "In formal singular collective-noun usage, “committee” takes “has” and the singular possessive “its”.",
+      "importantPoint": "Singular collective noun → singular agreement when acting as a unit.",
+      "examTrap": "Do not mix singular verb with plural possessive in a formal exam sentence.",
+      "hint": "Treat the committee as one unit here."
+    },
+    {
+      "id": "BG038",
+      "question": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "A",
+          "text": "The committee have disagreed among themselves."
+        },
+        {
+          "id": "B",
+          "text": "The committee has disagreed among themselves."
+        },
+        {
+          "id": "C",
+          "text": "The committee have disagreed among itself."
+        },
+        {
+          "id": "D",
+          "text": "The committee has disagreed among itself."
+        }
+      ],
+      "answer": "A",
+      "explanation": "When members act individually, a collective noun can take plural agreement in British-style usage; “themselves” supports the plural sense.",
+      "importantPoint": "Collective nouns may take plural agreement when members act separately.",
+      "examTrap": "Agreement depends on whether the group acts as a unit or individuals.",
+      "hint": "Look for “among themselves”."
+    },
+    {
+      "id": "BG039",
+      "question": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "A",
+          "text": "I am one of those employees who work overtime."
+        },
+        {
+          "id": "B",
+          "text": "I am one of those employees who works overtime."
+        },
+        {
+          "id": "C",
+          "text": "I am one of those employee who work overtime."
+        },
+        {
+          "id": "D",
+          "text": "I am one those employees who works overtime."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The relative pronoun “who” refers to plural “employees”, so “work” is appropriate.",
+      "importantPoint": "Relative-pronoun agreement depends on its antecedent.",
+      "examTrap": "Do not automatically make “who” singular because the sentence begins with “I”.",
+      "hint": "Find the noun immediately governing “who”."
+    },
+    {
+      "id": "BG040",
+      "question": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "A",
+          "text": "She is the only one of the candidates who has cleared the interview."
+        },
+        {
+          "id": "B",
+          "text": "She is the only one of the candidates who have cleared the interview."
+        },
+        {
+          "id": "C",
+          "text": "She is the only one of candidates who have cleared the interview."
+        },
+        {
+          "id": "D",
+          "text": "She is only one of the candidates who has clear the interview."
+        }
+      ],
+      "answer": "A",
+      "explanation": "“Who” refers to “the only one”, which is singular, so “has” is appropriate.",
+      "importantPoint": "Only one of + plural noun → relative clause may take singular agreement when “who” refers to one.",
+      "examTrap": "Distinguish “one of” from “the only one of”.",
+      "hint": "Identify the antecedent of “who”."
+    },
+    {
+      "id": "BG041",
+      "question": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Neither of them knows the answer."
+        },
+        {
+          "id": "B",
+          "text": "Neither of them know the answer."
+        },
+        {
+          "id": "C",
+          "text": "Neither them knows the answer."
+        },
+        {
+          "id": "D",
+          "text": "Neither of they knows the answer."
+        }
+      ],
+      "answer": "A",
+      "explanation": "“Neither” is singular in formal grammar and takes “knows”; “them” is the object form after “of”.",
+      "importantPoint": "Neither of + object pronoun + singular verb.",
+      "examTrap": "Do not use “they” after “of”.",
+      "hint": "Check pronoun case and subject number."
+    },
+    {
+      "id": "BG042",
+      "question": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whom did the interviewer select for the final round?"
+        },
+        {
+          "id": "B",
+          "text": "Who did the interviewer selected for the final round?"
+        },
+        {
+          "id": "C",
+          "text": "Whom did the interviewer selected for the final round?"
+        },
+        {
+          "id": "D",
+          "text": "Who did the interviewer select for the final round?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In formal grammar, “whom” is the object of “select”, and “did” requires the base verb “select”.",
+      "importantPoint": "Whom = object; did + base verb.",
+      "examTrap": "There are two traps: pronoun case and verb form after “did”.",
+      "hint": "Check both the pronoun’s role and the auxiliary."
+    },
+    {
+      "id": "BG043",
+      "question": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Who did you say was responsible for the error?"
+        },
+        {
+          "id": "B",
+          "text": "Whom did you say was responsible for the error?"
+        },
+        {
+          "id": "C",
+          "text": "Who did you said was responsible for the error?"
+        },
+        {
+          "id": "D",
+          "text": "Whom did you said was responsible for the error?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "“Who” is the subject of “was responsible”; “did you say” correctly uses the base verb “say”.",
+      "importantPoint": "Case is determined by the pronoun’s role in its clause.",
+      "examTrap": "Do not choose “whom” simply because “did” appears earlier.",
+      "hint": "Find the verb that the pronoun actually controls."
+    },
+    {
+      "id": "BG044",
+      "question": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "A",
+          "text": "To whom should I send the revised document?"
+        },
+        {
+          "id": "B",
+          "text": "To who should I send the revised document?"
+        },
+        {
+          "id": "C",
+          "text": "To whom should I sent the revised document?"
+        },
+        {
+          "id": "D",
+          "text": "To who should I sent the revised document?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "“Whom” follows the preposition “to”, and “should” is followed by the base verb “send”.",
+      "importantPoint": "Preposition + whom; modal + base verb.",
+      "examTrap": "Do not use “sent” after “should”.",
+      "hint": "Check both grammar points."
+    },
+    {
+      "id": "BG045",
+      "question": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both of the reports are accurate."
+        },
+        {
+          "id": "B",
+          "text": "Both of the reports is accurate."
+        },
+        {
+          "id": "C",
+          "text": "Both of the report are accurate."
+        },
+        {
+          "id": "D",
+          "text": "Both reports is accurate."
+        }
+      ],
+      "answer": "A",
+      "explanation": "“Both” takes a plural noun and plural verb.",
+      "importantPoint": "Both → plural agreement.",
+      "examTrap": "The singular “is” is not compatible with the plural subject.",
+      "hint": "Check the subject number."
+    },
+    {
+      "id": "BG046",
+      "question": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every one of these documents is confidential."
+        },
+        {
+          "id": "B",
+          "text": "Every one of these documents are confidential."
+        },
+        {
+          "id": "C",
+          "text": "Every one these documents is confidential."
+        },
+        {
+          "id": "D",
+          "text": "Every one of these document are confidential."
+        }
+      ],
+      "answer": "A",
+      "explanation": "“Every one” is singular and takes “is”; “documents” remains plural after “of”.",
+      "importantPoint": "Every one of + plural noun → singular verb.",
+      "examTrap": "Do not confuse “every one” with “everyone”.",
+      "hint": "Focus on the head phrase “every one”."
+    },
+    {
+      "id": "BG047",
+      "question": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Everyone who applies must provide valid identification."
+        },
+        {
+          "id": "B",
+          "text": "Everyone who applies must provides valid identification."
+        },
+        {
+          "id": "C",
+          "text": "Everyone who apply must provide valid identification."
+        },
+        {
+          "id": "D",
+          "text": "Everyone who applies must providing valid identification."
+        }
+      ],
+      "answer": "A",
+      "explanation": "“Everyone” is singular, “who applies” agrees with everyone, and modal “must” takes the base verb “provide”.",
+      "importantPoint": "Everyone + singular verb; modal + base verb.",
+      "examTrap": "There are two separate agreement/verb-form checks.",
+      "hint": "Check the relative clause and the modal."
+    },
+    {
+      "id": "BG048",
+      "question": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Each of the two proposals has a different risk profile."
+        },
+        {
+          "id": "B",
+          "text": "Each of the two proposals have a different risk profile."
+        },
+        {
+          "id": "C",
+          "text": "Each of the two proposal has a different risk profile."
+        },
+        {
+          "id": "D",
+          "text": "Each the two proposals has a different risk profile."
+        }
+      ],
+      "answer": "A",
+      "explanation": "“Each” is singular and takes “has”; “proposals” is plural after “of”.",
+      "importantPoint": "Each → singular agreement.",
+      "examTrap": "The presence of “two” does not make “each” plural.",
+      "hint": "Focus on the distributive meaning."
+    },
+    {
+      "id": "BG049",
+      "question": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "A",
+          "text": "The person whom I met yesterday was the branch manager."
+        },
+        {
+          "id": "B",
+          "text": "The person who I met yesterday were the branch manager."
+        },
+        {
+          "id": "C",
+          "text": "The person whom I meet yesterday was the branch manager."
+        },
+        {
+          "id": "D",
+          "text": "The person who I met yesterday were branch manager."
+        }
+      ],
+      "answer": "A",
+      "explanation": "“Whom” is the object of “met”, and the main subject “person” takes singular “was”.",
+      "importantPoint": "Relative object → whom; singular main subject → was.",
+      "examTrap": "Do not let “I” determine the main verb.",
+      "hint": "Identify the object of “met”."
+    },
+    {
+      "id": "BG050",
+      "question": "Choose the correct sentence.",
+      "options": [
+        {
+          "id": "A",
+          "text": "The applicants who submitted the forms on time were shortlisted."
+        },
+        {
+          "id": "B",
+          "text": "The applicants whom submitted the forms on time were shortlisted."
+        },
+        {
+          "id": "C",
+          "text": "The applicants who submitted the forms on time was shortlisted."
+        },
+        {
+          "id": "D",
+          "text": "The applicant who submitted the forms on time were shortlisted."
+        }
+      ],
+      "answer": "A",
+      "explanation": "“Who” is the subject of “submitted”, and plural “applicants” takes “were”.",
+      "importantPoint": "Who as subject; plural antecedent → plural verb.",
+      "examTrap": "“Whom” would be incorrect because the pronoun performs the action.",
+      "hint": "Ask: who submitted?"
     }
   ],
   "category": "English",
-  "topic": "Grammar",
-  "subtopic": "Grammar Rules 1–3",
-  "description": "Covers the first three grammar rules from the lesson: Each & Every, Both, and Who & Whom, with application-focused exam questions.",
+  "topic": "Grammar Rules 1–3",
+  "subtopic": "Grammar",
+  "description": "Grammar application covering agreement, each/every, both, neither/either, and who/whom in exam-style questions.",
   "part": 1
 }
