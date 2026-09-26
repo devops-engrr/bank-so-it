@@ -1,0 +1,1319 @@
+{
+  "version": 1,
+  "quizId": "day-01-banking-history",
+  "title": "Indian Banking History",
+  "subtitle": "Test your understanding of major milestones in Indian banking history, including early banks, Presidency Banks, Imperial Bank and key institutional developments.",
+  "questionCount": 50,
+  "source": "Day 1 vlog transcript supplied by the channel owner.",
+  "instructions": [
+    "Choose one answer for each question.",
+    "Review the explanation, important point and exam trap after submission.",
+    "Use the final review to revisit mistakes."
+  ],
+  "questions": [
+    {
+      "id": "BH1",
+      "question": "In the Day 1 lesson, which statement correctly matches Madras Bank?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1683"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates Madras Bank with 1683.",
+      "importantPoint": "Remember: Madras Bank → 1683.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH2",
+      "question": "Which item was paired with “1683” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Madras Bank"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1683” with Madras Bank.",
+      "importantPoint": "Key pairing: 1683 → Madras Bank.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH3",
+      "question": "In the Day 1 lesson, which statement correctly matches Bank of Hindustan?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1670"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates Bank of Hindustan with 1670.",
+      "importantPoint": "Remember: Bank of Hindustan → 1670.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH4",
+      "question": "Which item was paired with “1670” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bank of Hindustan"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1670” with Bank of Hindustan.",
+      "importantPoint": "Key pairing: 1670 → Bank of Hindustan.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH5",
+      "question": "In the Day 1 lesson, which statement correctly matches Presidency Banks?",
+      "options": [
+        {
+          "id": "A",
+          "text": "three: Bengal, Bombay and Madras"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates Presidency Banks with three: Bengal, Bombay and Madras.",
+      "importantPoint": "Remember: Presidency Banks → three: Bengal, Bombay and Madras.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH6",
+      "question": "Which item was paired with “three: Bengal, Bombay and Madras” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Presidency Banks"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “three: Bengal, Bombay and Madras” with Presidency Banks.",
+      "importantPoint": "Key pairing: three: Bengal, Bombay and Madras → Presidency Banks.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH7",
+      "question": "In the Day 1 lesson, which statement correctly matches Imperial Bank of India?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1921"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates Imperial Bank of India with 1921.",
+      "importantPoint": "Remember: Imperial Bank of India → 1921.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH8",
+      "question": "Which item was paired with “1921” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Imperial Bank of India"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1921” with Imperial Bank of India.",
+      "importantPoint": "Key pairing: 1921 → Imperial Bank of India.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH9",
+      "question": "In the Day 1 lesson, which statement correctly matches Bank of Upper India?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1862/18621 as spoken in the transcript"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates Bank of Upper India with 1862/18621 as spoken in the transcript.",
+      "importantPoint": "Remember: Bank of Upper India → 1862/18621 as spoken in the transcript.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH10",
+      "question": "Which item was paired with “1862/18621 as spoken in the transcript” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bank of Upper India"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1862/18621 as spoken in the transcript” with Bank of Upper India.",
+      "importantPoint": "Key pairing: 1862/18621 as spoken in the transcript → Bank of Upper India.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH11",
+      "question": "In the Day 1 lesson, which statement correctly matches Allahabad Bank?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1865"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates Allahabad Bank with 1865.",
+      "importantPoint": "Remember: Allahabad Bank → 1865.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH12",
+      "question": "Which item was paired with “1865” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Allahabad Bank"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1865” with Allahabad Bank.",
+      "importantPoint": "Key pairing: 1865 → Allahabad Bank.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH13",
+      "question": "In the Day 1 lesson, which statement correctly matches Awth Commercial Bank?",
+      "options": [
+        {
+          "id": "A",
+          "text": "ordinary people could deposit, as stated in the lesson"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates Awth Commercial Bank with ordinary people could deposit, as stated in the lesson.",
+      "importantPoint": "Remember: Awth Commercial Bank → ordinary people could deposit, as stated in the lesson.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH14",
+      "question": "Which item was paired with “ordinary people could deposit, as stated in the lesson” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Awth Commercial Bank"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “ordinary people could deposit, as stated in the lesson” with Awth Commercial Bank.",
+      "importantPoint": "Key pairing: ordinary people could deposit, as stated in the lesson → Awth Commercial Bank.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH15",
+      "question": "In the Day 1 lesson, which statement correctly matches Punjab National Bank?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100% Indian employees, as stated in the lesson"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates Punjab National Bank with 100% Indian employees, as stated in the lesson.",
+      "importantPoint": "Remember: Punjab National Bank → 100% Indian employees, as stated in the lesson.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH16",
+      "question": "Which item was paired with “100% Indian employees, as stated in the lesson” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Punjab National Bank"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “100% Indian employees, as stated in the lesson” with Punjab National Bank.",
+      "importantPoint": "Key pairing: 100% Indian employees, as stated in the lesson → Punjab National Bank.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH17",
+      "question": "In the Day 1 lesson, which statement correctly matches Central Bank of India?",
+      "options": [
+        {
+          "id": "A",
+          "text": "first Swadeshi bank, as stated in the lesson"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates Central Bank of India with first Swadeshi bank, as stated in the lesson.",
+      "importantPoint": "Remember: Central Bank of India → first Swadeshi bank, as stated in the lesson.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH18",
+      "question": "Which item was paired with “first Swadeshi bank, as stated in the lesson” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Central Bank of India"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “first Swadeshi bank, as stated in the lesson” with Central Bank of India.",
+      "importantPoint": "Key pairing: first Swadeshi bank, as stated in the lesson → Central Bank of India.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH19",
+      "question": "In the Day 1 lesson, which statement correctly matches darkest period?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1913–1918"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates darkest period with 1913–1918.",
+      "importantPoint": "Remember: darkest period → 1913–1918.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH20",
+      "question": "Which item was paired with “1913–1918” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "darkest period"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1913–1918” with darkest period.",
+      "importantPoint": "Key pairing: 1913–1918 → darkest period.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH21",
+      "question": "In the Day 1 lesson, which statement correctly matches Hilton Young Commission?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RBI historical discussion"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates Hilton Young Commission with RBI historical discussion.",
+      "importantPoint": "Remember: Hilton Young Commission → RBI historical discussion.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH22",
+      "question": "Which item was paired with “RBI historical discussion” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “RBI historical discussion” with Hilton Young Commission.",
+      "importantPoint": "Key pairing: RBI historical discussion → Hilton Young Commission.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH23",
+      "question": "In the Day 1 lesson, which statement correctly matches B. R. Ambedkar?",
+      "options": [
+        {
+          "id": "A",
+          "text": "author attributed to the banking book in the lesson"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates B. R. Ambedkar with author attributed to the banking book in the lesson.",
+      "importantPoint": "Remember: B. R. Ambedkar → author attributed to the banking book in the lesson.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH24",
+      "question": "Which item was paired with “author attributed to the banking book in the lesson” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "B. R. Ambedkar"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “author attributed to the banking book in the lesson” with B. R. Ambedkar.",
+      "importantPoint": "Key pairing: author attributed to the banking book in the lesson → B. R. Ambedkar.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH25",
+      "question": "In the Day 1 lesson, which statement correctly matches RBI Act?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1934"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates RBI Act with 1934.",
+      "importantPoint": "Remember: RBI Act → 1934.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH26",
+      "question": "Which item was paired with “1934” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RBI Act"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1934” with RBI Act.",
+      "importantPoint": "Key pairing: 1934 → RBI Act.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH27",
+      "question": "In the Day 1 lesson, which statement correctly matches RBI formation/commencement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1935"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates RBI formation/commencement with 1935.",
+      "importantPoint": "Remember: RBI formation/commencement → 1935.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH28",
+      "question": "Which item was paired with “1935” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RBI formation/commencement"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1935” with RBI formation/commencement.",
+      "importantPoint": "Key pairing: 1935 → RBI formation/commencement.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH29",
+      "question": "In the Day 1 lesson, which statement correctly matches RBI initial location?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kolkata/Calcutta"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates RBI initial location with Kolkata/Calcutta.",
+      "importantPoint": "Remember: RBI initial location → Kolkata/Calcutta.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH30",
+      "question": "Which item was paired with “Kolkata/Calcutta” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RBI initial location"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “Kolkata/Calcutta” with RBI initial location.",
+      "importantPoint": "Key pairing: Kolkata/Calcutta → RBI initial location.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH31",
+      "question": "In the Day 1 lesson, which statement correctly matches RBI moved to Bombay?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1937"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates RBI moved to Bombay with 1937.",
+      "importantPoint": "Remember: RBI moved to Bombay → 1937.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH32",
+      "question": "Which item was paired with “1937” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RBI moved to Bombay"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1937” with RBI moved to Bombay.",
+      "importantPoint": "Key pairing: 1937 → RBI moved to Bombay.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH33",
+      "question": "In the Day 1 lesson, which statement correctly matches Independence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1947"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates Independence with 1947.",
+      "importantPoint": "Remember: Independence → 1947.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH34",
+      "question": "Which item was paired with “1947” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Independence"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1947” with Independence.",
+      "importantPoint": "Key pairing: 1947 → Independence.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH35",
+      "question": "In the Day 1 lesson, which statement correctly matches RBI nationalisation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 January 1949"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates RBI nationalisation with 1 January 1949.",
+      "importantPoint": "Remember: RBI nationalisation → 1 January 1949.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH36",
+      "question": "Which item was paired with “1 January 1949” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RBI nationalisation"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1 January 1949” with RBI nationalisation.",
+      "importantPoint": "Key pairing: 1 January 1949 → RBI nationalisation.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH37",
+      "question": "In the Day 1 lesson, which statement correctly matches Banking Companies Act?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1949"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates Banking Companies Act with 1949.",
+      "importantPoint": "Remember: Banking Companies Act → 1949.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH38",
+      "question": "Which item was paired with “1949” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Banking Companies Act"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1949” with Banking Companies Act.",
+      "importantPoint": "Key pairing: 1949 → Banking Companies Act.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH39",
+      "question": "In the Day 1 lesson, which statement correctly matches SBI from Imperial Bank?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1955"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates SBI from Imperial Bank with 1955.",
+      "importantPoint": "Remember: SBI from Imperial Bank → 1955.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH40",
+      "question": "Which item was paired with “1955” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SBI from Imperial Bank"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1955” with SBI from Imperial Bank.",
+      "importantPoint": "Key pairing: 1955 → SBI from Imperial Bank.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH41",
+      "question": "In the Day 1 lesson, which statement correctly matches RBI share in SBI?",
+      "options": [
+        {
+          "id": "A",
+          "text": "93%, with 7% private as stated in lesson"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates RBI share in SBI with 93%, with 7% private as stated in lesson.",
+      "importantPoint": "Remember: RBI share in SBI → 93%, with 7% private as stated in lesson.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH42",
+      "question": "Which item was paired with “93%, with 7% private as stated in lesson” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RBI share in SBI"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “93%, with 7% private as stated in lesson” with RBI share in SBI.",
+      "importantPoint": "Key pairing: 93%, with 7% private as stated in lesson → RBI share in SBI.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH43",
+      "question": "In the Day 1 lesson, which statement correctly matches nationalisation phase 1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1969: 14 banks; ₹50 crore-plus deposits"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates nationalisation phase 1 with 1969: 14 banks; ₹50 crore-plus deposits.",
+      "importantPoint": "Remember: nationalisation phase 1 → 1969: 14 banks; ₹50 crore-plus deposits.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH44",
+      "question": "Which item was paired with “1969: 14 banks; ₹50 crore-plus deposits” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "nationalisation phase 1"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1969: 14 banks; ₹50 crore-plus deposits” with nationalisation phase 1.",
+      "importantPoint": "Key pairing: 1969: 14 banks; ₹50 crore-plus deposits → nationalisation phase 1.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH45",
+      "question": "In the Day 1 lesson, which statement correctly matches RRB milestone?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1975; Prathama Bank in October 1975"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates RRB milestone with 1975; Prathama Bank in October 1975.",
+      "importantPoint": "Remember: RRB milestone → 1975; Prathama Bank in October 1975.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH46",
+      "question": "Which item was paired with “1975; Prathama Bank in October 1975” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RRB milestone"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1975; Prathama Bank in October 1975” with RRB milestone.",
+      "importantPoint": "Key pairing: 1975; Prathama Bank in October 1975 → RRB milestone.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH47",
+      "question": "In the Day 1 lesson, which statement correctly matches RRB Act?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1976"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates RRB Act with 1976.",
+      "importantPoint": "Remember: RRB Act → 1976.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH48",
+      "question": "Which item was paired with “1976” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RRB Act"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1976” with RRB Act.",
+      "importantPoint": "Key pairing: 1976 → RRB Act.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    },
+    {
+      "id": "BH49",
+      "question": "In the Day 1 lesson, which statement correctly matches nationalisation phase 2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1980: 6 banks; ₹200 crore-plus deposits"
+        },
+        {
+          "id": "B",
+          "text": "1935"
+        },
+        {
+          "id": "C",
+          "text": "1969"
+        },
+        {
+          "id": "D",
+          "text": "1980"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Day 1 lesson explicitly associates nationalisation phase 2 with 1980: 6 banks; ₹200 crore-plus deposits.",
+      "importantPoint": "Remember: nationalisation phase 2 → 1980: 6 banks; ₹200 crore-plus deposits.",
+      "examTrap": "The distractors are other dates/numbers from the same lesson; do not swap milestones."
+    },
+    {
+      "id": "BH50",
+      "question": "Which item was paired with “1980: 6 banks; ₹200 crore-plus deposits” in the Day 1 lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "nationalisation phase 2"
+        },
+        {
+          "id": "B",
+          "text": "State Bank of India"
+        },
+        {
+          "id": "C",
+          "text": "Reserve Bank of India"
+        },
+        {
+          "id": "D",
+          "text": "NABARD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson pairs “1980: 6 banks; ₹200 crore-plus deposits” with nationalisation phase 2.",
+      "importantPoint": "Key pairing: 1980: 6 banks; ₹200 crore-plus deposits → nationalisation phase 2.",
+      "examTrap": "Several banking milestones are close together; keep the timeline pairs separate."
+    }
+  ],
+  "category": "Banking Awareness",
+  "topic": "Indian Banking History",
+  "subtopic": "Banking History",
+  "description": "Covers the major historical milestones, institutions and banking developments included in the lesson, with exam-focused recall and application questions."
+}

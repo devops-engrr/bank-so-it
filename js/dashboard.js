@@ -38,7 +38,7 @@
     const { data, error } = await client.auth.getUser();
 
     if (error || !data.user) {
-      window.location.replace("auth.html");
+      window.location.replace("/auth/");
       return;
     }
 
@@ -63,7 +63,7 @@
     button.disabled = true;
     button.textContent = "Logging out…";
     await client.auth.signOut();
-    window.location.replace("auth.html");
+    window.location.replace("/auth/");
   });
 
   init();

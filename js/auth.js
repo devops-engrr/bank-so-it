@@ -131,13 +131,13 @@
 
   async function ensureNotAlreadyLoggedIn() {
     const { data } = await client().auth.getSession();
-    if (data.session) window.location.replace("dashboard.html");
+    if (data.session) window.location.replace("/dashboard/");
   }
 
   $("#login-tab").addEventListener("click", () => switchMode("login"));
   $("#signup-tab").addEventListener("click", () => switchMode("signup"));
 
-  // Open the requested authentication mode from links such as auth.html?mode=signup.
+  // Open the requested authentication mode from links such as /auth/?mode=signup.
   const requestedMode = new URLSearchParams(window.location.search).get("mode");
   if (requestedMode === "signup" || requestedMode === "login") {
     switchMode(requestedMode);
@@ -177,7 +177,7 @@
       const { data, error } = await client().auth.signInWithPassword({ email, password });
       if (error) throw error;
       if (!data.session) throw new Error("Login completed but no active session was created.");
-      window.location.replace("dashboard.html");
+      window.location.replace("/dashboard/");
     } catch (error) {
       const msg = String(error.message || "").toLowerCase();
       if (msg.includes("email not confirmed")) {
@@ -240,7 +240,7 @@
         email,
         password,
         options: {
-          emailRedirectTo: `${window.location.origin}/auth.html`,
+          emailRedirectTo: `${window.location.origin}/auth/`,
           data: {
             full_name: name,
             exam_preference: exam || null
@@ -252,7 +252,7 @@
 
       // Supabase may return no session when email confirmation is required.
       if (data.session) {
-        window.location.replace("dashboard.html");
+        window.location.replace("/dashboard/");
         return;
       }
 
@@ -301,7 +301,7 @@
 
     try {
       const { error } = await client().auth.resetPasswordForEmail(email, {
-        redirectTo: `${window.location.origin}/auth.html?reset=1`
+        redirectTo: `${window.location.origin}/auth/?reset=1`
       });
       if (error) throw error;
       showMessage("If an account exists for that email, a password-reset link has been sent.", "success");
@@ -317,7 +317,7 @@
 
   client().auth.onAuthStateChange((event, session) => {
     if (event === "SIGNED_IN" && session) {
-      window.location.replace("dashboard.html");
+      window.location.replace("/dashboard/");
     }
   });
 

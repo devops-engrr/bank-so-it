@@ -1,0 +1,1320 @@
+{
+  "version": 1,
+  "quizId": "day-01-grammar-r01-r03",
+  "title": "Grammar Rules 1–3",
+  "subtitle": "Practice application-based questions on Each & Every, Both, and Who & Whom.",
+  "questionCount": 50,
+  "source": "Day 1 vlog transcript supplied by the channel owner.",
+  "instructions": [
+    "Choose one answer for each question.",
+    "Review the explanation, important point and exam trap after submission.",
+    "Use the final review to revisit mistakes."
+  ],
+  "questions": [
+    {
+      "id": "BG1",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Each of my students is working hard."
+        },
+        {
+          "id": "B",
+          "text": "Each my students is working hard."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of my students is working hard. follows the construction taught in the Day 1 lesson. R01 uses the each-of construction shown in the lesson.",
+      "importantPoint": "Each of + plural noun takes singular agreement in the lesson’s pattern.",
+      "examTrap": "Do not drop “of” in the each-of construction."
+    },
+    {
+      "id": "BG2",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Each my students is working hard."
+        },
+        {
+          "id": "B",
+          "text": "Each of my students is working hard."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each my students is working hard. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. R01 uses the each-of construction shown in the lesson.",
+      "importantPoint": "Each of + plural noun takes singular agreement in the lesson’s pattern.",
+      "examTrap": "Do not drop “of” in the each-of construction."
+    },
+    {
+      "id": "BG3",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every student is ready."
+        },
+        {
+          "id": "B",
+          "text": "Every of my student is ready."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every student is ready. follows the construction taught in the Day 1 lesson. The lesson contrasts direct Every + noun with the each-of construction.",
+      "importantPoint": "Every is presented with the direct noun pattern.",
+      "examTrap": "“Every of” is a trap in the lesson’s examples."
+    },
+    {
+      "id": "BG4",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every of my student is ready."
+        },
+        {
+          "id": "B",
+          "text": "Every student is ready."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every of my student is ready. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson contrasts direct Every + noun with the each-of construction.",
+      "importantPoint": "Every is presented with the direct noun pattern.",
+      "examTrap": "“Every of” is a trap in the lesson’s examples."
+    },
+    {
+      "id": "BG5",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I have a book in each hand."
+        },
+        {
+          "id": "B",
+          "text": "I have a book in every hand."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "I have a book in each hand. follows the construction taught in the Day 1 lesson. The lesson uses the two-hand example to illustrate Each for individual items.",
+      "importantPoint": "Remember the exact two-hand example.",
+      "examTrap": "Do not automatically substitute Every for Each."
+    },
+    {
+      "id": "BG6",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I have a book in every hand."
+        },
+        {
+          "id": "B",
+          "text": "I have a book in each hand."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "I have a book in every hand. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson uses the two-hand example to illustrate Each for individual items.",
+      "importantPoint": "Remember the exact two-hand example.",
+      "examTrap": "Do not automatically substitute Every for Each."
+    },
+    {
+      "id": "BG7",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I have every reason to be happy."
+        },
+        {
+          "id": "B",
+          "text": "I have each reason to be happy."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "I have every reason to be happy. follows the construction taught in the Day 1 lesson. The lesson specifically uses “every reason” as its abstract-noun example.",
+      "importantPoint": "The abstract-noun example is every reason.",
+      "examTrap": "This is a source-specific rule example from the vlog."
+    },
+    {
+      "id": "BG8",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I have each reason to be happy."
+        },
+        {
+          "id": "B",
+          "text": "I have every reason to be happy."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "I have each reason to be happy. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson specifically uses “every reason” as its abstract-noun example.",
+      "importantPoint": "The abstract-noun example is every reason.",
+      "examTrap": "This is a source-specific rule example from the vlog."
+    },
+    {
+      "id": "BG9",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every candidate is prepared."
+        },
+        {
+          "id": "B",
+          "text": "Every candidates are prepared."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every candidate is prepared. follows the construction taught in the Day 1 lesson. The lesson stresses singular agreement with Every.",
+      "importantPoint": "Every + singular noun + singular agreement in the taught framework.",
+      "examTrap": "A plural noun/verb pair is the trap."
+    },
+    {
+      "id": "BG10",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every candidates are prepared."
+        },
+        {
+          "id": "B",
+          "text": "Every candidate is prepared."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every candidates are prepared. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson stresses singular agreement with Every.",
+      "importantPoint": "Every + singular noun + singular agreement in the taught framework.",
+      "examTrap": "A plural noun/verb pair is the trap."
+    },
+    {
+      "id": "BG11",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Each candidate is prepared."
+        },
+        {
+          "id": "B",
+          "text": "Each candidates are prepared."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each candidate is prepared. follows the construction taught in the Day 1 lesson. The lesson stresses singular agreement with Each.",
+      "importantPoint": "Each + singular agreement in the taught framework.",
+      "examTrap": "Do not let the idea of a group force a plural verb."
+    },
+    {
+      "id": "BG12",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Each candidates are prepared."
+        },
+        {
+          "id": "B",
+          "text": "Each candidate is prepared."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each candidates are prepared. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson stresses singular agreement with Each.",
+      "importantPoint": "Each + singular agreement in the taught framework.",
+      "examTrap": "Do not let the idea of a group force a plural verb."
+    },
+    {
+      "id": "BG13",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Each of my books is useful."
+        },
+        {
+          "id": "B",
+          "text": "Each of my book is useful."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of my books is useful. follows the construction taught in the Day 1 lesson. The lesson’s each-of pattern uses a plural noun after of.",
+      "importantPoint": "Each of + plural noun + singular verb.",
+      "examTrap": "The noun after “of” is plural in the taught construction."
+    },
+    {
+      "id": "BG14",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Each of my book is useful."
+        },
+        {
+          "id": "B",
+          "text": "Each of my books is useful."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of my book is useful. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson’s each-of pattern uses a plural noun after of.",
+      "importantPoint": "Each of + plural noun + singular verb.",
+      "examTrap": "The noun after “of” is plural in the taught construction."
+    },
+    {
+      "id": "BG15",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every student is working."
+        },
+        {
+          "id": "B",
+          "text": "Every students are working."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every student is working. follows the construction taught in the Day 1 lesson. The direct Every construction uses a singular noun and singular agreement.",
+      "importantPoint": "Every + singular noun + singular verb.",
+      "examTrap": "Plural noun after Every is a common trap."
+    },
+    {
+      "id": "BG16",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every students are working."
+        },
+        {
+          "id": "B",
+          "text": "Every student is working."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every students are working. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The direct Every construction uses a singular noun and singular agreement.",
+      "importantPoint": "Every + singular noun + singular verb.",
+      "examTrap": "Plural noun after Every is a common trap."
+    },
+    {
+      "id": "BG17",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both A and B are correct."
+        },
+        {
+          "id": "B",
+          "text": "Both A as well as B are correct."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both A and B are correct. follows the construction taught in the Day 1 lesson. Rule 2 teaches Both with and and rejects the as-well-as pairing in the lesson.",
+      "importantPoint": "Both → and in the taught construction.",
+      "examTrap": "Do not combine Both with as well as."
+    },
+    {
+      "id": "BG18",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both A as well as B are correct."
+        },
+        {
+          "id": "B",
+          "text": "Both A and B are correct."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both A as well as B are correct. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. Rule 2 teaches Both with and and rejects the as-well-as pairing in the lesson.",
+      "importantPoint": "Both → and in the taught construction.",
+      "examTrap": "Do not combine Both with as well as."
+    },
+    {
+      "id": "BG19",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Neither A nor B is coming."
+        },
+        {
+          "id": "B",
+          "text": "Both A nor B is coming."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Neither A nor B is coming. follows the construction taught in the Day 1 lesson. The lesson contrasts Both with the negative neither...nor construction.",
+      "importantPoint": "Neither...nor is the negative pair taught.",
+      "examTrap": "Do not create a hybrid Both...nor construction."
+    },
+    {
+      "id": "BG20",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both A nor B is coming."
+        },
+        {
+          "id": "B",
+          "text": "Neither A nor B is coming."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both A nor B is coming. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson contrasts Both with the negative neither...nor construction.",
+      "importantPoint": "Neither...nor is the negative pair taught.",
+      "examTrap": "Do not create a hybrid Both...nor construction."
+    },
+    {
+      "id": "BG21",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both my students are ready."
+        },
+        {
+          "id": "B",
+          "text": "My both students are ready."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both my students are ready. follows the construction taught in the Day 1 lesson. The lesson explicitly places the possessive adjective after Both.",
+      "importantPoint": "Both + possessive adjective + noun.",
+      "examTrap": "The position of “my” is the trap."
+    },
+    {
+      "id": "BG22",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "My both students are ready."
+        },
+        {
+          "id": "B",
+          "text": "Both my students are ready."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "My both students are ready. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson explicitly places the possessive adjective after Both.",
+      "importantPoint": "Both + possessive adjective + noun.",
+      "examTrap": "The position of “my” is the trap."
+    },
+    {
+      "id": "BG23",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both my books are open."
+        },
+        {
+          "id": "B",
+          "text": "My both books are open."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both my books are open. follows the construction taught in the Day 1 lesson. The lesson’s possessive example uses both my, not my both.",
+      "importantPoint": "Possessive adjective follows Both.",
+      "examTrap": "Do not move the possessive adjective before Both."
+    },
+    {
+      "id": "BG24",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "My both books are open."
+        },
+        {
+          "id": "B",
+          "text": "Both my books are open."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "My both books are open. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson’s possessive example uses both my, not my both.",
+      "importantPoint": "Possessive adjective follows Both.",
+      "examTrap": "Do not move the possessive adjective before Both."
+    },
+    {
+      "id": "BG25",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both the candidates are ready."
+        },
+        {
+          "id": "B",
+          "text": "The both candidates are ready."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both the candidates are ready. follows the construction taught in the Day 1 lesson. The lesson teaches the ordering with Both before the possessive/determiner construction it illustrates.",
+      "importantPoint": "Keep Both in the taught position.",
+      "examTrap": "Watch the placement of the determiner/possessive."
+    },
+    {
+      "id": "BG26",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The both candidates are ready."
+        },
+        {
+          "id": "B",
+          "text": "Both the candidates are ready."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The both candidates are ready. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The lesson teaches the ordering with Both before the possessive/determiner construction it illustrates.",
+      "importantPoint": "Keep Both in the taught position.",
+      "examTrap": "Watch the placement of the determiner/possessive."
+    },
+    {
+      "id": "BG27",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both students are ready."
+        },
+        {
+          "id": "B",
+          "text": "Both students is ready."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both students are ready. follows the construction taught in the Day 1 lesson. The plural subject in the Both construction takes the plural agreement shown in the sentence.",
+      "importantPoint": "Both refers to two and the subject is plural.",
+      "examTrap": "Do not use singular agreement with a plural Both subject."
+    },
+    {
+      "id": "BG28",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both students is ready."
+        },
+        {
+          "id": "B",
+          "text": "Both students are ready."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Both students is ready. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The plural subject in the Both construction takes the plural agreement shown in the sentence.",
+      "importantPoint": "Both refers to two and the subject is plural.",
+      "examTrap": "Do not use singular agreement with a plural Both subject."
+    },
+    {
+      "id": "BG29",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Who called you?"
+        },
+        {
+          "id": "B",
+          "text": "Whom called you?"
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Who called you? follows the construction taught in the Day 1 lesson. Rule 3 distinguishes Who as subjective and Whom as objective.",
+      "importantPoint": "Who → subject; Whom → object.",
+      "examTrap": "Do not decide by question form alone."
+    },
+    {
+      "id": "BG30",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whom called you?"
+        },
+        {
+          "id": "B",
+          "text": "Who called you?"
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Whom called you? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. Rule 3 distinguishes Who as subjective and Whom as objective.",
+      "importantPoint": "Who → subject; Whom → object.",
+      "examTrap": "Do not decide by question form alone."
+    },
+    {
+      "id": "BG31",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whom did you meet?"
+        },
+        {
+          "id": "B",
+          "text": "Who did you meet?"
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Whom did you meet? follows the construction taught in the Day 1 lesson. In the lesson’s framework, Whom is used for the object of the verb meet.",
+      "importantPoint": "Whom → objective role.",
+      "examTrap": "The object can appear at the beginning of a question."
+    },
+    {
+      "id": "BG32",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Who did you meet?"
+        },
+        {
+          "id": "B",
+          "text": "Whom did you meet?"
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Who did you meet? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. In the lesson’s framework, Whom is used for the object of the verb meet.",
+      "importantPoint": "Whom → objective role.",
+      "examTrap": "The object can appear at the beginning of a question."
+    },
+    {
+      "id": "BG33",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "God likes whom?"
+        },
+        {
+          "id": "B",
+          "text": "God likes who?"
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "God likes whom? follows the construction taught in the Day 1 lesson. The pronoun is the object of likes in the lesson’s subject/object framework.",
+      "importantPoint": "Object role → Whom.",
+      "examTrap": "Check grammatical role, not just whether the person is human."
+    },
+    {
+      "id": "BG34",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "God likes who?"
+        },
+        {
+          "id": "B",
+          "text": "God likes whom?"
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "God likes who? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The pronoun is the object of likes in the lesson’s subject/object framework.",
+      "importantPoint": "Object role → Whom.",
+      "examTrap": "Check grammatical role, not just whether the person is human."
+    },
+    {
+      "id": "BG35",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Who works very hard?"
+        },
+        {
+          "id": "B",
+          "text": "Whom works very hard?"
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Who works very hard? follows the construction taught in the Day 1 lesson. Who is the subject performing the action.",
+      "importantPoint": "Subject role → Who.",
+      "examTrap": "Do not treat every question pronoun as Whom."
+    },
+    {
+      "id": "BG36",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whom works very hard?"
+        },
+        {
+          "id": "B",
+          "text": "Who works very hard?"
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Whom works very hard? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. Who is the subject performing the action.",
+      "importantPoint": "Subject role → Who.",
+      "examTrap": "Do not treat every question pronoun as Whom."
+    },
+    {
+      "id": "BG37",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "She met whom yesterday."
+        },
+        {
+          "id": "B",
+          "text": "She met who yesterday."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "She met whom yesterday. follows the construction taught in the Day 1 lesson. The pronoun is the object of met.",
+      "importantPoint": "Object role → Whom.",
+      "examTrap": "The verb-object relationship decides the form."
+    },
+    {
+      "id": "BG38",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "She met who yesterday."
+        },
+        {
+          "id": "B",
+          "text": "She met whom yesterday."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "She met who yesterday. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The pronoun is the object of met.",
+      "importantPoint": "Object role → Whom.",
+      "examTrap": "The verb-object relationship decides the form."
+    },
+    {
+      "id": "BG39",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Who is ready?"
+        },
+        {
+          "id": "B",
+          "text": "Whom is ready?"
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Who is ready? follows the construction taught in the Day 1 lesson. Who functions as the subject of is.",
+      "importantPoint": "Subject role → Who.",
+      "examTrap": "Whom is not the subject form taught in the lesson."
+    },
+    {
+      "id": "BG40",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whom is ready?"
+        },
+        {
+          "id": "B",
+          "text": "Who is ready?"
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Whom is ready? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. Who functions as the subject of is.",
+      "importantPoint": "Subject role → Who.",
+      "examTrap": "Whom is not the subject form taught in the lesson."
+    },
+    {
+      "id": "BG41",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I met whom yesterday."
+        },
+        {
+          "id": "B",
+          "text": "I met who yesterday."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "I met whom yesterday. follows the construction taught in the Day 1 lesson. The pronoun is the object of met.",
+      "importantPoint": "Whom → object.",
+      "examTrap": "Look for the verb whose object the pronoun represents."
+    },
+    {
+      "id": "BG42",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I met who yesterday."
+        },
+        {
+          "id": "B",
+          "text": "I met whom yesterday."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "I met who yesterday. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The pronoun is the object of met.",
+      "importantPoint": "Whom → object.",
+      "examTrap": "Look for the verb whose object the pronoun represents."
+    },
+    {
+      "id": "BG43",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Who works hard?"
+        },
+        {
+          "id": "B",
+          "text": "Whom works hard?"
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Who works hard? follows the construction taught in the Day 1 lesson. Who is doing the action.",
+      "importantPoint": "Who → subject.",
+      "examTrap": "The meaning “person” alone does not decide the form."
+    },
+    {
+      "id": "BG44",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whom works hard?"
+        },
+        {
+          "id": "B",
+          "text": "Who works hard?"
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Whom works hard? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. Who is doing the action.",
+      "importantPoint": "Who → subject.",
+      "examTrap": "The meaning “person” alone does not decide the form."
+    },
+    {
+      "id": "BG45",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whom did they meet?"
+        },
+        {
+          "id": "B",
+          "text": "Who did they meet?"
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Whom did they meet? follows the construction taught in the Day 1 lesson. Whom is the object of meet even though it appears first.",
+      "importantPoint": "Front position does not change grammatical role.",
+      "examTrap": "This is a classic Who/Whom exam trap."
+    },
+    {
+      "id": "BG46",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Who did they meet?"
+        },
+        {
+          "id": "B",
+          "text": "Whom did they meet?"
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Who did they meet? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. Whom is the object of meet even though it appears first.",
+      "importantPoint": "Front position does not change grammatical role.",
+      "examTrap": "This is a classic Who/Whom exam trap."
+    },
+    {
+      "id": "BG47",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Who called and whom did you meet?"
+        },
+        {
+          "id": "B",
+          "text": "Whom called and who did you meet?"
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Who called and whom did you meet? follows the construction taught in the Day 1 lesson. The two pronouns have different roles: Who is subject of called; Whom is object of meet.",
+      "importantPoint": "Judge each pronoun by its own grammatical role.",
+      "examTrap": "One sentence can legitimately contain both forms."
+    },
+    {
+      "id": "BG48",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Whom called and who did you meet?"
+        },
+        {
+          "id": "B",
+          "text": "Who called and whom did you meet?"
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Whom called and who did you meet? contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The two pronouns have different roles: Who is subject of called; Whom is object of meet.",
+      "importantPoint": "Judge each pronoun by its own grammatical role.",
+      "examTrap": "One sentence can legitimately contain both forms."
+    },
+    {
+      "id": "BG49",
+      "question": "Which sentence follows the Day 1 rule for this grammar point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Each of my students is ready, and both my books are open."
+        },
+        {
+          "id": "B",
+          "text": "Each my students are ready, and my both books are open."
+        },
+        {
+          "id": "C",
+          "text": "The students both are ready."
+        },
+        {
+          "id": "D",
+          "text": "Whom works hard every day?"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each of my students is ready, and both my books are open. follows the construction taught in the Day 1 lesson. The sentence combines the R01 each-of/singular pattern with the R02 possessive-after-Both pattern.",
+      "importantPoint": "R01: each of + plural noun + singular verb; R02: both + possessive.",
+      "examTrap": "Check both rules independently."
+    },
+    {
+      "id": "BG50",
+      "question": "Which sentence contains the construction the Day 1 lesson tells you to avoid for this point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Each my students are ready, and my both books are open."
+        },
+        {
+          "id": "B",
+          "text": "Each of my students is ready, and both my books are open."
+        },
+        {
+          "id": "C",
+          "text": "Who called you yesterday?"
+        },
+        {
+          "id": "D",
+          "text": "Both my books are open."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each my students are ready, and my both books are open. contains the construction identified as incorrect/avoidable for this specific Day 1 rule. The sentence combines the R01 each-of/singular pattern with the R02 possessive-after-Both pattern.",
+      "importantPoint": "R01: each of + plural noun + singular verb; R02: both + possessive.",
+      "examTrap": "Check both rules independently."
+    }
+  ],
+  "category": "English",
+  "topic": "Grammar",
+  "subtopic": "Grammar Rules 1–3",
+  "description": "Covers the first three grammar rules from the lesson: Each & Every, Both, and Who & Whom, with application-focused exam questions.",
+  "part": 1
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:url" content="https://banksoit.com/dashboard/">
+<link rel="canonical" href="https://banksoit.com/dashboard/">
+  <meta name="description" content="Bank SO IT student dashboard.">
+  <title>Dashboard | Bank SO IT</title>
+  <link rel="icon" href="/assets/logo/bank-so-it-logo.jpg">
+  <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body class="dashboard-page">
+  <header class="dash-nav">
+    <a href="/" class="brand-link"><img src="/assets/logo/bank-so-it-logo.jpg" alt=""> <span>Bank SO IT</span></a>
+    <button id="logout-btn" class="secondary-btn compact">Logout</button>
+  </header>
+
+  <main class="dashboard">
+    <section class="welcome-card">
+      <div>
+        <p class="eyebrow">STUDENT DASHBOARD</p>
+        <h1>Welcome, <span id="user-name">Student</span> 👋</h1>
+        <p id="user-email" class="muted"></p>
+      </div>
+      <a href="/" class="secondary-btn">Back to website</a>
+    </section>
+
+    <section class="dash-grid">
+      <article class="stat-card"><span>📝</span><h3>Quiz attempts</h3><strong>0</strong><p>Coming soon</p></article>
+      <article class="stat-card"><span>📚</span><h3>Topics completed</h3><strong>0</strong><p>Coming soon</p></article>
+      <article class="stat-card"><span>🔥</span><h3>Study streak</h3><strong>0</strong><p>Coming soon</p></article>
+      <article class="stat-card"><span>🎯</span><h3>Exam target</h3><strong id="user-exam">Not set</strong><p>Update your profile later</p></article>
+    </section>
+
+    <section class="coming-card">
+      <h2>Your preparation hub</h2>
+      <p>Quiz history, progress tracking, bookmarks, study streaks and more will appear here as we build the Bank SO IT student platform.</p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="/js/supabase.js" defer></script>
+  <script src="/js/dashboard.js" defer></script>
+</body>
+</html>

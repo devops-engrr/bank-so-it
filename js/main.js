@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const ensureSupabaseClient = async () => {
 
     /*
-     * auth.html/dashboard.html already load Supabase themselves.
+     * auth/dashboard routes already load Supabase themselves.
      * On public pages we load the same client only when needed.
      */
     if (!window.supabase) {
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (!window.bankSoItSupabase) {
-      await loadScript("js/supabase.js");
+      await loadScript("/js/supabase.js");
     }
 
     if (!window.bankSoItSupabase) {
@@ -162,8 +162,8 @@ document.addEventListener("DOMContentLoaded", () => {
       : "Login / Sign Up";
 
     accountLink.href = loggedIn
-      ? "dashboard.html"
-      : "auth.html";
+      ? "/dashboard/"
+      : "/auth/";
 
     accountLink.classList.toggle(
       "is-authenticated",
@@ -358,7 +358,7 @@ document.addEventListener("DOMContentLoaded", () => {
           alt="${title}"
           loading="lazy"
           decoding="async"
-          onerror="this.onerror=null;this.src='assets/logo/bank-so-it-logo.jpg';"
+          onerror="this.onerror=null;this.src='/assets/logo/bank-so-it-logo.jpg';"
         >
 
         <span
@@ -809,7 +809,7 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
 
       const response = await fetch(
-        `data/videos.json?v=${Date.now()}`,
+        `/data/videos.json?v=${Date.now()}`,
         {
           cache: "no-store"
         }
@@ -960,7 +960,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <img src="${thumbnail}"
              alt="${title}"
              loading="lazy"
-             onerror="this.onerror=null;this.src='assets/logo/bank-so-it-logo.jpg';">
+             onerror="this.onerror=null;this.src='/assets/logo/bank-so-it-logo.jpg';">
         <span class="dynamic-video-play">▶</span>
       </a>
 
@@ -983,7 +983,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const loadVideos = async () => {
 
     try {
-      const response = await fetch(`data/videos.json?v=${Date.now()}`, {
+      const response = await fetch(`/data/videos.json?v=${Date.now()}`, {
         cache: "no-store"
       });
 

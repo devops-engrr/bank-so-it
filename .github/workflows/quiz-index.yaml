@@ -1,0 +1,36 @@
+name: Build Quiz Index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/quizzes/**.json'
+      - 'scripts/build-quiz-index.py'
+      - '.github/workflows/quiz-index.yaml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-quiz-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build and validate quiz index
+        run: python3 scripts/build-quiz-index.py
+
+      - name: Commit generated index when changed
+        run: |
+          if git diff --quiet -- data/quizzes-index.json; then
+            echo "Quiz index is already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/quizzes-index.json
+          git commit -m "chore: rebuild quiz index"
+          git push

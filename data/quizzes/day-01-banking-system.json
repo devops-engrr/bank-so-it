@@ -1,0 +1,1319 @@
+{
+  "version": 1,
+  "quizId": "day-01-banking-system",
+  "title": "Indian Banking System",
+  "subtitle": "Practice questions on the structure of the Indian banking system, scheduled banks, public sector banks, RRBs, foreign banks and key banking terms.",
+  "questionCount": 50,
+  "source": "Day 1 vlog transcript supplied by the channel owner.",
+  "instructions": [
+    "Choose one answer for each question.",
+    "Review the explanation, important point and exam trap after submission.",
+    "Use the final review to revisit mistakes."
+  ],
+  "questions": [
+    {
+      "id": "BS1",
+      "question": "According to the Day 1 system lesson, what is the correct match for financial inclusion?",
+      "options": [
+        {
+          "id": "A",
+          "text": "providing financial services more easily to the public"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives providing financial services more easily to the public for financial inclusion.",
+      "importantPoint": "Memory pair: financial inclusion → providing financial services more easily to the public.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS2",
+      "question": "Which option is the Day 1 lesson’s match for “providing financial services more easily to the public”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "financial inclusion"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “providing financial services more easily to the public” with financial inclusion.",
+      "importantPoint": "Recall the pair: providing financial services more easily to the public → financial inclusion.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS3",
+      "question": "According to the Day 1 system lesson, what is the correct match for scheduled bank?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Second Schedule of RBI Act 1934"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives Second Schedule of RBI Act 1934 for scheduled bank.",
+      "importantPoint": "Memory pair: scheduled bank → Second Schedule of RBI Act 1934.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS4",
+      "question": "Which option is the Day 1 lesson’s match for “Second Schedule of RBI Act 1934”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "scheduled bank"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “Second Schedule of RBI Act 1934” with scheduled bank.",
+      "importantPoint": "Recall the pair: Second Schedule of RBI Act 1934 → scheduled bank.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS5",
+      "question": "According to the Day 1 system lesson, what is the correct match for non-scheduled category?",
+      "options": [
+        {
+          "id": "A",
+          "text": "discussed alongside NBFCs and housing finance"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives discussed alongside NBFCs and housing finance for non-scheduled category.",
+      "importantPoint": "Memory pair: non-scheduled category → discussed alongside NBFCs and housing finance.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS6",
+      "question": "Which option is the Day 1 lesson’s match for “discussed alongside NBFCs and housing finance”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "non-scheduled category"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “discussed alongside NBFCs and housing finance” with non-scheduled category.",
+      "importantPoint": "Recall the pair: discussed alongside NBFCs and housing finance → non-scheduled category.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS7",
+      "question": "According to the Day 1 system lesson, what is the correct match for NBFC?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Non-Banking Financial Company"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives Non-Banking Financial Company for NBFC.",
+      "importantPoint": "Memory pair: NBFC → Non-Banking Financial Company.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS8",
+      "question": "Which option is the Day 1 lesson’s match for “Non-Banking Financial Company”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NBFC"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “Non-Banking Financial Company” with NBFC.",
+      "importantPoint": "Recall the pair: Non-Banking Financial Company → NBFC.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS9",
+      "question": "According to the Day 1 system lesson, what is the correct match for NABARD?",
+      "options": [
+        {
+          "id": "A",
+          "text": "rural-focused institutional point"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives rural-focused institutional point for NABARD.",
+      "importantPoint": "Memory pair: NABARD → rural-focused institutional point.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS10",
+      "question": "Which option is the Day 1 lesson’s match for “rural-focused institutional point”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NABARD"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “rural-focused institutional point” with NABARD.",
+      "importantPoint": "Recall the pair: rural-focused institutional point → NABARD.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS11",
+      "question": "According to the Day 1 system lesson, what is the correct match for SIDBI?",
+      "options": [
+        {
+          "id": "A",
+          "text": "investment-oriented institutional point"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives investment-oriented institutional point for SIDBI.",
+      "importantPoint": "Memory pair: SIDBI → investment-oriented institutional point.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS12",
+      "question": "Which option is the Day 1 lesson’s match for “investment-oriented institutional point”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SIDBI"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “investment-oriented institutional point” with SIDBI.",
+      "importantPoint": "Recall the pair: investment-oriented institutional point → SIDBI.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS13",
+      "question": "According to the Day 1 system lesson, what is the correct match for PSB?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Public Sector Bank"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives Public Sector Bank for PSB.",
+      "importantPoint": "Memory pair: PSB → Public Sector Bank.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS14",
+      "question": "Which option is the Day 1 lesson’s match for “Public Sector Bank”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PSB"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “Public Sector Bank” with PSB.",
+      "importantPoint": "Recall the pair: Public Sector Bank → PSB.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS15",
+      "question": "According to the Day 1 system lesson, what is the correct match for SBI?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PSB example; Imperial Bank became SBI in 1955"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives PSB example; Imperial Bank became SBI in 1955 for SBI.",
+      "importantPoint": "Memory pair: SBI → PSB example; Imperial Bank became SBI in 1955.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS16",
+      "question": "Which option is the Day 1 lesson’s match for “PSB example; Imperial Bank became SBI in 1955”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SBI"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “PSB example; Imperial Bank became SBI in 1955” with SBI.",
+      "importantPoint": "Recall the pair: PSB example; Imperial Bank became SBI in 1955 → SBI.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS17",
+      "question": "According to the Day 1 system lesson, what is the correct match for total nationalised banks in the two phases?",
+      "options": [
+        {
+          "id": "A",
+          "text": "20 = 14 + 6, as taught"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives 20 = 14 + 6, as taught for total nationalised banks in the two phases.",
+      "importantPoint": "Memory pair: total nationalised banks in the two phases → 20 = 14 + 6, as taught.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS18",
+      "question": "Which option is the Day 1 lesson’s match for “20 = 14 + 6, as taught”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "total nationalised banks in the two phases"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “20 = 14 + 6, as taught” with total nationalised banks in the two phases.",
+      "importantPoint": "Recall the pair: 20 = 14 + 6, as taught → total nationalised banks in the two phases.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS19",
+      "question": "According to the Day 1 system lesson, what is the correct match for PSB count in the lesson?",
+      "options": [
+        {
+          "id": "A",
+          "text": "12 = 11 nationalised + SBI, as taught"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives 12 = 11 nationalised + SBI, as taught for PSB count in the lesson.",
+      "importantPoint": "Memory pair: PSB count in the lesson → 12 = 11 nationalised + SBI, as taught.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS20",
+      "question": "Which option is the Day 1 lesson’s match for “12 = 11 nationalised + SBI, as taught”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PSB count in the lesson"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “12 = 11 nationalised + SBI, as taught” with PSB count in the lesson.",
+      "importantPoint": "Recall the pair: 12 = 11 nationalised + SBI, as taught → PSB count in the lesson.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS21",
+      "question": "According to the Day 1 system lesson, what is the correct match for old private-sector bank boundary?",
+      "options": [
+        {
+          "id": "A",
+          "text": "before 1993"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives before 1993 for old private-sector bank boundary.",
+      "importantPoint": "Memory pair: old private-sector bank boundary → before 1993.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS22",
+      "question": "Which option is the Day 1 lesson’s match for “before 1993”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "old private-sector bank boundary"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “before 1993” with old private-sector bank boundary.",
+      "importantPoint": "Recall the pair: before 1993 → old private-sector bank boundary.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS23",
+      "question": "According to the Day 1 system lesson, what is the correct match for new private-sector bank boundary?",
+      "options": [
+        {
+          "id": "A",
+          "text": "after 1993"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives after 1993 for new private-sector bank boundary.",
+      "importantPoint": "Memory pair: new private-sector bank boundary → after 1993.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS24",
+      "question": "Which option is the Day 1 lesson’s match for “after 1993”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "new private-sector bank boundary"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “after 1993” with new private-sector bank boundary.",
+      "importantPoint": "Recall the pair: after 1993 → new private-sector bank boundary.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS25",
+      "question": "According to the Day 1 system lesson, what is the correct match for new-bank examples?",
+      "options": [
+        {
+          "id": "A",
+          "text": "UTI, ICICI, HDFC, DCB and IndusInd"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives UTI, ICICI, HDFC, DCB and IndusInd for new-bank examples.",
+      "importantPoint": "Memory pair: new-bank examples → UTI, ICICI, HDFC, DCB and IndusInd.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS26",
+      "question": "Which option is the Day 1 lesson’s match for “UTI, ICICI, HDFC, DCB and IndusInd”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "new-bank examples"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “UTI, ICICI, HDFC, DCB and IndusInd” with new-bank examples.",
+      "importantPoint": "Recall the pair: UTI, ICICI, HDFC, DCB and IndusInd → new-bank examples.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS27",
+      "question": "According to the Day 1 system lesson, what is the correct match for neo-bank model?",
+      "options": [
+        {
+          "id": "A",
+          "text": "online-focused/no traditional branch network in the lesson"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives online-focused/no traditional branch network in the lesson for neo-bank model.",
+      "importantPoint": "Memory pair: neo-bank model → online-focused/no traditional branch network in the lesson.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS28",
+      "question": "Which option is the Day 1 lesson’s match for “online-focused/no traditional branch network in the lesson”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "neo-bank model"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “online-focused/no traditional branch network in the lesson” with neo-bank model.",
+      "importantPoint": "Recall the pair: online-focused/no traditional branch network in the lesson → neo-bank model.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS29",
+      "question": "According to the Day 1 system lesson, what is the correct match for neo-bank example?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Slice"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives Slice for neo-bank example.",
+      "importantPoint": "Memory pair: neo-bank example → Slice.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS30",
+      "question": "Which option is the Day 1 lesson’s match for “Slice”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "neo-bank example"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “Slice” with neo-bank example.",
+      "importantPoint": "Recall the pair: Slice → neo-bank example.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS31",
+      "question": "According to the Day 1 system lesson, what is the correct match for payment aggregator examples?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Amazon Pay and PayPal"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives Amazon Pay and PayPal for payment aggregator examples.",
+      "importantPoint": "Memory pair: payment aggregator examples → Amazon Pay and PayPal.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS32",
+      "question": "Which option is the Day 1 lesson’s match for “Amazon Pay and PayPal”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "payment aggregator examples"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “Amazon Pay and PayPal” with payment aggregator examples.",
+      "importantPoint": "Recall the pair: Amazon Pay and PayPal → payment aggregator examples.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS33",
+      "question": "According to the Day 1 system lesson, what is the correct match for commercial bank regulation reference?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Banking Regulation Act 1949"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives Banking Regulation Act 1949 for commercial bank regulation reference.",
+      "importantPoint": "Memory pair: commercial bank regulation reference → Banking Regulation Act 1949.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS34",
+      "question": "Which option is the Day 1 lesson’s match for “Banking Regulation Act 1949”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "commercial bank regulation reference"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “Banking Regulation Act 1949” with commercial bank regulation reference.",
+      "importantPoint": "Recall the pair: Banking Regulation Act 1949 → commercial bank regulation reference.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS35",
+      "question": "According to the Day 1 system lesson, what is the correct match for commercial-bank reserve point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "₹5 lakh, as stated in the lesson"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives ₹5 lakh, as stated in the lesson for commercial-bank reserve point.",
+      "importantPoint": "Memory pair: commercial-bank reserve point → ₹5 lakh, as stated in the lesson.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS36",
+      "question": "Which option is the Day 1 lesson’s match for “₹5 lakh, as stated in the lesson”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "commercial-bank reserve point"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “₹5 lakh, as stated in the lesson” with commercial-bank reserve point.",
+      "importantPoint": "Recall the pair: ₹5 lakh, as stated in the lesson → commercial-bank reserve point.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS37",
+      "question": "According to the Day 1 system lesson, what is the correct match for commercial-bank liquidity point?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CRR maintenance"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives CRR maintenance for commercial-bank liquidity point.",
+      "importantPoint": "Memory pair: commercial-bank liquidity point → CRR maintenance.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS38",
+      "question": "Which option is the Day 1 lesson’s match for “CRR maintenance”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "commercial-bank liquidity point"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “CRR maintenance” with commercial-bank liquidity point.",
+      "importantPoint": "Recall the pair: CRR maintenance → commercial-bank liquidity point.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS39",
+      "question": "According to the Day 1 system lesson, what is the correct match for SCB?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Scheduled Commercial Bank"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives Scheduled Commercial Bank for SCB.",
+      "importantPoint": "Memory pair: SCB → Scheduled Commercial Bank.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS40",
+      "question": "Which option is the Day 1 lesson’s match for “Scheduled Commercial Bank”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SCB"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “Scheduled Commercial Bank” with SCB.",
+      "importantPoint": "Recall the pair: Scheduled Commercial Bank → SCB.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS41",
+      "question": "According to the Day 1 system lesson, what is the correct match for foreign-bank regulation principle?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rule of Reciprocity"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives Rule of Reciprocity for foreign-bank regulation principle.",
+      "importantPoint": "Memory pair: foreign-bank regulation principle → Rule of Reciprocity.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS42",
+      "question": "Which option is the Day 1 lesson’s match for “Rule of Reciprocity”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "foreign-bank regulation principle"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “Rule of Reciprocity” with foreign-bank regulation principle.",
+      "importantPoint": "Recall the pair: Rule of Reciprocity → foreign-bank regulation principle.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS43",
+      "question": "According to the Day 1 system lesson, what is the correct match for foreign-bank example?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DBS India"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives DBS India for foreign-bank example.",
+      "importantPoint": "Memory pair: foreign-bank example → DBS India.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS44",
+      "question": "Which option is the Day 1 lesson’s match for “DBS India”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "foreign-bank example"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “DBS India” with foreign-bank example.",
+      "importantPoint": "Recall the pair: DBS India → foreign-bank example.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS45",
+      "question": "According to the Day 1 system lesson, what is the correct match for RRB ownership?",
+      "options": [
+        {
+          "id": "A",
+          "text": "50% Government, 35% Sponsor Bank, 15% State Government"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives 50% Government, 35% Sponsor Bank, 15% State Government for RRB ownership.",
+      "importantPoint": "Memory pair: RRB ownership → 50% Government, 35% Sponsor Bank, 15% State Government.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS46",
+      "question": "Which option is the Day 1 lesson’s match for “50% Government, 35% Sponsor Bank, 15% State Government”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RRB ownership"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “50% Government, 35% Sponsor Bank, 15% State Government” with RRB ownership.",
+      "importantPoint": "Recall the pair: 50% Government, 35% Sponsor Bank, 15% State Government → RRB ownership.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS47",
+      "question": "According to the Day 1 system lesson, what is the correct match for RRB first bank?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Prathama Bank, October 1975"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives Prathama Bank, October 1975 for RRB first bank.",
+      "importantPoint": "Memory pair: RRB first bank → Prathama Bank, October 1975.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS48",
+      "question": "Which option is the Day 1 lesson’s match for “Prathama Bank, October 1975”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RRB first bank"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “Prathama Bank, October 1975” with RRB first bank.",
+      "importantPoint": "Recall the pair: Prathama Bank, October 1975 → RRB first bank.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    },
+    {
+      "id": "BS49",
+      "question": "According to the Day 1 system lesson, what is the correct match for RRB Act?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1976"
+        },
+        {
+          "id": "B",
+          "text": "Hilton Young Commission"
+        },
+        {
+          "id": "C",
+          "text": "1969 nationalisation"
+        },
+        {
+          "id": "D",
+          "text": "RBI formation"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson gives 1976 for RRB Act.",
+      "importantPoint": "Memory pair: RRB Act → 1976.",
+      "examTrap": "Do not mix system classifications with historical milestones."
+    },
+    {
+      "id": "BS50",
+      "question": "Which option is the Day 1 lesson’s match for “1976”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "RRB Act"
+        },
+        {
+          "id": "B",
+          "text": "RBI"
+        },
+        {
+          "id": "C",
+          "text": "SBI"
+        },
+        {
+          "id": "D",
+          "text": "RRB"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The lesson connects “1976” with RRB Act.",
+      "importantPoint": "Recall the pair: 1976 → RRB Act.",
+      "examTrap": "Close banking terms are deliberately used as distractors."
+    }
+  ],
+  "category": "Banking Awareness",
+  "topic": "Indian Banking System",
+  "subtopic": "Banking System",
+  "description": "Covers the structure and classification of the Indian banking system, scheduled banks, PSBs, RRBs, foreign banks and important terminology."
+}

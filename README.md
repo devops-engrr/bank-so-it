@@ -1701,3 +1701,7 @@ The project should continue to favor:
 - incremental development
 
 This README is intended to be the long-term technical reference for future Bank SO IT development conversations.
+
+
+## Clean URL deployment
+The site uses directory-based GitHub Pages routes such as `/videos/`, `/quizzes/`, `/about/`, `/auth/` and `/dashboard/`. The legacy `.html` files are retained as lightweight compatibility redirects.

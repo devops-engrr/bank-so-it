@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "quizzes": [
+    {
+      "id": "day-01-grammar-r01-r03",
+      "title": "Grammar Rules 1–3",
+      "category": "English",
+      "topic": "Grammar",
+      "subtopic": "Grammar Rules 1–3",
+      "part": 1,
+      "description": "Covers the first three grammar rules from the lesson: Each & Every, Both, and Who & Whom, with application-focused exam questions.",
+      "difficulty": "Exam Practice",
+      "questionCount": 50,
+      "file": "data/quizzes/day-01-grammar-r01-r03.json"
+    },
+    {
+      "id": "day-01-banking-history",
+      "title": "Indian Banking History",
+      "category": "Banking Awareness",
+      "topic": "Indian Banking History",
+      "subtopic": "Banking History",
+      "description": "Covers the major historical milestones, institutions and banking developments included in the lesson, with exam-focused recall and application questions.",
+      "difficulty": "Exam Practice",
+      "questionCount": 50,
+      "file": "data/quizzes/day-01-banking-history.json"
+    },
+    {
+      "id": "day-01-banking-system",
+      "title": "Indian Banking System",
+      "category": "Banking Awareness",
+      "topic": "Indian Banking System",
+      "subtopic": "Banking System",
+      "description": "Covers the structure and classification of the Indian banking system, scheduled banks, PSBs, RRBs, foreign banks and important terminology.",
+      "difficulty": "Exam Practice",
+      "questionCount": 50,
+      "file": "data/quizzes/day-01-banking-system.json"
+    }
+  ]
+}

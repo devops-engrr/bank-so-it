@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:url" content="https://banksoit.com/auth/">
+<link rel="canonical" href="https://banksoit.com/auth/">
+  <meta name="description" content="Bank SO IT secure student login and signup.">
+  <title>Login / Sign Up | Bank SO IT</title>
+  <link rel="icon" href="/assets/logo/bank-so-it-logo.jpg">
+  <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+  <div class="auth-shell">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <main class="auth-card" aria-live="polite">
+      <section class="auth-brand">
+        <a href="/" class="brand-link" aria-label="Bank SO IT home">
+          <img src="/assets/logo/bank-so-it-logo.jpg" alt="Bank SO IT logo">
+          <span>Bank SO IT</span>
+        </a>
+        <p class="eyebrow">STUDENT PLATFORM</p>
+        <h1 id="hero-title">Prepare smarter.<br><span>Track your progress.</span></h1>
+        <p class="hero-copy">Your focused preparation space for Bank SO IT exams.</p>
+        <div class="trust-row">
+          <span>✓ Secure authentication</span>
+          <span>✓ Personal progress</span>
+        </div>
+      </section>
+
+      <section class="auth-panel">
+        <div class="mode-switch" role="tablist" aria-label="Authentication mode">
+          <button class="mode-btn active" id="login-tab" type="button" role="tab" aria-selected="true">Login</button>
+          <button class="mode-btn" id="signup-tab" type="button" role="tab" aria-selected="false">Create account</button>
+        </div>
+
+        <div id="global-message" class="message hidden" role="alert"></div>
+
+        <form id="login-form" novalidate>
+          <div class="form-heading">
+            <h2>Welcome back</h2>
+            <p>Continue your preparation.</p>
+          </div>
+
+          <label class="field">
+            <span>Email <b>*</b></span>
+            <input id="login-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" maxlength="254" required>
+            <small class="field-error" data-error-for="login-email"></small>
+          </label>
+
+          <label class="field">
+            <span>Password <b>*</b></span>
+            <div class="password-wrap">
+              <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" maxlength="72" required>
+              <button type="button" class="eye-btn" data-toggle-password="login-password" aria-label="Show password">Show</button>
+            </div>
+            <small class="field-error" data-error-for="login-password"></small>
+          </label>
+
+          <div class="form-row">
+            <label class="check"><input id="remember-me" type="checkbox" checked> <span>Keep me signed in</span></label>
+            <button class="text-btn" type="button" id="forgot-btn">Forgot password?</button>
+          </div>
+
+          <button class="primary-btn" type="submit" id="login-submit">
+            <span class="btn-label">Login</span><span class="spinner hidden"></span>
+          </button>
+        </form>
+
+        <form id="signup-form" class="hidden" novalidate>
+          <div class="form-heading">
+            <h2>Create your account</h2>
+            <p>Start building your Bank SO IT preparation profile.</p>
+          </div>
+
+          <label class="field">
+            <span>Full name <b>*</b></span>
+            <input id="signup-name" name="full_name" type="text" autocomplete="name" placeholder="Your full name" maxlength="80" required>
+            <small class="field-error" data-error-for="signup-name"></small>
+          </label>
+
+          <label class="field">
+            <span>Email <b>*</b></span>
+            <input id="signup-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" maxlength="254" required>
+            <small class="field-error" data-error-for="signup-email"></small>
+          </label>
+
+          <label class="field">
+            <span>Exam preference <em>optional</em></span>
+            <select id="signup-exam" name="exam_preference">
+              <option value="">Choose later</option>
+              <option>IBPS SO IT</option>
+              <option>RRB SO IT</option>
+              <option>SBI SO</option>
+              <option>Other Bank SO</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Password <b>*</b></span>
+            <div class="password-wrap">
+              <input id="signup-password" name="password" type="password" autocomplete="new-password" placeholder="Create a strong password" maxlength="72" required>
+              <button type="button" class="eye-btn" data-toggle-password="signup-password" aria-label="Show password">Show</button>
+            </div>
+            <div class="strength" aria-live="polite">
+              <div class="strength-track"><i id="strength-bar"></i></div>
+              <span id="strength-label">Use 8+ characters</span>
+            </div>
+            <small class="field-error" data-error-for="signup-password"></small>
+          </label>
+
+          <label class="field">
+            <span>Confirm password <b>*</b></span>
+            <div class="password-wrap">
+              <input id="signup-confirm" name="confirm_password" type="password" autocomplete="new-password" placeholder="Re-enter your password" maxlength="72" required>
+              <button type="button" class="eye-btn" data-toggle-password="signup-confirm" aria-label="Show password">Show</button>
+            </div>
+            <small class="field-error" data-error-for="signup-confirm"></small>
+          </label>
+
+          <label class="check terms"><input id="terms" type="checkbox"> <span>I agree to use Bank SO IT for educational preparation.</span></label>
+          <small class="field-error" id="terms-error"></small>
+
+          <button class="primary-btn" type="submit" id="signup-submit">
+            <span class="btn-label">Create account</span><span class="spinner hidden"></span>
+          </button>
+        </form>
+
+        <div id="verification-view" class="hidden status-view">
+          <div class="status-icon">✉</div>
+          <h2>Check your email</h2>
+          <p>We've sent a verification email <strong>from Supabase</strong> to <strong id="verification-email"></strong>.</p>
+          <p class="muted">Open the email and click the verification link before logging in. If you do not see it, check your spam or junk folder.</p>
+          <button class="secondary-btn" id="back-to-login" type="button">Back to login</button>
+        </div>
+
+        <div id="reset-view" class="hidden">
+          <div class="form-heading">
+            <h2>Reset your password</h2>
+            <p>Enter your account email and we'll send a recovery link.</p>
+          </div>
+          <label class="field">
+            <span>Email <b>*</b></span>
+            <input id="reset-email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="254">
+            <small class="field-error" data-error-for="reset-email"></small>
+          </label>
+          <button class="primary-btn" id="reset-submit" type="button">
+            <span class="btn-label">Send reset link</span><span class="spinner hidden"></span>
+          </button>
+          <button class="secondary-btn full" id="reset-back" type="button">Back to login</button>
+        </div>
+
+        <p class="legal">By continuing, you agree to use the platform responsibly for educational purposes.</p>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="/js/supabase.js" defer></script>
+  <script src="/js/auth.js" defer></script>
+</body>
+</html>
