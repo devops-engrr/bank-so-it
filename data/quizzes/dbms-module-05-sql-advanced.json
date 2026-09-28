@@ -1,0 +1,561 @@
+{
+  "version": 1,
+  "quizId": "dbms-module-05-sql-advanced",
+  "title": "SQL Advanced",
+  "subtitle": "Joins, subqueries, set operators, views and indexes — exam-oriented practice.",
+  "questionCount": 20,
+  "source": "BankSoIt DBMS Production Deck — Module 05. Questions are independently crafted from the module topics for competitive-exam practice.",
+  "instructions": [
+    "Choose one answer for each question.",
+    "Questions are designed for IBPS SO IT, RRB Scale II IT, SBI SO and similar Computer Science/IT examinations.",
+    "Review the explanation, important point, exam trap and hint after submission."
+  ],
+  "category": "IT Professional Knowledge",
+  "topic": "DBMS",
+  "subtopic": "SQL Advanced",
+  "description": "Joins, subqueries, set operators, views and indexes — exam-oriented practice.",
+  "part": 2,
+  "difficulty": "Exam Practice",
+  "questions": [
+    {
+      "id": "DBM5-01",
+      "question": "Two tables EMP(EmpID, DeptID) and DEPT(DeptID, DeptName) are joined to list every employee together with the name of the department they belong to. Which join is the usual choice when only matching department rows are required?",
+      "options": [
+        {
+          "id": "A",
+          "text": "INNER JOIN"
+        },
+        {
+          "id": "B",
+          "text": "LEFT OUTER JOIN"
+        },
+        {
+          "id": "C",
+          "text": "FULL OUTER JOIN"
+        },
+        {
+          "id": "D",
+          "text": "CROSS JOIN"
+        }
+      ],
+      "answer": "A",
+      "explanation": "An INNER JOIN returns rows for which the join condition matches in both tables, which is the stated requirement.",
+      "importantPoint": "INNER JOIN returns only matching rows from both relations.",
+      "examTrap": "LEFT JOIN would also preserve employees without a matching department; CROSS JOIN ignores the matching condition.",
+      "hint": "Ask whether unmatched rows from either table must be preserved."
+    },
+    {
+      "id": "DBM5-02",
+      "question": "Table A contains 100 rows and table B contains 40 rows. A CROSS JOIN is performed with no filtering condition. How many rows are produced?",
+      "options": [
+        {
+          "id": "A",
+          "text": "40"
+        },
+        {
+          "id": "B",
+          "text": "100"
+        },
+        {
+          "id": "C",
+          "text": "140"
+        },
+        {
+          "id": "D",
+          "text": "4000"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A Cartesian product pairs every row of A with every row of B, so 100 × 40 = 4000 rows.",
+      "importantPoint": "CROSS JOIN produces the Cartesian product: |A × B| = |A| × |B|.",
+      "examTrap": "Do not add the row counts; every row of one table pairs with every row of the other.",
+      "hint": "Think in terms of ordered row pairs."
+    },
+    {
+      "id": "DBM5-03",
+      "question": "A LEFT JOIN between A and B is used, but a predicate on a B column is placed in the WHERE clause and rejects NULL values. What is the likely effect?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It always becomes a CROSS JOIN"
+        },
+        {
+          "id": "B",
+          "text": "It can eliminate unmatched A rows and behave like an inner join for that condition"
+        },
+        {
+          "id": "C",
+          "text": "It duplicates every A row"
+        },
+        {
+          "id": "D",
+          "text": "It removes all rows from A"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Unmatched B columns are NULL; a WHERE predicate such as B.status = ... rejects those rows, effectively removing the preserved unmatched side.",
+      "importantPoint": "Predicate placement can change the practical result of an outer join.",
+      "examTrap": "A LEFT JOIN does not guarantee preservation if a later WHERE condition rejects the NULL-extended rows.",
+      "hint": "Check what happens to rows where B columns are NULL."
+    },
+    {
+      "id": "DBM5-04",
+      "question": "Consider EMP(EmpID, DeptID, Salary). Which query correctly returns employees whose salary is greater than the average salary of all employees?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SELECT * FROM EMP WHERE Salary > AVG(Salary);"
+        },
+        {
+          "id": "B",
+          "text": "SELECT * FROM EMP WHERE Salary > (SELECT AVG(Salary) FROM EMP);"
+        },
+        {
+          "id": "C",
+          "text": "SELECT * FROM EMP HAVING Salary > AVG(Salary);"
+        },
+        {
+          "id": "D",
+          "text": "SELECT * FROM EMP WHERE Salary > ALL (SELECT Salary FROM EMP);"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The scalar subquery computes the overall average, and the outer WHERE compares each employee salary with that value.",
+      "importantPoint": "A scalar aggregate subquery can supply a single comparison value.",
+      "examTrap": "Aggregate functions cannot normally be placed directly in a row-level WHERE condition without an appropriate query structure.",
+      "hint": "First compute one average value, then compare each row against it."
+    },
+    {
+      "id": "DBM5-05",
+      "question": "Which subquery operator is most directly suited to testing whether at least one row returned by a subquery satisfies a condition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "EXISTS"
+        },
+        {
+          "id": "B",
+          "text": "BETWEEN"
+        },
+        {
+          "id": "C",
+          "text": "LIKE"
+        },
+        {
+          "id": "D",
+          "text": "DISTINCT"
+        }
+      ],
+      "answer": "A",
+      "explanation": "EXISTS evaluates to true when the subquery returns at least one row.",
+      "importantPoint": "EXISTS tests the existence of one or more qualifying rows.",
+      "examTrap": "IN compares a value with a set of values; EXISTS is specifically an existence test.",
+      "hint": "Focus on the phrase “at least one row exists”."
+    },
+    {
+      "id": "DBM5-06",
+      "question": "Which statement about NOT IN and NULL is most important in SQL logic?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NULL is always treated as equal to zero"
+        },
+        {
+          "id": "B",
+          "text": "A NULL in the subquery can make a NOT IN predicate evaluate to UNKNOWN"
+        },
+        {
+          "id": "C",
+          "text": "NOT IN automatically removes NULL from the subquery"
+        },
+        {
+          "id": "D",
+          "text": "NOT IN and NOT EXISTS are always identical"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Because NULL represents an unknown value, comparisons involving it can yield UNKNOWN; this can make NOT IN unexpectedly return no rows when the subquery contains NULL.",
+      "importantPoint": "NULL participates in three-valued SQL logic.",
+      "examTrap": "NOT IN is not universally interchangeable with NOT EXISTS when NULLs are possible.",
+      "hint": "Recall SQL’s TRUE/FALSE/UNKNOWN logic."
+    },
+    {
+      "id": "DBM5-07",
+      "question": "Which set operator combines the results of two compatible SELECT queries and removes duplicate rows?",
+      "options": [
+        {
+          "id": "A",
+          "text": "UNION"
+        },
+        {
+          "id": "B",
+          "text": "UNION ALL"
+        },
+        {
+          "id": "C",
+          "text": "INTERSECT ALL"
+        },
+        {
+          "id": "D",
+          "text": "CROSS JOIN"
+        }
+      ],
+      "answer": "A",
+      "explanation": "UNION combines compatible result sets and eliminates duplicate rows.",
+      "importantPoint": "UNION removes duplicates; UNION ALL retains them.",
+      "examTrap": "UNION requires compatible column counts and corresponding data types.",
+      "hint": "Compare UNION with UNION ALL."
+    },
+    {
+      "id": "DBM5-08",
+      "question": "Two SELECT statements return 6 and 5 rows respectively, with 2 rows appearing in both result sets. Assuming UNION removes duplicates, how many rows can the UNION return?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3"
+        },
+        {
+          "id": "B",
+          "text": "9"
+        },
+        {
+          "id": "C",
+          "text": "11"
+        },
+        {
+          "id": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The overlap of 2 rows is counted once, so 6 + 5 − 2 = 9 distinct rows.",
+      "importantPoint": "For set union, subtract the intersection counted twice.",
+      "examTrap": "UNION ALL would retain all 11 row occurrences instead.",
+      "hint": "Use |A ∪ B| = |A| + |B| − |A ∩ B|."
+    },
+    {
+      "id": "DBM5-09",
+      "question": "Which condition is required for two SELECT results to be combined with a standard UNION?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They must have the same table name"
+        },
+        {
+          "id": "B",
+          "text": "They must have the same number of corresponding columns with compatible data types"
+        },
+        {
+          "id": "C",
+          "text": "They must have identical WHERE clauses"
+        },
+        {
+          "id": "D",
+          "text": "They must use the same primary key"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Set operations require compatible result structures: the same number of corresponding columns and compatible data types.",
+      "importantPoint": "Set operators work on union-compatible result sets.",
+      "examTrap": "The source table names, WHERE clauses and primary keys do not have to be identical.",
+      "hint": "Look at the shape and types of the result sets, not their source tables."
+    },
+    {
+      "id": "DBM5-10",
+      "question": "A view V is defined as SELECT EmpID, DeptID FROM EMP. Which statement best describes V?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It must always store a second physical copy of EMP"
+        },
+        {
+          "id": "B",
+          "text": "It is a virtual table defined by a query"
+        },
+        {
+          "id": "C",
+          "text": "It is a primary key constraint"
+        },
+        {
+          "id": "D",
+          "text": "It is an index on EMP"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A conventional SQL view is a named query whose result can be referenced like a table; it does not inherently mean a separate stored copy of all rows.",
+      "importantPoint": "View = named query abstraction over underlying data.",
+      "examTrap": "A view and an index solve different problems; a view does not automatically create an index.",
+      "hint": "Think of a view as a reusable query definition."
+    },
+    {
+      "id": "DBM5-11",
+      "question": "What is a key advantage of a view for database applications?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It can provide a restricted logical representation of underlying tables"
+        },
+        {
+          "id": "B",
+          "text": "It guarantees every query will use an index"
+        },
+        {
+          "id": "C",
+          "text": "It permanently converts rows into indexes"
+        },
+        {
+          "id": "D",
+          "text": "It removes the need for authorization"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A view can expose only selected columns or rows, supporting abstraction and controlled access.",
+      "importantPoint": "Views can simplify queries and restrict exposed data.",
+      "examTrap": "Views do not automatically guarantee index use or eliminate access control.",
+      "hint": "Consider what the application is allowed to see."
+    },
+    {
+      "id": "DBM5-12",
+      "question": "An index is created on EMP(EmpID), and a query frequently searches WHERE EmpID = 500. What is the primary purpose of the index?",
+      "options": [
+        {
+          "id": "A",
+          "text": "To enforce every foreign-key constraint"
+        },
+        {
+          "id": "B",
+          "text": "To provide a faster access path for qualifying rows"
+        },
+        {
+          "id": "C",
+          "text": "To duplicate the entire table for backup"
+        },
+        {
+          "id": "D",
+          "text": "To replace the SQL optimizer"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An index provides an access structure that can make searches on the indexed column more efficient.",
+      "importantPoint": "Indexes are access paths used to speed suitable searches.",
+      "examTrap": "An index is not a backup copy and does not replace the optimizer.",
+      "hint": "Ask what structure can help locate matching rows without scanning every row."
+    },
+    {
+      "id": "DBM5-13",
+      "question": "Which trade-off is generally associated with adding indexes to a table that receives frequent INSERT operations?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Indexes always reduce storage usage"
+        },
+        {
+          "id": "B",
+          "text": "Indexes can increase write overhead because index structures must also be maintained"
+        },
+        {
+          "id": "C",
+          "text": "Indexes prevent all concurrent access"
+        },
+        {
+          "id": "D",
+          "text": "Indexes eliminate the need for constraints"
+        }
+      ],
+      "answer": "B",
+      "explanation": "When rows are inserted, relevant index entries must also be maintained, adding work and storage overhead.",
+      "importantPoint": "Indexes can improve reads while increasing maintenance cost for writes.",
+      "examTrap": "The trade-off is not that indexes eliminate concurrency or constraints.",
+      "hint": "Think about what must change when a new row is inserted."
+    },
+    {
+      "id": "DBM5-14",
+      "question": "A correlated subquery differs from a non-correlated subquery because the correlated subquery:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Can never contain an aggregate"
+        },
+        {
+          "id": "B",
+          "text": "References a column from the outer query and may be evaluated with respect to each outer row"
+        },
+        {
+          "id": "C",
+          "text": "Always returns exactly one row"
+        },
+        {
+          "id": "D",
+          "text": "Can only be used with DELETE"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A correlated subquery references values from the current row of the outer query, so its evaluation is tied to the outer query.",
+      "importantPoint": "Correlated subquery = depends on the current outer-row context.",
+      "examTrap": "It may return one or multiple rows depending on the query.",
+      "hint": "Look for a reference from the inner query back to the outer query."
+    },
+    {
+      "id": "DBM5-15",
+      "question": "Which query pattern correctly identifies departments having more than 5 employees?",
+      "options": [
+        {
+          "id": "A",
+          "text": "WHERE COUNT(*) > 5"
+        },
+        {
+          "id": "B",
+          "text": "GROUP BY DeptID HAVING COUNT(*) > 5"
+        },
+        {
+          "id": "C",
+          "text": "ORDER BY DeptID HAVING COUNT(*) > 5"
+        },
+        {
+          "id": "D",
+          "text": "GROUP BY COUNT(*) HAVING DeptID > 5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "GROUP BY forms department groups, and HAVING filters those groups using COUNT(*).",
+      "importantPoint": "WHERE filters rows before grouping; HAVING filters groups after aggregation.",
+      "examTrap": "COUNT(*) cannot be used as a GROUP BY expression in this way.",
+      "hint": "Separate row filtering from group filtering."
+    },
+    {
+      "id": "DBM5-16",
+      "question": "Which join is appropriate when the requirement is to return all departments, including departments with no employees?",
+      "options": [
+        {
+          "id": "A",
+          "text": "INNER JOIN with DEPT on the left"
+        },
+        {
+          "id": "B",
+          "text": "LEFT JOIN with DEPT on the left"
+        },
+        {
+          "id": "C",
+          "text": "RIGHT JOIN with EMP on the left"
+        },
+        {
+          "id": "D",
+          "text": "CROSS JOIN only"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Putting DEPT on the left side of a LEFT JOIN preserves every department; unmatched employee columns become NULL.",
+      "importantPoint": "The preserved table is the left side of a LEFT JOIN.",
+      "examTrap": "An INNER JOIN would discard departments with no matching employee.",
+      "hint": "Identify which table must never disappear from the result."
+    },
+    {
+      "id": "DBM5-17",
+      "question": "Which SQL construct is generally used to test whether a value belongs to the set returned by a subquery?",
+      "options": [
+        {
+          "id": "A",
+          "text": "IN"
+        },
+        {
+          "id": "B",
+          "text": "EXISTS ONLY"
+        },
+        {
+          "id": "C",
+          "text": "MATCH"
+        },
+        {
+          "id": "D",
+          "text": "CONTAINS ROW"
+        }
+      ],
+      "answer": "A",
+      "explanation": "IN compares an expression with the set of values produced by a subquery.",
+      "importantPoint": "IN is a set-membership predicate.",
+      "examTrap": "EXISTS tests row existence rather than direct value membership.",
+      "hint": "Look for the phrase “belongs to the set of values”."
+    },
+    {
+      "id": "DBM5-18",
+      "question": "Which statement about UNION ALL is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It removes duplicate rows"
+        },
+        {
+          "id": "B",
+          "text": "It preserves duplicate row occurrences between the two result sets"
+        },
+        {
+          "id": "C",
+          "text": "It requires both queries to reference the same table"
+        },
+        {
+          "id": "D",
+          "text": "It performs a join on matching columns"
+        }
+      ],
+      "answer": "B",
+      "explanation": "UNION ALL concatenates compatible result sets without duplicate elimination.",
+      "importantPoint": "UNION ALL retains duplicates; UNION removes them.",
+      "examTrap": "A set operator combines result sets; it does not perform a join.",
+      "hint": "Focus on whether duplicate occurrences are eliminated."
+    },
+    {
+      "id": "DBM5-19",
+      "question": "A view is defined over three base tables. An application queries the view without knowing those table names. Which DBMS concept is primarily demonstrated?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Data abstraction"
+        },
+        {
+          "id": "B",
+          "text": "Deadlock prevention"
+        },
+        {
+          "id": "C",
+          "text": "Physical logging"
+        },
+        {
+          "id": "D",
+          "text": "Two-phase locking"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The view hides underlying table complexity and exposes a simpler logical representation to the application.",
+      "importantPoint": "Views support logical data abstraction.",
+      "examTrap": "Locking and logging concern transaction processing, not view abstraction.",
+      "hint": "Think about hiding implementation details from the user."
+    },
+    {
+      "id": "DBM5-20",
+      "question": "A composite index exists on (DeptID, Salary). Which query is most directly aligned with the leading column of that index?",
+      "options": [
+        {
+          "id": "A",
+          "text": "WHERE Salary = 50000"
+        },
+        {
+          "id": "B",
+          "text": "WHERE DeptID = 10"
+        },
+        {
+          "id": "C",
+          "text": "WHERE Name = 'Ravi'"
+        },
+        {
+          "id": "D",
+          "text": "WHERE Email LIKE 'a%@example.com'"
+        }
+      ],
+      "answer": "B",
+      "explanation": "DeptID is the leading column of the composite index, so a predicate on DeptID can directly align with its indexed ordering/access path.",
+      "importantPoint": "In a composite index, the leading column is especially important for index access.",
+      "examTrap": "An index on (DeptID, Salary) is not equivalent to an index beginning with Salary alone.",
+      "hint": "Look at the first column in the composite index definition."
+    }
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "version": 1,
+  "quizId": "dbms-module-06-transactions-concurrency",
+  "title": "Transactions & Concurrency",
+  "subtitle": "ACID, transaction control, anomalies, locks, 2PL, serializability and deadlock — exam-oriented practice.",
+  "questionCount": 20,
+  "source": "BankSoIt DBMS Production Deck — Module 06. Questions are independently crafted from the module topics for competitive-exam practice.",
+  "instructions": [
+    "Choose one answer for each question.",
+    "Questions are designed for IBPS SO IT, RRB Scale II IT, SBI SO and similar Computer Science/IT examinations.",
+    "Review the explanation, important point, exam trap and hint after submission."
+  ],
+  "category": "IT Professional Knowledge",
+  "topic": "DBMS",
+  "subtopic": "Transactions & Concurrency",
+  "description": "ACID, COMMIT, ROLLBACK, SAVEPOINT, concurrency anomalies, locks, 2PL, serializability and deadlock.",
+  "part": 2,
+  "difficulty": "Exam Practice",
+  "questions": [
+    {
+      "id": "DBM6-01",
+      "question": "A transaction transfers ₹500 from Account A to Account B. The debit succeeds but the credit fails, and the system leaves the database with only the debit. Which ACID property has been violated?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Atomicity"
+        },
+        {
+          "id": "B",
+          "text": "Consistency"
+        },
+        {
+          "id": "C",
+          "text": "Isolation"
+        },
+        {
+          "id": "D",
+          "text": "Durability"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The transfer should occur as an all-or-nothing unit; leaving only the debit means the transaction was partially applied.",
+      "importantPoint": "Atomicity means all operations of a transaction occur or none do.",
+      "examTrap": "Durability concerns committed results surviving failures; isolation concerns concurrent transactions.",
+      "hint": "Use the “all or nothing” test."
+    },
+    {
+      "id": "DBM6-02",
+      "question": "Which ACID property requires a committed transaction’s effects to survive a subsequent system crash?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Atomicity"
+        },
+        {
+          "id": "B",
+          "text": "Consistency"
+        },
+        {
+          "id": "C",
+          "text": "Isolation"
+        },
+        {
+          "id": "D",
+          "text": "Durability"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Durability requires committed changes to persist despite failures.",
+      "importantPoint": "Durability = committed effects survive failures.",
+      "examTrap": "Atomicity is all-or-nothing; isolation controls interaction among concurrent transactions.",
+      "hint": "Think about what must remain after a crash."
+    },
+    {
+      "id": "DBM6-03",
+      "question": "A transaction temporarily produces an invalid database state but completes with all integrity constraints satisfied. Which ACID property is concerned with preserving valid states from one committed state to another?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Consistency"
+        },
+        {
+          "id": "B",
+          "text": "Isolation"
+        },
+        {
+          "id": "C",
+          "text": "Durability"
+        },
+        {
+          "id": "D",
+          "text": "Atomicity"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Consistency requires a transaction to take the database from one valid state to another valid state, subject to constraints.",
+      "importantPoint": "Consistency preserves database rules and integrity constraints.",
+      "examTrap": "Isolation is about concurrent execution, not the validity of the committed state itself.",
+      "hint": "Focus on database rules remaining satisfied."
+    },
+    {
+      "id": "DBM6-04",
+      "question": "Which command makes the changes of the current transaction permanent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SAVEPOINT"
+        },
+        {
+          "id": "B",
+          "text": "ROLLBACK"
+        },
+        {
+          "id": "C",
+          "text": "COMMIT"
+        },
+        {
+          "id": "D",
+          "text": "RELEASE"
+        }
+      ],
+      "answer": "C",
+      "explanation": "COMMIT ends the transaction successfully and makes its changes permanent according to the DBMS transaction model.",
+      "importantPoint": "COMMIT makes transaction changes permanent.",
+      "examTrap": "ROLLBACK undoes uncommitted work; SAVEPOINT creates an intermediate rollback point.",
+      "hint": "Which command signals successful completion of the transaction?"
+    },
+    {
+      "id": "DBM6-05",
+      "question": "A transaction updates several rows and then executes ROLLBACK before COMMIT. What is the normal effect on those uncommitted changes?",
+      "options": [
+        {
+          "id": "A",
+          "text": "They become permanent"
+        },
+        {
+          "id": "B",
+          "text": "They are undone"
+        },
+        {
+          "id": "C",
+          "text": "They are converted into a savepoint"
+        },
+        {
+          "id": "D",
+          "text": "They are copied into the log only"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ROLLBACK reverses the transaction’s uncommitted work.",
+      "importantPoint": "ROLLBACK undoes uncommitted transaction changes.",
+      "examTrap": "COMMIT, not ROLLBACK, makes changes permanent.",
+      "hint": "Think about the purpose of rollback in transaction control."
+    },
+    {
+      "id": "DBM6-06",
+      "question": "Which statement best describes SAVEPOINT?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It permanently commits all changes"
+        },
+        {
+          "id": "B",
+          "text": "It creates a point within a transaction to which partial rollback can be performed"
+        },
+        {
+          "id": "C",
+          "text": "It starts a new database instance"
+        },
+        {
+          "id": "D",
+          "text": "It automatically releases all locks immediately"
+        }
+      ],
+      "answer": "B",
+      "explanation": "SAVEPOINT marks an intermediate point so a transaction can roll back part of its work without necessarily discarding all earlier work.",
+      "importantPoint": "SAVEPOINT supports partial rollback within a transaction.",
+      "examTrap": "It is not a substitute for COMMIT and does not itself start a new database instance.",
+      "hint": "Think of SAVEPOINT as an intermediate recovery position within one transaction."
+    },
+    {
+      "id": "DBM6-07",
+      "question": "Transaction T2 reads a value written by T1 before T1 commits. T1 later rolls back. What anomaly did T2 experience?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lost update"
+        },
+        {
+          "id": "B",
+          "text": "Dirty read"
+        },
+        {
+          "id": "C",
+          "text": "Phantom read"
+        },
+        {
+          "id": "D",
+          "text": "Deadlock"
+        }
+      ],
+      "answer": "B",
+      "explanation": "T2 consumed uncommitted data from T1, which later disappeared due to rollback; this is a dirty read.",
+      "importantPoint": "Dirty read = reading uncommitted data.",
+      "examTrap": "A lost update involves overwriting another transaction’s update; a phantom concerns a changing set of rows.",
+      "hint": "Was the value read committed at the time it was read?"
+    },
+    {
+      "id": "DBM6-08",
+      "question": "T1 reads the same row twice and gets different committed values because T2 updates and commits that row between the two reads. Which anomaly is this?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dirty read"
+        },
+        {
+          "id": "B",
+          "text": "Non-repeatable read"
+        },
+        {
+          "id": "C",
+          "text": "Phantom read"
+        },
+        {
+          "id": "D",
+          "text": "Deadlock"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The same row is read twice and returns different values due to another committed update, which is a non-repeatable read.",
+      "importantPoint": "Non-repeatable read concerns the value of the same row changing between reads.",
+      "examTrap": "A phantom read concerns newly appearing/disappearing rows in a result set.",
+      "hint": "Focus on one existing row being read twice."
+    },
+    {
+      "id": "DBM6-09",
+      "question": "T1 executes a query returning all employees in Dept 10. T2 inserts another Dept 10 employee and commits. T1 repeats the query and gets an additional row. Which anomaly is illustrated?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dirty read"
+        },
+        {
+          "id": "B",
+          "text": "Lost update"
+        },
+        {
+          "id": "C",
+          "text": "Phantom read"
+        },
+        {
+          "id": "D",
+          "text": "Write skew"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A phantom read occurs when a repeated range/set query sees a different set of rows because another transaction inserted or removed qualifying rows.",
+      "importantPoint": "Phantom = changed set of rows for the same predicate.",
+      "examTrap": "Non-repeatable read is typically framed around a changed value of an existing row.",
+      "hint": "Ask whether the row set itself changed."
+    },
+    {
+      "id": "DBM6-10",
+      "question": "Which lock is normally required when a transaction intends to modify a data item?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Shared lock"
+        },
+        {
+          "id": "B",
+          "text": "Exclusive lock"
+        },
+        {
+          "id": "C",
+          "text": "Intent-free lock"
+        },
+        {
+          "id": "D",
+          "text": "Read-only lock"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An exclusive lock provides write access while preventing conflicting access according to the locking protocol.",
+      "importantPoint": "Exclusive lock is associated with writing/updating.",
+      "examTrap": "A shared lock is primarily associated with reading and can be compatible with other shared locks.",
+      "hint": "Match the lock type with a write operation."
+    },
+    {
+      "id": "DBM6-11",
+      "question": "Two transactions both hold shared locks on a row and both need to convert them to exclusive locks. Which problem can arise because each waits for the other to release its shared lock?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Deadlock"
+        },
+        {
+          "id": "B",
+          "text": "Dirty read"
+        },
+        {
+          "id": "C",
+          "text": "Checkpoint"
+        },
+        {
+          "id": "D",
+          "text": "View materialization"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each transaction can wait for the other, producing a cycle in the wait-for relationship: a deadlock.",
+      "importantPoint": "Deadlock can arise from circular waiting for locks.",
+      "examTrap": "Dirty reads and checkpoints are unrelated to this lock-conversion cycle.",
+      "hint": "Look for mutual waiting."
+    },
+    {
+      "id": "DBM6-12",
+      "question": "In the growing phase of two-phase locking (2PL), a transaction may:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Release locks but never acquire new ones"
+        },
+        {
+          "id": "B",
+          "text": "Acquire locks but not release them"
+        },
+        {
+          "id": "C",
+          "text": "Commit without holding any lock"
+        },
+        {
+          "id": "D",
+          "text": "Only acquire shared locks"
+        }
+      ],
+      "answer": "B",
+      "explanation": "During the growing phase, locks may be acquired but none are released; releases occur in the shrinking phase.",
+      "importantPoint": "2PL: growing = acquire; shrinking = release.",
+      "examTrap": "The protocol does not restrict the growing phase to shared locks only.",
+      "hint": "Recall the two phases as acquire first, release later."
+    },
+    {
+      "id": "DBM6-13",
+      "question": "Under basic two-phase locking, once a transaction releases its first lock, what is it prohibited from doing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reading any data"
+        },
+        {
+          "id": "B",
+          "text": "Committing"
+        },
+        {
+          "id": "C",
+          "text": "Acquiring a new lock"
+        },
+        {
+          "id": "D",
+          "text": "Writing any data"
+        }
+      ],
+      "answer": "C",
+      "explanation": "After the first lock release, the transaction is in the shrinking phase and cannot acquire new locks.",
+      "importantPoint": "The key 2PL boundary is that no new lock is acquired after the first release.",
+      "examTrap": "The transaction can still perform other operations subject to the protocol; the specific restriction is on acquiring locks.",
+      "hint": "Identify the action that changes the phase from growing to shrinking."
+    },
+    {
+      "id": "DBM6-14",
+      "question": "A schedule is conflict-serializable if its precedence graph is:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Complete"
+        },
+        {
+          "id": "B",
+          "text": "Acyclic"
+        },
+        {
+          "id": "C",
+          "text": "Disconnected in every case"
+        },
+        {
+          "id": "D",
+          "text": "Cyclic"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A schedule is conflict-serializable exactly when its precedence graph has no cycle.",
+      "importantPoint": "Acyclic precedence graph → conflict-serializable schedule.",
+      "examTrap": "A cycle indicates that no equivalent serial order exists under conflict-serializability.",
+      "hint": "Look for the graph property used to test conflict serializability."
+    },
+    {
+      "id": "DBM6-15",
+      "question": "Consider the schedule: T1 reads X, T2 writes X, T1 writes X. The conflicting operations create which relationship from T2 to T1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "T2 → T1 because T2’s write precedes T1’s write on X"
+        },
+        {
+          "id": "B",
+          "text": "T1 → T2 because T1 reads before T2 writes"
+        },
+        {
+          "id": "C",
+          "text": "No edge can exist because both transactions access X"
+        },
+        {
+          "id": "D",
+          "text": "T1 ↔ T2 is always required"
+        }
+      ],
+      "answer": "A",
+      "explanation": "T2’s write on X occurs before T1’s write on X, and the operations conflict, so the precedence graph contains T2 → T1.",
+      "importantPoint": "A write-write conflict creates an edge from the earlier transaction to the later one.",
+      "examTrap": "The direction follows the order of the conflicting operations in the schedule.",
+      "hint": "Compare the order of the conflicting writes."
+    },
+    {
+      "id": "DBM6-16",
+      "question": "Which set of conditions is classically associated with the possibility of deadlock?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Mutual exclusion, hold and wait, no preemption, circular wait"
+        },
+        {
+          "id": "B",
+          "text": "Atomicity, consistency, isolation, durability"
+        },
+        {
+          "id": "C",
+          "text": "Read, write, commit, rollback"
+        },
+        {
+          "id": "D",
+          "text": "Select, project, join, union"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The classic necessary conditions are mutual exclusion, hold and wait, no preemption and circular wait.",
+      "importantPoint": "Deadlock conditions describe how transactions can become permanently blocked by one another.",
+      "examTrap": "ACID properties are not deadlock conditions.",
+      "hint": "Recall the four Coffman conditions."
+    },
+    {
+      "id": "DBM6-17",
+      "question": "If a transaction holds a shared lock on item X, which access is generally compatible with that lock under a basic lock-compatibility model?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Another transaction acquiring a shared lock on X"
+        },
+        {
+          "id": "B",
+          "text": "Another transaction acquiring an exclusive lock on X"
+        },
+        {
+          "id": "C",
+          "text": "Another transaction deleting X while ignoring locks"
+        },
+        {
+          "id": "D",
+          "text": "Any operation regardless of lock type"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Shared locks are compatible with other shared locks because both represent read access.",
+      "importantPoint": "S-S is compatible; S-X is not.",
+      "examTrap": "Compatibility depends on the lock matrix, not on ignoring locks.",
+      "hint": "Think about multiple readers versus a writer."
+    },
+    {
+      "id": "DBM6-18",
+      "question": "Which statement best describes isolation in ACID?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Committed changes survive hardware failure"
+        },
+        {
+          "id": "B",
+          "text": "Concurrent transactions should behave as if their intermediate effects are appropriately controlled"
+        },
+        {
+          "id": "C",
+          "text": "Every transaction must use a foreign key"
+        },
+        {
+          "id": "D",
+          "text": "A transaction must always execute faster than other transactions"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Isolation controls how concurrent transactions interact so intermediate effects do not improperly interfere.",
+      "importantPoint": "Isolation concerns concurrent execution behavior.",
+      "examTrap": "Durability, not isolation, concerns survival of committed data after failures.",
+      "hint": "Focus on concurrent transactions interacting with each other."
+    },
+    {
+      "id": "DBM6-19",
+      "question": "A schedule executes all operations of T1 before all operations of T2. What kind of schedule is this?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Serial schedule"
+        },
+        {
+          "id": "B",
+          "text": "Cyclic schedule"
+        },
+        {
+          "id": "C",
+          "text": "Deadlocked schedule"
+        },
+        {
+          "id": "D",
+          "text": "Recoverable schedule by definition"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A serial schedule completes one transaction before beginning the next, so no interleaving occurs.",
+      "importantPoint": "Serial = transactions execute one after another without interleaving.",
+      "examTrap": "Recoverability is a different property and is not guaranteed merely by the label “serial” in every broader sense.",
+      "hint": "Ask whether operations of the transactions are interleaved."
+    },
+    {
+      "id": "DBM6-20",
+      "question": "Which statement about deadlock detection is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A cycle in a wait-for graph can indicate deadlock"
+        },
+        {
+          "id": "B",
+          "text": "A cycle always means the database has achieved serializability"
+        },
+        {
+          "id": "C",
+          "text": "Deadlock is prevented by UNION"
+        },
+        {
+          "id": "D",
+          "text": "A wait-for graph cannot represent transaction waiting"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A cycle in the wait-for graph indicates circular waiting, which is the signature of a deadlock among the involved transactions.",
+      "importantPoint": "Wait-for graph cycles are used to detect deadlock.",
+      "examTrap": "Serializability and deadlock are different concepts.",
+      "hint": "Look for circular waiting between transactions."
+    }
+  ]
+}

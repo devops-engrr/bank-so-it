@@ -50,6 +50,42 @@
       "file": "data/quizzes/dbms-module-04-sql-core.json"
     },
     {
+      "id": "dbms-module-07-recovery-relational-algebra",
+      "title": "Recovery & Relational Algebra",
+      "category": "IT Professional Knowledge",
+      "topic": "DBMS",
+      "subtopic": "Recovery & Relational Algebra",
+      "part": 2,
+      "description": "Logs, UNDO, REDO, checkpoints, selection, projection, Cartesian product and join.",
+      "difficulty": "Exam Practice",
+      "questionCount": 20,
+      "file": "data/quizzes/dbms-module-07-recovery-relational-algebra.json"
+    },
+    {
+      "id": "dbms-module-05-sql-advanced",
+      "title": "SQL Advanced",
+      "category": "IT Professional Knowledge",
+      "topic": "DBMS",
+      "subtopic": "SQL Advanced",
+      "part": 2,
+      "description": "Joins, subqueries, set operators, views and indexes — exam-oriented practice.",
+      "difficulty": "Exam Practice",
+      "questionCount": 20,
+      "file": "data/quizzes/dbms-module-05-sql-advanced.json"
+    },
+    {
+      "id": "dbms-module-06-transactions-concurrency",
+      "title": "Transactions & Concurrency",
+      "category": "IT Professional Knowledge",
+      "topic": "DBMS",
+      "subtopic": "Transactions & Concurrency",
+      "part": 2,
+      "description": "ACID, COMMIT, ROLLBACK, SAVEPOINT, concurrency anomalies, locks, 2PL, serializability and deadlock.",
+      "difficulty": "Exam Practice",
+      "questionCount": 20,
+      "file": "data/quizzes/dbms-module-06-transactions-concurrency.json"
+    },
+    {
       "id": "day-01-grammar-r01-r03",
       "title": "Grammar Rules 1–3",
       "category": "English",

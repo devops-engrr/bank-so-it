@@ -1,0 +1,561 @@
+{
+  "version": 1,
+  "quizId": "dbms-module-07-recovery-relational-algebra",
+  "title": "Recovery & Relational Algebra",
+  "subtitle": "UNDO, REDO, checkpoints and core relational algebra operators — exam-oriented practice.",
+  "questionCount": 20,
+  "source": "BankSoIt DBMS Production Deck — Module 07. Questions are independently crafted from the module topics for competitive-exam practice.",
+  "instructions": [
+    "Choose one answer for each question.",
+    "Questions are designed for IBPS SO IT, RRB Scale II IT, SBI SO and similar Computer Science/IT examinations.",
+    "Review the explanation, important point, exam trap and hint after submission."
+  ],
+  "category": "IT Professional Knowledge",
+  "topic": "DBMS",
+  "subtopic": "Recovery & Relational Algebra",
+  "description": "Logs, UNDO, REDO, checkpoints, selection, projection, Cartesian product and join.",
+  "part": 2,
+  "difficulty": "Exam Practice",
+  "questions": [
+    {
+      "id": "DBM7-01",
+      "question": "In log-based recovery, what is the primary purpose of UNDO?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reapply committed updates"
+        },
+        {
+          "id": "B",
+          "text": "Reverse effects of transactions that should not remain"
+        },
+        {
+          "id": "C",
+          "text": "Create a new index"
+        },
+        {
+          "id": "D",
+          "text": "Combine two relations"
+        }
+      ],
+      "answer": "B",
+      "explanation": "UNDO reverses changes associated with failed or uncommitted transactions so the database can return to a consistent state.",
+      "importantPoint": "UNDO = take back effects that should not remain.",
+      "examTrap": "REDO is used to reapply required committed effects.",
+      "hint": "Ask what happens to an uncommitted transaction after failure."
+    },
+    {
+      "id": "DBM7-02",
+      "question": "What is the primary purpose of REDO during recovery?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reverse every committed transaction"
+        },
+        {
+          "id": "B",
+          "text": "Reapply necessary effects of committed transactions"
+        },
+        {
+          "id": "C",
+          "text": "Delete the transaction log"
+        },
+        {
+          "id": "D",
+          "text": "Perform a Cartesian product"
+        }
+      ],
+      "answer": "B",
+      "explanation": "REDO reapplies logged changes that belong to transactions whose committed effects must be reflected in the database after a failure.",
+      "importantPoint": "REDO = apply the required committed effects again.",
+      "examTrap": "UNDO and REDO have opposite recovery roles.",
+      "hint": "Think about committed work that may not yet have reached stable storage."
+    },
+    {
+      "id": "DBM7-03",
+      "question": "Why is a checkpoint useful in database recovery?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It guarantees that no transaction can fail"
+        },
+        {
+          "id": "B",
+          "text": "It provides a known recovery point and can reduce the amount of log that must be processed"
+        },
+        {
+          "id": "C",
+          "text": "It replaces all transaction logs permanently"
+        },
+        {
+          "id": "D",
+          "text": "It converts all transactions into serial schedules"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A checkpoint records a known point in recovery processing, allowing the DBMS to avoid scanning the entire log from the beginning in many recovery schemes.",
+      "importantPoint": "Checkpoint = known point that reduces recovery work.",
+      "examTrap": "A checkpoint does not prevent transaction failure or replace logging entirely.",
+      "hint": "Think about reducing recovery work after a crash."
+    },
+    {
+      "id": "DBM7-04",
+      "question": "A transaction writes X = 50 but later fails before commit. During recovery, the database must restore the previous value of X. Which action corresponds to this?",
+      "options": [
+        {
+          "id": "A",
+          "text": "REDO"
+        },
+        {
+          "id": "B",
+          "text": "UNDO"
+        },
+        {
+          "id": "C",
+          "text": "JOIN"
+        },
+        {
+          "id": "D",
+          "text": "CHECKPOINT creation"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The failed transaction’s uncommitted effect should be reversed, which is an UNDO operation.",
+      "importantPoint": "Failed/uncommitted effects are candidates for UNDO.",
+      "examTrap": "REDO would reapply an effect, not reverse it.",
+      "hint": "Was the transaction committed or failed before commit?"
+    },
+    {
+      "id": "DBM7-05",
+      "question": "A transaction commits, but its final page update is not yet reflected in the database storage when a crash occurs. Which recovery action may be needed to reproduce its committed effect?",
+      "options": [
+        {
+          "id": "A",
+          "text": "UNDO"
+        },
+        {
+          "id": "B",
+          "text": "REDO"
+        },
+        {
+          "id": "C",
+          "text": "DROP"
+        },
+        {
+          "id": "D",
+          "text": "PROJECTION"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A committed transaction whose changes were not fully persisted may require REDO from the log.",
+      "importantPoint": "Committed effects that need to be reapplied are handled by REDO.",
+      "examTrap": "UNDO would remove effects rather than restore committed work.",
+      "hint": "Focus on the word “commits”."
+    },
+    {
+      "id": "DBM7-06",
+      "question": "Which relational algebra operator selects rows satisfying a predicate such as Salary > 50000?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Projection (π)"
+        },
+        {
+          "id": "B",
+          "text": "Selection (σ)"
+        },
+        {
+          "id": "C",
+          "text": "Cartesian product (×)"
+        },
+        {
+          "id": "D",
+          "text": "Rename (ρ)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Selection filters tuples based on a predicate, so Salary > 50000 is expressed with σ.",
+      "importantPoint": "σ selects rows/tuples based on a condition.",
+      "examTrap": "π selects attributes/columns, not rows.",
+      "hint": "Ask whether the operation changes the set of rows or the set of columns."
+    },
+    {
+      "id": "DBM7-07",
+      "question": "Which relational algebra operator chooses specific attributes such as EmpID and Name from a relation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Selection (σ)"
+        },
+        {
+          "id": "B",
+          "text": "Projection (π)"
+        },
+        {
+          "id": "C",
+          "text": "Join (⋈)"
+        },
+        {
+          "id": "D",
+          "text": "Difference (−)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Projection chooses attributes (columns) from a relation.",
+      "importantPoint": "π = columns/attributes; σ = rows/tuples.",
+      "examTrap": "Do not confuse row filtering with column selection.",
+      "hint": "Focus on whether the desired result removes columns or rows."
+    },
+    {
+      "id": "DBM7-08",
+      "question": "If relation R has 5 tuples and relation S has 4 tuples, how many tuples are in R × S before duplicate considerations?",
+      "options": [
+        {
+          "id": "A",
+          "text": "9"
+        },
+        {
+          "id": "B",
+          "text": "20"
+        },
+        {
+          "id": "C",
+          "text": "25"
+        },
+        {
+          "id": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Cartesian product pairs each tuple of R with each tuple of S, giving 5 × 4 = 20 tuples.",
+      "importantPoint": "|R × S| = |R| × |S|.",
+      "examTrap": "Do not add the cardinalities for a Cartesian product.",
+      "hint": "Think of every R tuple paired with every S tuple."
+    },
+    {
+      "id": "DBM7-09",
+      "question": "Which relational algebra operation combines tuples from two relations based on a matching condition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Selection"
+        },
+        {
+          "id": "B",
+          "text": "Projection"
+        },
+        {
+          "id": "C",
+          "text": "Join"
+        },
+        {
+          "id": "D",
+          "text": "Rename"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A join combines tuples from two relations using a specified join condition or matching attributes.",
+      "importantPoint": "Join combines related tuples from two relations.",
+      "examTrap": "Selection and projection operate on one relation’s tuples/attributes, while join combines relations.",
+      "hint": "Look for an operation involving two related relations and a matching condition."
+    },
+    {
+      "id": "DBM7-10",
+      "question": "Given STUDENT(SID, Name, Dept) and DEPT(Dept, DeptName), which relational algebra expression conceptually returns student names with department names?",
+      "options": [
+        {
+          "id": "A",
+          "text": "π Name,DeptName (STUDENT ⋈ DEPT)"
+        },
+        {
+          "id": "B",
+          "text": "σ Name,DeptName (STUDENT)"
+        },
+        {
+          "id": "C",
+          "text": "π SID (STUDENT × DEPT)"
+        },
+        {
+          "id": "D",
+          "text": "σ Dept (DEPT)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The join combines matching student and department tuples, and projection retains the requested attributes.",
+      "importantPoint": "A common relational algebra pattern is join first, then project required attributes.",
+      "examTrap": "Projection alone cannot combine two relations.",
+      "hint": "Identify the two steps: combine related rows, then keep needed columns."
+    },
+    {
+      "id": "DBM7-11",
+      "question": "What is the result of applying selection σ Salary > 50000 to EMP(EID, Name, Salary)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only the Salary column remains"
+        },
+        {
+          "id": "B",
+          "text": "Only tuples whose Salary exceeds 50000 remain"
+        },
+        {
+          "id": "C",
+          "text": "All rows are duplicated"
+        },
+        {
+          "id": "D",
+          "text": "All columns are removed"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Selection filters tuples using the predicate while retaining the relation’s attributes.",
+      "importantPoint": "σ filters rows and preserves the relation’s attribute structure.",
+      "examTrap": "Projection, not selection, changes the set of attributes.",
+      "hint": "Remember σ as row filtering."
+    },
+    {
+      "id": "DBM7-12",
+      "question": "What happens to the number of attributes when projection π Name, Dept is applied to a relation with attributes (ID, Name, Dept, Salary)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It remains four"
+        },
+        {
+          "id": "B",
+          "text": "It becomes two"
+        },
+        {
+          "id": "C",
+          "text": "It becomes zero"
+        },
+        {
+          "id": "D",
+          "text": "It becomes eight"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Projection keeps only the specified attributes Name and Dept, so the resulting relation has two attributes.",
+      "importantPoint": "Projection controls the columns in the result.",
+      "examTrap": "Selection would filter rows without changing the attribute set.",
+      "hint": "Count the attributes listed in the projection."
+    },
+    {
+      "id": "DBM7-13",
+      "question": "Which relational algebra operator is most closely associated with combining every tuple of one relation with every tuple of another?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Join"
+        },
+        {
+          "id": "B",
+          "text": "Selection"
+        },
+        {
+          "id": "C",
+          "text": "Cartesian product"
+        },
+        {
+          "id": "D",
+          "text": "Projection"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Cartesian product forms every possible pair of tuples from the two relations.",
+      "importantPoint": "× = Cartesian product.",
+      "examTrap": "A join usually applies a matching condition to restrict combinations.",
+      "hint": "Look for the operation with no matching restriction."
+    },
+    {
+      "id": "DBM7-14",
+      "question": "Suppose R(A,B) = {(1,2), (2,3)}. What is σ A = 2 (R)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "{(1,2)}"
+        },
+        {
+          "id": "B",
+          "text": "{(2,3)}"
+        },
+        {
+          "id": "C",
+          "text": "{(1,2),(2,3)}"
+        },
+        {
+          "id": "D",
+          "text": "{}"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Selection keeps the tuple whose A value equals 2, namely (2,3).",
+      "importantPoint": "Selection evaluates the predicate against each tuple.",
+      "examTrap": "The tuple (1,2) has A = 1, not A = 2.",
+      "hint": "Check the value of attribute A, not B."
+    },
+    {
+      "id": "DBM7-15",
+      "question": "Suppose R(A,B,C) contains tuples and the expression is π A,C(R). What happens to attribute B?",
+      "options": [
+        {
+          "id": "A",
+          "text": "B is retained automatically"
+        },
+        {
+          "id": "B",
+          "text": "B is removed from the projected result"
+        },
+        {
+          "id": "C",
+          "text": "B becomes the primary key"
+        },
+        {
+          "id": "D",
+          "text": "B is converted into a selection condition"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Projection retains only the specified attributes A and C, so B is omitted from the result.",
+      "importantPoint": "Projection explicitly chooses the output attributes.",
+      "examTrap": "Primary-key status is not created merely by projection.",
+      "hint": "Read the projection list literally."
+    },
+    {
+      "id": "DBM7-16",
+      "question": "A recovery log contains records for transactions T1 and T2. T1 committed before the crash; T2 was still active. Which general recovery treatment matches the deck’s UNDO/REDO model?",
+      "options": [
+        {
+          "id": "A",
+          "text": "UNDO T1 and REDO T2"
+        },
+        {
+          "id": "B",
+          "text": "REDO T1 and UNDO T2"
+        },
+        {
+          "id": "C",
+          "text": "UNDO both regardless of status"
+        },
+        {
+          "id": "D",
+          "text": "REDO both regardless of status"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Committed work may need REDO, while failed/uncommitted work may need UNDO.",
+      "importantPoint": "Committed → potentially REDO; failed/uncommitted → UNDO.",
+      "examTrap": "Recovery decisions depend on transaction state, not simply transaction order.",
+      "hint": "Classify each transaction as committed or uncommitted first."
+    },
+    {
+      "id": "DBM7-17",
+      "question": "Which statement correctly distinguishes selection and projection?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Selection chooses columns; projection chooses rows"
+        },
+        {
+          "id": "B",
+          "text": "Selection chooses rows; projection chooses columns"
+        },
+        {
+          "id": "C",
+          "text": "Both always choose columns"
+        },
+        {
+          "id": "D",
+          "text": "Both always choose rows"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Selection (σ) filters tuples based on predicates; projection (π) chooses attributes.",
+      "importantPoint": "σ = rows; π = columns.",
+      "examTrap": "The symbols are easy to reverse in exam questions, so associate each with its result shape.",
+      "hint": "Remember the result dimension: tuples versus attributes."
+    },
+    {
+      "id": "DBM7-18",
+      "question": "If |R| = 3 and |S| = 2, and R × S is followed by a selection that keeps only 4 matching pairs, what is the final cardinality?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Cartesian product initially contains 3 × 2 = 6 pairs, and the selection retains 4 of them, so the final relation has 4 tuples.",
+      "importantPoint": "Selection can reduce the cardinality of a Cartesian product.",
+      "examTrap": "Do not report the pre-selection product size after the filter.",
+      "hint": "Compute the product first, then apply the stated selection result."
+    },
+    {
+      "id": "DBM7-19",
+      "question": "Which operation is represented by σ Dept = 'IT'(EMP)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Project all IT attributes"
+        },
+        {
+          "id": "B",
+          "text": "Select tuples whose Dept is IT"
+        },
+        {
+          "id": "C",
+          "text": "Join EMP with an IT table"
+        },
+        {
+          "id": "D",
+          "text": "Create an index on Dept"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The selection predicate keeps tuples whose Dept attribute equals IT.",
+      "importantPoint": "Selection applies a Boolean predicate to tuples.",
+      "examTrap": "Relational algebra selection does not create indexes or joins by itself.",
+      "hint": "Read σ as a row-filtering operation."
+    },
+    {
+      "id": "DBM7-20",
+      "question": "Why can recovery be described as bringing a database back to a consistent state after failure?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Because recovery only deletes the database"
+        },
+        {
+          "id": "B",
+          "text": "Because recovery uses logged information and recovery actions such as UNDO/REDO to restore appropriate effects"
+        },
+        {
+          "id": "C",
+          "text": "Because recovery replaces all tables with views"
+        },
+        {
+          "id": "D",
+          "text": "Because recovery always reruns every transaction from the beginning"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Recovery uses recorded transaction activity to reverse inappropriate effects and restore required committed effects, returning the database toward a consistent state.",
+      "importantPoint": "Recovery combines log information with appropriate UNDO/REDO processing.",
+      "examTrap": "Recovery does not simply delete data or blindly rerun every transaction.",
+      "hint": "Think of recovery as deciding which effects must be removed and which must be restored."
+    }
+  ]
+}
