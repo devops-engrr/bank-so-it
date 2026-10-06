@@ -1,11 +1,19 @@
 {
-  "updatedAt": "2026-10-06T00:48:06Z",
+  "updatedAt": "2026-10-06T07:33:00Z",
   "channel": {
     "name": "Bank SO IT",
     "handle": "@BankSoIt",
     "url": "https://www.youtube.com/@BankSoIt"
   },
   "videos": [
+    {
+      "videoId": "npOfXvrUoMU",
+      "title": "Union Bank SO Cloud Administrator (S06) | 5-Day Last Minute Preparation Strategy 2026",
+      "description": "Preparing for the Union Bank of India (UBI) Specialist Officer (SO) Cloud Administrator (S06 - MMGS-II) exam? With only 5 days left until October 10th, here is an actionable, high-yield crash plan designed especially for working professionals.\n\nIn this video, we break down:\n- Exam pattern, marking scheme, and time management (72 sec/question)\n- Day-wise roadmap (AWS, Azure/GCP, Linux, Networking, Docker, K8s, CI/CD)\n- High-priority vs. low-priority topics (Priority Matrix)\n- 3-Round Exam Hall Strategy to avoid negative marking\n\n📌 Timestamps:\n00:00 - Introduction & Why a 5-Day Plan?\n00:37 - Exam Pattern & Marking Scheme (50 Qs / 100 Marks)\n01:34 - 5-Day Battle Plan Overview\n03:02 - Day 1: Cloud Fundamentals & AWS\n04:01 - Day 2: Azure, GCP & Cloud Security\n05:13 - Day 3: Linux, Networking & High Availability/DR\n06:23 - Day 4: Docker, Kubernetes, Terraform & CI/CD\n07:30 - Day 5: 50-Q Full Mock & Error Analysis\n08:14 - High-Yield Priority Matrix\n08:48 - Daily Routine for Working Professionals\n09:08 - Exam-Hall 3-Round Strategy (Avoid Negative Marking)\n09:53 - 9th October Night Checklist & Final Tips\n\n🔔 Subscribe to Bank SO IT for exam-oriented IT officer preparation and full-length mocks!\n\n#UnionBankSO #CloudAdministrator #BankSO #DevOps #AWS #Azure #Kubernetes #BankExamPrep",
+      "publishedAt": "2026-10-06T04:37:43Z",
+      "thumbnail": "https://i.ytimg.com/vi/npOfXvrUoMU/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=npOfXvrUoMU"
+    },
     {
       "videoId": "Hf0yzxxRVZk",
       "title": "SSC CGL Done ➔ Union Bank SO IT in 5 Days! 🚨 Admit Card Out, Center Pune & Last Minute Plan",
