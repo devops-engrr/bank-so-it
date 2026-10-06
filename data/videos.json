@@ -1,11 +1,19 @@
 {
-  "updatedAt": "2026-10-06T07:33:00Z",
+  "updatedAt": "2026-10-06T15:09:43Z",
   "channel": {
     "name": "Bank SO IT",
     "handle": "@BankSoIt",
     "url": "https://www.youtube.com/@BankSoIt"
   },
   "videos": [
+    {
+      "videoId": "Ks7lhw4sZwI",
+      "title": "Cloud Computing & AWS Complete Revision | Day 1 | Union Bank SO (S06), BPSC TRE CS, IBPS IT",
+      "description": "Day 01 of our 5-Day Crash Course for the Union Bank of India (UBI) Specialist Officer (SO) Cloud Administrator (Post Code: S06 - MMGS-II) exam.\n\nToday's focus: Building rapid recall for Cloud Infrastructure & AWS Core services to tackle Professional Knowledge MCQs under tight time limits (50 Questions / 100 Marks / 60 Min).\n\n📌 Key Topics Covered:\n- Cloud Fundamentals: 5 NIST Characteristics, IaaS vs PaaS vs SaaS, Public/Private/Hybrid\n- Architecture Patterns: Scalability vs Elasticity, Vertical vs Horizontal, HA vs Fault Tolerance\n- AWS Core Services: EC2, S3, EBS, EFS, VPC (Subnets, IGW, NAT), IAM, KMS, Secrets Manager\n- Critical Exam Traps: Security Group vs NACL, CloudWatch vs CloudTrail, S3 vs EBS vs EFS\n- Practice: Exam-level MCQs & 1-Page Summary Cheat Sheet\n\n⏱️ Timestamps:\n00:00 - Introduction & Day 1 Target\n00:37 - How to Use This Masterclass (Concept to Trap to Memory to MCQ)\n01:11 - Day 1 Detailed Roadmap\n02:11 - What is Cloud Computing? (NIST Keywords)\n03:42 - 4 Core Characteristics You Must Recognize\n04:40 - IaaS vs PaaS vs SaaS (Memory Rule)\n05:50 - Public vs Private vs Hybrid Cloud\n06:30 - Scalability vs Elasticity (Exam Trap)\n07:31 - Vertical vs Horizontal Scaling\n08:32 - High Availability (HA) vs Fault Tolerance (FT)\n09:25 - Stateless vs Stateful Architecture\n10:30 - Load Balancing (L4 vs L7 Routing)\n11:33 - Shared Responsibility Model & Principle of Least Privilege\n12:31 - AWS Service Map Overview\n13:28 - AWS EC2 Core Concepts & Instance Types\n14:31 - AWS S3 Object Storage Essentials\n15:16 - Storage Shootout: EBS vs EFS vs S3\n15:52 - AWS VPC Architecture (Subnets, IGW, NAT Gateway)\n17:02 - Public vs Private Subnet Routing Rules\n17:39 - Security Group vs NACL (High-Yield Comparison)\n19:03 - AWS IAM: AuthN, AuthZ & Least Privilege\n20:32 - KMS vs Secrets Manager\n21:23 - CloudWatch vs CloudTrail (Monitoring vs Audit)\n22:19 - Day 1 Rapid-Fire Exam Trap Recall\n22:20 - Solved Practice MCQs\n22:46 - Complete AWS Service Mapping\n23:25 - Day 1 Final Revision Cheat Sheet & Assignment\n\n🔔 Subscribe to Bank SO IT for Day 2 (Azure + GCP + Security)!\n\n#UnionBankSO #CloudAdministrator #BankSO #AWS #CloudComputing #BankExamPrep #UBISO",
+      "publishedAt": "2026-10-06T13:11:49Z",
+      "thumbnail": "https://i.ytimg.com/vi/Ks7lhw4sZwI/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=Ks7lhw4sZwI"
+    },
     {
       "videoId": "npOfXvrUoMU",
       "title": "Union Bank SO Cloud Administrator (S06) | 5-Day Last Minute Preparation Strategy 2026",
