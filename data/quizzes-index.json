@@ -2,6 +2,18 @@
   "version": 1,
   "quizzes": [
     {
+      "id": "dpdp-act-2023-quiz",
+      "title": "DPDP Act 2023 & Rules 2025",
+      "category": "IT Professional Knowledge",
+      "topic": "Cybersecurity & Data Protection",
+      "subtopic": "DPDP Act 2023",
+      "part": 1,
+      "description": "Practice the Digital Personal Data Protection Act, 2023, and DPDP Rules, 2025 for Bank SO IT examinations.",
+      "difficulty": "Exam Practice",
+      "questionCount": 30,
+      "file": "data/quizzes/dpdp-act-2023-quiz.json"
+    },
+    {
       "id": "dbms-module-01-foundations",
       "title": "DBMS Foundations",
       "category": "IT Professional Knowledge",

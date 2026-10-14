@@ -1,0 +1,35 @@
+BANK SO IT — DPDP ACT 2023 QUIZ INTEGRATION
+
+Added:
+- resources/dpdp-act-2023/index.html — study material, separate from the quiz
+- css/dpdp.css — study guide styles
+- data/quizzes/dpdp-act-2023-quiz.json — 30 questions in 3 sets of 10
+- DPDP-LEGAL-REVIEW.txt — source verification and unresolved legal editorial flags
+
+Updated:
+- data/quizzes-index.json — regenerated catalog now includes the DPDP quiz
+- js/quiz-data.js — regenerated offline fallback contains all 11 quizzes
+- js/quiz.js — multi-select support, previous/next navigation, per-question lock/scoring, set summaries, set-wise results, review and retake
+- quizzes/index.html — loads fallback quiz data before the catalog renderer
+- resources/index.html — links to the DPDP study guide
+- css/quiz.css — responsive controls and set summary styles
+
+Quiz route:
+- Study material: /resources/dpdp-act-2023/
+- Quiz: /quiz/?id=dpdp-act-2023-quiz
+
+Validation performed:
+- JavaScript syntax checks passed.
+- Catalog contains 11 quizzes.
+- DPDP question bank contains 30 questions, split 10/10/10.
+- Q10 is multi-select and requires A, B and D only.
+- Q8 and Q29 are true/false.
+- Existing quiz JSON files were preserved and included in regenerated fallback data.
+
+IMPORTANT — DO NOT CLAIM FULL LEGAL VERIFICATION YET:
+- Q18's supplied explanation conflicts with the wording of Section 33(2)(g) in the official Act. See DPDP-LEGAL-REVIEW.txt.
+- Q30 refers to a 5 October 2026 Removal of Difficulties Order that could not be located in an official source during this verification pass. See DPDP-LEGAL-REVIEW.txt.
+- Supplied wording and answer keys are preserved; resolve these flags before treating the quiz as legally final.
+
+Suggested commit:
+feat: add DPDP Act study guide and interactive quiz

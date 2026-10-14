@@ -1,0 +1,905 @@
+{
+  "version": 1,
+  "quizId": "dpdp-act-2023-quiz",
+  "title": "DPDP Act 2023 & Rules 2025",
+  "subtitle": "30 exam-oriented questions across three sets, with explanations and exam traps.",
+  "description": "Practice the Digital Personal Data Protection Act, 2023, and DPDP Rules, 2025 for Bank SO IT examinations.",
+  "category": "IT Professional Knowledge",
+  "topic": "Cybersecurity & Data Protection",
+  "subtopic": "DPDP Act 2023",
+  "part": 1,
+  "difficulty": "Exam Practice",
+  "questionCount": 30,
+  "source": "Reconstructed question bank supplied by the user. Legal claims, commencement timelines and the flagged items require final review against official government documents before public release.",
+  "instructions": [
+    "30 questions · 1 mark each · no negative marking.",
+    "Questions 1–10, 11–20 and 21–30 form three separate sets.",
+    "Question 10 is multi-select; all correct options and no incorrect options are required for the mark.",
+    "Explanations and exam traps appear only after submission.",
+    "This educational practice quiz is not legal advice."
+  ],
+  "sets": [
+    {
+      "number": 1,
+      "title": "Fundamentals, Scope, Consent and Roles",
+      "start": 1,
+      "end": 10
+    },
+    {
+      "number": 2,
+      "title": "Penalties, Board, Exemptions and Banking/IT Scenarios",
+      "start": 11,
+      "end": 20
+    },
+    {
+      "number": 3,
+      "title": "Sections, DPDP Rules 2025 and Commencement Traps",
+      "start": 21,
+      "end": 30
+    }
+  ],
+  "questions": [
+    {
+      "id": "DPDP-01",
+      "question": "A bank determines why customers’ personal data is collected and how it will be processed. Under the DPDP Act, what is the bank in this situation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Data Principal"
+        },
+        {
+          "id": "B",
+          "text": "Data Fiduciary"
+        },
+        {
+          "id": "C",
+          "text": "Data Processor"
+        },
+        {
+          "id": "D",
+          "text": "Consent Manager"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A Data Fiduciary determines the purpose and means of processing personal data. A bank making these decisions is acting as a Data Fiduciary.",
+      "importantPoint": "A Data Fiduciary determines the purpose and means of processing personal data.",
+      "examTrap": "Do not confuse a Data Fiduciary with a Data Processor. A processor processes personal data on behalf of a fiduciary.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 1,
+      "setTitle": "Fundamentals, Scope, Consent and Roles"
+    },
+    {
+      "id": "DPDP-02",
+      "question": "The DPDP Act may apply to processing of digital personal data outside India when which condition is satisfied?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The processing is connected with offering goods or services to Data Principals within India."
+        },
+        {
+          "id": "B",
+          "text": "The company has any employee who is an Indian citizen."
+        },
+        {
+          "id": "C",
+          "text": "The company uses software developed in India."
+        },
+        {
+          "id": "D",
+          "text": "The company maintains a bank account in India."
+        }
+      ],
+      "answer": "A",
+      "explanation": "The Act has an extraterritorial application provision for processing outside India when connected with offering goods or services to Data Principals within the territory of India.",
+      "importantPoint": "The Act has an extraterritorial application provision for processing outside India when connected with offering goods or services to Data Principals within the territory of India.",
+      "examTrap": "Do not assume that every foreign company is automatically covered. Check the statutory territorial-scope conditions.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 1,
+      "setTitle": "Fundamentals, Scope, Consent and Roles"
+    },
+    {
+      "id": "DPDP-03",
+      "question": "Which combination best describes valid consent under the DPDP Act?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Implied consent in every situation"
+        },
+        {
+          "id": "B",
+          "text": "Free, specific, informed, unconditional and unambiguous consent indicated by clear affirmative action"
+        },
+        {
+          "id": "C",
+          "text": "Consent obtained only through a signed paper document"
+        },
+        {
+          "id": "D",
+          "text": "Consent obtained through a preselected checkbox in every case"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Act establishes requirements for valid consent. It must be a clear affirmative action and meet the prescribed statutory characteristics.",
+      "importantPoint": "The Act establishes requirements for valid consent.",
+      "examTrap": "A preselected checkbox or silence should not automatically be treated as valid consent.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 1,
+      "setTitle": "Fundamentals, Scope, Consent and Roles"
+    },
+    {
+      "id": "DPDP-04",
+      "question": "Under the DPDP Act, an individual to whom personal data relates is known as:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Data Principal"
+        },
+        {
+          "id": "B",
+          "text": "Data Fiduciary"
+        },
+        {
+          "id": "C",
+          "text": "Data Processor"
+        },
+        {
+          "id": "D",
+          "text": "Data Protection Officer"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A Data Principal is the individual to whom the personal data relates. In the case of a child, the definition and applicable provisions must be read accordingly.",
+      "importantPoint": "A Data Principal is the individual to whom the personal data relates.",
+      "examTrap": "The Data Principal is the individual, not the organisation processing the data.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 1,
+      "setTitle": "Fundamentals, Scope, Consent and Roles"
+    },
+    {
+      "id": "DPDP-05",
+      "question": "For the purposes of the DPDP Act, a child is generally an individual who has not completed which age?",
+      "options": [
+        {
+          "id": "A",
+          "text": "14 years"
+        },
+        {
+          "id": "B",
+          "text": "16 years"
+        },
+        {
+          "id": "C",
+          "text": "18 years"
+        },
+        {
+          "id": "D",
+          "text": "21 years"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The Act defines a child as an individual who has not completed eighteen years of age, subject to the Act's applicable provisions.",
+      "importantPoint": "The Act defines a child as an individual who has not completed eighteen years of age, subject to the Act's applicable provisions.",
+      "examTrap": "Do not confuse the age threshold with age limits found in other laws or platform policies.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 1,
+      "setTitle": "Fundamentals, Scope, Consent and Roles"
+    },
+    {
+      "id": "DPDP-06",
+      "question": "A customer requests erasure of personal data held by a bank. What should the bank consider before deleting the data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The bank must always delete all data immediately."
+        },
+        {
+          "id": "B",
+          "text": "The bank can never delete financial records."
+        },
+        {
+          "id": "C",
+          "text": "Applicable legal retention requirements and the relevant provisions of the DPDP Act."
+        },
+        {
+          "id": "D",
+          "text": "The customer’s request can always be ignored."
+        }
+      ],
+      "answer": "C",
+      "explanation": "The right to erasure must be read alongside applicable legal requirements. A bank may have separate statutory or regulatory obligations to retain particular records.",
+      "importantPoint": "The right to erasure must be read alongside applicable legal requirements.",
+      "examTrap": "Erasure is not an unconditional requirement to destroy records that must lawfully be retained.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 1,
+      "setTitle": "Fundamentals, Scope, Consent and Roles"
+    },
+    {
+      "id": "DPDP-07",
+      "question": "A bank hires an external technology company to process personal data on the bank’s behalf. If the company processes that data under the bank’s instructions, it may be classified as:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Data Principal"
+        },
+        {
+          "id": "B",
+          "text": "Data Processor"
+        },
+        {
+          "id": "C",
+          "text": "Consent Manager"
+        },
+        {
+          "id": "D",
+          "text": "Data Protection Board"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A Data Processor processes personal data on behalf of a Data Fiduciary.",
+      "importantPoint": "A Data Processor processes personal data on behalf of a Data Fiduciary.",
+      "examTrap": "Classification depends on the actual role and arrangement, not merely the vendor’s name or the fact that it supplies software.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 1,
+      "setTitle": "Fundamentals, Scope, Consent and Roles"
+    },
+    {
+      "id": "DPDP-08",
+      "question": "True or False: The DPDP Act, 2023, and the DPDP Rules, 2025, have exactly the same notification date and commencement schedule.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Act and the Rules were notified on different dates and have separate commencement provisions and timelines.",
+      "importantPoint": "The Act and the Rules were notified on different dates and have separate commencement provisions and timelines.",
+      "examTrap": "Memorise the notification dates separately: the Act's commencement notification is dated 13 November 2025, while the DPDP Rules, 2025, were notified on 14 November 2025.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "type": "boolean",
+      "setNumber": 1,
+      "setTitle": "Fundamentals, Scope, Consent and Roles"
+    },
+    {
+      "id": "DPDP-09",
+      "question": "Can a Data Principal withdraw consent under the DPDP Act?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No, consent is permanent once granted."
+        },
+        {
+          "id": "B",
+          "text": "Only the Data Fiduciary can withdraw consent."
+        },
+        {
+          "id": "C",
+          "text": "Yes, consent can be withdrawn, and withdrawal should be as easy as giving consent."
+        },
+        {
+          "id": "D",
+          "text": "Only the Data Protection Board can withdraw consent."
+        }
+      ],
+      "answer": "C",
+      "explanation": "The Act recognises the right to withdraw consent. The process for withdrawal should be comparable in ease to the process for giving consent.",
+      "importantPoint": "The Act recognises the right to withdraw consent.",
+      "examTrap": "Withdrawal does not automatically make previous lawful processing unlawful. Also consider applicable legal obligations and the consequences specified in the Act.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 1,
+      "setTitle": "Fundamentals, Scope, Consent and Roles"
+    },
+    {
+      "id": "DPDP-10",
+      "question": "Which of the following are recognised rights of a Data Principal under the DPDP Act?\n\nSelect all correct options.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Right to correction and completion of personal data, subject to applicable provisions"
+        },
+        {
+          "id": "B",
+          "text": "Right to grievance redressal"
+        },
+        {
+          "id": "C",
+          "text": "Unrestricted access to every internal document of a Data Fiduciary"
+        },
+        {
+          "id": "D",
+          "text": "Right to nominate another individual, subject to applicable provisions"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "The Act recognises rights including correction and completion, grievance redressal, and nomination, subject to applicable provisions. It does not create a general right to inspect every internal document of an organisation.",
+      "importantPoint": "The Act recognises rights including correction and completion, grievance redressal, and nomination, subject to applicable provisions.",
+      "examTrap": "This is a multi-select question. Do not select an option simply because it sounds like a privacy right. Read the exact statutory right.  ---  # SET 2: PENALTIES, BOARD, EXEMPTIONS AND BANKING/IT SCENARIOS",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "type": "multi",
+      "setNumber": 1,
+      "setTitle": "Fundamentals, Scope, Consent and Roles"
+    },
+    {
+      "id": "DPDP-11",
+      "question": "What is the maximum penalty specified in the DPDP Act's Schedule for failure to notify the Board and affected Data Principals of a personal data breach under Section 8(6)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "₹50 crore"
+        },
+        {
+          "id": "B",
+          "text": "₹150 crore"
+        },
+        {
+          "id": "C",
+          "text": "₹200 crore"
+        },
+        {
+          "id": "D",
+          "text": "₹250 crore"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The Schedule specifies a maximum penalty of ₹200 crore for failure to give the required intimation of a personal data breach to the Board and affected Data Principals under Section 8(6).",
+      "importantPoint": "The Schedule specifies a maximum penalty of ₹200 crore for failure to give the required intimation of a personal data breach to the Board and affected Data Principals under Section 8(6).",
+      "examTrap": "Do not confuse breach-notification failure with failure to take reasonable security safeguards, which has a different maximum penalty.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 2,
+      "setTitle": "Penalties, Board, Exemptions and Banking/IT Scenarios"
+    },
+    {
+      "id": "DPDP-12",
+      "question": "Before imposing a penalty under the DPDP Act, which procedural safeguard is relevant to the Data Protection Board's inquiry and penalty process?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Board must obtain approval from every affected Data Principal."
+        },
+        {
+          "id": "B",
+          "text": "The concerned person must be given an opportunity of being heard in accordance with the applicable statutory procedure."
+        },
+        {
+          "id": "C",
+          "text": "The Board must conduct a criminal trial in every case."
+        },
+        {
+          "id": "D",
+          "text": "The penalty must automatically be imposed as soon as a complaint is filed."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Act establishes an inquiry process and requires the relevant procedural safeguards to be followed before the Board reaches its decision.",
+      "importantPoint": "The Act establishes an inquiry process and requires the relevant procedural safeguards to be followed before the Board reaches its decision.",
+      "examTrap": "A complaint or alleged contravention does not mean that the maximum penalty is imposed automatically.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 2,
+      "setTitle": "Penalties, Board, Exemptions and Banking/IT Scenarios"
+    },
+    {
+      "id": "DPDP-13",
+      "question": "What is the maximum penalty specified for a Significant Data Fiduciary's failure to fulfil its obligations under Section 10?",
+      "options": [
+        {
+          "id": "A",
+          "text": "₹10 crore"
+        },
+        {
+          "id": "B",
+          "text": "₹50 crore"
+        },
+        {
+          "id": "C",
+          "text": "₹150 crore"
+        },
+        {
+          "id": "D",
+          "text": "₹200 crore"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The Schedule specifies a maximum penalty of ₹150 crore for failure by a Significant Data Fiduciary to fulfil its obligations under Section 10.",
+      "importantPoint": "The Schedule specifies a maximum penalty of ₹150 crore for failure by a Significant Data Fiduciary to fulfil its obligations under Section 10.",
+      "examTrap": "Do not confuse this with the maximum penalties for security-safeguard failures or breach-notification failures.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 2,
+      "setTitle": "Penalties, Board, Exemptions and Banking/IT Scenarios"
+    },
+    {
+      "id": "DPDP-14",
+      "question": "A bank experiences a personal data breach and is accused both of failing to implement reasonable security safeguards and of failing to notify the required parties. How should the potential contraventions be analysed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Treat both failures as one identical contravention with one automatically fixed penalty."
+        },
+        {
+          "id": "B",
+          "text": "Analyse the distinct statutory obligations and applicable Schedule entries separately; the maximum amounts are not automatically imposed or summed."
+        },
+        {
+          "id": "C",
+          "text": "Apply only the smaller maximum penalty in every case."
+        },
+        {
+          "id": "D",
+          "text": "Assume that no penalty can apply if the breach was accidental."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Security safeguards and breach notification are separate obligations. Any penalty determination must follow the applicable statutory process and consider the circumstances of the contraventions.",
+      "importantPoint": "Security safeguards and breach notification are separate obligations.",
+      "examTrap": "Two possible contraventions do not mean that both maximum penalties are automatically imposed.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 2,
+      "setTitle": "Penalties, Board, Exemptions and Banking/IT Scenarios"
+    },
+    {
+      "id": "DPDP-15",
+      "question": "A Data Fiduciary gives a voluntary undertaking to the Data Protection Board under Section 32, and the undertaking is accepted. What is the significance if the undertaking is subsequently breached?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The undertaking automatically cancels all liability under the Act."
+        },
+        {
+          "id": "B",
+          "text": "Breach of the accepted undertaking can attract consequences under Section 32, subject to the statutory conditions."
+        },
+        {
+          "id": "C",
+          "text": "The undertaking has no legal significance."
+        },
+        {
+          "id": "D",
+          "text": "The Data Principal must personally impose the penalty."
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Act provides for voluntary undertakings and consequences for breaching an accepted undertaking. The applicable statutory conditions and penalty provisions must be considered.",
+      "importantPoint": "The Act provides for voluntary undertakings and consequences for breaching an accepted undertaking.",
+      "examTrap": "Do not assume that a voluntary undertaking permanently immunises the organisation from consequences.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 2,
+      "setTitle": "Penalties, Board, Exemptions and Banking/IT Scenarios"
+    },
+    {
+      "id": "DPDP-16",
+      "question": "Under Section 34 of the DPDP Act, amounts realised through penalties are credited to:",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Data Protection Board's private account"
+        },
+        {
+          "id": "B",
+          "text": "The account of the affected Data Principal"
+        },
+        {
+          "id": "C",
+          "text": "The Consolidated Fund of India"
+        },
+        {
+          "id": "D",
+          "text": "The Reserve Bank of India's contingency fund"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Section 34 provides for amounts realised by way of penalties to be credited to the Consolidated Fund of India.",
+      "importantPoint": "Section 34 provides for amounts realised by way of penalties to be credited to the Consolidated Fund of India.",
+      "examTrap": "A penalty imposed under the Act is not automatically paid directly to the affected individual as compensation.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 2,
+      "setTitle": "Penalties, Board, Exemptions and Banking/IT Scenarios"
+    },
+    {
+      "id": "DPDP-17",
+      "question": "A bank claims that a particular processing activity is exempt from certain DPDP Act obligations. What is the correct approach?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every activity performed by a bank is automatically exempt."
+        },
+        {
+          "id": "B",
+          "text": "Examine the relevant exemption provision, its conditions, and the facts of the processing activity."
+        },
+        {
+          "id": "C",
+          "text": "All government-regulated organisations are exempt from the entire Act."
+        },
+        {
+          "id": "D",
+          "text": "Any processing involving financial data is automatically exempt."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Exemptions depend on the specific provisions and applicable conditions. The organisation's industry alone does not establish a blanket exemption.",
+      "importantPoint": "Exemptions depend on the specific provisions and applicable conditions.",
+      "examTrap": "Never infer a complete exemption merely because the organisation is a bank, a regulated entity, or a government-related body.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 2,
+      "setTitle": "Penalties, Board, Exemptions and Banking/IT Scenarios"
+    },
+    {
+      "id": "DPDP-18",
+      "question": "Which factor is expressly relevant to determining the amount of a monetary penalty under Section 33(2)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The organisation's brand popularity"
+        },
+        {
+          "id": "B",
+          "text": "The number of software developers employed"
+        },
+        {
+          "id": "C",
+          "text": "The likely impact of the contravention on the affected person"
+        },
+        {
+          "id": "D",
+          "text": "The age of the organisation's website"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Section 33(2) lists factors relevant to determining penalties, including the likely impact of the contravention on the affected person.",
+      "importantPoint": "Section 33(2) lists factors relevant to determining penalties, including the likely impact of the contravention on the affected person.",
+      "examTrap": "Focus on the statutory factors, not business characteristics that are not listed as relevant factors.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 2,
+      "setTitle": "Penalties, Board, Exemptions and Banking/IT Scenarios"
+    },
+    {
+      "id": "DPDP-19",
+      "question": "A software vendor is hired by a bank. Which fact is most relevant when deciding whether the vendor is acting as a Data Processor for a particular processing activity?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The vendor has an office outside India."
+        },
+        {
+          "id": "B",
+          "text": "The vendor has more employees than the bank."
+        },
+        {
+          "id": "C",
+          "text": "The vendor processes personal data on behalf of the bank under the relevant arrangement."
+        },
+        {
+          "id": "D",
+          "text": "The vendor's product is widely used by other banks."
+        }
+      ],
+      "answer": "C",
+      "explanation": "A Data Processor's role depends on processing personal data on behalf of a Data Fiduciary. The actual arrangement and activity are important.",
+      "importantPoint": "A Data Processor's role depends on processing personal data on behalf of a Data Fiduciary.",
+      "examTrap": "Do not classify an organisation solely by its industry, size, location, or product branding.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 2,
+      "setTitle": "Penalties, Board, Exemptions and Banking/IT Scenarios"
+    },
+    {
+      "id": "DPDP-20",
+      "question": "A Data Fiduciary is found to have contravened a provision of the DPDP Act. Does the maximum penalty listed in the Schedule automatically become the final penalty?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes, the maximum is mandatory in every case."
+        },
+        {
+          "id": "B",
+          "text": "Yes, if the organisation is a bank."
+        },
+        {
+          "id": "C",
+          "text": "No, the applicable statutory process and relevant factors must be considered."
+        },
+        {
+          "id": "D",
+          "text": "No penalty can ever be imposed on an organisation."
+        }
+      ],
+      "answer": "C",
+      "explanation": "The Schedule specifies maximum penalties for listed contraventions. It does not mean that the maximum amount is automatically imposed in every case.",
+      "importantPoint": "The Schedule specifies maximum penalties for listed contraventions.",
+      "examTrap": "Remember the difference between a maximum statutory penalty and the penalty ultimately determined in an individual case.  ---  # SET 3: SECTIONS, DPDP RULES 2025 AND COMMENCEMENT TRAPS",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 2,
+      "setTitle": "Penalties, Board, Exemptions and Banking/IT Scenarios"
+    },
+    {
+      "id": "DPDP-21",
+      "question": "Which section of the DPDP Act deals with the powers and functions of the Data Protection Board of India?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Section 16"
+        },
+        {
+          "id": "B",
+          "text": "Section 27"
+        },
+        {
+          "id": "C",
+          "text": "Section 33"
+        },
+        {
+          "id": "D",
+          "text": "Section 44"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Section 27 deals with the powers and functions of the Data Protection Board of India.",
+      "importantPoint": "Section 27 deals with the powers and functions of the Data Protection Board of India.",
+      "examTrap": "Do not confuse the Board's powers and functions with its inquiry procedure, appeals, or penalties, which are dealt with in other sections.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 3,
+      "setTitle": "Sections, DPDP Rules 2025 and Commencement Traps"
+    },
+    {
+      "id": "DPDP-22",
+      "question": "Under which section of the DPDP Act is the appeal to the Appellate Tribunal addressed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Section 29"
+        },
+        {
+          "id": "B",
+          "text": "Section 30"
+        },
+        {
+          "id": "C",
+          "text": "Section 32"
+        },
+        {
+          "id": "D",
+          "text": "Section 34"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Section 29 addresses appeals to the Appellate Tribunal.",
+      "importantPoint": "Section 29 addresses appeals to the Appellate Tribunal.",
+      "examTrap": "Keep the section sequence clear: Section 28 concerns inquiry procedure, Section 29 concerns appeals, Section 30 concerns alternative dispute resolution, and Section 32 concerns voluntary undertakings.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 3,
+      "setTitle": "Sections, DPDP Rules 2025 and Commencement Traps"
+    },
+    {
+      "id": "DPDP-23",
+      "question": "Which of the following is a factor listed under Section 33(2) for determining the amount of a penalty?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The organisation's social media following"
+        },
+        {
+          "id": "B",
+          "text": "The gain realised or loss avoided as a result of the contravention"
+        },
+        {
+          "id": "C",
+          "text": "The number of branches operated by the organisation"
+        },
+        {
+          "id": "D",
+          "text": "The market capitalisation of the organisation alone"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Section 33(2) includes the gain realised or loss avoided as a relevant factor in determining the amount of a penalty.",
+      "importantPoint": "Section 33(2) includes the gain realised or loss avoided as a relevant factor in determining the amount of a penalty.",
+      "examTrap": "Learn the statutory list of penalty factors instead of relying on assumptions about what might matter commercially.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 3,
+      "setTitle": "Sections, DPDP Rules 2025 and Commencement Traps"
+    },
+    {
+      "id": "DPDP-24",
+      "question": "What is the maximum penalty specified in the Schedule for contraventions of the DPDP Act or Rules for which no separate penalty is specified?",
+      "options": [
+        {
+          "id": "A",
+          "text": "₹10 crore"
+        },
+        {
+          "id": "B",
+          "text": "₹50 crore"
+        },
+        {
+          "id": "C",
+          "text": "₹150 crore"
+        },
+        {
+          "id": "D",
+          "text": "₹250 crore"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Schedule provides a maximum penalty of ₹50 crore for contraventions of the Act or Rules for which no separate penalty is specified.",
+      "importantPoint": "The Schedule provides a maximum penalty of ₹50 crore for contraventions of the Act or Rules for which no separate penalty is specified.",
+      "examTrap": "Do not confuse this residual category with the higher maximum penalties assigned to specific contraventions.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 3,
+      "setTitle": "Sections, DPDP Rules 2025 and Commencement Traps"
+    },
+    {
+      "id": "DPDP-25",
+      "question": "According to the DPDP Rules, 2025, which commencement timeline applies to Rule 4?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It commenced before the Rules were notified."
+        },
+        {
+          "id": "B",
+          "text": "It commences only after 18 months."
+        },
+        {
+          "id": "C",
+          "text": "It is scheduled to commence one year after notification, on 14 November 2026."
+        },
+        {
+          "id": "D",
+          "text": "It is scheduled to commence after five years."
+        }
+      ],
+      "answer": "C",
+      "explanation": "The DPDP Rules, 2025, were notified on 14 November 2025. Rule 4 is in the group scheduled to commence one year after notification, making 14 November 2026 the calculated commencement date.",
+      "importantPoint": "The DPDP Rules, 2025, were notified on 14 November 2025.",
+      "examTrap": "Do not assume that every rule became effective on the day the Rules were notified.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 3,
+      "setTitle": "Sections, DPDP Rules 2025 and Commencement Traps"
+    },
+    {
+      "id": "DPDP-26",
+      "question": "Which group of DPDP Rules, 2025, was specified to commence immediately upon publication of the Rules?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rules 3–16 only"
+        },
+        {
+          "id": "B",
+          "text": "Rules 1, 2 and 17–21"
+        },
+        {
+          "id": "C",
+          "text": "Rules 5–16 and 22–23"
+        },
+        {
+          "id": "D",
+          "text": "Rule 4 only"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The commencement provision specifies immediate commencement for Rules 1, 2 and 17–21. Other rules follow their separately specified timelines.",
+      "importantPoint": "The commencement provision specifies immediate commencement for Rules 1, 2 and 17–21.",
+      "examTrap": "The notification date and the commencement date for an individual rule are not always the same.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 3,
+      "setTitle": "Sections, DPDP Rules 2025 and Commencement Traps"
+    },
+    {
+      "id": "DPDP-27",
+      "question": "Which group of DPDP Rules, 2025, is scheduled to commence 18 months after notification, with the calculated date being 14 May 2027?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rules 1 and 2 only"
+        },
+        {
+          "id": "B",
+          "text": "Rules 17–21 only"
+        },
+        {
+          "id": "C",
+          "text": "Rule 4 only"
+        },
+        {
+          "id": "D",
+          "text": "Rules 3, 5–16 and 22–23"
+        }
+      ],
+      "answer": "D",
+      "explanation": "These rules are in the 18-month commencement group under the DPDP Rules, 2025. Counting 18 months from 14 November 2025 gives 14 May 2027.",
+      "importantPoint": "These rules are in the 18-month commencement group under the DPDP Rules, 2025.",
+      "examTrap": "Do not apply the one-year timeline for Rule 4 to every other rule.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 3,
+      "setTitle": "Sections, DPDP Rules 2025 and Commencement Traps"
+    },
+    {
+      "id": "DPDP-28",
+      "question": "Which provisions of the DPDP Act, 2023, were specified to commence one year after the commencement notification dated 13 November 2025?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Section 6(9) and Section 27(1)(d)"
+        },
+        {
+          "id": "B",
+          "text": "Sections 1–5 in their entirety"
+        },
+        {
+          "id": "C",
+          "text": "Section 34 only"
+        },
+        {
+          "id": "D",
+          "text": "Every provision of the Act"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The commencement notification specifies a one-year phase for Section 6(9) and Section 27(1)(d). Counting one year from 13 November 2025 gives 13 November 2026.",
+      "importantPoint": "The commencement notification specifies a one-year phase for Section 6(9) and Section 27(1)(d).",
+      "examTrap": "Different provisions of the Act have different commencement phases. Do not assume that all provisions started operating together.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 3,
+      "setTitle": "Sections, DPDP Rules 2025 and Commencement Traps"
+    },
+    {
+      "id": "DPDP-29",
+      "question": "True or False: The 18-month commencement dates for the DPDP Act, 2023, and the DPDP Rules, 2025, fall on the same calendar date.",
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The Act's commencement notification is dated 13 November 2025, while the Rules were notified on 14 November 2025. Their respective 18-month dates are therefore calculated as 13 May 2027 and 14 May 2027.",
+      "importantPoint": "The Act's commencement notification is dated 13 November 2025, while the Rules were notified on 14 November 2025.",
+      "examTrap": "Even a one-day difference in notification dates can produce a one-day difference in the calculated commencement dates.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "type": "boolean",
+      "setNumber": 3,
+      "setTitle": "Sections, DPDP Rules 2025 and Commencement Traps"
+    },
+    {
+      "id": "DPDP-30",
+      "question": "The Removal of Difficulties Order issued in October 2026 modifies specified wording in the DPDP Act. What should candidates remember about the commencement timeline?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Order automatically brings every remaining provision into force."
+        },
+        {
+          "id": "B",
+          "text": "The Order cancels the DPDP Rules, 2025."
+        },
+        {
+          "id": "C",
+          "text": "The specified wording changes do not themselves change the previously notified commencement-phase dates."
+        },
+        {
+          "id": "D",
+          "text": "The Order makes every penalty provision inapplicable."
+        }
+      ],
+      "answer": "C",
+      "explanation": "The Removal of Difficulties Order dated 5 October 2026 makes specified textual changes, including changes relating to Section 9(1) and Section 10(2)(c)(ii). Those changes do not themselves alter the previously notified commencement-phase dates.",
+      "importantPoint": "The Removal of Difficulties Order dated 5 October 2026 makes specified textual changes, including changes relating to Section 9(1) and Section 10(2)(c)(ii).",
+      "examTrap": "Distinguish an amendment or wording clarification from a notification that changes when provisions commence. Verify the latest official text before the exam.  ---  # WEBSITE QUIZ FUNCTIONAL REQUIREMENTS  Build the quiz as a separate, interactive learning tool on the BANK SO IT website.  ## 1. Quiz structure - Divide the quiz into three sets: - Set 1: Fundamentals, Scope, Consent and Roles - Set 2: Penalties, Board, Exemptions and Banking/IT Scenarios - Set 3: Sections, DPDP Rules 2025 and Commencement Traps - Each set contains 10 questions. - Total score: 30 marks. - Each question carries one mark. - Do not show the correct answer before the student submits an answer.  ## 2. Question types - Questions 1–7: Single-select MCQs. - Question 8: True/False. - Question 9: Single-select MCQ. - Question 10: Multi-select; correct options are A, B and D. - Questions 11–20: Single-select MCQs. - Questions 21–28: Single-select MCQs. - Question 29: True/False. - Question 30: Single-select MCQ.  ## 3. Answer validation - Single-select questions: award one mark for the correct answer. - Multi-select Question 10: award one mark only if all correct options are selected and no incorrect option is selected. - No negative marking unless a separate setting is introduced. - Show the explanation and exam trap after the student submits an answer. - Clearly indicate whether the answer is correct or incorrect.  ## 4. User interface - Professional banking-exam preparation design. - Mobile-responsive layout. - Use BANK SO IT branding and the tagline “Learn. Practice. Improve.” - Display the current set, question number and progress bar. - Include Previous and Next navigation. - Include a Submit Answer button. - Prevent accidental duplicate scoring. - Show an end-of-set summary and a final summary after all 30 questions. - Include a Review Answers option. - Include a Retake Quiz option. - Make the interface accessible and easy to use on mobile devices.  ## 5. Results page Display: - Total score out of 30. - Percentage. - Score for Set 1, Set 2 and Set 3. - Correct and incorrect answer counts. - Questions requiring revision. - Review of each question with the user's answer, correct answer, explanation and exam trap. - Retake button.  ## 6. Technical requirements - Use the website's existing technology stack, styles and components. - Do not break existing website pages or navigation. - Keep the question bank in a maintainable data structure, separate from the UI code. - Keep learning material separate from quiz functionality. - Ensure the quiz works on desktop, tablet and mobile. - Do not hardcode a result score or show an answer before submission. - Test navigation, answer validation, scoring, review, refresh behaviour and retaking. - Preserve the wording and answer key supplied above unless a legal verification identifies a discrepancy. If a discrepancy is found, flag it clearly for correction before publication. - Do not fabricate citations or claim legal verification unless official sources have actually been checked.  ## 7. Official verification sources Before publishing the quiz, verify the Act, Rules, commencement notifications and Removal of Difficulties Order against official government documents.  Official DPDP Rules listing: https://www.meity.gov.in/documents/act-and-policies/digital-personal-data-protection-rules-2025-gDOxUjMtQWa?pageTitle=Digit  Official commencement notification: https://www.meity.gov.in/static/uploads/2025/11/c56ceae6c383460ca69577428d36828b.pdf  Verify the exact statutory language, section numbers, penalty amounts, dates and amendments against the latest official documents.  ## FINAL DELIVERABLE Implement a complete, working 30-question DPDP Act quiz on the BANK SO IT website. The student should be able to study the topic first, attempt the quiz afterwards, receive explanations and exam traps, review mistakes, see set-wise performance and retake the quiz. Do not merely create a static mock-up or a non-functional design.",
+      "hint": "Identify the exact statutory definition, duty, section or commencement group being tested. Eliminate options that overstate the rule or confuse it with a different provision.",
+      "setNumber": 3,
+      "setTitle": "Sections, DPDP Rules 2025 and Commencement Traps",
+      "reviewFlag": "Official verification pending: the supplied question refers to a Removal of Difficulties Order dated 5 October 2026. An official government copy could not be located during this verification pass; do not treat this item as verified for publication."
+    }
+  ]
+}
