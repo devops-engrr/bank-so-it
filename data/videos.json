@@ -1,11 +1,27 @@
 {
-  "updatedAt": "2026-10-15T07:24:13Z",
+  "updatedAt": "2026-10-15T13:24:07Z",
   "channel": {
     "name": "Bank SO IT",
     "handle": "@BankSoIt",
     "url": "https://www.youtube.com/@BankSoIt"
   },
   "videos": [
+    {
+      "videoId": "Aw52FcbmlNs",
+      "title": "Crack Bank SO IT: Complete Operating System Crash Course Part 1",
+      "description": "Welcome back to Bank SO IT! In Part 1 of our Operating System (OS) Crash Course, we are diving deep into the core concepts for the IBPS SO IT Officer and RRB SO IT scale 1 exams. In this session, we cover OS basics, storage hierarchies, Process vs. Threads, advanced CPU Scheduling algorithms, and Deadlock handling (Banker's Algorithm). \n\nThese handwritten notes will help you secure solid marks in your IT Officer mains. Part 2 and Part 3 are coming soon, so make sure to subscribe and hit the bell icon to not miss the next chapters!\n\nWhile tailored for Bank SO IT exams, this comprehensive lecture is highly recommended for all major Computer Science and IT competitive exams, including BPSC TRE, Bihar STET, NICL AO IT, DSSSB/KVS/NVS PGT CS, SBI SO IT, SEBI Grade A, and GATE CS.\n\n⏳ Timestamps:\n00:00 - Introduction to OS & Four Components\n04:18 - Computer Startup & Bootstrap Program\n05:08 - Storage Device Hierarchy (Registers to Magnetic Tapes)\n07:11 - Types of OS (Batch vs Time-Sharing)\n08:43 - Process vs Program\n10:00 - State of Process (New, Ready, Running, Waiting, Terminated)\n11:19 - Schedulers Explained (LTS, STS, MTS)\n12:18 - Process Control Block (PCB)\n13:17 - Thread vs Process (User Level & Kernel Level)\n16:09 - CPU Scheduling Terminology (AT, BT, CT, TAT, WT)\n19:04 - FCFS Scheduling (First-Come, First-Served)\n30:01 - SJF Scheduling (Shortest Job First)\n44:42 - Priority Scheduling & Starvation (Aging)\n45:26 - Round Robin Scheduling & Time Quantum\n51:09 - Multilevel Queue & Feedback Queue\n56:42 - Deadlock in OS (4 Necessary Conditions)\n1:03:36 - Resource Allocation Graph\n1:06:21 - Deadlock Avoidance (Banker's Algorithm)\n\n🔍 Your Queries (Searchable Keywords):\noperating system crash course in hindi\nnicl ao it officer preparation\nnicl ao specialist it syllabus\nbpsc tre computer science preparation\nbpsc tre pgt computer science classes\nbihar stet computer science\ndsssb pgt computer science preparation\nkvs pgt computer science classes\nibps so it officer preparation\nrrb so it scale 1 classes\nbank so it officer syllabus\ncpu scheduling algorithms operating system\nfcfs sjf round robin examples\ndeadlock in os in hindi\nbankers algorithm in operating system\nugc net computer science operating system\ngate cs os lectures\ncomputer science for competitive exams\n\n⚠️ Copyright Disclaimer:\nUnder section 107 of the Copyright Act 1976, allowance is made for \"fair use\" for purposes such as criticism, comment, news reporting, teaching, scholarship, education and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational or personal use tips the balance in favor of fair use.\n\n\n\n#ibps #ibpsso  #computerscience #operatingsystem #bpsc #deadlock #rrb #rrbso",
+      "publishedAt": "2026-10-15T12:20:23Z",
+      "thumbnail": "https://i.ytimg.com/vi/Aw52FcbmlNs/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=Aw52FcbmlNs"
+    },
+    {
+      "videoId": "0ucMe10oOpQ",
+      "title": "🚨 Bank of Baroda IT Recruitment Delayed! | Where is the BOB SO Interview List? (10 Months Later)",
+      "description": "Are you waiting for the Bank of Baroda IT Officer or Cloud Administrator interview list? In this video, we discuss the massive 10-month delay in the Bank of Baroda's IT Department recruitment (Advt. No. BOB/HRM/REC/Advt/2026/4). \n\nWe analyze the timeline, discuss the pending interview lists, and make a humble request to the Bank of Baroda HR department to expedite the process for the thousands of candidates waiting for their results. If you are preparing for Bank of Baroda SO, IBPS SO, or RBI exams, this update is crucial for you!\n\n📌 TIMESTAMPS:\n0:00 - Introduction & Bank of Baroda Recruitment Update\n1:15 - Detailed Analysis of BOB/HRM/REC/Advt/2026/4 Delay\n3:30 - Impact on IT Officer & Cloud Administrator Candidates\n5:45 - Appeal to Bank of Baroda HR for Interview Lists\n7:20 - Next Steps for IBPS SO & RBI Aspirants\n9:00 - Final Thoughts & Support the Campaign\n\n⚠️ IMPORTANT DISCLAIMER: \nThe intent of this video is purely educational and to support the student/aspirant community. We hold the utmost respect for the Bank of Baroda and its management. This video is not intended to defame, affect, or malign the institution in any way. We are simply raising the genuine concerns of diligent students waiting for their career opportunities. \n\n⚖️ COPYRIGHT DISCLAIMER: \nUnder Section 107 of the Copyright Act 1976, allowance is made for \"fair use\" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational, or personal use tips the balance in favor of fair use.\n\n#BankOfBaroda #BOBRecruitment #BankExams #IBPSSO #RBI #ITOfficer #BankSOIT",
+      "publishedAt": "2026-10-15T10:23:38Z",
+      "thumbnail": "https://i.ytimg.com/vi/0ucMe10oOpQ/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=0ucMe10oOpQ"
+    },
     {
       "videoId": "am0mN2A79PU",
       "title": "IBPS SO IT & RRB SO IT: DPDP Act 2023 Complete Strategy",
