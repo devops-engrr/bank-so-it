@@ -1,0 +1,29 @@
+BANK SO IT — OPERATING SYSTEM PART 1 QUIZ
+
+Quiz ID: os-part-01-process-management-cpu-scheduling
+Title: Operating System — Part 1: Process Management & CPU Scheduling
+Category: IT Professional Knowledge
+Topic: Operating System
+Subtopic: Process Management & CPU Scheduling
+Questions: 25
+
+Coverage includes process states/transitions, orphan and zombie processes, long/short/medium-term schedulers, PCB, context switching, FCFS/SJF/SRTF/Round Robin, scheduling metrics and calculations, starvation/aging, semaphores, critical sections, and spooling.
+
+Files changed/added:
+- data/quizzes/os-part-01-process-management-cpu-scheduling.json (new question bank)
+- data/quizzes-index.json (rebuilt catalog)
+- js/quiz-data.js (embedded fallback refreshed from repository quiz JSON files)
+- OS-PART1-INTEGRATION.txt (this note)
+
+Validation performed:
+- 25 questions present
+- unique question IDs
+- four options per question
+- answer key references a valid option
+- explanations, important points, exam traps and hints populated
+- catalog includes the quiz with the correct question count
+- JavaScript syntax check passed
+
+Before deployment, test /quiz/?id=os-part-01-process-management-cpu-scheduling in a browser, including selecting/submitting answers, navigation, review, and retake.
+
+Source note: The user-provided exam screenshots informed the difficulty and question style. The linked YouTube page could not be retrieved reliably during this pass, so the quiz is aligned to the visible Process Management and CPU Scheduling scope rather than claimed as a verified transcript-by-transcript match.

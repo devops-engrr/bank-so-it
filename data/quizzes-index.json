@@ -98,6 +98,18 @@
       "file": "data/quizzes/dbms-module-06-transactions-concurrency.json"
     },
     {
+      "id": "os-part-01-process-management-cpu-scheduling",
+      "title": "Operating System — Part 1: Process Management & CPU Scheduling",
+      "category": "IT Professional Knowledge",
+      "topic": "Operating System",
+      "subtopic": "Process Management & CPU Scheduling",
+      "part": 1,
+      "description": "Process states, PCB, schedulers, context switching, FCFS/SJF/SRTF/Round Robin, waiting-time calculations, starvation, semaphores and spooling.",
+      "difficulty": "Exam Practice",
+      "questionCount": 25,
+      "file": "data/quizzes/os-part-01-process-management-cpu-scheduling.json"
+    },
+    {
       "id": "day-01-grammar-r01-r03",
       "title": "Grammar Rules 1–3",
       "category": "English",

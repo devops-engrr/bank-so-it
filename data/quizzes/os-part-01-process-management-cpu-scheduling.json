@@ -1,0 +1,696 @@
+{
+  "version": 1,
+  "quizId": "os-part-01-process-management-cpu-scheduling",
+  "title": "Operating System — Part 1: Process Management & CPU Scheduling",
+  "subtitle": "Exam-level practice on process states, schedulers, PCB, context switching, CPU scheduling, starvation, semaphores and spooling.",
+  "questionCount": 25,
+  "source": "Original exam-style question bank based on the user-provided sample questions and the linked video’s process-management / CPU-scheduling scope. Numerical answers independently checked.",
+  "instructions": [
+    "Choose one answer for each question.",
+    "25 questions · 1 mark each · no negative marking.",
+    "Review the explanation, important point, exam trap and hint after answering."
+  ],
+  "category": "IT Professional Knowledge",
+  "topic": "Operating System",
+  "subtopic": "Process Management & CPU Scheduling",
+  "part": 1,
+  "description": "Process states, PCB, schedulers, context switching, FCFS/SJF/SRTF/Round Robin, waiting-time calculations, starvation, semaphores and spooling.",
+  "difficulty": "Exam Practice",
+  "questions": [
+    {
+      "id": "OS1-01",
+      "question": "A process has completed execution, but its process-table entry remains because the parent has not yet collected its exit status. Which state best describes it?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Orphan"
+        },
+        {
+          "id": "B",
+          "text": "Zombie"
+        },
+        {
+          "id": "C",
+          "text": "Ready"
+        },
+        {
+          "id": "D",
+          "text": "Suspended"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The process has terminated, but the kernel retains its process-table entry until the parent collects its status (for example, with wait()).",
+      "importantPoint": "A zombie has exited but still has an unreaped process-table entry.",
+      "examTrap": "An orphan is still executing after its parent terminates; a zombie has already exited.",
+      "hint": "Focus on whether the process has finished executing or is still running."
+    },
+    {
+      "id": "OS1-02",
+      "question": "A parent process terminates while its child continues executing. The child is best described as:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Zombie process"
+        },
+        {
+          "id": "B",
+          "text": "Orphan process"
+        },
+        {
+          "id": "C",
+          "text": "Blocked process"
+        },
+        {
+          "id": "D",
+          "text": "Daemon by definition"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A child that continues after its parent exits is an orphan; it may be adopted by a system process.",
+      "importantPoint": "Orphan describes the parent-child lifetime relationship.",
+      "examTrap": "A zombie is terminated; an orphan is still running or otherwise alive.",
+      "hint": "Determine whether the child has terminated."
+    },
+    {
+      "id": "OS1-03",
+      "question": "Which transition is invalid in the standard five-state process model, assuming no special direct-dispatch mechanism?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Running → Ready"
+        },
+        {
+          "id": "B",
+          "text": "Blocked → Ready"
+        },
+        {
+          "id": "C",
+          "text": "Ready → Running"
+        },
+        {
+          "id": "D",
+          "text": "Blocked → Running"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A blocked process must first become ready when the awaited event completes; it does not normally move directly from blocked to running.",
+      "importantPoint": "Event completion moves Blocked → Ready; dispatch moves Ready → Running.",
+      "examTrap": "Do not confuse becoming eligible to run with actually receiving the CPU.",
+      "hint": "Separate the event-completion transition from the scheduler-dispatch transition."
+    },
+    {
+      "id": "OS1-04",
+      "question": "Which scheduler primarily controls the degree of multiprogramming by deciding which jobs are admitted into main memory?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Short-term scheduler"
+        },
+        {
+          "id": "B",
+          "text": "Long-term scheduler"
+        },
+        {
+          "id": "C",
+          "text": "I/O scheduler"
+        },
+        {
+          "id": "D",
+          "text": "Dispatcher"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The long-term (job) scheduler admits jobs into the system and influences how many processes are in memory.",
+      "importantPoint": "Long-term scheduling controls admission and degree of multiprogramming.",
+      "examTrap": "The short-term scheduler selects a ready process for the CPU; the dispatcher performs the handoff.",
+      "hint": "Ask which component controls admission into the ready pool."
+    },
+    {
+      "id": "OS1-05",
+      "question": "A system temporarily swaps a suspended process out of main memory and later brings it back. Which scheduler is most directly associated with this medium-term activity?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Long-term scheduler"
+        },
+        {
+          "id": "B",
+          "text": "Short-term scheduler"
+        },
+        {
+          "id": "C",
+          "text": "Medium-term scheduler"
+        },
+        {
+          "id": "D",
+          "text": "Dispatcher"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The medium-term scheduler manages swapping/suspension to adjust the set of processes resident in memory.",
+      "importantPoint": "Medium-term scheduling is associated with swapping and suspended states.",
+      "examTrap": "Do not confuse swapping with selecting the next CPU-bound process.",
+      "hint": "Look for the scheduler associated with temporarily removing processes from memory."
+    },
+    {
+      "id": "OS1-06",
+      "question": "Which item is normally stored in a Process Control Block (PCB) to allow a process to resume correctly after a context switch?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Source code comments"
+        },
+        {
+          "id": "B",
+          "text": "Saved program counter and CPU registers"
+        },
+        {
+          "id": "C",
+          "text": "Only the process owner’s password"
+        },
+        {
+          "id": "D",
+          "text": "The complete contents of every file opened by the process"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The PCB stores execution context such as process state, program counter, registers, scheduling information and memory-management information.",
+      "importantPoint": "A PCB stores process-management and saved execution-context information.",
+      "examTrap": "Open-file references may be managed in kernel structures, but the source code itself is not the saved CPU context.",
+      "hint": "Which information is needed to continue execution at the correct instruction?"
+    },
+    {
+      "id": "OS1-07",
+      "question": "A timer interrupt causes the running process to be preempted, and the scheduler chooses another ready process. Which operation saves the old execution context and restores the new one?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Spooling"
+        },
+        {
+          "id": "B",
+          "text": "Context switch"
+        },
+        {
+          "id": "C",
+          "text": "Page compaction"
+        },
+        {
+          "id": "D",
+          "text": "System boot"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A context switch saves the outgoing process/thread state and restores the selected one.",
+      "importantPoint": "Context switching changes the CPU execution context.",
+      "examTrap": "A timer interrupt may trigger scheduling, but the interrupt itself is not the context switch.",
+      "hint": "Think about what must happen before a different process can safely resume."
+    },
+    {
+      "id": "OS1-08",
+      "question": "Consider two processes: P1 arrives at time 0 with burst 7; P2 arrives at time 2 with burst 3. Under non-preemptive SJF, what is the completion order?",
+      "options": [
+        {
+          "id": "A",
+          "text": "P2, then P1"
+        },
+        {
+          "id": "B",
+          "text": "P1, then P2"
+        },
+        {
+          "id": "C",
+          "text": "They complete simultaneously"
+        },
+        {
+          "id": "D",
+          "text": "Cannot be determined"
+        }
+      ],
+      "answer": "B",
+      "explanation": "At time 0 only P1 is available, so non-preemptive SJF runs P1 until time 7. P2 then runs and finishes at time 10.",
+      "importantPoint": "Non-preemptive SJF does not interrupt the running job when a shorter job arrives.",
+      "examTrap": "Do not apply SRTF rules to non-preemptive SJF.",
+      "hint": "At time zero, which jobs have actually arrived?"
+    },
+    {
+      "id": "OS1-09",
+      "question": "Processes arrive as follows: P1 (AT=0, BT=8), P2 (AT=1, BT=4), P3 (AT=2, BT=2). Using SRTF and breaking ties by earlier arrival, which is the Gantt-chart sequence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "P1(0–1), P2(1–2), P3(2–4), P2(4–7), P1(7–14)"
+        },
+        {
+          "id": "B",
+          "text": "P1(0–8), P2(8–12), P3(12–14)"
+        },
+        {
+          "id": "C",
+          "text": "P1(0–1), P2(1–5), P3(5–7), P1(7–14)"
+        },
+        {
+          "id": "D",
+          "text": "P1(0–1), P3(1–3), P2(3–7), P1(7–14)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At t=1, P2 has 4 versus P1 remaining 7; at t=2, P3 has 2 versus P2 remaining 3. P3 completes at 4, P2 at 7, and P1 at 14.",
+      "importantPoint": "SRTF always selects the available process with the shortest remaining time.",
+      "examTrap": "Compare remaining time, not original burst time, at each arrival.",
+      "hint": "Re-evaluate the ready set at t=1 and again at t=2."
+    },
+    {
+      "id": "OS1-10",
+      "question": "For the processes in Q9, what is the average waiting time under SRTF?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2.00 time units"
+        },
+        {
+          "id": "B",
+          "text": "2.67 time units"
+        },
+        {
+          "id": "C",
+          "text": "3.00 time units"
+        },
+        {
+          "id": "D",
+          "text": "4.00 time units"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Completion times are P3=4, P2=7, P1=14. Waiting time = CT−AT−BT: P1=14−0−8=6, P2=7−1−4=2, P3=4−2−2=0. Average = (6+2+0)/3 = 8/3 ≈ 2.67.",
+      "importantPoint": "Waiting time = completion time − arrival time − burst time.",
+      "examTrap": "Turnaround time is not the same as waiting time.",
+      "hint": "Calculate each process waiting time separately, then average."
+    },
+    {
+      "id": "OS1-11",
+      "question": "Three processes all arrive at time 0: P1 BT=5, P2 BT=3, P3 BT=1. Under non-preemptive SJF, what is the average waiting time?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.00"
+        },
+        {
+          "id": "B",
+          "text": "1.33"
+        },
+        {
+          "id": "C",
+          "text": "1.67"
+        },
+        {
+          "id": "D",
+          "text": "2.00"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Order is P3 (0–1), P2 (1–4), P1 (4–9). Waiting times are 0, 1 and 4; average = 5/3 ≈ 1.67.",
+      "importantPoint": "SJF minimizes average waiting time when all jobs are available and burst lengths are known.",
+      "examTrap": "The first process in the SJF order waits zero time.",
+      "hint": "Order by burst time and calculate each start time minus arrival time."
+    },
+    {
+      "id": "OS1-12",
+      "question": "In Round Robin, P1, P2 and P3 arrive at time 0 with burst times 5, 4 and 2 respectively. With quantum=2 and no context-switch overhead, when does P2 complete?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Time 6"
+        },
+        {
+          "id": "B",
+          "text": "Time 8"
+        },
+        {
+          "id": "C",
+          "text": "Time 10"
+        },
+        {
+          "id": "D",
+          "text": "Time 11"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Execution: P1 0–2, P2 2–4, P3 4–6 (finishes), P1 6–8 (remaining 1), P2 8–10 (finishes), P1 10–11. P2 completes at time 10.",
+      "importantPoint": "Round Robin requeues unfinished processes at the tail after their quantum.",
+      "examTrap": "Do not forget processes that finish before using the full quantum.",
+      "hint": "Write the ready-queue rotation after each time slice."
+    },
+    {
+      "id": "OS1-13",
+      "question": "A Round Robin scheduler uses a very large time quantum compared with every process burst. Ignoring arrivals during execution, it approaches which policy?",
+      "options": [
+        {
+          "id": "A",
+          "text": "SRTF"
+        },
+        {
+          "id": "B",
+          "text": "FCFS"
+        },
+        {
+          "id": "C",
+          "text": "Non-preemptive priority"
+        },
+        {
+          "id": "D",
+          "text": "Shortest Job Next"
+        }
+      ],
+      "answer": "B",
+      "explanation": "When the quantum is large enough that each process finishes before its quantum expires, the ready queue is served in arrival order, making RR behave like FCFS.",
+      "importantPoint": "A sufficiently large RR quantum makes preemption unlikely.",
+      "examTrap": "This does not make RR equivalent to SJF.",
+      "hint": "Ask whether any process is likely to exhaust the quantum before finishing."
+    },
+    {
+      "id": "OS1-14",
+      "question": "Which scheduling policy can cause starvation because newly arriving short jobs may repeatedly be selected ahead of a long job?",
+      "options": [
+        {
+          "id": "A",
+          "text": "FCFS"
+        },
+        {
+          "id": "B",
+          "text": "Non-preemptive SJF"
+        },
+        {
+          "id": "C",
+          "text": "Round Robin with equal quantum"
+        },
+        {
+          "id": "D",
+          "text": "FCFS with aging"
+        }
+      ],
+      "answer": "B",
+      "explanation": "SJF can indefinitely delay a long job if shorter jobs continue to arrive and are selected first.",
+      "importantPoint": "Starvation is indefinite postponement despite the process remaining eligible.",
+      "examTrap": "Aging is a technique used to reduce starvation in priority scheduling.",
+      "hint": "Consider what happens if short jobs keep arriving before the long job is selected."
+    },
+    {
+      "id": "OS1-15",
+      "question": "Priority scheduling is causing a low-priority process to wait for an unusually long time. Which change directly addresses this risk?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Increase the low-priority process’s waiting time in the queue"
+        },
+        {
+          "id": "B",
+          "text": "Use aging to gradually raise its priority"
+        },
+        {
+          "id": "C",
+          "text": "Replace every process with a new process"
+        },
+        {
+          "id": "D",
+          "text": "Disable the ready queue"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Aging gradually increases a waiting process’s priority, reducing the chance of indefinite postponement.",
+      "importantPoint": "Aging combats starvation by changing effective priority over time.",
+      "examTrap": "Aging is not the same as increasing CPU burst length.",
+      "hint": "Choose the technique that rewards prolonged waiting."
+    },
+    {
+      "id": "OS1-16",
+      "question": "Which statement about preemptive scheduling is the most accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It can preempt a running process when a scheduling event warrants it."
+        },
+        {
+          "id": "B",
+          "text": "It always has lower context-switch overhead than non-preemptive scheduling."
+        },
+        {
+          "id": "C",
+          "text": "It guarantees that starvation never occurs."
+        },
+        {
+          "id": "D",
+          "text": "It never uses timer interrupts."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Preemptive scheduling permits the OS to take the CPU from a running process under defined conditions, often after a timer interrupt or a higher-priority arrival.",
+      "importantPoint": "Preemption improves responsiveness but can add switching overhead.",
+      "examTrap": "Preemption alone does not guarantee fairness or prevent starvation.",
+      "hint": "Separate what preemption permits from what it guarantees."
+    },
+    {
+      "id": "OS1-17",
+      "question": "A process has AT=3, BT=5 and CT=14. What are its turnaround time and waiting time, respectively?",
+      "options": [
+        {
+          "id": "A",
+          "text": "11 and 6"
+        },
+        {
+          "id": "B",
+          "text": "9 and 4"
+        },
+        {
+          "id": "C",
+          "text": "11 and 8"
+        },
+        {
+          "id": "D",
+          "text": "14 and 9"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Turnaround time = CT−AT = 14−3 = 11. Waiting time = TAT−BT = 11−5 = 6.",
+      "importantPoint": "TAT = CT−AT; WT = TAT−BT when no other service time is specified.",
+      "examTrap": "Completion time is not itself turnaround time if arrival is nonzero.",
+      "hint": "First subtract arrival from completion, then subtract burst."
+    },
+    {
+      "id": "OS1-18",
+      "question": "For a single CPU, which scheduling criterion most directly measures the time from a process’s arrival until it first receives CPU service?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Turnaround time"
+        },
+        {
+          "id": "B",
+          "text": "Response time"
+        },
+        {
+          "id": "C",
+          "text": "Throughput"
+        },
+        {
+          "id": "D",
+          "text": "CPU utilization"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Response time is the interval from arrival/submission until the first response or first CPU service, depending on the stated convention.",
+      "importantPoint": "Response time focuses on the first response, not final completion.",
+      "examTrap": "Turnaround time measures arrival to completion.",
+      "hint": "The process need not finish for this metric to be measured."
+    },
+    {
+      "id": "OS1-19",
+      "question": "Which pair is correctly matched?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Long-term scheduler — selects the next ready process for CPU"
+        },
+        {
+          "id": "B",
+          "text": "Short-term scheduler — admits jobs from secondary storage into memory"
+        },
+        {
+          "id": "C",
+          "text": "Dispatcher — hands CPU control to the selected process"
+        },
+        {
+          "id": "D",
+          "text": "Medium-term scheduler — performs arithmetic instructions"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The dispatcher performs the context switch and transfers control to the selected process. The other choices mix scheduler responsibilities or describe unrelated work.",
+      "importantPoint": "Scheduler selects; dispatcher hands over CPU control.",
+      "examTrap": "Do not interchange long-term admission and short-term CPU selection.",
+      "hint": "Look for the component responsible for the actual handoff."
+    },
+    {
+      "id": "OS1-20",
+      "question": "A process blocks for disk I/O while running. When the I/O completes, which transition normally occurs before it can execute again?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Blocked → Running"
+        },
+        {
+          "id": "B",
+          "text": "Blocked → Ready"
+        },
+        {
+          "id": "C",
+          "text": "Ready → Blocked"
+        },
+        {
+          "id": "D",
+          "text": "Running → Terminated"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Completion of the awaited I/O makes the process ready; it must still be dispatched before it runs.",
+      "importantPoint": "I/O completion makes a process eligible, not automatically the CPU owner.",
+      "examTrap": "The CPU may be executing another process when the I/O completes.",
+      "hint": "Distinguish becoming runnable from being selected."
+    },
+    {
+      "id": "OS1-21",
+      "question": "A counting semaphore starts at 6. Eight successful wait (P) operations and four successful signal (V) operations occur, with no blocked operations or other accesses. What is the final value?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "4"
+        },
+        {
+          "id": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each successful P decrements and each V increments: 6−8+4=2.",
+      "importantPoint": "A successful wait decrements; a signal increments.",
+      "examTrap": "If waits block, the simple arithmetic model must account for blocked operations; this question explicitly says all are successful.",
+      "hint": "Apply the operation counts with their signs."
+    },
+    {
+      "id": "OS1-22",
+      "question": "Two processes may update the same shared counter. Which requirement ensures that the critical section is not executed by both processes at the same time?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Progress"
+        },
+        {
+          "id": "B",
+          "text": "Bounded waiting"
+        },
+        {
+          "id": "C",
+          "text": "Mutual exclusion"
+        },
+        {
+          "id": "D",
+          "text": "Preemption"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Mutual exclusion allows at most one process at a time inside the critical section for the same protected resource.",
+      "importantPoint": "Mutual exclusion prevents simultaneous entry into a critical section.",
+      "examTrap": "Progress and bounded waiting address different correctness properties.",
+      "hint": "Identify the property that explicitly limits concurrent entrants."
+    },
+    {
+      "id": "OS1-23",
+      "question": "A print subsystem places output jobs in a disk-based queue so the printer can process them at its own speed while applications continue. This is an example of:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Spooling"
+        },
+        {
+          "id": "B",
+          "text": "Paging"
+        },
+        {
+          "id": "C",
+          "text": "Swapping"
+        },
+        {
+          "id": "D",
+          "text": "Thrashing"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Spooling queues jobs, commonly on disk, for a device such as a printer that processes them sequentially.",
+      "importantPoint": "Spooling decouples application submission from slower device execution.",
+      "examTrap": "Paging and swapping are memory-management mechanisms.",
+      "hint": "Focus on buffering queued jobs for a shared peripheral."
+    },
+    {
+      "id": "OS1-24",
+      "question": "Which statement about context switching is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It always performs useful application work while the CPU changes processes."
+        },
+        {
+          "id": "B",
+          "text": "It may add overhead because the CPU saves/restores execution state rather than executing application instructions."
+        },
+        {
+          "id": "C",
+          "text": "It occurs only when a process terminates."
+        },
+        {
+          "id": "D",
+          "text": "It is identical to switching from user mode to kernel mode."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Saving and restoring context consumes CPU time and is generally overhead from the application-work perspective.",
+      "importantPoint": "Context switches are necessary but can reduce useful CPU time.",
+      "examTrap": "A mode switch does not necessarily imply a process context switch.",
+      "hint": "Ask whether the CPU is executing the process’s workload during the state transfer."
+    },
+    {
+      "id": "OS1-25",
+      "question": "Consider these statements: I. SRTF may starve a long process. II. Round Robin usually improves response time for interactive workloads compared with FCFS. III. A very large Round Robin quantum tends toward FCFS behavior. Which set is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "I only"
+        },
+        {
+          "id": "B",
+          "text": "I and II only"
+        },
+        {
+          "id": "C",
+          "text": "II and III only"
+        },
+        {
+          "id": "D",
+          "text": "I, II and III"
+        }
+      ],
+      "answer": "D",
+      "explanation": "SRTF can repeatedly favor short remaining jobs; RR gives processes periodic turns, improving responsiveness in many interactive workloads; with a sufficiently large quantum, RR approximates FCFS.",
+      "importantPoint": "Scheduling trade-offs depend on workload and quantum size.",
+      "examTrap": "“Usually” is intentional: RR does not universally outperform FCFS on every metric.",
+      "hint": "Evaluate each statement independently, noting the qualifier in II."
+    }
+  ]
+}
