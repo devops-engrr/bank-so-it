@@ -1,11 +1,19 @@
 {
-  "updatedAt": "2026-10-16T00:23:12Z",
+  "updatedAt": "2026-10-16T05:50:06Z",
   "channel": {
     "name": "Bank SO IT",
     "handle": "@BankSoIt",
     "url": "https://www.youtube.com/@BankSoIt"
   },
   "videos": [
+    {
+      "videoId": "nR4UM_u3DlM",
+      "title": "IT Officer Mock Test: IBPS SO & RRB SO 2026",
+      "description": "Prepare for the IBPS SO, RRB SO, and other government IT exams with our first free IT Agnipareeksha Mock Test for 2026. This comprehensive IT Professional Knowledge quiz covers exam-level questions with detailed explanations to boost your score. \n\n⏰ Video Chapters:\n00:00 Introduction to IT Agnipareeksha Mock Series\n00:57 Linux Job Scheduling (Crontab)\n01:50 Data Structures: Binary Tree & Arrays\n03:47 OS: Memory Management & Fragmentation\n05:08 Number Systems: Hexadecimal & BCD\n05:55 Microprocessors & Word Size\n06:29 Digital Logic: K-Maps\n06:40 DBMS: Joins & SQL UNION\n08:35 Base Conversion in Number Systems\n09:50 Computer Networks: OSI Model & Protocols\n11:08 Algorithms: Kruskal's Minimum Spanning Tree\n11:19 AI & Tech Initiatives: GPT, BHASHINI & Gen AI\n12:16 Programming: Pseudocode & Functions\n13:09 Conclusion & Daily Quiz Schedule\n\n📌 Topics Covered:\n* Linux utility scheduling\n* Binary tree array representation and Array constraints\n* Internal and External memory fragmentation\n* Hexadecimal and BCD representations\n* SQL queries, UNION vs UNION ALL, and Join Cardinality\n* OSI Model Session Layer responsibilities and UDP/DNS protocols\n* Generative AI and the Indian Government's BHASHINI initiative\n* Pseudocode evaluation and programming function rules\n\n\n🔍 Your Queries Solved:\nrrb so it officer preparation 2026\nibps so it professional knowledge mock test\nbank it officer exam questions\ncomputer science mcqs for competitive exams\nrrb so it officer study material\nnicl ao it exam syllabus\ndbms and computer networks interview questions\nsql union vs union all explanation\nmemory fragmentation operating system\ngenerative ai and bhashini current affairs\n\n#RRBSO #IBPSSO #ITOfficer #BankExams #ComputerScience #ITMockTest",
+      "publishedAt": "2026-10-16T05:00:14Z",
+      "thumbnail": "https://i.ytimg.com/vi/nR4UM_u3DlM/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=nR4UM_u3DlM"
+    },
     {
       "videoId": "5q6-N4H18-s",
       "title": "DPDP Act 2023 & Rules 2025 | 10 Min Quick Revision | IBPS SO IT",
