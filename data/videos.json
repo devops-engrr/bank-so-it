@@ -1,11 +1,19 @@
 {
-  "updatedAt": "2026-10-16T11:20:30Z",
+  "updatedAt": "2026-10-16T16:36:50Z",
   "channel": {
     "name": "Bank SO IT",
     "handle": "@BankSoIt",
     "url": "https://www.youtube.com/@BankSoIt"
   },
   "videos": [
+    {
+      "videoId": "4zOgerSYLBw",
+      "title": "Crack Bank SO IT: Complete Operating System Crash Course Part 2",
+      "description": "Welcome back to Bank SO IT! Let's crack the IBPS SO IT & RRB SO IT exams together with Part 2 of our Operating System Masterclass. Today, we are deep-diving into File Systems, System Calls, and Process Allocation Methods. \n\nDid you miss the first class? \n▶️ Watch Part 1 here: https://youtu.be/Aw52FcbmlNs?si=bpxN7g85dwLG47iK\n\n⏰ Video Chapters:\n00:00 - Pre-Exam Motivation & Strategy\n02:24 - File System Foundations & Operations\n04:04 - File Systems by OS (Windows, Linux, macOS)\n06:22 - File Attributes & Metadata\n08:24 - Delete vs. Truncate (Exam Trap!)\n11:08 - File Types & Extensions\n12:07 - File Access Methods (Sequential, Direct, Indexed)\n14:11 - Directory Structures (Absolute vs Relative Path)\n21:07 - File Allocation Methods (Contiguous, Linked, Indexed)\n25:35 - File Protection & CHMOD Permissions\n28:00 - System Calls (User Mode vs Kernel Mode)\n34:00 - The fork() System Call Explained\n\n📌 Topics Covered:\n* Types of File Systems (NTFS, ext4, APFS, NFS, HDFS).\n* Deep dive into CHMOD permissions and File Access control.\n* Contiguous vs. Linked vs. Indexed allocation.\n* What is a System Call and how does it transition between modes.\n* Parent and Child process creation using fork() in Unix/Linux.\n* Direct exam traps to avoid in competitive exams.\n\n🔗 Helpful Links:\n📲 Join our Telegram for Notes & Quizzes: https://t.me/banksoitt\n\n🔍 Your Queries Solved:\nibps so professional knowledge preparation\nibps so it mains preparation\nbank so it officer computer science classes\noperating system crash course for ibps so\nfile allocation methods in operating system\nsystem calls and file systems in os\nfork system call questions in computer science\nlinux chmod permissions exam questions\n\n#IBPSSO #ITOfficer #OperatingSystem #ComputerScience #BankExams #SoftwareEngineering #Tech",
+      "publishedAt": "2026-10-16T11:25:20Z",
+      "thumbnail": "https://i.ytimg.com/vi/4zOgerSYLBw/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=4zOgerSYLBw"
+    },
     {
       "videoId": "nR4UM_u3DlM",
       "title": "IT Officer Mock Test 2026: IBPS SO & RRB SO Practice Questions and Exam-Level Challenges",
