@@ -1,11 +1,27 @@
 {
-  "updatedAt": "2026-10-18T04:29:44Z",
+  "updatedAt": "2026-10-18T09:35:48Z",
   "channel": {
     "name": "Bank SO IT",
     "handle": "@BankSoIt",
     "url": "https://www.youtube.com/@BankSoIt"
   },
   "videos": [
+    {
+      "videoId": "31PpIFP-xCo",
+      "title": "IT Officer Mock Test 2026: IBPS SO & RRB SO Practice Questions (Mock Test 2)",
+      "description": "Welcome back to Bank SO IT! This is Mock Test 2 of our IT Agnipariksha Mock Test Series, designed to help you crack your IBPS SO and RRB SO IT Officer examinations with exam-level questions and detailed explanations.\n\n⏰ Video Chapters:\n00:00 Introduction & Agnipariksha Series Overview\n00:54 Q1: Linux Cron Jobs & Scheduling\n01:50 Q2: Binary Tree Array Representation (Left & Right Child)\n03:08 Q3: Array Data Structure & Direct Access vs. Sequential\n03:47 Q4: OS Memory Management: Internal vs. External Fragmentation\n05:12 Q5: Hexadecimal Conversions (2A to Decimal) & BCD Format\n05:57 Q6: M-Bit Processor Architecture & Word Size\n06:38 Q7: Relational Algebra Join Cardinality (Min & Max)\n07:25 Q8: SQL Queries & Union vs. Union All (Duplicate Removal)\n08:35 Q9: Number System Base Conversions\n09:50 Q10: OSI Model Layers & Session Layer Functions\n10:30 Q11: DNS Port Numbers & UDP Protocols\n11:10 Q12: Dijkstra's Algorithm & Minimum Spanning Trees\n11:35 Q13: Generative AI & Government Initiatives (Bhashini)\n12:20 Q14: Pseudo Code Evaluation & Modulus Remainder Logic\n12:45 Q15: Functions in Programming & Return Values\n\n📌 Topics Covered:\n* Complete exam-level problem solving for IBPS SO and RRB SO IT Officer aspirants.\n* Core technical concepts including DBMS, Data Structures, Operating Systems, Computer Networks, and Python/Programming fundamentals.\n* Step-by-step detailed teacher explanations for every question to save revision time.\n\n🔗 Helpful Links:\n* Website: https://www.banksoit.com\n* Telegram Channel: https://t.me/banksoit\n* Follow us on Instagram: https://instagram.com/banksoit\n\n🔍 Your Queries Solved\nibps so it officer mock test 2\nrrb so it officer exam preparation\nit agnipariksha series mock 2\ncomputer science mock test for banking exams\ndata structures and algorithms important questions\ncomputer networks previous year questions\noperating systems internal and external fragmentation\nsql union vs union all differences\nosi model layers explanation\ngenerative ai bhashini initiative government of india\n\n#IBPSSOIT #ITOfficerMockTest #BankingExams #ComputerScience #AgniparikshaSeries #IBPSSO2026",
+      "publishedAt": "2026-10-18T09:03:06Z",
+      "thumbnail": "https://i.ytimg.com/vi/31PpIFP-xCo/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=31PpIFP-xCo"
+    },
+    {
+      "videoId": "OMrI0h0fWJc",
+      "title": "शुभ नवरात्रि अष्टमी 🙏 | Happy Durga Ashtami 2026 | Bank SO IT #navratri",
+      "description": "🙏 आप सभी को महाष्टमी की हार्दिक शुभकामनाएँ! 🌺\n\nमाँ दुर्गा आप सभी के जीवन में सुख, शांति, शक्ति और सफलता प्रदान करें। 📚✨\n\nआपकी मेहनत रंग लाए और आप अपने सभी लक्ष्यों को प्राप्त करें।\n\nजय माता दी! 🚩🌺\n\n— Team Bank SO IT\n\n🏷️ Tags:\n\nNavratri Ashtami 2026, Happy Durga Ashtami, Maha Ashtami Wishes, Navratri Wishes in Hindi, जय माता दी, Bank SO IT, Durga Puja Wishes, Happy Navratri, शुभ नवरात्रि, Bank SO IT Shorts\n\n#navratri #pawansingh #devi #ashtami #bhakti #shorts",
+      "publishedAt": "2026-10-18T06:11:19Z",
+      "thumbnail": "https://i.ytimg.com/vi/OMrI0h0fWJc/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=OMrI0h0fWJc"
+    },
     {
       "videoId": "4zOgerSYLBw",
       "title": "Crack Bank SO IT: Complete Operating System Crash Course Part 2",
