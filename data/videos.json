@@ -1,11 +1,19 @@
 {
-  "updatedAt": "2026-10-19T13:16:25Z",
+  "updatedAt": "2026-10-19T19:21:17Z",
   "channel": {
     "name": "Bank SO IT",
     "handle": "@BankSoIt",
     "url": "https://www.youtube.com/@BankSoIt"
   },
   "videos": [
+    {
+      "videoId": "uwXcps_pFo0",
+      "title": "Proxy vs Reverse Proxy | Why Websites Never Crash",
+      "description": "दोस्तों, क्या आपने कभी सोचा है कि जब करोड़ों लोग एक साथ Netflix, YouTube या Amazon खोलते हैं, तो इनका सर्वर क्रैश क्यों नहीं होता? और हैकर्स इनके असली सर्वर तक क्यों नहीं पहुँच पाते?\n\nइस वीडियो में हमने एकदम आसान और देसी भाषा में समझाया है कि Reverse Proxy क्या होता है, यह कैसे काम करता है, और इसके 3 सबसे बड़े फायदे क्या हैं। वीडियो को अंत तक देखें!\n\nIBPS SO IT / SBI SO Professional Knowledge में Networking का ये बहुत important concept है।\n\n⏱️ Timestamps:\n0:00 - Intro: वेबसाइट्स क्रैश क्यों नहीं होतीं?\n0:19 - Reverse Proxy क्या है? (Proxy vs Reverse Proxy)\n0:39 - 1st Benefit: Load Balancing (ट्रैफिक का बँटवारा)\n0:50 - 2nd Benefit: Security (हैकर्स से सुरक्षा)\n0:59 - 3rd Benefit: Caching (सुपरफास्ट स्पीड & Nginx/Cloudflare)\n1:10 - Outro & Subscribe\n\n👉 Bank SO IT को Subscribe करें for DBMS, Networking, OS in Hindi for IBPS SO IT, SBI SO, RRB SO.\n\n#ReverseProxy #LoadBalancing #Networking",
+      "publishedAt": "2026-10-19T13:17:56Z",
+      "thumbnail": "https://i.ytimg.com/vi/uwXcps_pFo0/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=uwXcps_pFo0"
+    },
     {
       "videoId": "hNztTFT84mU",
       "title": "IT Officer Mock Test Day 3 | IBPS SO & RRB SO Exam",
