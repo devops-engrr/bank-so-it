@@ -1,11 +1,19 @@
 {
-  "updatedAt": "2026-10-29T02:26:48Z",
+  "updatedAt": "2026-10-29T09:55:31Z",
   "channel": {
     "name": "Bank SO IT",
     "handle": "@BankSoIt",
     "url": "https://www.youtube.com/@BankSoIt"
   },
   "videos": [
+    {
+      "videoId": "6ax4fgh9UFg",
+      "title": "Bank SO IT | SSC Live Stream",
+      "description": "",
+      "publishedAt": "2026-10-29T07:30:48Z",
+      "thumbnail": "https://i.ytimg.com/vi/6ax4fgh9UFg/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=6ax4fgh9UFg"
+    },
     {
       "videoId": "N8UnO9R66DE",
       "title": "YES Officer Patna Meetup ❤️ | Ashish Arora | Unforgettable Memories @studified @YesOfficerBankExams",
