@@ -1,11 +1,19 @@
 {
-  "updatedAt": "2026-11-27T08:25:19Z",
+  "updatedAt": "2026-11-27T18:56:18Z",
   "channel": {
     "name": "Bank SO IT",
     "handle": "@BankSoIt",
     "url": "https://www.youtube.com/@BankSoIt"
   },
   "videos": [
+    {
+      "videoId": "ujpOD0Pkic8",
+      "title": "Cloud & DevOps Engineer Interview Series (2026) | Corporate MNCs & Banking SO IT Complete Roadmap",
+      "description": "Welcome to the official launch of the Cloud & DevOps Engineer Interview Question Series on @banksoit! 🚀\n\nWhether you are preparing for top IT & Corporate MNCs (TCS, Infosys, LTIMindtree, Wipro, Accenture) or high-security Public & Private Sector Banking Specialist Officer roles (SBI, Bank of Baroda, PNB, IBPS SO IT, Union Bank), this series breaks down real-world, scenario-based interview questions across the entire modern DevOps and Cloud ecosystem.\n\n📌 Complete Tech Stack Covered in This Series:\n• Core Operating Systems & Networking: Linux internals, troubleshooting, TCP/IP, DNS & SSL/TLS\n• Version Control & CI/CD: Git workflows, branching strategies & automated pipelines\n• Cloud Computing: AWS architecture, IAM security, networking & disaster recovery\n• Containerization & Orchestration: Docker, multi-stage builds, container security & Kubernetes\n• Infrastructure as Code (IaC): Terraform, state management & automated provisioning\n• Production Ops, Security & Scripting: Banking-grade Cloud Security, Databases (SQL/NoSQL) & Shell/Python Scripting\n\n🔔 Subscribe to @banksoit and press the bell icon so you never miss an episode—starting tomorrow with Docker Interview Questions (Day 1)! Drop your target company or bank in the comments below.\n\n🌐 Official Website & Mock Quizzes: https://banksoit.com\n📲 Join our Telegram Channel: https://t.me/banksoitt\n\n-----------------------------------------\n⚖️ COPYRIGHT & EDUCATIONAL DISCLAIMER:\n© 2026 Bank SO IT (@banksoit). All rights reserved.\nThis video is created strictly for educational and interview preparation purposes. All third-party product names, logos, and trademarks (including AWS, Docker, Linux, Terraform, and company/bank names referenced for exam and career guidance) belong to their respective owners. Unauthorized reproduction, re-uploading, or commercial distribution of this video or presentation slides without prior written permission is prohibited.\nFair Use Notice: Under Section 107 of the Copyright Act 1976 (and applicable Indian Copyright fair dealing provisions for education and commentary), allowance is made for \"fair use\" for purposes such as teaching, scholarship, commentary, and research.\n-----------------------------------------\n\n#CloudEngineer #DevOps #BankingIT #BankSOIT #AWS #Docker #Terraform #Linux #DevOpsInterview #CloudInterview #IBPSSO #SBISO #TCS #Infosys #TechCareers",
+      "publishedAt": "2026-11-27T17:07:33Z",
+      "thumbnail": "https://i.ytimg.com/vi/ujpOD0Pkic8/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=ujpOD0Pkic8"
+    },
     {
       "videoId": "q6OitGmKBUI",
       "title": "Bank of Baroda SO 2026 Interview Experience & Feedback | Feb 2026 Notification Update (LIVE)",
@@ -397,14 +405,6 @@
       "publishedAt": "2026-08-22T04:03:02Z",
       "thumbnail": "https://i.ytimg.com/vi/mJAejAqx6ng/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=mJAejAqx6ng"
-    },
-    {
-      "videoId": "rUQ2ORcDLF8",
-      "title": "Don't take the IBPS SO IT exam without this 📉 #ibps2026 #SoftwareEngineering",
-      "description": "IBPS SO IT Software Engineering Traps you MUST avoid 🚨\n\nIn this 30-second Short we cover the most confused concepts:\n✅ SDLC stages\n✅ Waterfall vs Agile vs Spiral\n✅ Verification vs Validation\n✅ Functional vs Non-Functional Requirements\n✅ Unit → Integration → System → Acceptance Testing\n✅ Black Box vs White Box\n✅ 4 Types of Maintenance (Corrective, Adaptive, Perfective, Preventive)\n✅ Low Coupling + High Cohesion = Good Design\n\n📥 FREE Complete Software Engineering Cheatsheet PDF:\nhttps://drive.google.com/file/d/1gBb0r4rJlDGzr7FdshyhanPBfWCkgSDV/view?usp=drivesdk\n\nSave this Short + Download the PDF → Revision complete in minutes!\n\nFollow @BankSoIt  for daily IBPS SO IT Professional Knowledge content.\n\n#IBPSSOIT #IBPSSO #SoftwareEngineering #ibps2026",
-      "publishedAt": "2026-08-21T18:00:09Z",
-      "thumbnail": "https://i.ytimg.com/vi/rUQ2ORcDLF8/maxresdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=rUQ2ORcDLF8"
     }
   ]
 }
