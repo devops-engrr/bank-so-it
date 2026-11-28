@@ -1,11 +1,19 @@
 {
-  "updatedAt": "2026-11-27T18:56:18Z",
+  "updatedAt": "2026-11-28T01:57:25Z",
   "channel": {
     "name": "Bank SO IT",
     "handle": "@BankSoIt",
     "url": "https://www.youtube.com/@BankSoIt"
   },
   "videos": [
+    {
+      "videoId": "sP1FEEgZ6H4",
+      "title": "Day 1 | Top 6 Docker Interview Questions & Answers (Hinglish) | Cloud & DevOps Interview Series",
+      "description": "Welcome to Day 1 of the Cloud & DevOps Interview Series on @banksoit! 🚀\n\nIn this kickoff episode, we cover the Top 6 most frequently asked Docker interview questions for DevOps Engineers, Cloud Administrators, and Banking/PSU IT Specialist Officer interviews (IBPS SO IT, SBI SO IT, Bank of Baroda SO, Bank of India SO, and DSSSB). We break down every concept in simple Hinglish—using real-world analogies (like the Chef & Recipe analogy) and production Dockerfile examples so you can answer confidently without memorizing textbook definitions.\n\n📌 What You Will Learn in Day 1:\n• How a Dockerfile builds an image layer by layer and how layer caching works\n• The real difference between a Docker Image and a Docker Container (Recipe vs. Dish)\n• How to write and structure a clean production Dockerfile from scratch\n• ADD vs COPY: When to use each, tar auto-extraction, and remote URLs\n• CMD vs ENTRYPOINT: Exec form vs Shell form, PID 1 behavior, and argument overriding\n• How to reduce Docker image size using Multi-Stage Builds and Distroless images to minimize CVEs\n\n🔗 Resources & Channels:\n• Website & Notes: https://banksoit.com\n• Subscribe to Bank SO IT: https://youtube.com/@banksoit\n\n⏱️ Video Timestamps:\n00:00 Series Roadmap: 100+ Docker Interview Questions & Exam Focus\n02:27 Q1: What is a Dockerfile & How Layer Caching Works?\n06:31 Q2: Docker Image vs Docker Container (Chef & Recipe Analogy)\n10:53 Q3: How to Write & Explain a Sample Dockerfile in Interviews\n12:20 Q4: ADD vs COPY in Dockerfile (With Practical Use Cases)\n15:05 Q5: CMD vs ENTRYPOINT (Overriding Arguments & Exec vs Shell Form)\n18:50 Q6: How to Reduce Docker Image Size? (Multi-Stage Build & Distroless)\n21:48 Outro & Subscribe for Day 2\n\n#DockerInterviewQuestions #DevOpsInterview #CloudAndDevOps #BankSOIT #DockerTutorial #IBPSSOIT #SBISOIT #KubernetesAndDevOps #DockerHinglish #TechInterviewPrep\n\n\n⚖️ Copyright Disclaimer:\nUnder Section 107 of the Copyright Act 1976, allowance is made for \"fair use\" for purposes such as criticism, comment, news reporting, teaching, scholarship, and research. Fair use is a use permitted by copyright statute that might otherwise be infringing. Non-profit, educational, or personal use tips the balance in favor of fair use. All technical architectures, commands, and diagrams shown in this video are created strictly for educational and interview preparation purposes.",
+      "publishedAt": "2026-11-28T01:40:06Z",
+      "thumbnail": "https://i.ytimg.com/vi/sP1FEEgZ6H4/maxresdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=sP1FEEgZ6H4"
+    },
     {
       "videoId": "ujpOD0Pkic8",
       "title": "Cloud & DevOps Engineer Interview Series (2026) | Corporate MNCs & Banking SO IT Complete Roadmap",
@@ -397,14 +405,6 @@
       "publishedAt": "2026-08-22T16:50:37Z",
       "thumbnail": "https://i.ytimg.com/vi/HEW8Dqe4Ol4/maxresdefault.jpg",
       "url": "https://www.youtube.com/watch?v=HEW8Dqe4Ol4"
-    },
-    {
-      "videoId": "mJAejAqx6ng",
-      "title": "Web Technology 🔥 HTML vs CSS vs JavaScript | IBPS SO IT Exam Traps #shorts #ibpsso2026 #ibpsso",
-      "description": "WEB TECHNOLOGY — IBPS SO IT 🚨\n\nHTML, CSS and JavaScript are extremely important for the IBPS SO IT exam. This Short covers the highest-yield concepts and common exam traps in a quick revision format.\n\n🔥 Topics covered\n\n* HTML → Structure of a webpage\n* Semantic HTML → header, nav, main, footer\n* CSS → Presentation and styling\n* CSS Selectors → Element, Class, ID\n* Box Model → Content → Padding → Border → Margin\n* Responsive Design\n* JavaScript → Behaviour/interactivity\n* DOM Manipulation\n* Events → Click, Submit, Change, etc.\n\n📚 FREE CHEATSHEET PDF\n\nGet the complete revision cheatsheet here: https://drive.google.com/file/d/1WiqEd-UrP3ZpkutCU5HhUCvhyakROSMz/view?usp=drivesdk\n\nSave it. Revise it. Crack IBPS SO IT. 🚀\n\n⸻\n\n⚠️ COPYRIGHT\n\n© 2026 @BankSoIt  / BankSOIT. All Rights Reserved.\n\nThis video, script, graphics, thumbnail, educational material and associated PDF are original content created for BankSOIT. Unauthorized copying, reproduction, redistribution, re-uploading, modification or commercial use of this content, in whole or in part, is prohibited without prior permission.\n\nFor educational and exam-preparation purposes only.\n\n#IBPSSOIT #IBPSSO #WebTechnology #HTML #CSS #JavaScript #ITOfficer #ComputerScience #BankSOIT #ExamPreparation #shorts",
-      "publishedAt": "2026-08-22T04:03:02Z",
-      "thumbnail": "https://i.ytimg.com/vi/mJAejAqx6ng/maxresdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=mJAejAqx6ng"
     }
   ]
 }
